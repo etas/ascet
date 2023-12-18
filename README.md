@@ -14,7 +14,7 @@ ASCET-DEVELOPER has embraced the use of GitHub Discussions as a platform for fos
 
 This move reflects our commitment to creating an open dialogue, enabling users to connect, share experiences, and contribute to the continuous improvement of ASCET-DEVELOPER. By leveraging GitHub Discussions, we aim to enhance the user experience, gather valuable feedback, and collectively shape the future developments of our product in alignment with the evolving needs of the community. 
 
-To create a welcoming and inspiring community please follow the [Code of Conduct](https://github.com/etas-e2e/ascet?tab=coc-ov-file)
+To create a welcoming and inspiring community please follow the [Code of Conduct](https://github.com/etas/ascet?tab=coc-ov-file)
 
-[Let's start discussing](https://github.com/etas-e2e/ascet/discussions)🌞
+[Let's start discussing](https://github.com/etas/ascet/discussions)🌞
 
