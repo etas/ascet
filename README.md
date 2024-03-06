@@ -5,7 +5,7 @@ Community discussions is the place to discuss ASCET-DEVELOPER, ask questions, he
 ETAS ASCET-DEVELOPER is a tool for model-based design and auto C code generation for embedded systems. It enables you to create graphical and textual models from which you can automatically generate safe and efficient C code that is well defined, maintainable, testable, and reusable.
 
 - 👉 To learn more about the product visit [our product site](https://www.etas.com/en/products/ascet-developer.php)
-- ⬇️ To directly download the product click [here](https://www.etas.com/en/products/44496.php)
+- ⬇️ To directly download the product click [here](https://www.etas.com/en/products/ascet-developer-contact-form.php)
 - 📧 To contact ASCET-DEVELOPER please use <Community.ASCET@etas.com >
 
 ### Join the community
