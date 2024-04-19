@@ -1,0 +1,5 @@
+../src-gen/src/model_LedController_stm32f334r8.c:55:6:model_LedController_stm32f334r8_fadeViolet	24	static
+../src-gen/src/model_LedController_stm32f334r8.c:106:6:model_LedController_stm32f334r8_indicateGameTime	24	static
+../src-gen/src/model_LedController_stm32f334r8.c:168:9:model_LedController_stm32f334r8_isGameIdle	0	static
+../src-gen/src/model_LedController_stm32f334r8.c:186:9:model_LedController_stm32f334r8_isGameRunning	0	static
+../src-gen/src/model_LedController_stm32f334r8.c:204:6:model_LedController_stm32f334r8_periodicTrigger	16	static

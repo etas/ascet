@@ -1,0 +1,4 @@
+../src-gen/src/SystemLib_CounterTimer_Timer_Automatic.c:41:6:SystemLib_CounterTimer_Timer_Automatic_begin	1
+../src-gen/src/SystemLib_CounterTimer_Timer_Automatic.c:62:6:SystemLib_CounterTimer_Timer_Automatic_compute	2
+../src-gen/src/SystemLib_CounterTimer_Timer_Automatic.c:81:9:SystemLib_CounterTimer_Timer_Automatic_getTime	1
+../src-gen/src/SystemLib_CounterTimer_Timer_Automatic.c:99:9:SystemLib_CounterTimer_Timer_Automatic_isElapsed	1

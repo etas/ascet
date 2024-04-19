@@ -1,0 +1,5 @@
+../src-gen/src/model_ServoController_Automatic.c:66:6:model_ServoController_Automatic_autoMode	0	static
+../src-gen/src/model_ServoController_Automatic.c:98:9:model_ServoController_Automatic_isGameIdle	0	static
+../src-gen/src/model_ServoController_Automatic.c:116:9:model_ServoController_Automatic_isGameRunning	0	static
+../src-gen/src/model_ServoController_Automatic.c:191:9:model_ServoController_Automatic_switchModeButtonPushed	8	static
+../src-gen/src/model_ServoController_Automatic.c:134:6:model_ServoController_Automatic_periodicTrigger	16	static

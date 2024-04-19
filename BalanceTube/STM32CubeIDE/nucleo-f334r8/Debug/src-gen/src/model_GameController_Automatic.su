@@ -1,0 +1,6 @@
+../src-gen/src/model_GameController_Automatic.c:59:7:model_GameController_Automatic_gameState	0	static
+../src-gen/src/model_GameController_Automatic.c:77:9:model_GameController_Automatic_getTime	8	static
+../src-gen/src/model_GameController_Automatic.c:99:9:model_GameController_Automatic_isCanceled	24	static
+../src-gen/src/model_GameController_Automatic.c:122:9:model_GameController_Automatic_isInScoringZone	0	static
+../src-gen/src/model_GameController_Automatic.c:144:9:model_GameController_Automatic_isStartGameButtonPushed	8	static
+../src-gen/src/model_GameController_Automatic.c:163:6:model_GameController_Automatic_periodicTrigger	16	static

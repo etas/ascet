@@ -1,0 +1,7 @@
+.pio
+*.lib
+*.log
+disclaimer.txt
+ESDL_Linear_Interpolation.ini
+.trace/
+CodeGeneration.log
