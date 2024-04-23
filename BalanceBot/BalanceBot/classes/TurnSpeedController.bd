@@ -1,0 +1,377 @@
+classType classes.TurnSpeedController
+blockdiagramSpecification Main {
+	methodBody calculateTurnSpeed {
+		outPin active {
+			connection_35, connection_3
+		}
+	}
+	container calculateRotationRatio at (321, 261) size (19, 8) {
+		label at (50, -39)
+		containerInPin firstEntry at (left, 2) connection_94
+		containerOutPin rotationRatio at (right, 2) {
+			connection_82
+		}
+		simpleIdentifier interfaces.IBalance2WD.PulseLeft at (91, 145) {
+			label at (0, -1)
+			outPin {
+				connection_41
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		literal Numeric "55.0" at (421, 133) size (49, 0) {
+			label at (0, 4)
+			outPin {
+				connection_26
+			}
+		}
+		absolute at (261, 151) {
+			inPin connection_104
+			outPin {
+				connection_59
+			}
+		}
+		addition at (181, 146) {
+			inPin connection_41
+			inPin connection_42 {
+				bendpoints (0, -10)
+			}
+			outPin {
+				connection_105
+			}
+		}
+		simpleIdentifier currentSpeed at (331, 155) {
+			label at (0, -1)
+			inPin connection_59
+			outPin {
+				connection_89
+			}
+			sequenceCall {
+				inPin connection_61 {
+					bendpoints (210, 0), (210, 90)
+				}
+			}
+		}
+		simpleIdentifier interfaces.IBalance2WD.PulseRight at (91, 175) {
+			label at (0, -1)
+			outPin {
+				connection_42
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier Limit_RotationRatio at (591, 131) size (6, 4) backgroundColor #ffffff {
+			label at (0, 1)
+			methodCall SystemLib.Nonlinears.Limiter.value {
+				argumentPin mn at (top, 0) connection_31
+				argumentPin x at (left, 1) connection_30
+				argumentPin mx at (top, 4) connection_32 {
+					bendpoints (10, 0)
+				}
+				returnPin at (right, 1) {
+					connection_29
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		literal Numeric "5.0" at (581, 63) size (49, 0) {
+			label at (0, 4)
+			outPin {
+				connection_32
+			}
+		}
+		division at (501, 136) {
+			inPin connection_26
+			inPin connection_89
+			outPin {
+				connection_30
+			}
+		}
+		containerPinIdentifier firstEntry at (11, 43) size (8, 1) {
+			outPin {
+				connection_61, connection_28
+			}
+		}
+		containerPinIdentifier rotationRatio at (811, 143) size (10, 1) {
+			inPin connection_93
+		}
+		simpleIdentifier rotationRatio at (721, 145) {
+			label at (0, -1)
+			inPin connection_29
+			outPin {
+				connection_93
+			}
+			sequenceCall at (-40, -24) {
+				inPin connection_28 {
+					bendpoints (590, 0)
+				}
+			}
+		}
+		literal Numeric "0.5" at (551, 83) size (49, 0) {
+			label at (0, 4)
+			outPin {
+				connection_31
+			}
+		}
+		typeConverter real at (221, 151) {
+			inPin connection_105
+			outPin {
+				connection_104
+			}
+		}
+	}
+	container calculateTurnOut at (581, 261) size (18, 8) {
+		label at (50, -29)
+		containerInPin always at (top, 8) connection_79 {
+			bendpoints (0, 50), (470, 50)
+		}
+		containerInPin rotationRatio at (left, 2) connection_82
+		containerOutPin turnOut at (right, 5) {
+			connection_1
+		}
+		literal Numeric "5.0" at (501, 163) size (49, 0) {
+			outPin {
+				connection_8
+			}
+		}
+		containerPinIdentifier always at (21, 113) size (6, 1) {
+			outPin {
+				connection_5
+			}
+		}
+		containerPinIdentifier turnOut at (711, 253) size (7, 1) {
+			inPin connection_80
+		}
+		simpleIdentifier turnOut at (611, 255) {
+			label at (0, -1)
+			inPin connection_6
+			outPin {
+				connection_80, connection_23
+			}
+			sequenceCall {
+				inPin connection_5 {
+					bendpoints (520, 0)
+				}
+			}
+		}
+		literal Numeric "1" at (201, 193) size (49, 0) {
+			outPin {
+				connection_11
+			}
+		}
+		addition at (421, 246) {
+			inPin connection_23 {
+				bendpoints (0, -110), (-280, -110), (-280, -10)
+			}
+			inPin connection_19
+			outPin {
+				connection_20
+			}
+		}
+		simpleIdentifier interfaces.IBalance2WD.TurnLeftRightFlag at (211, 165) {
+			label at (-60, -1)
+			outPin {
+				connection_10
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		literal Numeric "-5.0" at (441, 183) size (49, 0) {
+			outPin {
+				connection_7
+			}
+		}
+		negation at (271, 271) {
+			inPin connection_83 {
+				bendpoints (90, 0), (90, 20)
+			}
+			outPin {
+				connection_65
+			}
+		}
+		complexIdentifier Limit_TurnOut at (501, 241) size (6, 4) backgroundColor #ffffff {
+			label at (0, 1)
+			methodCall SystemLib.Nonlinears.Limiter.value {
+				argumentPin mn at (top, 0) connection_7 {
+					bendpoints (20, 0)
+				}
+				argumentPin x at (left, 1) connection_20
+				argumentPin mx at (top, 4) connection_8
+				returnPin at (right, 1) {
+					connection_6
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		containerPinIdentifier rotationRatio at (21, 253) size (13, 1) {
+			outPin {
+				connection_83, connection_78
+			}
+		}
+		conditionalSelect at (311, 241) {
+			inPin connection_78
+			inPin CASE_CONDITION connection_12
+			inPin connection_65
+			outPin {
+				connection_19
+			}
+		}
+		equal at (291, 166) {
+			inPin connection_10
+			inPin connection_11 {
+				bendpoints (20, 0), (20, -10)
+			}
+			outPin {
+				connection_12
+			}
+		}
+	}
+	simpleIdentifier interfaces.IParameters.KpTurn at (791, 295) {
+		label at (0, -1)
+		outPin {
+			connection_2
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	multiplication at (861, 296) {
+		inPin connection_2
+		inPin connection_1
+		outPin {
+			connection_4
+		}
+	}
+	simpleIdentifier interfaces.IBalance2WD.TurnOutput at (931, 305) {
+		label at (0, -1)
+		inPin connection_4
+		sequenceCall {
+			inPin connection_3
+		}
+	}
+	simpleIdentifier interfaces.IBalance2WD.TurnLeftRightFlag at (21, 105) {
+		label at (0, -31)
+		outPin {
+			connection_33
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	equal at (121, 106) {
+		inPin connection_33
+		inPin connection_84
+		outPin {
+			connection_36
+		}
+	}
+	literal Numeric "0" at (21, 123) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_84
+		}
+	}
+	ifElse at (181, 111) {
+		inPin connection_36
+		ifControlFlowOutPin {
+			connection_46, connection_48
+		}
+		elseControlFlowOutPin {
+			connection_39, connection_79
+		}
+		sequenceCall {
+			inPin connection_35
+		}
+	}
+	simpleIdentifier spinOnce at (51, 275) {
+		label at (0, -1)
+		inPin outPin {
+			connection_96
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	equal at (151, 276) {
+		inPin connection_96
+		inPin connection_95 {
+			bendpoints (0, -10)
+		}
+		outPin {
+			connection_40
+		}
+	}
+	if at (221, 281) {
+		inPin connection_40
+		ifControlFlowOutPin {
+			connection_102, connection_94
+		}
+		sequenceCall {
+			inPin connection_39 {
+				bendpoints (0, 120)
+			}
+		}
+	}
+	simpleIdentifier spinOnce at (521, 85) {
+		label at (0, -1)
+		inPin connection_47
+		outPin sequenceCall {
+			inPin connection_46 {
+				bendpoints (160, 0), (160, -50)
+			}
+		}
+	}
+	literal Numeric "0" at (431, 83) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_47
+		}
+	}
+	simpleIdentifier turnOut at (521, 135) {
+		label at (0, -1)
+		inPin connection_49
+		outPin sequenceCall {
+			inPin connection_48
+		}
+	}
+	literal Numeric "0.0" at (431, 133) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_49
+		}
+	}
+	literal Numeric "0" at (51, 303) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_95
+		}
+	}
+	freeComment at (301, 101) {
+		"0 => Do not turn\r\n"
+	}
+	freeComment at (211, 181) {
+		"Turn left (-1) or right (1)"
+	}
+	simpleIdentifier spinOnce at (301, 375) {
+		label at (0, -1)
+		inPin connection_103
+		outPin sequenceCall {
+			inPin connection_102 {
+				bendpoints (10, 0), (10, 70)
+			}
+		}
+	}
+	literal Numeric "1" at (231, 373) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_103
+		}
+	}
+}

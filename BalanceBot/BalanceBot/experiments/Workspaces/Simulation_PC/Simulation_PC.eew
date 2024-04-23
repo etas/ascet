@@ -1,0 +1,22 @@
+<?SCHEMA schemaVersion="1.0"?>
+<Workspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Program%20Files/Common%20Files/ETAS/Experiment%20Environment/3.8/Schemas/EE.Data.Workspace.xsd" xsi:type="ETAS.EE.Data.WorkspaceType">
+  <PluginData xsi:type="ETAS.EE.Data.PluginDataListType">
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="ID1af70bf7-c0dd-41bb-8875-f1754c341914" pluginID="Options" rootFolder="Options_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="IDe213ccd0-d503-414e-932a-c4f775cfe420" type="" name="Options" file="Options.opt" />
+      </Documents>
+    </Item>
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="ID12db388e-a9c9-4c59-9b85-724674684c19" pluginID="SignalSourceManager" rootFolder="SignalSourceManager_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="ID808f823f-0d42-4b86-be73-93b316b92a49" type="" name="SignalSourcesData" file="SignalSources.xml" />
+      </Documents>
+    </Item>
+  </PluginData>
+  <RecentExperiments xsi:type="ETAS.EE.Data.FileReferenceListType">
+    <Item xsi:type="ETAS.EE.Data.FileReferenceType" id="IDa8539e8f-44b0-4db3-8d10-24929e825b18" path="C:\git\example-projects\embedded-world\BalanceBot\BalanceBot\experiments\Experiments\system\Simulation_PC\Simulation_PC.eex" hintPath="..\..\Experiments\system\Simulation_PC\Simulation_PC.eex" />
+  </RecentExperiments>
+  <WorkspaceInfo xsi:type="ETAS.EE.Data.WorkspaceInfoType">
+    <DateTime xsi:type="ETAS.EE.Data.DateTimeInfoType" id="IDf60eabbf-b15b-485a-98c9-0f1546c0a569" Created="2024-04-05T07:28:48.372Z" LastOpened="2024-04-22T09:17:25.236Z" LastSaved="2024-04-22T10:24:39.875Z" />
+    <Version xsi:type="ETAS.EE.Data.VersionInfoType" id="ID731c77c5-7b78-4ccd-9112-2e2d4461e18c" Created="3.8.5.253" LastSaved="3.8.5.253" MinRequired="3.3.1" />
+  </WorkspaceInfo>
+</Workspace>

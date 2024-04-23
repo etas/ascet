@@ -1,0 +1,423 @@
+classType classes.AngleSpeedController
+blockdiagramSpecification Main {
+	methodBody calculateInclinationAngle {
+		outPin active {
+			connection_5, connection_9, connection_23, connection_107, connection_112
+		}
+	}
+	methodBody calculateAngleSpeed {
+		outPin {
+			connection_39, connection_81, connection_76, connection_56
+		}
+	}
+	container AngleSpeed at (371, 351) size (30, 20) {
+		label at (100, -229)
+		containerInPin KpAngle at (left, 9) connection_60
+		containerInPin TargetAngle at (left, 3) connection_61
+		containerInPin KiAngle at (left, 14) connection_62
+		containerInPin currentAngle at (left, 0) connection_98 {
+			bendpoints (70, 0), (70, 100), (-350, 100), (-350, 210)
+		}
+		containerOutPin AngleOutput at (right, 9) {
+			connection_57
+		}
+		literal Numeric "1.5" at (261, 353) size (49, 0) {
+			outPin {
+				connection_82
+			}
+		}
+		containerPinIdentifier KpAngle at (-49, 263) size (8, 1) {
+			outPin {
+				connection_86
+			}
+		}
+		multiplication at (711, 266) {
+			inPin connection_86
+			inPin connection_87 {
+				bendpoints (40, 0), (40, -170)
+			}
+			outPin {
+				connection_51
+			}
+		}
+		simpleIdentifier errorAngleSum at (471, 455) {
+			label at (0, -1)
+			inPin connection_77
+			outPin {
+				connection_88
+			}
+			sequenceCall {
+				inPin connection_76
+			}
+		}
+		containerPinIdentifier TargetAngle at (-59, 463) size (11, 1) {
+			outPin {
+				connection_34
+			}
+		}
+		subtraction at (71, 446) {
+			inPin connection_71
+			inPin connection_34
+			outPin {
+				connection_38
+			}
+		}
+		containerPinIdentifier KiAngle at (-49, 573) size (8, 1) {
+			outPin {
+				connection_89
+			}
+		}
+		multiplication at (711, 456) {
+			inPin connection_88
+			inPin connection_89 {
+				bendpoints (600, 0), (600, -100)
+			}
+			outPin {
+				connection_52
+			}
+		}
+		literal Numeric "-1.5" at (261, 403) size (49, 0) {
+			outPin {
+				connection_80
+			}
+		}
+		containerPinIdentifier AngleOutput at (881, 283) size (11, 1) {
+			inPin connection_63
+		}
+		addition at (781, 276) {
+			inPin connection_51
+			inPin connection_52 {
+				bendpoints (20, 0), (20, -170)
+			}
+			outPin {
+				connection_63
+			}
+		}
+		simpleIdentifier calculateAngleSpeed.errorAngle at (141, 455) {
+			label at (0, -1)
+			inPin connection_38
+			outPin {
+				connection_87, connection_75
+			}
+			sequenceCall {
+				inPin connection_39
+			}
+		}
+		containerPinIdentifier currentAngle at (-59, 443) size (11, 1) {
+			outPin {
+				connection_71
+			}
+		}
+		literal Numeric "1.0" at (261, 383) size (49, 0) {
+			outPin {
+				connection_79
+			}
+		}
+		complexIdentifier IntegratorKLimited_instance at (331, 431) size (8, 6) backgroundColor #ffffff {
+			label at (0, 1)
+			methodCall SystemLib.Transferfunction.Integrator.IntegratorKLimited.reset {
+				argumentPin initValue at (bottom, 3) sequenceCall {
+					inPin
+				}
+			}
+			methodCall SystemLib.Transferfunction.Integrator.IntegratorKLimited.compute {
+				argumentPin val at (left, 2) connection_75
+				argumentPin K at (top, 3) connection_79 {
+					bendpoints (60, 0)
+				}
+				argumentPin mn at (top, 0) connection_80 {
+					bendpoints (30, 0)
+				}
+				argumentPin mx at (top, 6) connection_82 {
+					bendpoints (90, 0)
+				}
+				sequenceCall at (0, 56) {
+					inPin connection_81
+				}
+			}
+			methodCall SystemLib.Transferfunction.Integrator.IntegratorKLimited.value {
+				returnPin at (right, 2) {
+					connection_77
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		freeComment at (311, 321) {
+			"1.5 = 300 multiplied with 0.005s.\r\n(deltaT included in Integrator)"
+		}
+	}
+	container InclinationAngle at (381, 91) size (26, 12) {
+		label at (70, -149)
+		containerInPin GyroX at (left, 9) connection_29
+		containerInPin AccelerationY at (left, 1) connection_31
+		containerInPin AccelerationZ at (left, 4) connection_32
+		containerOutPin currentAngle at (right, 5) {
+			connection_98
+		}
+		complexIdentifier SystemLib.Miscellaneous.DeltaTimeService at (321, 421) size (8, 7) backgroundColor #ffffff {
+			label at (-90, -89)
+			elementCall (SystemLib.Miscellaneous.DeltaTimeService.deltaT) {
+				returnPin at (right, 0) {
+					connection_22
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		multiplication at (731, 606) {
+			inPin connection_3
+			inPin connection_109
+			outPin {
+				connection_6
+			}
+		}
+		containerPinIdentifier GyroX at (41, 503) size (6, 1) {
+			outPin {
+				connection_8
+			}
+		}
+		division at (231, 506) {
+			inPin connection_8
+			inPin connection_7
+			outPin {
+				connection_64
+			}
+		}
+		literal Numeric "131" at (161, 523) size (49, 0) {
+			outPin {
+				connection_7
+			}
+		}
+		addition at (901, 296) {
+			inPin connection_97 {
+				bendpoints (30, 0), (30, -90), (-610, -90), (-610, 50)
+			}
+			inPin connection_68 {
+				bendpoints (80, 0), (80, -130)
+			}
+			outPin {
+				connection_14
+			}
+		}
+		literal Numeric "0.9934" at (901, 253) size (49, 0) {
+			outPin {
+				connection_13
+			}
+		}
+		simpleIdentifier calculateInclinationAngle.accAngle at (821, 615) {
+			label at (0, -1)
+			inPin connection_6
+			outPin {
+				connection_69
+			}
+			sequenceCall {
+				inPin connection_5
+			}
+		}
+		multiplication at (1021, 286) {
+			inPin connection_13 {
+				bendpoints (20, 0), (20, 30)
+			}
+			inPin connection_14
+			outPin {
+				connection_26
+			}
+		}
+		simpleIdentifier calculateInclinationAngle.gyroAngle at (751, 445) {
+			label at (0, -1)
+			inPin connection_24
+			outPin {
+				connection_68
+			}
+			sequenceCall {
+				inPin connection_23
+			}
+		}
+		simpleIdentifier calculateInclinationAngle.gyroRate at (471, 515) {
+			label at (0, -1)
+			inPin connection_10
+			outPin {
+				connection_67
+			}
+			sequenceCall {
+				inPin connection_9
+			}
+		}
+		multiplication at (1071, 596) {
+			inPin connection_25
+			inPin connection_69
+			outPin {
+				connection_20
+			}
+		}
+		containerPinIdentifier currentAngle at (1421, 303) size (11, 1) {
+			inPin connection_95
+		}
+		addition at (1161, 296) {
+			inPin connection_26
+			inPin connection_20 {
+				bendpoints (50, 0)
+			}
+			outPin {
+				connection_108
+			}
+		}
+		containerPinIdentifier AccelerationY at (41, 563) size (15, 1) {
+			outPin {
+				connection_65
+			}
+		}
+		containerPinIdentifier AccelerationZ at (41, 613) size (14, 1) {
+			outPin {
+				connection_66
+			}
+		}
+		complexIdentifier mathlib_ at (431, 601) size (14, 8) {
+			label at (0, 1)
+			methodCall SystemLib.Math.MathLib.atan2 {
+				argumentPin x at (left, 0) connection_1 {
+					bendpoints (0, 40)
+				}
+				argumentPin y at (left, 1) connection_2
+				returnPin at (right, 0) {
+					connection_3
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		literal Numeric "0.0066" at (1001, 593) size (49, 0) {
+			outPin {
+				connection_25
+			}
+		}
+		multiplication at (591, 436) {
+			inPin connection_22 {
+				bendpoints (30, 0), (30, 10)
+			}
+			inPin connection_67 {
+				bendpoints (50, 0), (50, -50), (70, -50)
+			}
+			outPin {
+				connection_24
+			}
+		}
+		typeConverter real at (351, 511) {
+			inPin connection_64
+			outPin {
+				connection_10
+			}
+		}
+		typeConverter real at (351, 561) {
+			inPin connection_65
+			outPin {
+				connection_1
+			}
+		}
+		typeConverter real at (351, 611) {
+			inPin connection_66
+			outPin {
+				connection_2
+			}
+		}
+		simpleIdentifier currentAngle at (1211, 305) {
+			label at (0, -1)
+			inPin connection_108
+			outPin {
+				connection_113, connection_95
+			}
+			sequenceCall {
+				inPin connection_107
+			}
+		}
+		simpleIdentifier prevAngle at (1391, 245) {
+			label at (0, -1)
+			inPin connection_113 {
+				bendpoints (80, 0), (80, -60)
+			}
+			outPin {
+				connection_97
+			}
+			sequenceCall {
+				inPin connection_112
+			}
+		}
+		freeComment at (131, 441) size (14, 6) {
+			"The gyro has a resolution of 16 bits which has to be mapped to an output range of +/- 250 deg/s"
+		}
+		simpleIdentifier control.RAD_TO_DEG at (641, 625) {
+			label at (0, -1)
+			outPin {
+				connection_109
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier interfaces.IBalance2WD.AccelerationY at (91, 105) {
+		label at (0, -31)
+		outPin {
+			connection_31
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.IBalance2WD.AccelerationZ at (91, 135) {
+		label at (0, -1)
+		outPin {
+			connection_32
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.IBalance2WD.GyroX at (91, 185) {
+		label at (0, -1)
+		outPin {
+			connection_29
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.IParameters.TargetAngle at (91, 385) {
+		label at (-30, -1)
+		outPin {
+			connection_61
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.IParameters.KpAngle at (91, 445) {
+		label at (0, -1)
+		outPin {
+			connection_60
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.IParameters.KiAngle at (91, 495) {
+		label at (0, -1)
+		outPin {
+			connection_62
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.IBalance2WD.AngleOutput at (771, 445) {
+		label at (0, -1)
+		inPin connection_57
+		sequenceCall {
+			inPin connection_56
+		}
+	}
+}

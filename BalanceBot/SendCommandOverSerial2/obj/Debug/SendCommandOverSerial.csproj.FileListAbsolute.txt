@@ -1,0 +1,10 @@
+C:\Users\bfr9fe\ETAS\ASCET-DEVELOPER-7.9.0\edukit2\SendCommandOverSerial2\bin\Debug\SendCommandOverSerial.exe.config
+C:\Users\bfr9fe\ETAS\ASCET-DEVELOPER-7.9.0\edukit2\SendCommandOverSerial2\bin\Debug\SendCommandOverSerial.exe
+C:\Users\bfr9fe\ETAS\ASCET-DEVELOPER-7.9.0\edukit2\SendCommandOverSerial2\bin\Debug\SendCommandOverSerial.pdb
+C:\Users\bfr9fe\ETAS\ASCET-DEVELOPER-7.9.0\edukit2\SendCommandOverSerial2\obj\Debug\SendCommandOverSerial.csprojAssemblyReference.cache
+C:\Users\bfr9fe\ETAS\ASCET-DEVELOPER-7.9.0\edukit2\SendCommandOverSerial2\obj\Debug\SendCommandOverSerial.MainUI.resources
+C:\Users\bfr9fe\ETAS\ASCET-DEVELOPER-7.9.0\edukit2\SendCommandOverSerial2\obj\Debug\SendCommandOverSerial.Properties.Resources.resources
+C:\Users\bfr9fe\ETAS\ASCET-DEVELOPER-7.9.0\edukit2\SendCommandOverSerial2\obj\Debug\SendCommandOverSerial.csproj.GenerateResource.cache
+C:\Users\bfr9fe\ETAS\ASCET-DEVELOPER-7.9.0\edukit2\SendCommandOverSerial2\obj\Debug\SendCommandOverSerial.csproj.CoreCompileInputs.cache
+C:\Users\bfr9fe\ETAS\ASCET-DEVELOPER-7.9.0\edukit2\SendCommandOverSerial2\obj\Debug\SendCommandOverSerial.exe
+C:\Users\bfr9fe\ETAS\ASCET-DEVELOPER-7.9.0\edukit2\SendCommandOverSerial2\obj\Debug\SendCommandOverSerial.pdb

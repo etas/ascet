@@ -1,0 +1,350 @@
+classType classes.VehicleSpeedController
+blockdiagramSpecification Main {
+	methodBody calculateVehicleSpeed {
+		outPin active {
+			connection_94, connection_202, connection_197, connection_200, connection_37, connection_35, connection_157, connection_158, connection_163, connection_166
+		}
+	}
+	methodBody init {
+		outPin {
+			connection_182
+		}
+	}
+	container Measure_Speed at (201, 61) size (17, 7) hidePinName {
+		label at (50, -39)
+		containerInPin PulseLeft at (left, 1) connection_87
+		containerInPin PulseRight at (left, 4) connection_88
+		containerOutPin measuredSpeed at (right, 2) {
+			connection_95
+		}
+		literal Numeric "0" at (101, 193) size (49, 0) {
+			outPin {
+				connection_38, connection_36
+			}
+		}
+		addition at (261, 86) {
+			inPin connection_89
+			inPin connection_90
+			outPin {
+				connection_91
+			}
+		}
+		simpleIdentifier interfaces.IBalance2WD.PulseLeft at (671, 195) {
+			label at (0, -1)
+			inPin connection_38
+			outPin sequenceCall {
+				inPin connection_37
+			}
+		}
+		simpleIdentifier interfaces.IBalance2WD.PulseRight at (681, 245) {
+			label at (0, -1)
+			inPin connection_36 {
+				bendpoints (440, 0), (440, 50)
+			}
+			outPin sequenceCall {
+				inPin connection_35
+			}
+		}
+		containerPinIdentifier PulseLeft at (41, 83) size (10, 1) {
+			outPin {
+				connection_89
+			}
+		}
+		containerPinIdentifier PulseRight at (41, 103) size (11, 1) {
+			outPin {
+				connection_90
+			}
+		}
+		containerPinIdentifier measuredSpeed at (721, 93) size (10, 1) {
+			inPin connection_91
+		}
+	}
+	simpleIdentifier interfaces.IParameters.KpSpeed at (21, 345) {
+		label at (0, -1)
+		outPin {
+			connection_153
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.IParameters.KiSpeed at (21, 395) {
+		label at (0, -1)
+		outPin {
+			connection_154
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.IBalance2WD.SpeedOutput at (961, 345) {
+		label at (0, -1)
+		inPin connection_167
+		sequenceCall {
+			inPin connection_166
+		}
+	}
+	simpleIdentifier calculateVehicleSpeed.currentSpeed at (911, 85) {
+		label at (0, -1)
+		inPin connection_198
+		outPin {
+			connection_155
+		}
+		sequenceCall {
+			inPin connection_197
+		}
+	}
+	simpleIdentifier interfaces.IBalance2WD.PulseLeft at (21, 75) {
+		label at (0, -1)
+		inPin outPin {
+			connection_87
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.IBalance2WD.PulseRight at (21, 105) {
+		label at (0, -1)
+		inPin outPin {
+			connection_88
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier calculateVehicleSpeed.measuredSpeed at (401, 85) {
+		label at (0, -1)
+		inPin connection_95
+		outPin {
+			connection_204
+		}
+		sequenceCall {
+			inPin connection_94
+		}
+	}
+	simpleIdentifier interfaces.IParameters.TargetSpeed at (21, 285) {
+		label at (0, -1)
+		outPin {
+			connection_199
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	container VehicleSpeed at (591, 251) size (30, 20) {
+		label at (130, -139)
+		containerInPin KpSpeed at (left, 9) connection_153 {
+			bendpoints (360, 0)
+		}
+		containerInPin TargetSpeed at (left, 3) connection_156
+		containerInPin KiSpeed at (left, 14) connection_154
+		containerInPin currentSpeed at (left, 0) connection_155 {
+			bendpoints (200, 0), (200, 110), (-550, 110), (-550, 170)
+		}
+		containerOutPin SpeedOutput at (right, 9) {
+			connection_167
+		}
+		literal Numeric "227.5" at (261, 353) size (49, 0) {
+			outPin {
+				connection_149
+			}
+		}
+		containerPinIdentifier KpSpeed at (-39, 263) size (9, 1) {
+			outPin {
+				connection_143
+			}
+		}
+		multiplication at (501, 266) {
+			inPin connection_143
+			inPin connection_168 {
+				bendpoints (0, -180)
+			}
+			outPin {
+				connection_137
+			}
+		}
+		containerPinIdentifier TargetSpeed at (-39, 473) size (10, 1) {
+			outPin {
+				connection_136
+			}
+		}
+		subtraction at (71, 456) {
+			inPin connection_152
+			inPin connection_136
+			outPin {
+				connection_140
+			}
+		}
+		containerPinIdentifier KiSpeed at (-39, 573) size (6, 1) {
+			outPin {
+				connection_141
+			}
+		}
+		multiplication at (711, 466) {
+			inPin connection_162
+			inPin connection_141 {
+				bendpoints (630, 0), (630, -90)
+			}
+			outPin {
+				connection_134
+			}
+		}
+		literal Numeric "-227.5" at (261, 403) size (49, 0) {
+			outPin {
+				connection_142
+			}
+		}
+		containerPinIdentifier SpeedOutput at (881, 283) size (13, 1) {
+			inPin connection_135
+		}
+		addition at (781, 276) {
+			inPin connection_137
+			inPin connection_134 {
+				bendpoints (20, 0), (20, -180)
+			}
+			outPin {
+				connection_135
+			}
+		}
+		containerPinIdentifier currentSpeed at (-39, 453) size (10, 1) {
+			outPin {
+				connection_152
+			}
+		}
+		literal Numeric "1.0" at (261, 383) size (49, 0) {
+			outPin {
+				connection_147
+			}
+		}
+		complexIdentifier Integrator_Speed at (401, 441) size (8, 6) backgroundColor #ffffff {
+			label at (0, 1)
+			methodCall SystemLib.Transferfunction.Integrator.IntegratorKLimited.reset {
+				argumentPin initValue at (bottom, 3) connection_183 {
+					bendpoints (50, 0)
+				}
+				sequenceCall at (-14, 21) {
+					inPin connection_182
+				}
+			}
+			methodCall SystemLib.Transferfunction.Integrator.IntegratorKLimited.compute {
+				argumentPin val at (left, 2) connection_159
+				argumentPin K at (top, 3) connection_147 {
+					bendpoints (130, 0)
+				}
+				argumentPin mn at (top, 0) connection_142 {
+					bendpoints (90, 0)
+				}
+				argumentPin mx at (top, 6) connection_149 {
+					bendpoints (160, 0)
+				}
+				sequenceCall at (-130, -24) {
+					inPin connection_158
+				}
+			}
+			methodCall SystemLib.Transferfunction.Integrator.IntegratorKLimited.value {
+				returnPin at (right, 2) {
+					connection_164
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier calculateVehicleSpeed.errorSpeed at (141, 465) {
+			label at (0, -1)
+			inPin connection_140
+			outPin {
+				connection_168, connection_159
+			}
+			sequenceCall {
+				inPin connection_157
+			}
+		}
+		simpleIdentifier errorSpeedSum at (521, 465) {
+			label at (0, -1)
+			inPin connection_164
+			outPin {
+				connection_162
+			}
+			sequenceCall {
+				inPin connection_163
+			}
+		}
+		literal Numeric "0.0" at (341, 513) size (49, 0) {
+			outPin {
+				connection_183
+			}
+		}
+		freeComment at (311, 321) {
+			"227.5 = 4550 multiplied with 0.05s.\r\n(deltaT included in Integrator)"
+		}
+	}
+	literal Numeric "0.3" at (661, 13) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_196
+		}
+	}
+	complexIdentifier DigitalLowpass_Speed at (741, 61) size (8, 6) backgroundColor #ffffff {
+		label at (0, 1)
+		methodCall SystemLib.Transferfunction.Lowpass.DigitalLowpass.compute {
+			argumentPin val at (left, 2) connection_203
+			argumentPin m at (top, 3) connection_196 {
+				bendpoints (70, 0)
+			}
+			sequenceCall at (-150, -30) {
+				inPin connection_202
+			}
+		}
+		methodCall SystemLib.Transferfunction.Lowpass.DigitalLowpass.reset {
+			argumentPin initValue at (bottom, 3) sequenceCall {
+				inPin
+			}
+		}
+		methodCall SystemLib.Transferfunction.Lowpass.DigitalLowpass.value {
+			returnPin at (right, 2) {
+				connection_198
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	complexIdentifier DigitalLowpass_TargetSpeed at (221, 261) size (8, 6) backgroundColor #ffffff {
+		label at (-50, 1)
+		methodCall SystemLib.Transferfunction.Lowpass.DigitalLowpass.compute {
+			argumentPin val at (left, 2) connection_199
+			argumentPin m at (top, 3) connection_201 {
+				bendpoints (30, 0)
+			}
+			sequenceCall at (60, -64) {
+				inPin connection_200
+			}
+		}
+		methodCall SystemLib.Transferfunction.Lowpass.DigitalLowpass.reset {
+			argumentPin initValue at (bottom, 3) sequenceCall {
+				inPin
+			}
+		}
+		methodCall SystemLib.Transferfunction.Lowpass.DigitalLowpass.value {
+			returnPin at (right, 2) {
+				connection_156
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	literal Numeric "0.05" at (181, 193) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_201
+		}
+	}
+	typeConverter real at (671, 81) {
+		inPin connection_204
+		outPin {
+			connection_203
+		}
+	}
+}

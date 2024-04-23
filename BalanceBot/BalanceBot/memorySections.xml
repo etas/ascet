@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!-- please see also the description in ReadMe_memorySections.html --><MemClassConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="6.1.1.0" xsi:noNamespaceSchemaLocation="../../Schemas/memorySections.xsd">
+    <MemClassCategories>
+        <Code defaultMemClass="CODE"/>
+        <Variable defaultMemClass="RAM"/>
+        <Characteristic defaultMemClass="CAL_MEM"/>
+        <ConstData defaultMemClass="ROM"/>
+        <DistSearchResult defaultMemClass="RAM"/>
+    </MemClassCategories>
+    <MemClasses>
+        <!-- VARIABLES -->
+        <MemClass>
+            <name>IRAM</name>
+            <prePragma/>
+            <postPragma/>
+            <typeDef>%const% %volatile% %type%</typeDef>
+            <typeDefRef>%const_ref% %volatile_ref% %type% * %const% %volatile% %storage_ref%</typeDefRef>
+            <constQualifier>false</constQualifier>
+            <volatileQualifier>false</volatileQualifier>
+            <storageQualifier/>
+            <description>internal ram</description>
+            <category>Variable</category>
+            <category>DistSearchResult</category>
+        </MemClass>
+        <MemClass>
+            <name>RAM</name>
+            <prePragma/>
+            <postPragma/>
+            <typeDef>%const% %volatile% %type%</typeDef>
+            <typeDefRef>%const_ref% %volatile_ref% %type% * %const% %volatile% %storage_ref%</typeDefRef>
+            <constQualifier>false</constQualifier>
+            <volatileQualifier>false</volatileQualifier>
+            <storageQualifier/>
+            <description>internal ram</description>
+            <category>Variable</category>
+            <category>DistSearchResult</category>
+        </MemClass>
+        <MemClass>
+            <name>REFRAM</name>
+            <prePragma/>
+            <postPragma/>
+            <typeDef>%const% %volatile% %type%</typeDef>
+            <typeDefRef>%const_ref% %volatile_ref% %type% * %const% %volatile% %storage_ref%</typeDefRef>
+            <constQualifier>false</constQualifier>
+            <volatileQualifier>false</volatileQualifier>
+            <storageQualifier/>
+            <description>all variables generated as references are mapped into this memory class</description>
+            <category>Internal</category>
+        </MemClass>
+        <MemClass>
+            <name>DISTRRAM</name>
+            <prePragma/>
+            <postPragma/>
+            <typeDef>%const% %volatile% %type%</typeDef>
+            <typeDefRef>%const_ref% %volatile_ref% %type% * %const% %volatile% %storage_ref%</typeDefRef>
+            <constQualifier>false</constQualifier>
+            <volatileQualifier>false</volatileQualifier>
+            <storageQualifier/>
+            <description>variables used to store intermediate results of distributions look-ups are placed here</description>
+            <category>DistSearchResult</category>
+        </MemClass>
+        <!-- PARAMETERS AND CONST DATA -->
+        <MemClass>
+            <name>CAL_MEM</name>
+            <prePragma/>
+            <postPragma/>
+            <typeDef>%const% %volatile% %type%</typeDef>
+            <typeDefRef>%const_ref% %volatile_ref% %type% * %const% %volatile% %storage_ref%</typeDefRef>
+            <constQualifier>false</constQualifier>
+            <volatileQualifier>false</volatileQualifier>
+            <storageQualifier/>
+            <description/>
+            <category>Characteristic</category>
+        </MemClass>
+        <MemClass>
+            <name>IROM</name>
+            <prePragma/>
+            <postPragma/>
+            <typeDef>%const% %volatile% %type%</typeDef>
+            <typeDefRef>%const_ref% %volatile_ref% %type% * %const% %volatile% %storage_ref%</typeDefRef>
+            <constQualifier>true</constQualifier>
+            <volatileQualifier>false</volatileQualifier>
+            <storageQualifier/>
+            <description/>
+            <category>ConstData</category>
+        </MemClass>
+        <MemClass>
+            <name>ROM</name>
+            <prePragma/>
+            <postPragma/>
+            <typeDef>%const% %volatile% %type%</typeDef>
+            <typeDefRef>%const_ref% %volatile_ref% %type% * %const% %volatile% %storage_ref%</typeDefRef>
+            <constQualifier>true</constQualifier>
+            <volatileQualifier>false</volatileQualifier>
+            <storageQualifier/>
+            <description/>
+            <category>ConstData</category>
+        </MemClass>
+        <!-- CODE -->
+        <MemClass>
+            <name>CODE</name>
+            <prePragma/>
+            <postPragma/>
+            <funcSignatureDef>%return_type% %gen_name% (%argv%)</funcSignatureDef>
+            <constQualifier>true</constQualifier>
+            <volatileQualifier>false</volatileQualifier>
+            <description>memory section for internal code</description>
+            <category>Code</category>
+        </MemClass>
+        <MemClass>
+            <name>ICODE</name>
+            <prePragma/>
+            <postPragma/>
+            <funcSignatureDef>%return_type% %gen_name% (%argv%)</funcSignatureDef>
+            <constQualifier>true</constQualifier>
+            <volatileQualifier>false</volatileQualifier>
+            <description>memory section for internal code</description>
+            <category>Code</category>
+        </MemClass>
+        <!-- INTERNALS -->
+        <MemClass>
+            <name>SERAP_REF</name>
+            <prePragma/>
+            <postPragma/>
+            <typeDef>%const% %volatile% %type%</typeDef>
+            <typeDefRef>%const_ref% %volatile_ref% %type% * %const% %volatile% %storage_ref%</typeDefRef>
+            <constQualifier>true</constQualifier>
+            <volatileQualifier>true</volatileQualifier>
+            <storageQualifier/>
+            <description>memory section for reference page (SERAP)</description>
+            <category>Internal</category>
+        </MemClass>
+        <MemClass>
+            <name>SERAP_WORK</name>
+            <prePragma/>
+            <postPragma/>
+            <typeDef>%const% %volatile% %type%</typeDef>
+            <typeDefRef>%const_ref% %volatile_ref% %type% * %const% %volatile% %storage_ref%</typeDefRef>
+            <constQualifier>true</constQualifier>
+            <volatileQualifier>true</volatileQualifier>
+            <storageQualifier/>
+            <description>memory section for working page (SERAP)</description>
+            <category>Internal</category>
+        </MemClass>
+        <MemClass>
+            <name>VATROM</name>
+            <prePragma/>
+            <postPragma/>
+            <typeDef>%const% %volatile% %type%</typeDef>
+            <typeDefRef>%const_ref% %volatile_ref% %type% * %const% %volatile% %storage_ref%</typeDefRef>
+            <constQualifier>true</constQualifier>
+            <volatileQualifier>false</volatileQualifier>
+            <storageQualifier/>
+            <description>memory section used to locate virtual address tables. It should not be mapped to physical memory</description>
+            <category>Internal</category>
+        </MemClass>
+        <MemClass>
+            <name>VIRT_PARAM</name>
+            <prePragma/>
+            <postPragma/>
+            <typeDef>%const% %volatile% %type%</typeDef>
+            <typeDefRef>%const_ref% %volatile_ref% %type% * %const% %volatile% %storage_ref%</typeDefRef>
+            <constQualifier>false</constQualifier>
+            <volatileQualifier>false</volatileQualifier>
+            <storageQualifier/>
+            <description>virtual parameters are located to this mem class. It should not be assigned to physical memory</description>
+            <category>Internal</category>
+        </MemClass>
+        <MemClass>
+            <name>FUNC_ARG_IN</name>
+            <typeDef>const %type%</typeDef>
+            <typeDefRef>%const_ref% %volatile_ref% %type% * %storage_ref%</typeDefRef>
+            <constQualifier>false</constQualifier>
+            <volatileQualifier>false</volatileQualifier>
+            <category>Internal</category>
+            <description>FUNC_ARG_IN is used to generate type definitions of IN-arguments of C-functions</description>
+        </MemClass>
+        <MemClass>
+            <name>FUNC_ARG_INOUT</name>
+            <typeDef>%type%</typeDef>
+            <typeDefRef>%const_ref% %volatile_ref% %type% * %storage_ref%</typeDefRef>
+            <constQualifier>false</constQualifier>
+            <volatileQualifier>false</volatileQualifier>
+            <category>Internal</category>
+            <description>FUNC_ARG_INOUT is used to generate type definitions of INOUT-arguments of C-functions</description>
+        </MemClass>
+        <MemClass>
+            <name>FUNC_ARG_OUT</name>
+            <typeDef>%type%</typeDef>
+            <typeDefRef>%volatile_ref% %type% * %storage_ref%</typeDefRef>
+            <constQualifier>false</constQualifier>
+            <volatileQualifier>false</volatileQualifier>
+            <category>Internal</category>
+            <description>FUNC_ARG_OUT is used to generate type definitions of OUT-arguments of C-functions</description>
+        </MemClass>
+        <MemClass>
+            <name>STACK</name>
+            <typeDef>%type%</typeDef>
+            <typeDefRef>%const_ref% %volatile_ref% %type% * %storage_ref%</typeDefRef>
+            <constQualifier>false</constQualifier>
+            <volatileQualifier>false</volatileQualifier>
+            <category>Internal</category>
+        </MemClass>
+    </MemClasses>
+</MemClassConfig>

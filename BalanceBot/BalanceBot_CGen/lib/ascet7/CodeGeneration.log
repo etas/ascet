@@ -1,0 +1,48 @@
+[INFO]  [BalanceBot] [21:20:24] Output folder: C:\ETASData\git\example_projects\embedded-world\BalanceBot\BalanceBot\..\BalanceBot_CGen\lib\ascet7
+[INFO]  [BalanceBot] [21:20:24] Model dependency analysis                  (took:  0.081 s)
+[INFO]  [BalanceBot] [21:20:24] Validating generation resources            (took:  0.005 s)
+[INFO]  [BalanceBot] [21:20:24] Intermediate code generation               (took:  0.198 s)
+[INFO]  [BalanceBot] [21:20:24] C code pre-processing                      (took:  0.000 s)
+[INFO]  [BalanceBot] [21:20:28] C code generation                          (took:  3.157 s)
+[INFO]  [BalanceBot] [21:20:28] C code post-processing                     (took:  0.136 s)
+[INFO]  [BalanceBot] [21:20:28] [IIa11] Interval (physical) mismatch in assignment to <leftPulse> [-2147483648,2147483647] := [-2147483647,2147483648] (will be limited) at '/BalanceBot/classes/Balance2WD.esdl:56' [classes_Balance2WD>>Automatic (Component) calculatePulseCount]
+[INFO]  [BalanceBot] [21:20:28] [IIa11] Interval (physical) mismatch in assignment to <rightPulse> [-2147483648,2147483647] := [-2147483647,2147483648] (will be limited) at '/BalanceBot/classes/Balance2WD.esdl:59' [classes_Balance2WD>>Automatic (Component) calculatePulseCount]
+[INFO]  [BalanceBot] [21:20:28] [IIa11] Interval (physical) mismatch in assignment to <PulseLeft> [-2147483648,2147483647] := [-4294967296,4294967294] (will be limited) at '/BalanceBot/classes/Balance2WD.esdl:62' [classes_Balance2WD>>Automatic (Component) calculatePulseCount]
+[INFO]  [BalanceBot] [21:20:28] [IIa11] Interval (physical) mismatch in assignment to <PulseRight> [-2147483648,2147483647] := [-4294967296,4294967294] (will be limited) at '/BalanceBot/classes/Balance2WD.esdl:63' [classes_Balance2WD>>Automatic (Component) calculatePulseCount]
+[INFO]  [BalanceBot] [21:20:28] [IIa31] Arithmetic (specified MUL) operation overflows by 1 bits (will be handled by reducing resolution) at '/BalanceBot/classes/Balance2WD.esdl:56' [classes_Balance2WD>>Automatic (Component) calculatePulseCount]
+[INFO]  [BalanceBot] [21:20:28] [IIa31] Arithmetic (specified NEG) operation overflows by 1 bits (will be handled by reducing resolution) at '/BalanceBot/classes/Balance2WD.esdl:56' [classes_Balance2WD>>Automatic (Component) calculatePulseCount]
+[INFO]  [BalanceBot] [21:20:28] [IIa31] Arithmetic (specified MUL) operation overflows by 1 bits (will be handled by reducing resolution) at '/BalanceBot/classes/Balance2WD.esdl:59' [classes_Balance2WD>>Automatic (Component) calculatePulseCount]
+[INFO]  [BalanceBot] [21:20:28] [IIa31] Arithmetic (specified NEG) operation overflows by 1 bits (will be handled by reducing resolution) at '/BalanceBot/classes/Balance2WD.esdl:59' [classes_Balance2WD>>Automatic (Component) calculatePulseCount]
+[INFO]  [BalanceBot] [21:20:28] [IIa31] Arithmetic (specified ADD) operation overflows by 1 bits (will be handled by reducing resolution) at '/BalanceBot/classes/Balance2WD.esdl:62' [classes_Balance2WD>>Automatic (Component) calculatePulseCount]
+[INFO]  [BalanceBot] [21:20:28] [IIa31] Arithmetic (specified ADD) operation overflows by 1 bits (will be handled by reducing resolution) at '/BalanceBot/classes/Balance2WD.esdl:63' [classes_Balance2WD>>Automatic (Component) calculatePulseCount]
+[INFO]  [BalanceBot] [21:20:28] [IIle17] Division is protected against division-by-0 at '/BalanceBot/classes/TurnSpeedController.esdl:27' [classes_TurnSpeedController>>Automatic (Component) calculateTurnSpeed]
+[INFO]  [BalanceBot] [21:20:28] [IIa11] Interval (physical) mismatch in assignment to <measuredSpeed> [-2147483648,2147483647] := [-4294967296,4294967294] (will be limited) at '/BalanceBot/classes/VehicleSpeedController.esdl:22' [classes_VehicleSpeedController>>Automatic (Component) calculateVehicleSpeed]
+[INFO]  [BalanceBot] [21:20:28] [IIa31] Arithmetic (specified ADD) operation overflows by 1 bits (will be handled by reducing resolution) at '/BalanceBot/classes/VehicleSpeedController.esdl:22' [classes_VehicleSpeedController>>Automatic (Component) calculateVehicleSpeed]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <buzzerOff> not used in this project [classes_Balance2WD>>Automatic]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <buzzerOn> not used in this project [classes_Balance2WD>>Automatic]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <calculateFrontDistance> not used in this project [classes_Balance2WD>>Automatic]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <calculateMotorPower> not used in this project [classes_Balance2WD>>Automatic]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <calculatePulseCount> not used in this project [classes_Balance2WD>>Automatic]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <setLEDsOff> not used in this project [classes_Balance2WD>>Automatic]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <init> not used in this project [classes_VehicleSpeedController>>Automatic]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <acos> not used in this project [SystemLib_Math_MathLib>>R64]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <asin> not used in this project [SystemLib_Math_MathLib>>R64]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <atan> not used in this project [SystemLib_Math_MathLib>>R64]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <ceil> not used in this project [SystemLib_Math_MathLib>>R64]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <cos> not used in this project [SystemLib_Math_MathLib>>R64]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <cosh> not used in this project [SystemLib_Math_MathLib>>R64]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <exp> not used in this project [SystemLib_Math_MathLib>>R64]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <floor> not used in this project [SystemLib_Math_MathLib>>R64]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <log> not used in this project [SystemLib_Math_MathLib>>R64]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <log10> not used in this project [SystemLib_Math_MathLib>>R64]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <pow> not used in this project [SystemLib_Math_MathLib>>R64]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <sin> not used in this project [SystemLib_Math_MathLib>>R64]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <sinh> not used in this project [SystemLib_Math_MathLib>>R64]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <sqrt> not used in this project [SystemLib_Math_MathLib>>R64]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <tan> not used in this project [SystemLib_Math_MathLib>>R64]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <tanh> not used in this project [SystemLib_Math_MathLib>>R64]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <reset> not used in this project [SystemLib_Transferfunction_Integrator_IntegratorKLimited>>Automatic]
+[INFO]  [BalanceBot] [21:20:28] [IMdl93] method <reset> not used in this project [SystemLib_Transferfunction_Lowpass_DigitalLowpass>>Automatic]
+[INFO]  [BalanceBot] [21:20:28] C code generation issues reporting         (took:  0.010 s)
+[INFO]  [BalanceBot] [21:20:28] Finished successfully ECU code generation  (took:  3.723 s)
+[INFO]  [BalanceBot] [21:20:28] --------------------------------------------------------------------------------
