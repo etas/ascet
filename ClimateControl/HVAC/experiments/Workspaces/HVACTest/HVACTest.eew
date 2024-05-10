@@ -1,0 +1,22 @@
+<?SCHEMA schemaVersion="1.0"?>
+<Workspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/Program%20Files/Common%20Files/ETAS/Experiment%20Environment/3.8/Schemas/EE.Data.Workspace.xsd" xsi:type="ETAS.EE.Data.WorkspaceType">
+  <PluginData xsi:type="ETAS.EE.Data.PluginDataListType">
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="ID9fad8092-87e3-4cf8-a960-b7db86e83a50" pluginID="Options" rootFolder="Options_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="IDd4678e88-57e7-4ee6-a19b-3d1493ea203d" type="" name="Options" file="Options.opt" />
+      </Documents>
+    </Item>
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="IDdb93e39c-d9af-4c8b-9274-86cf7bf93f88" pluginID="SignalSourceManager" rootFolder="SignalSourceManager_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="ID7f699f7c-b93f-4b75-8025-efc8796c967a" type="" name="SignalSourcesData" file="SignalSources.xml" />
+      </Documents>
+    </Item>
+  </PluginData>
+  <RecentExperiments xsi:type="ETAS.EE.Data.FileReferenceListType">
+    <Item xsi:type="ETAS.EE.Data.FileReferenceType" id="IDbf6cfb39-b9e2-4de1-8a0a-bcf8e8a70337" path="C:\Users\dya9fe\ETAS\ASCET-DEVELOPER-7.9.0\ws_hvac\HVAC\experiments\Experiments\system\HVACTest\HVACTest.eex" hintPath="..\..\Experiments\system\HVACTest\HVACTest.eex" />
+  </RecentExperiments>
+  <WorkspaceInfo xsi:type="ETAS.EE.Data.WorkspaceInfoType">
+    <DateTime xsi:type="ETAS.EE.Data.DateTimeInfoType" id="ID9bd80f5e-78d9-4d40-a34e-33c34c797af6" Created="2016-07-01T13:13:53.890Z" LastOpened="2024-05-10T13:31:35.859Z" LastSaved="2024-05-10T13:31:34.594Z" />
+    <Version xsi:type="ETAS.EE.Data.VersionInfoType" id="ID56ebe511-cc79-4925-bf89-07191abe3948" Created="3.7.0.73" LastSaved="3.8.5.253" MinRequired="3.3.1" />
+  </WorkspaceInfo>
+</Workspace>

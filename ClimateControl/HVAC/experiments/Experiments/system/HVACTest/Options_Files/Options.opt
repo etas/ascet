@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PropertySets>
+  <PropertySet name="Options">
+    <PropertySet name="RecentDirectories">
+      <PropertySet name="Contexts">
+        <PropertySet name="MappingHandling">
+          <Property name="MappingFiles" type="StringProperty">.\mapping_files</Property>
+        </PropertySet>
+        <PropertySet name="ParameterHandling">
+          <Property name="ParameterFiles" type="StringProperty">.\parameter_files</Property>
+        </PropertySet>
+      </PropertySet>
+    </PropertySet>
+  </PropertySet>
+</PropertySets>

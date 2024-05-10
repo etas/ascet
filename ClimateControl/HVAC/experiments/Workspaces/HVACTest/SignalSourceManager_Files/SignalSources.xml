@@ -1,0 +1,13 @@
+<?SCHEMA schemaVersion="1.0"?>
+<SignalSourcesConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/Program%20Files/Common%20Files/ETAS/Experiment%20Environment/3.8/Schemas/EE.Data.SignalSources.xsd" xsi:type="ETAS.EE.Data.SignalSourcesConfigurationType">
+  <SignalSourcesData xsi:type="ETAS.EE.Data.PluginDataListType">
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="ID0277f83f-9f1d-413a-8812-7a8225ad7af3" pluginID="System" rootFolder="System_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="ID14675895-4b0a-4d6d-9553-25fd5a9f5d6d" type="" name="Configuration" file="Configuration.xml" />
+      </Documents>
+    </Item>
+  </SignalSourcesData>
+  <SignalSourceDeclarations xsi:type="ETAS.EE.Data.SignalSourceDeclarationListType">
+    <Item xsi:type="ETAS.EE.Data.SignalSourceDeclarationType" id="ID7c3842e1-0345-43b9-b1ac-ab50dce5782f" type="VP" signalSourceId="System" name="HVACTest" active="true" />
+  </SignalSourceDeclarations>
+</SignalSourcesConfiguration>

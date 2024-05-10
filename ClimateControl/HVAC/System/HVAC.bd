@@ -1,0 +1,592 @@
+classType System.HVAC
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin {
+			connection_14, connection_45, LConnection__1xAuVAyOEeaBWL0PM_AzYw
+		}
+	}
+	switch System.Scode.ModesEnum at (751, 181) size (12, 6) {
+		inPin CASE_CONDITION connection_57 {
+			bendpoints (20, 0)
+		}
+		caseLiteralValues {
+			System.Scode.ModesEnum.ET_System_Off System.Scode.ModesEnum.ET_Uncontrolled System.Scode.ModesEnum.ET_Controlled_Heating
+					System.Scode.ModesEnum.ET_Controlled_Cooling
+		}
+		caseOutPins {
+			outPin outPin {
+				connection_64
+			}
+			outPin {
+				connection_71
+			}
+			outPin {
+				connection_78
+			}
+			outPin {
+				connection_92
+			}
+		}
+		sequenceCall {
+			inPin LConnection__1xAuVAyOEeaBWL0PM_AzYw emptyBendPoints
+		}
+	}
+	simpleIdentifier System.HVAC_Interface.T_Environment at (41, 85) {
+		label at (0, 9)
+		outPin {
+			connection_42
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier System.HVAC_Interface.T_Setpoint at (41, 125) {
+		label at (0, 9)
+		outPin {
+			connection_43
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier System.HVAC_Interface.VentilationSetpoint at (41, 165) {
+		label at (0, 9)
+		outPin {
+			connection_44
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	sequenceableContainer 01_Input_Selection at (331, 71) size (21, 12) {
+		label at (60, 1)
+		containerInPin T_Environment at (left, 1) connection_42 emptyBendPoints
+		containerInPin T_Setpoint at (left, 5) connection_43 emptyBendPoints
+		containerInPin VentilationSetPoint at (left, 9) connection_44 emptyBendPoints
+		containerOutPin temperatureRequest at (right, 3) {
+			connection_62
+		}
+		containerOutPin ventilationRequest at (right, 7) {
+			connection_63
+		}
+		literal enum System.Scode.ET_Request_VentilationEnum.ET_Off at (581, 333) size (59, 0) {
+			outPin {
+				connection_30
+			}
+		}
+		literal enum System.Scode.ET_Request_VentilationEnum.ET_Max at (571, 403) size (59, 0) {
+			outPin {
+				connection_21
+			}
+		}
+		greater at (271, 136) {
+			inPin connection_36 emptyBendPoints
+			inPin connection_37 {
+				bendpoints (50, 0), (50, -10)
+			}
+			outPin {
+				connection_24
+			}
+		}
+		equal at (301, 376) {
+			inPin connection_39 {
+				bendpoints (0, 70)
+			}
+			inPin connection_26 emptyBendPoints
+			outPin {
+				connection_34
+			}
+		}
+		literal enum System.Scode.ET_Request_VentilationEnum.ET_Automatic at (531, 473) size (99, 0) {
+			outPin {
+				connection_35
+			}
+		}
+		literal enum System.Scode.ET_Request_TemperatureEnum.ET_Below_Outside at (481, 163) size (129, 0) {
+			outPin {
+				connection_19
+			}
+		}
+		literal enum System.Scode.ET_Request_TemperatureEnum.ET_Above_Outside at (481, 233) size (119, 0) {
+			outPin {
+				connection_32
+			}
+		}
+		equal at (301, 306) {
+			inPin connection_38 emptyBendPoints
+			inPin connection_25 emptyBendPoints
+			outPin {
+				connection_27
+			}
+		}
+		literal enum System.OnOffSwitch.Off at (231, 323) size (49, 0) {
+			outPin {
+				connection_25
+			}
+		}
+		literal enum System.OnOffSwitch.Manual at (231, 393) size (59, 0) {
+			outPin {
+				connection_26
+			}
+		}
+		ifElse at (371, 141) {
+			inPin connection_24 emptyBendPoints
+			ifControlFlowOutPin {
+				connection_28
+			}
+			elseControlFlowOutPin {
+				connection_31
+			}
+			sequenceCall {
+				inPin connection_15
+			}
+		}
+		ifElse at (411, 381) {
+			inPin connection_34 emptyBendPoints
+			ifControlFlowOutPin {
+				connection_23
+			}
+			elseControlFlowOutPin {
+				connection_22
+			}
+			sequenceCall {
+				inPin connection_16 {
+					bendpoints (0, 20)
+				}
+			}
+		}
+		simpleIdentifier ventilationRequest at (641, 475) {
+			label at (0, 5)
+			inPin connection_35 emptyBendPoints
+			outPin sequenceCall {
+				inPin connection_22 {
+					bendpoints (100, 0), (100, 40)
+				}
+			}
+		}
+		simpleIdentifier temperatureRequest at (641, 235) {
+			label at (0, 5)
+			inPin connection_32 emptyBendPoints
+			outPin sequenceCall {
+				inPin connection_31 {
+					bendpoints (120, 0), (120, 40)
+				}
+			}
+		}
+		simpleIdentifier ventilationRequest at (641, 405) {
+			label at (0, 5)
+			inPin connection_21 emptyBendPoints
+			outPin sequenceCall {
+				inPin connection_23 emptyBendPoints
+			}
+		}
+		simpleIdentifier ventilationRequest at (641, 335) {
+			label at (0, 5)
+			inPin connection_30 emptyBendPoints
+			outPin {
+				connection_41
+			}
+			sequenceCall {
+				inPin connection_33 emptyBendPoints
+			}
+		}
+		simpleIdentifier temperatureRequest at (641, 165) {
+			label at (0, 5)
+			inPin connection_19 emptyBendPoints
+			outPin {
+				connection_40
+			}
+			sequenceCall {
+				inPin connection_28 emptyBendPoints
+			}
+		}
+		ifElse at (361, 311) {
+			inPin connection_27 emptyBendPoints
+			ifControlFlowOutPin {
+				connection_33
+			}
+			elseControlFlowOutPin {
+				connection_16
+			}
+			sequenceCall {
+				inPin connection_17
+			}
+		}
+		containerPinIdentifier T_Environment at (71, 133) size (11, 1) {
+			outPin {
+				connection_36
+			}
+		}
+		containerPinIdentifier T_Setpoint at (71, 163) size (9, 1) {
+			outPin {
+				connection_37
+			}
+		}
+		containerPinIdentifier VentilationSetPoint at (71, 303) size (13, 1) {
+			outPin {
+				connection_39, connection_38
+			}
+		}
+		containerPinIdentifier temperatureRequest at (831, 163) size (14, 1) {
+			inPin connection_40 emptyBendPoints
+		}
+		containerPinIdentifier ventilationRequest at (831, 333) size (13, 1) {
+			inPin connection_41 {
+				bendpoints (70, 0)
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_15, connection_17
+			}
+			sequenceCall {
+				inPin connection_14
+			}
+		}
+	}
+	sequenceableContainer 02_Mode_Selection at (581, 71) size (15, 12) {
+		label at (40, 1)
+		containerInPin ventilationRequest at (left, 7) connection_63 emptyBendPoints
+		containerInPin temperatureRequest at (left, 3) connection_62 emptyBendPoints
+		containerOutPin mode at (right, 5) {
+			connection_57
+		}
+		containerPinIdentifier ventilationRequest at (191, 173) size (13, 1) {
+			outPin {
+				connection_49
+			}
+		}
+		containerPinIdentifier temperatureRequest at (191, 213) size (14, 1) {
+			outPin {
+				connection_51
+			}
+		}
+		containerPinIdentifier mode at (791, 193) size (6, 1) {
+			inPin connection_54 emptyBendPoints
+		}
+		complexIdentifier modeSelector_instance at (411, 171) size (20, 7) {
+			label at (0, 1)
+			methodCall System.Scode.modeSelector.execute {
+				argumentPin ventilationRequest at (left, 0) connection_49 emptyBendPoints
+				argumentPin temperatureRequest at (left, 4) connection_51 emptyBendPoints
+				sequenceCall at (-120, -34) {
+					inPin connection_50
+				}
+			}
+			methodCall System.Scode.modeSelector.getCurrentMode {
+				returnPin at (right, 2) {
+					connection_53
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier mode at (711, 195) {
+			label at (0, 5)
+			inPin connection_53 emptyBendPoints
+			outPin {
+				connection_54
+			}
+			sequenceCall {
+				inPin connection_52
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_50, connection_52
+			}
+			sequenceCall {
+				inPin connection_45
+			}
+		}
+	}
+	sequenceableContainer off at (971, 211) size (10, 4) {
+		label at (40, 1)
+		literal Boolean "false" at (161, 173) size (49, 0) {
+			outPin {
+				connection_70, connection_68
+			}
+		}
+		literal Numeric "0.0" at (171, 313) size (49, 0) {
+			outPin {
+				connection_66
+			}
+		}
+		simpleIdentifier System.HVAC_Interface.b_Cooler at (361, 175) {
+			label at (0, 5)
+			inPin connection_70 emptyBendPoints
+			sequenceCall {
+				inPin connection_69
+			}
+		}
+		simpleIdentifier System.HVAC_Interface.b_Heater at (361, 255) {
+			label at (0, 5)
+			inPin connection_68 {
+				bendpoints (70, 0), (70, 80)
+			}
+			sequenceCall {
+				inPin connection_67 emptyBendPoints
+			}
+		}
+		simpleIdentifier System.HVAC_Interface.R_Ventilation at (361, 315) {
+			label at (0, 5)
+			inPin connection_66 emptyBendPoints
+			sequenceCall {
+				inPin connection_65 emptyBendPoints
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_69, connection_67, connection_65
+			}
+			sequenceCall {
+				inPin connection_64 emptyBendPoints
+			}
+		}
+	}
+	sequenceableContainer Manual at (971, 281) size (10, 4) {
+		label at (30, 1)
+		literal Boolean "false" at (211, 143) size (49, 0) {
+			outPin {
+				connection_75, connection_73
+			}
+		}
+		literal Numeric "0.0" at (211, 303) size (49, 0) {
+			outPin {
+				connection_77
+			}
+		}
+		simpleIdentifier System.HVAC_Interface.b_Cooler at (291, 145) {
+			label at (0, 5)
+			inPin connection_75 emptyBendPoints
+			sequenceCall {
+				inPin connection_74
+			}
+		}
+		simpleIdentifier System.HVAC_Interface.b_Heater at (291, 225) {
+			label at (0, 5)
+			inPin connection_73 {
+				bendpoints (10, 0), (10, 80)
+			}
+			sequenceCall {
+				inPin connection_72 emptyBendPoints
+			}
+		}
+		simpleIdentifier System.HVAC_Interface.R_Ventilation at (291, 305) {
+			label at (0, 5)
+			inPin connection_77 emptyBendPoints
+			sequenceCall {
+				inPin connection_76 emptyBendPoints
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_74, connection_72, connection_76
+			}
+			sequenceCall {
+				inPin connection_71 {
+					bendpoints (80, 0)
+				}
+			}
+		}
+	}
+	sequenceableContainer Heating at (971, 361) size (10, 4) {
+		label at (30, 1)
+		simpleIdentifier System.HVAC_Interface.T_Setpoint at (61, 275) {
+			label at (0, 5)
+			outPin {
+				connection_87
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier System.HVAC_Interface.T_Environment at (61, 235) {
+			label at (0, 5)
+			outPin {
+				connection_89
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		literal Boolean "true" at (681, 113) size (49, 0) {
+			outPin {
+				connection_83, connection_79
+			}
+		}
+		not at (731, 181) {
+			inPin connection_79 emptyBendPoints
+			outPin {
+				connection_81
+			}
+		}
+		simpleIdentifier System.HVAC_Interface.b_Heater at (821, 115) {
+			label at (0, 5)
+			inPin connection_83 emptyBendPoints
+			sequenceCall {
+				inPin connection_82 emptyBendPoints
+			}
+		}
+		simpleIdentifier System.HVAC_Interface.b_Cooler at (821, 185) {
+			label at (0, 5)
+			inPin connection_81 emptyBendPoints
+			sequenceCall at (-10, -14) {
+				inPin connection_80 emptyBendPoints
+			}
+		}
+		simpleIdentifier System.HVAC_Interface.R_Ventilation at (811, 265) {
+			label at (0, 5)
+			inPin connection_91 emptyBendPoints
+			sequenceCall {
+				inPin connection_90 emptyBendPoints
+			}
+		}
+		complexIdentifier InteriorModel_c_Heat_instance at (321, 231) size (22, 7) {
+			label at (0, 1)
+			methodCall System.Congra.InteriorModel_c_Heat.setT_env {
+				argumentPin value at (left, 0) connection_89 {
+					bendpoints (100, 0), (100, 0)
+				}
+				sequenceCall at (-120, -34) {
+					inPin connection_88 emptyBendPoints
+				}
+			}
+			methodCall System.Congra.InteriorModel_c_Heat.setT_set {
+				argumentPin value at (left, 4) connection_87 emptyBendPoints
+				sequenceCall at (-120, 6) {
+					inPin connection_86 emptyBendPoints
+				}
+			}
+			methodCall System.Congra.InteriorModel_c_Heat.c_Heat__Initial {
+				methodVoidPin at (top, 4) sequenceCall at (-44, -50) {
+					inPin connection_84 emptyBendPoints
+				}
+			}
+			methodCall System.Congra.InteriorModel_c_Heat.c_Heat_integrate {
+				methodVoidPin at (top, 12) sequenceCall at (-4, -50) {
+					inPin connection_85 emptyBendPoints
+				}
+			}
+			methodCall System.Congra.InteriorModel_c_Heat.getRate_heater {
+				returnPin at (right, 3) {
+					connection_91
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_88, connection_86, connection_84, connection_85, connection_82, connection_80, connection_90
+			}
+			sequenceCall {
+				inPin connection_78 {
+					bendpoints (60, 0), (60, 120)
+				}
+			}
+		}
+	}
+	sequenceableContainer Cooling at (971, 441) size (10, 4) {
+		label at (30, 1)
+		simpleIdentifier System.HVAC_Interface.T_Setpoint at (101, 285) {
+			label at (0, 5)
+			outPin {
+				connection_101
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier System.HVAC_Interface.T_Environment at (101, 225) {
+			label at (0, 5)
+			outPin {
+				connection_103
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		literal Boolean "true" at (661, 93) size (49, 0) {
+			outPin {
+				connection_95, connection_93
+			}
+		}
+		not at (741, 171) {
+			inPin connection_93 {
+				bendpoints (10, 0), (10, 80)
+			}
+			outPin {
+				connection_97
+			}
+		}
+		simpleIdentifier System.HVAC_Interface.b_Cooler at (791, 95) {
+			label at (0, 5)
+			inPin connection_95 emptyBendPoints
+			sequenceCall {
+				inPin connection_94 emptyBendPoints
+			}
+		}
+		simpleIdentifier System.HVAC_Interface.b_Heater at (791, 175) {
+			label at (0, 5)
+			inPin connection_97 {
+				bendpoints (10, 0)
+			}
+			sequenceCall {
+				inPin connection_96 emptyBendPoints
+			}
+		}
+		simpleIdentifier System.HVAC_Interface.R_Ventilation at (791, 255) {
+			label at (0, 5)
+			inPin connection_105 emptyBendPoints
+			sequenceCall {
+				inPin connection_104 emptyBendPoints
+			}
+		}
+		complexIdentifier InteriorModel_c_AC_instance at (331, 201) size (23, 14) {
+			label at (20, 1)
+			methodCall System.Congra.InteriorModel_c_AC.setT_env {
+				argumentPin value at (left, 2) connection_103 emptyBendPoints
+				sequenceCall at (-120, -34) {
+					inPin connection_102
+				}
+			}
+			methodCall System.Congra.InteriorModel_c_AC.setT_set {
+				argumentPin value at (left, 8) connection_101 emptyBendPoints
+				sequenceCall at (-120, -34) {
+					inPin connection_100
+				}
+			}
+			methodCall System.Congra.InteriorModel_c_AC.c_AC__Initial {
+				methodVoidPin at (top, 4) sequenceCall at (-44, -40) {
+					inPin connection_98 emptyBendPoints
+				}
+			}
+			methodCall System.Congra.InteriorModel_c_AC.c_AC_integrate {
+				methodVoidPin at (top, 14) sequenceCall at (-14, -40) {
+					inPin connection_99
+				}
+			}
+			methodCall System.Congra.InteriorModel_c_AC.getRate_cooler {
+				returnPin at (right, 5) {
+					connection_105
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		statementBlock {
+			controlFlowOutPin active {
+				connection_102, connection_100, connection_98, connection_99, connection_94, connection_96, connection_104
+			}
+			sequenceCall {
+				inPin connection_92 {
+					bendpoints (50, 0), (50, 190)
+				}
+			}
+		}
+	}
+}
