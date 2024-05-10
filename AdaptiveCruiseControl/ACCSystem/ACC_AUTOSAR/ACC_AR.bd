@@ -1,0 +1,35 @@
+classType ACC_AUTOSAR.ACC_AR
+blockdiagramSpecification ACC_runnable_spec {
+	methodBody ACC_runnable_ini {
+		outPin {
+			connection_2
+		}
+	}
+	methodBody ACC_runnable_10ms {
+		outPin active {
+			connection_1
+		}
+	}
+	complexIdentifier ACC_instance at (411, 151) size (14, 8) {
+		label at (0, 1)
+		methodCall ACC.ACC_SWC.proc_10ms {
+			methodVoidPin at (top, 0) sequenceCall at (-154, -40) {
+				inPin connection_1
+			}
+		}
+		methodCall ACC.ACC_SWC.proc_ini {
+			methodVoidPin at (top, 1) sequenceCall at (56, -50) {
+				inPin connection_2
+			}
+		}
+	}
+	complexIdentifier rp_bsw2asw at (131, 161) size (16, 6) {
+		label at (0, 1)
+	}
+	complexIdentifier pp_asw2bsw at (641, 171) size (14, 4) {
+		label at (20, 1)
+	}
+	complexIdentifier rp_asw2asw at (131, 281) size (16, 4) {
+		label at (0, 1)
+	}
+}

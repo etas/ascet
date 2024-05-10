@@ -1,0 +1,105 @@
+/* Usage of company font in the container */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url(roboto-v20-latin-regular.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --etas-blue: #164293;
+  --etas-light-blue: #70CBF3;
+  --etas-red: #E5004A;
+
+  --etas-gradient: linear-gradient(#917c4d, #ffffff);
+  /*-webkit-gradient(linear,left top,right top,color-stop(10%,#1e539e),color-stop(90%,#81d0f5));*/
+
+  --etas-black: #FFFFFF;
+  --etas-black: #000000;
+
+  --etas-grey-100: #5A646E;
+  --etas-grey-90: #6A737C;
+  --etas-grey-80: #7B838B;
+  --etas-grey-70: #8B9299;
+  --etas-grey-60: #9CA2A8;
+  --etas-grey-50: #ACB1B6;
+  --etas-grey-40: #BDC1C5;
+  --etas-grey-30: #CDD0D3;
+  --etas-grey-20: #DEE0E2;
+  --etas-grey-10: #EEEFF0;
+
+  --etas-border-color: var(--etas-grey-70);
+
+  --etas-font-family: Roboto;
+
+  --font-size-small: 8pt;
+  --font-size-medium: 10pt;
+  --font-size-large: 12pt;
+}
+
+/* Footer Configuration */
+.footer {
+	white-space: pre-wrap;
+	font-size: var(--font-size-small);
+	color: var(--etas-grey-100);
+	position: relative;
+}
+
+/* Text Configuration */
+body {
+	font-family: Tahoma, sans-serif;
+	padding: 20px;
+	color: var(--etas-black);
+	word-wrap: break-word;
+}
+
+body.titlePage svg {
+	border: 1px #cdd0d3 solid;
+}
+
+p {
+	font-size: var(--font-size-medium);
+}
+
+/* Header Configuration */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	color: var(--etas-blue);
+	margin: 0px;
+
+	font-family: Roboto, Tahoma, sans-serif;	
+}
+
+/* Label and Link Configuration */
+a {
+	text-decoration: none;
+	font-weight: bolder;
+	color: var(--etas-blue);
+}
+
+/* Label Table Configuration */
+table {
+	font-size: var(--font-size-medium);
+
+	border: solid;
+	border-color: var(--etas-border-color) !important;
+	border-width: 1px;
+
+	width: 100%;
+}
+
+th {
+	background-color: var(--etas-blue);
+	color: white;
+}
+
+td {
+	font-size: var(--font-size-medium);
+
+	color: var(--etas-black);
+
+	border-style: solid;
+	border-color: var(--etas-border-color) !important;
+	border-width: 1px;	
+}

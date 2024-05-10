@@ -1,0 +1,15 @@
+package SENSED_DATA_AUTOSAR;
+
+esdl mapping SENSED_DATA_AUTOSAR.Sensed_Data_AR {
+
+	application SENSED_DATA_AUTOSAR.Sensed_Data_AR_SWC;
+
+	sri ports {
+		interfaces.messages.Actual_Position_EC uses rp_bsw2asw.Actual_Position_EC;
+		interfaces.messages.Actual_Position_LC uses rp_bsw2asw_ActPos_LC.Actual_Position_LC;
+		interfaces.messages.Actual_Velocity_EC uses rp_bsw2asw.Actual_Velocity_EC;
+		interfaces.messages.Actual_Velocity_LC uses rp_bsw2asw.Actual_Velocity_LC;
+		interfaces.messages.Relative_Velocity uses pp_asw2asw.Relative_Velocity;
+		interfaces.messages.Relative_Distance uses pp_asw2asw.Relative_Distance;
+	}
+}

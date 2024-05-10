@@ -1,0 +1,35 @@
+classType SENSED_DATA_AUTOSAR.Sensed_Data_AR
+blockdiagramSpecification SD_runnable_spec {
+	methodBody SD_runnable_ini {
+		outPin {
+			connection_2
+		}
+	}
+	methodBody SD_runnable_10ms {
+		outPin active {
+			connection_1
+		}
+	}
+	complexIdentifier Sensed_Data_instance at (511, 151) size (14, 8) {
+		label at (0, 1)
+		methodCall SENSED_DATA.Sensed_Data_SWC.proc_10ms {
+			methodVoidPin at (top, 0) sequenceCall at (46, -50) {
+				inPin connection_1
+			}
+		}
+		methodCall SENSED_DATA.Sensed_Data_SWC.proc_ini {
+			methodVoidPin at (top, 1) sequenceCall at (-144, -50) {
+				inPin connection_2
+			}
+		}
+	}
+	complexIdentifier rp_bsw2asw at (251, 251) size (14, 8) {
+		label at (0, 1)
+	}
+	complexIdentifier pp_asw2asw at (791, 261) size (14, 8) {
+		label at (0, 1)
+	}
+	complexIdentifier rp_bsw2asw_ActPos_LC at (91, 151) size (14, 8) {
+		label at (0, 1)
+	}
+}

@@ -1,0 +1,133 @@
+classType VehicleModel.VehicelDynamicModel.Vehicle0
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_9
+		}
+	}
+	simpleIdentifier VehicleModel.DataDefinitionFiles.CruiseControlInterface.WindSpeed at (581, 385) {
+		comment at (0, 25) {
+			"head wind is positive, tail wind is negative"
+		}
+		label at (0, -1)
+		outPin {
+			connection_8
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier VehicleModel.DataDefinitionFiles.CruiseControlInterface.RoadSlopeSet at (661, 345) {
+		comment at (0, 15) {
+			"uphill is posiitive, downhill is negative"
+		}
+		label at (0, -1)
+		outPin {
+			connection_7
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier VehicleDynamicModelClass_instance_2 at (891, 271) size (24, 14) {
+		label at (0, 1)
+		methodCall VehicleModel.VehicelDynamicModel.VehicleDynamicModelClass.calc {
+			argumentPin CtrlVal_accel at (left, 0) connection_5 {
+				bendpoints (300, 10), (300, 100)
+			}
+			argumentPin WindSpeed at (left, 11) connection_8
+			argumentPin RoadSlope at (left, 7) connection_7
+			argumentPin CtrlVal_brake at (left, 3) connection_14
+			returnPin at (right, 0) {
+				connection_10
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier interfaces.messages.Acceleration_EC at (381, 305) {
+		label at (0, -1)
+		outPin {
+			connection_21, connection_15
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.messages.Actual_Velocity_EC at (1261, 275) {
+		label at (0, -1)
+		inPin connection_10
+		sequenceCall {
+			inPin connection_9
+		}
+	}
+	literal Numeric "-3.0" at (371, 253) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_17
+		}
+	}
+	literal Numeric "0.0" at (381, 233) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_18
+		}
+	}
+	negation at (741, 301) {
+		inPin connection_16
+		outPin {
+			connection_14
+		}
+	}
+	complexIdentifier Limiter_instance at (511, 291) size (6, 4) backgroundColor #ffffff {
+		label at (0, 1)
+		methodCall SystemLib.Nonlinears.Limiter.value {
+			argumentPin mn at (top, 0) connection_17 {
+				bendpoints (80, 0), (100, 0)
+			}
+			argumentPin x at (left, 1) connection_15
+			argumentPin mx at (top, 4) connection_18 {
+				bendpoints (130, 0)
+			}
+			returnPin at (right, 1) {
+				connection_16
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	complexIdentifier Limiter_instance at (511, 171) size (6, 4) backgroundColor #ffffff {
+		label at (0, 1)
+		methodCall SystemLib.Nonlinears.Limiter.value {
+			argumentPin mn at (top, 0) connection_19 {
+				bendpoints (110, 0)
+			}
+			argumentPin x at (left, 1) connection_21 {
+				bendpoints (60, 0), (60, -120)
+			}
+			argumentPin mx at (top, 4) connection_20 {
+				bendpoints (130, 0)
+			}
+			returnPin at (right, 1) {
+				connection_5
+			}
+			sequenceCall at (0, 6) {
+				inPin
+			}
+		}
+	}
+	literal Numeric "0.0" at (381, 123) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_19
+		}
+	}
+	literal Numeric "2.0" at (381, 93) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_20
+		}
+	}
+}

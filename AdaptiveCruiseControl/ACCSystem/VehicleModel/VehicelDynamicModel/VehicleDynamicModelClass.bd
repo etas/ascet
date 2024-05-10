@@ -1,0 +1,849 @@
+classType VehicleModel.VehicelDynamicModel.VehicleDynamicModelClass
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_2, connection_3, connection_4, connection_10, connection_43, connection_56, connection_49, connection_52, connection_73, connection_76, connection_97, connection_121
+		}
+	}
+	container VehicleLongitudinalDynamicsModel at (351, 141) size (25, 17) {
+		label at (0, 1)
+		containerInPin CC_ControlValue_acc at (left, 0) connection_116
+		containerInPin CC_ControlValue_brake at (left, 5) connection_117
+		containerInPin RoadSlopeSet at (left, 10) connection_118
+		containerInPin WindSpeed at (left, 15) connection_119
+		containerOutPin CurrentSpeed at (right, 7) {
+			connection_122
+		}
+		container Slope at (311, 511) size (22, 6) {
+			label at (0, 1)
+			containerInPin RoadSlopeSet at (left, 2) connection_109
+			containerInPin CC_ControlValue_brake at (left, 0) connection_108 {
+				bendpoints (40, 0), (40, 220)
+			}
+			containerOutPin SlopeAcceleration at (right, 2) {
+				connection_5
+			}
+			less at (831, 206) {
+				inPin connection_34 {
+					bendpoints (61, 0), (61, -1)
+				}
+				inPin connection_21 {
+					bendpoints (30, 0)
+				}
+				outPin {
+					connection_6
+				}
+			}
+			if at (951, 291) {
+				inPin connection_6 {
+					bendpoints (80, 0)
+				}
+				ifControlFlowOutPin {
+					connection_7
+				}
+				sequenceCall {
+					inPin connection_2
+				}
+			}
+			containerPinIdentifier SlopeAcceleration at (1121, 453) size (10, 1) {
+				inPin connection_8
+			}
+			simpleIdentifier SlopeAcceleration at (961, 455) {
+				label at (0, -1)
+				inPin connection_11
+				outPin {
+					connection_8
+				}
+				sequenceCall {
+					inPin connection_10
+				}
+			}
+			less at (231, 456) {
+				inPin connection_32 {
+					bendpoints (0, -20), (-160, -20), (-160, 40)
+				}
+				inPin connection_18
+				outPin {
+					connection_9
+				}
+			}
+			multiplication at (901, 436) size (2, 5) {
+				inPin connection_27
+				inPin connection_15
+				inPin connection_17 {
+					bendpoints (490, 0)
+				}
+				outPin {
+					connection_11
+				}
+			}
+			literal Numeric "1.0" at (291, 513) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_12
+				}
+			}
+			literal Numeric "0.0001" at (541, 323) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_13
+				}
+			}
+			addition at (511, 426) {
+				inPin connection_30
+				inPin connection_20 {
+					bendpoints (20, 0)
+				}
+				outPin {
+					connection_14
+				}
+			}
+			literal Numeric "9.81" at (841, 453) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_15
+				}
+			}
+			division at (551, 416) {
+				inPin connection_36 {
+					bendpoints (70, 0)
+				}
+				inPin connection_14
+				outPin {
+					connection_16
+				}
+			}
+			conditionalSelect at (371, 481) {
+				inPin connection_24
+				inPin CASE_CONDITION connection_9 {
+					bendpoints (120, 0)
+				}
+				inPin connection_12
+				outPin {
+					connection_17
+				}
+			}
+			literal Numeric "0.0" at (171, 473) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_18
+				}
+			}
+			lessOrEqual at (611, 306) {
+				inPin connection_35
+				inPin connection_13
+				outPin {
+					connection_19
+				}
+			}
+			literal Numeric "1.0" at (441, 453) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_20
+				}
+			}
+			literal Numeric "0.05" at (751, 233) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_21
+				}
+			}
+			literal Numeric "1.0" at (311, 373) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_22
+				}
+			}
+			literal Boolean "false" at (941, 323) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_23
+				}
+			}
+			simpleIdentifier hold at (1021, 325) {
+				label at (0, -1)
+				inPin connection_23
+				outPin sequenceCall {
+					inPin connection_7 {
+						bendpoints (10, 0)
+					}
+				}
+			}
+			literal Numeric "-1.0" at (291, 493) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_24
+				}
+			}
+			division at (381, 376) {
+				inPin connection_22
+				inPin connection_31 {
+					bendpoints (40, 0), (20, 0)
+				}
+				outPin {
+					connection_26, connection_25
+				}
+			}
+			complexIdentifier MathLib_instance at (721, 431) size (8, 3) {
+				label at (0, 1)
+				methodCall SystemLib.Math.MathLib.sqrt {
+					argumentPin val at (left, 0) connection_29
+					returnPin at (right, 0) {
+						connection_27
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal Numeric "0.0" at (601, 443) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_28
+				}
+			}
+			conditionalSelect at (661, 411) {
+				inPin connection_16
+				inPin CASE_CONDITION connection_19 {
+					bendpoints (30, 0)
+				}
+				inPin connection_28
+				outPin {
+					connection_29
+				}
+			}
+			multiplication at (451, 416) {
+				inPin connection_26 {
+					bendpoints (20, 0), (20, 30)
+				}
+				inPin connection_25 {
+					bendpoints (20, 0), (20, 50)
+				}
+				outPin {
+					connection_30
+				}
+			}
+			containerPinIdentifier RoadSlopeSet at (241, 413) size (9, 1) {
+				outPin {
+					connection_32, connection_31
+				}
+			}
+			containerPinIdentifier RoadSlopeSet at (231, 303) size (9, 1) {
+				outPin {
+					connection_33
+				}
+			}
+			containerPinIdentifier CC_ControlValue_brake at (551, 203) size (19, 1) {
+				outPin {
+					connection_34
+				}
+			}
+			absolute at (431, 301) {
+				inPin connection_33
+				outPin {
+					connection_35
+				}
+			}
+			simpleIdentifier c_SlopePlus at (441, 355) {
+				label at (0, -1)
+				outPin {
+					connection_36
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		container Brake at (311, 281) size (22, 6) {
+			label at (0, 1)
+			containerInPin CC_ControlValue_brake at (left, 1) connection_107
+			containerOutPin BrakeForce at (right, 2) {
+				connection_37
+			}
+			containerOutPin BrakeAutoHold at (bottom, 12) {
+				connection_38
+			}
+			containerPinIdentifier BrakeForce at (721, 263) size (7, 1) {
+				inPin connection_39
+			}
+			simpleIdentifier BrakeForce at (621, 265) {
+				label at (0, -1)
+				inPin connection_50
+				outPin {
+					connection_39
+				}
+				sequenceCall {
+					inPin connection_49
+				}
+			}
+			literal Numeric "-1.0" at (411, 443) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_40
+				}
+			}
+			simpleIdentifier velocity at (211, 305) {
+				label at (0, -1)
+				inPin outPin {
+					connection_42, connection_44, connection_41
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			simpleIdentifier velocity_old at (201, 365) {
+				label at (0, -1)
+				inPin connection_44 {
+					bendpoints (0, -10), (-110, -10), (-110, 60)
+				}
+				outPin {
+					connection_45
+				}
+				sequenceCall at (-10, -24) {
+					inPin connection_43
+				}
+			}
+			multiplication at (311, 366) {
+				inPin connection_45
+				inPin connection_41 {
+					bendpoints (0, -10), (-110, -10), (-110, 80)
+				}
+				outPin {
+					connection_46
+				}
+			}
+			if at (881, 391) {
+				inPin connection_54
+				ifControlFlowOutPin {
+					connection_47
+				}
+				sequenceCall {
+					inPin connection_3
+				}
+			}
+			containerPinIdentifier BrakeAutoHold at (1021, 453) size (9, 1) {
+				inPin connection_48
+			}
+			simpleIdentifier hold at (951, 455) {
+				label at (0, -1)
+				inPin connection_64
+				outPin {
+					connection_48
+				}
+				sequenceCall {
+					inPin connection_47 {
+						bendpoints (10, 0)
+					}
+				}
+			}
+			multiplication at (561, 256) {
+				inPin connection_55
+				inPin connection_68 {
+					bendpoints (20, 0)
+				}
+				outPin {
+					connection_50
+				}
+			}
+			simpleIdentifier calc.ZeroCross at (431, 385) {
+				label at (-10, -1)
+				inPin connection_57
+				outPin {
+					connection_53, connection_51
+				}
+				sequenceCall at (-20, -24) {
+					inPin connection_56
+				}
+			}
+			and at (831, 386) {
+				inPin connection_67
+				inPin connection_62 {
+					bendpoints (180, 0)
+				}
+				outPin {
+					connection_54
+				}
+			}
+			simpleIdentifier BrakeForceCurve_instance at (391, 241) {
+				label at (-150, 1)
+				inPin connection_69
+				outPin {
+					connection_55
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			lessOrEqual at (371, 376) {
+				inPin connection_46
+				inPin connection_61 {
+					bendpoints (20, 0)
+				}
+				outPin {
+					connection_57
+				}
+			}
+			literal Numeric "0.01" at (551, 533) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_59
+				}
+			}
+			literal Numeric "1.0" at (411, 423) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_60
+				}
+			}
+			literal Numeric "0.0" at (301, 403) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_61
+				}
+			}
+			lessOrEqual at (611, 506) {
+				inPin connection_115
+				inPin connection_59 {
+					bendpoints (10, 0)
+				}
+				outPin {
+					connection_62
+				}
+			}
+			literal Numeric "0.0" at (411, 463) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_63
+				}
+			}
+			literal Boolean "true" at (871, 453) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_64
+				}
+			}
+			less at (441, 306) {
+				inPin connection_42
+				inPin connection_66
+				outPin {
+					connection_65
+				}
+			}
+			literal Numeric "0.0" at (361, 323) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_66
+				}
+			}
+			complexIdentifier EdgeRising_instance at (641, 371) size (3, 3) backgroundColor #ffffff {
+				label at (0, 1)
+				methodCall SystemLib.Miscellaneous.EdgeRising.compute {
+					argumentPin signal at (left, 1) connection_53
+					sequenceCall at (-30, -34) {
+						inPin connection_52
+					}
+				}
+				methodCall SystemLib.Miscellaneous.EdgeRising.value {
+					returnPin at (right, 1) {
+						connection_67
+					}
+					sequenceCall at (0, 0) {
+						inPin
+					}
+				}
+			}
+			conditionalSelect at (491, 411) size (3, 6) {
+				inPin connection_60
+				inPin CASE_CONDITION connection_51 {
+					bendpoints (30, 0)
+				}
+				inPin connection_63
+				inPin CASE_CONDITION connection_65 {
+					bendpoints (40, 0)
+				}
+				inPin connection_40
+				outPin {
+					connection_68
+				}
+			}
+			containerPinIdentifier CC_ControlValue_brake at (151, 253) size (13, 1) {
+				outPin {
+					connection_69
+				}
+			}
+			methodArgumentIdentifier calc.CtrlVal_accel at (471, 505) {
+				label at (0, -1)
+				outPin {
+					connection_115
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		container Acceleration at (311, 61) size (22, 6) {
+			label at (0, 1)
+			containerInPin CC_ControlValue_acc at (left, 2) connection_105 {
+				bendpoints (0, -1)
+			}
+			containerOutPin EngineForce at (right, 1) {
+				connection_70
+			}
+			containerPinIdentifier EngineForce at (741, 133) size (8, 1) {
+				inPin connection_71
+			}
+			simpleIdentifier EngineForce at (611, 135) {
+				label at (0, -1)
+				inPin connection_74
+				outPin {
+					connection_71
+				}
+				sequenceCall {
+					inPin connection_73
+				}
+			}
+			containerPinIdentifier CC_ControlValue_acc at (141, 133) size (12, 1) {
+				outPin {
+					connection_72
+				}
+			}
+			simpleIdentifier EngineForceCurve_instance at (411, 121) {
+				label at (0, 1)
+				inPin connection_72
+				outPin {
+					connection_74
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		container Wind at (311, 171) size (22, 6) {
+			label at (0, 1)
+			containerInPin WindSpeed at (left, 2) connection_106 {
+				bendpoints (0, -1)
+			}
+			containerOutPin AirResistance at (right, 3) {
+				connection_75
+			}
+			multiplication at (421, 136) size (2, 13) {
+				inPin connection_90
+				inPin connection_92 {
+					bendpoints (20, 0), (20, 20)
+				}
+				inPin connection_85 {
+					bendpoints (70, 0)
+				}
+				inPin connection_82
+				inPin connection_83 {
+					bendpoints (30, 0), (30, -20)
+				}
+				inPin connection_79 {
+					bendpoints (50, 0), (50, -30)
+				}
+				inPin connection_86 {
+					bendpoints (0, -90)
+				}
+				outPin {
+					connection_77
+				}
+			}
+			literal Numeric "1.0" at (291, 333) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_78
+				}
+			}
+			simpleIdentifier roh at (311, 265) {
+				comment at (-70, -15) {
+					"air density"
+				}
+				label at (0, -1)
+				outPin {
+					connection_79
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			less at (231, 296) {
+				inPin connection_91 {
+					bendpoints (0, -60), (-300, -60), (-300, 160)
+				}
+				inPin connection_84 {
+					bendpoints (40, 0)
+				}
+				outPin {
+					connection_80
+				}
+			}
+			simpleIdentifier velocity at (111, 145) {
+				label at (0, -1)
+				inPin outPin {
+					connection_81
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			simpleIdentifier cw at (311, 195) {
+				comment at (-90, -15) {
+					"drag coefficient"
+				}
+				label at (0, -1)
+				outPin {
+					connection_82
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			literal Numeric "0.5" at (311, 233) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_83
+				}
+			}
+			literal Numeric "0.0" at (141, 323) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_84
+				}
+			}
+			simpleIdentifier A at (311, 165) {
+				comment at (-70, -15) {
+					"frontal area"
+				}
+				label at (0, -1)
+				outPin {
+					connection_85
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			conditionalSelect at (371, 321) {
+				inPin connection_78
+				inPin CASE_CONDITION connection_80 {
+					bendpoints (120, 0)
+				}
+				inPin connection_87
+				outPin {
+					connection_86
+				}
+			}
+			literal Numeric "-1.0" at (291, 353) size (49, 0) {
+				label at (0, 4)
+				outPin {
+					connection_87
+				}
+			}
+			containerPinIdentifier AirResistance at (711, 193) size (8, 1) {
+				inPin connection_88
+			}
+			simpleIdentifier AirResistance at (601, 195) {
+				label at (0, -1)
+				inPin connection_77
+				outPin {
+					connection_88
+				}
+				sequenceCall {
+					inPin connection_76
+				}
+			}
+			containerPinIdentifier WindSpeed at (121, 123) size (7, 1) {
+				outPin {
+					connection_89
+				}
+			}
+			addition at (321, 126) {
+				inPin connection_89
+				inPin connection_81
+				outPin {
+					connection_91, connection_92, connection_90
+				}
+			}
+		}
+		simpleIdentifier vehicle_mass at (691, 295) {
+			comment at (0, 25) {
+				"vehicle mass"
+			}
+			label at (0, -1)
+			outPin {
+				connection_93
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		subtraction at (571, 76) size (2, 10) {
+			inPin connection_70
+			inPin connection_75 {
+				bendpoints (30, 0)
+			}
+			outPin {
+				connection_94
+			}
+		}
+		subtraction at (641, 116) size (2, 5) {
+			inPin connection_94
+			inPin connection_37 {
+				bendpoints (100, 0)
+			}
+			outPin {
+				connection_95
+			}
+		}
+		division at (741, 276) {
+			inPin connection_95 {
+				bendpoints (60, 0)
+			}
+			inPin connection_93
+			outPin {
+				connection_96
+			}
+		}
+		complexIdentifier IntegratorK_instance at (941, 271) size (8, 6) backgroundColor #ffffff {
+			label at (50, 11)
+			methodCall SystemLib.Transferfunction.Integrator.IntegratorK.reset {
+				argumentPin initValue at (bottom, 3) connection_103
+				sequenceCall at (-34, 111) {
+					inPin connection_101
+				}
+			}
+			methodCall SystemLib.Transferfunction.Integrator.IntegratorK.compute {
+				argumentPin val at (left, 2) connection_104
+				argumentPin K at (top, 3) connection_99 {
+					bendpoints (20, 0)
+				}
+				sequenceCall at (-110, -54) {
+					inPin connection_102 {
+						bendpoints (410, 0), (410, -360), (-50, -360)
+					}
+				}
+			}
+			methodCall SystemLib.Transferfunction.Integrator.IntegratorK.value {
+				returnPin at (right, 2) {
+					connection_98
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier K at (921, 245) {
+			label at (0, -1)
+			outPin {
+				connection_99
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier velocity at (1081, 295) {
+			label at (0, -1)
+			inPin connection_98
+			outPin {
+				connection_100
+			}
+			sequenceCall {
+				inPin connection_97
+			}
+		}
+		ifElse at (851, 441) {
+			inPin connection_38 {
+				bendpoints (0, 100)
+			}
+			ifControlFlowOutPin {
+				connection_101
+			}
+			elseControlFlowOutPin {
+				connection_102
+			}
+			sequenceCall {
+				inPin connection_4
+			}
+		}
+		literal Numeric "0.0" at (881, 333) size (49, 0) {
+			label at (0, 4)
+			outPin {
+				connection_103
+			}
+		}
+		addition at (831, 286) {
+			inPin connection_96
+			inPin connection_5 {
+				bendpoints (250, 0), (250, -230)
+			}
+			outPin {
+				connection_104
+			}
+		}
+		containerPinIdentifier CC_ControlValue_acc at (61, 83) size (14, 1) {
+			outPin {
+				connection_105
+			}
+		}
+		containerPinIdentifier WindSpeed at (61, 193) size (11, 1) {
+			outPin {
+				connection_106
+			}
+		}
+		containerPinIdentifier CC_ControlValue_brake at (61, 293) size (13, 1) {
+			outPin {
+				connection_108, connection_107
+			}
+		}
+		containerPinIdentifier RoadSlopeSet at (71, 533) size (9, 1) {
+			outPin {
+				connection_109
+			}
+		}
+		containerPinIdentifier CurrentSpeed at (1171, 293) size (9, 1) {
+			inPin connection_100
+		}
+	}
+	methodArgumentIdentifier calc.CtrlVal_accel at (91, 145) {
+		label at (0, -1)
+		outPin {
+			connection_116
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.CtrlVal_brake at (91, 195) {
+		label at (0, -1)
+		outPin {
+			connection_117
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.RoadSlope at (91, 245) {
+		label at (0, -1)
+		outPin {
+			connection_118
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.WindSpeed at (91, 295) {
+		label at (0, -1)
+		outPin {
+			connection_119
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	return at (681, 215) {
+		label at (0, 0)
+		inPin connection_122
+		sequenceCall {
+			inPin connection_121
+		}
+	}
+}

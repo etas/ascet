@@ -1,0 +1,329 @@
+classType VehicleModel.RelativeData.RelativeData
+blockdiagramSpecification Main {
+	methodBody proc_10ms {
+		outPin {
+			connection_16, connection_17, connection_24, connection_26, connection_49, connection_51
+		}
+	}
+	methodBody SetDistance100 {
+		outPin active {
+			connection_28, connection_30
+		}
+	}
+	subtraction at (391, 166) {
+		inPin connection_21 {
+			bendpoints (40, 0)
+		}
+		inPin connection_20 {
+			bendpoints (40, 0)
+		}
+		outPin {
+			connection_6
+		}
+	}
+	subtraction at (431, 356) {
+		inPin connection_3 {
+			bendpoints (310, 0)
+		}
+		inPin connection_4 {
+			bendpoints (310, 0)
+		}
+		outPin {
+			connection_8
+		}
+	}
+	simpleIdentifier interfaces.messages.Actual_Velocity_LC at (81, 325) {
+		label at (0, -1)
+		outPin {
+			connection_23, connection_3
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.messages.Actual_Velocity_EC at (81, 395) {
+		label at (0, -1)
+		outPin {
+			connection_22, connection_4
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.messages.Relative_Distance at (511, 175) {
+		label at (0, -1)
+		inPin connection_6
+		sequenceCall {
+			inPin connection_16
+		}
+	}
+	simpleIdentifier interfaces.messages.Relative_Velocity at (531, 365) {
+		label at (0, -1)
+		inPin connection_8
+		sequenceCall {
+			inPin connection_17
+		}
+	}
+	complexIdentifier Position_EC at (261, 191) size (8, 6) backgroundColor #ffffff {
+		label at (50, 1)
+		methodCall SystemLib.Transferfunction.Integrator.IntegratorK.reset {
+			argumentPin initValue at (bottom, 3) connection_31
+			sequenceCall at (106, 21) {
+				inPin connection_30
+			}
+		}
+		methodCall SystemLib.Transferfunction.Integrator.IntegratorK.compute {
+			argumentPin val at (left, 2) connection_22 {
+				bendpoints (120, 0), (120, -180)
+			}
+			argumentPin K at (top, 3) connection_27 {
+				bendpoints (20, 0)
+			}
+			sequenceCall at (-90, -30) {
+				inPin connection_26
+			}
+		}
+		methodCall SystemLib.Transferfunction.Integrator.IntegratorK.value {
+			returnPin at (right, 2) {
+				connection_52, connection_20
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	complexIdentifier Position_LC at (261, 61) size (8, 6) backgroundColor #ffffff {
+		label at (50, 1)
+		methodCall SystemLib.Transferfunction.Integrator.IntegratorK.reset {
+			argumentPin initValue at (bottom, 3) connection_29 {
+				bendpoints (20, 0)
+			}
+			sequenceCall at (66, -69) {
+				inPin connection_28
+			}
+		}
+		methodCall SystemLib.Transferfunction.Integrator.IntegratorK.compute {
+			argumentPin val at (left, 2) connection_23 {
+				bendpoints (90, 0), (90, -240)
+			}
+			argumentPin K at (top, 3) connection_25 {
+				bendpoints (30, 0)
+			}
+			sequenceCall at (-90, -30) {
+				inPin connection_24
+			}
+		}
+		methodCall SystemLib.Transferfunction.Integrator.IntegratorK.value {
+			returnPin at (right, 2) {
+				connection_50, connection_21
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	literal Numeric "0.27778" at (221, 33) size (59, 0) {
+		label at (0, 4)
+		outPin {
+			connection_25
+		}
+	}
+	literal Numeric "0.27778" at (231, 163) size (59, 0) {
+		label at (0, 4)
+		outPin {
+			connection_27
+		}
+	}
+	literal Numeric "100.0" at (231, 133) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_29
+		}
+	}
+	literal Numeric "0.0" at (251, 273) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_31
+		}
+	}
+	simpleIdentifier interfaces.messages.Actual_Position_LC at (701, 85) {
+		label at (0, -1)
+		inPin connection_50
+		sequenceCall {
+			inPin connection_49
+		}
+	}
+	simpleIdentifier interfaces.messages.Actual_Position_EC at (701, 215) {
+		label at (0, -1)
+		inPin connection_52
+		sequenceCall {
+			inPin connection_51
+		}
+	}
+}
+blockdiagramSpecification Ini {
+	methodBody proc_ini {
+		outPin active {
+			connection_19, connection_18
+		}
+	}
+	literal Numeric "0.0" at (211, 153) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_14
+		}
+	}
+	literal Numeric "0.0" at (211, 233) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_12
+		}
+	}
+	simpleIdentifier interfaces.messages.Relative_Distance at (351, 155) {
+		label at (0, -1)
+		inPin connection_14
+		sequenceCall {
+			inPin connection_18
+		}
+	}
+	simpleIdentifier interfaces.messages.Relative_Velocity at (361, 235) {
+		label at (0, -1)
+		inPin connection_12
+		sequenceCall {
+			inPin connection_19
+		}
+	}
+}
+blockdiagramSpecification OwervlowReset {
+	methodBody AntiOverFlow_10ms {
+		outPin active {
+			connection_34
+		}
+	}
+	complexIdentifier Position_EC at (351, 111) size (8, 6) backgroundColor #ffffff {
+		label at (90, 21)
+		methodCall SystemLib.Transferfunction.Integrator.IntegratorK.reset {
+			argumentPin initValue at (bottom, 3) connection_40 {
+				bendpoints (30, 0)
+			}
+			sequenceCall at (16, 31) {
+				inPin connection_39 {
+					bendpoints (30, 0), (30, -30), (-280, -30)
+				}
+			}
+		}
+		methodCall SystemLib.Transferfunction.Integrator.IntegratorK.compute {
+			argumentPin val at (left, 2) argumentPin K at (top, 3) sequenceCall {
+				inPin
+			}
+		}
+		methodCall SystemLib.Transferfunction.Integrator.IntegratorK.value {
+			returnPin at (right, 2) {
+				connection_37, connection_36
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	complexIdentifier Position_LC at (351, 361) size (8, 6) backgroundColor #ffffff {
+		label at (90, 11)
+		methodCall SystemLib.Transferfunction.Integrator.IntegratorK.reset {
+			argumentPin initValue at (bottom, 3) connection_48 {
+				bendpoints (10, 0)
+			}
+			sequenceCall at (66, 41) {
+				inPin connection_47 {
+					bendpoints (30, 0), (30, 230), (-230, 230)
+				}
+			}
+		}
+		methodCall SystemLib.Transferfunction.Integrator.IntegratorK.compute {
+			argumentPin val at (left, 2) argumentPin K at (top, 3) sequenceCall {
+				inPin
+			}
+		}
+		methodCall SystemLib.Transferfunction.Integrator.IntegratorK.value {
+			returnPin at (right, 2) {
+				connection_54, connection_46
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	if at (631, 291) {
+		inPin connection_56
+		ifControlFlowOutPin {
+			connection_39, connection_47
+		}
+		sequenceCall at (20, -40) {
+			inPin connection_34
+		}
+	}
+	greater at (511, 136) {
+		inPin connection_36
+		inPin connection_35
+		outPin {
+			connection_41
+		}
+	}
+	literal Numeric "2000.0" at (451, 153) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_35
+		}
+	}
+	subtraction at (321, 216) {
+		inPin connection_37 {
+			bendpoints (0, -70), (-120, -70)
+		}
+		inPin connection_38
+		outPin {
+			connection_40
+		}
+	}
+	literal Numeric "2000.0" at (241, 233) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_38
+		}
+	}
+	subtraction at (341, 486) {
+		inPin connection_46 {
+			bendpoints (0, -50), (-150, -50), (-150, 100)
+		}
+		inPin connection_45
+		outPin {
+			connection_48
+		}
+	}
+	literal Numeric "2000.0" at (261, 503) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_45
+		}
+	}
+	or at (561, 286) {
+		inPin connection_41 {
+			bendpoints (10, 0)
+		}
+		inPin connection_55
+		outPin {
+			connection_56
+		}
+	}
+	literal Numeric "2000.0" at (461, 403) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_53
+		}
+	}
+	greater at (521, 386) {
+		inPin connection_54
+		inPin connection_53
+		outPin {
+			connection_55
+		}
+	}
+}

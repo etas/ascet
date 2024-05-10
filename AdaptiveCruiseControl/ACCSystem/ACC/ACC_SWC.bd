@@ -1,0 +1,320 @@
+classType ACC.ACC_SWC
+blockdiagramSpecification Main {
+	methodBody proc_10ms {
+		outPin active {
+			connection_37, connection_38
+		}
+	}
+	container compute at (431, 161) size (34, 17) {
+		label at (150, 1)
+		containerInPin Set_Velocity at (left, 1) connection_41
+		containerInPin Actual_Velocity_EC at (left, 4) connection_42
+		containerInPin Relative_Distance at (left, 10) connection_43
+		containerInPin Relative_Velocity at (left, 13) connection_46
+		containerOutPin Safe_Distance at (right, 5) {
+			connection_7
+		}
+		containerOutPin Acceleration_EC at (right, 9) {
+			connection_21
+		}
+		simpleIdentifier Spacing_Error_Gain at (521, 435) {
+			label at (0, -1)
+			outPin {
+				connection_28
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier Velocity_Error_Gain at (761, 305) {
+			label at (0, -1)
+			outPin {
+				connection_27
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		subtraction at (821, 366) {
+			inPin connection_13
+			inPin connection_12 {
+				bendpoints (70, 0), (70, -40)
+			}
+			outPin {
+				connection_15, connection_14
+			}
+		}
+		containerPinIdentifier Set_Velocity at (521, 233) size (8, 1) {
+			outPin {
+				connection_3
+			}
+		}
+		containerPinIdentifier Actual_Velocity_EC at (491, 313) size (14, 1) {
+			outPin {
+				connection_25
+			}
+		}
+		subtraction at (701, 236) {
+			inPin connection_3
+			inPin connection_25 {
+				bendpoints (70, 0)
+			}
+			outPin {
+				connection_4
+			}
+		}
+		multiplication at (701, 416) {
+			inPin connection_11 {
+				bendpoints (80, 0), (80, 140)
+			}
+			inPin connection_28
+			outPin {
+				connection_12
+			}
+		}
+		simpleIdentifier Default_Distance at (241, 165) {
+			label at (0, -1)
+			outPin {
+				connection_30
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		multiplication at (821, 246) {
+			inPin connection_4
+			inPin connection_27 {
+				bendpoints (20, 0)
+			}
+			outPin {
+				connection_5
+			}
+		}
+		containerPinIdentifier Relative_Distance at (381, 283) size (11, 1) {
+			outPin {
+				connection_1
+			}
+		}
+		subtraction at (551, 266) {
+			inPin connection_8 {
+				bendpoints (50, 0), (50, 90)
+			}
+			inPin connection_1
+			outPin {
+				connection_11, connection_10
+			}
+		}
+		minimum at (891, 256) {
+			inPin connection_5
+			inPin connection_15 {
+				bendpoints (20, 0), (20, -100)
+			}
+			outPin {
+				connection_19
+			}
+		}
+		literal Numeric "-3.0" at (961, 163) size (49, 0) {
+			label at (0, 4)
+			outPin {
+				connection_50
+			}
+		}
+		containerPinIdentifier Safe_Distance at (541, 173) size (9, 1) {
+			inPin connection_44
+		}
+		addition at (411, 166) {
+			inPin connection_30
+			inPin connection_9 {
+				bendpoints (50, 0), (50, -30)
+			}
+			outPin {
+				connection_44, connection_8
+			}
+		}
+		containerPinIdentifier Acceleration_EC at (1171, 273) size (10, 1) {
+			inPin connection_52
+		}
+		greater at (701, 186) {
+			inPin connection_10 {
+				bendpoints (80, 0), (80, -90)
+			}
+			inPin connection_18
+			outPin {
+				connection_17
+			}
+		}
+		simpleIdentifier Relative_Velocity_Gain at (521, 385) {
+			label at (0, -1)
+			outPin {
+				connection_29
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		containerPinIdentifier Relative_Velocity at (491, 353) size (13, 1) {
+			outPin {
+				connection_2
+			}
+		}
+		multiplication at (701, 356) {
+			inPin connection_2 {
+				bendpoints (31, 0), (31, -1)
+			}
+			inPin connection_29 {
+				bendpoints (120, 0), (120, 0)
+			}
+			outPin {
+				connection_13
+			}
+		}
+		literal Numeric "2.0" at (961, 133) size (49, 0) {
+			label at (0, 4)
+			outPin {
+				connection_51
+			}
+		}
+		simpleIdentifier Time_Gap at (191, 205) {
+			label at (-10, -1)
+			outPin {
+				connection_26
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		conditionalSelect at (971, 251) {
+			inPin connection_19
+			inPin CASE_CONDITION connection_17 {
+				bendpoints (250, 0)
+			}
+			inPin connection_14 {
+				bendpoints (100, 0), (100, -90)
+			}
+			outPin {
+				connection_49
+			}
+		}
+		literal Numeric "0.0" at (521, 203) size (49, 0) {
+			label at (0, 4)
+			outPin {
+				connection_18
+			}
+		}
+		multiplication at (291, 206) size (2, 4) {
+			inPin connection_26
+			inPin connection_48 {
+				bendpoints (31, 0), (31, -1)
+			}
+			outPin {
+				connection_9
+			}
+		}
+		containerPinIdentifier Actual_Velocity_EC at (121, 233) size (14, 1) {
+			outPin {
+				connection_48
+			}
+		}
+		complexIdentifier Limiter at (1041, 261) size (6, 4) backgroundColor #ffffff {
+			label at (0, 1)
+			methodCall SystemLib.Nonlinears.Limiter.value {
+				argumentPin mn at (top, 0) connection_50 {
+					bendpoints (40, 0)
+				}
+				argumentPin x at (left, 1) connection_49
+				argumentPin mx at (top, 4) connection_51 {
+					bendpoints (80, 0)
+				}
+				returnPin at (right, 1) {
+					connection_52
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+	}
+	simpleIdentifier interfaces.messages.Set_Velocity at (191, 175) {
+		label at (0, -1)
+		outPin {
+			connection_41
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.messages.Actual_Velocity_EC at (191, 205) {
+		label at (0, -1)
+		outPin {
+			connection_42
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.messages.Relative_Distance at (191, 265) {
+		label at (0, -1)
+		outPin {
+			connection_43
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.messages.Relative_Velocity at (191, 295) {
+		label at (0, -1)
+		outPin {
+			connection_46
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.messages.Safe_Distance at (951, 215) {
+		label at (0, -1)
+		inPin connection_7
+		sequenceCall at (30, -14) {
+			inPin connection_37
+		}
+	}
+	simpleIdentifier interfaces.messages.Acceleration_EC at (951, 255) {
+		label at (0, -1)
+		inPin connection_21
+		sequenceCall at (30, -14) {
+			inPin connection_38
+		}
+	}
+}
+blockdiagramSpecification Ini {
+	methodBody proc_ini {
+		outPin active {
+			connection_39, connection_40
+		}
+	}
+	literal Numeric "0.0" at (271, 133) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_32
+		}
+	}
+	literal Numeric "0.0" at (271, 213) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_34
+		}
+	}
+	simpleIdentifier interfaces.messages.Safe_Distance at (411, 135) {
+		label at (0, -1)
+		inPin connection_32
+		sequenceCall {
+			inPin connection_39
+		}
+	}
+	simpleIdentifier interfaces.messages.Acceleration_EC at (411, 215) {
+		label at (0, -1)
+		inPin connection_34
+		sequenceCall {
+			inPin connection_40
+		}
+	}
+}

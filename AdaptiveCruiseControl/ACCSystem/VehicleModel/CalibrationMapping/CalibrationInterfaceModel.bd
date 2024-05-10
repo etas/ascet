@@ -1,0 +1,104 @@
+classType VehicleModel.CalibrationMapping.CalibrationInterfaceModel
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_1, connection_3, connection_5, connection_7, connection_9, connection_11
+		}
+	}
+	simpleIdentifier VehicleModel.DataDefinitionFiles.CruiseControlInterface.CC_ControlValue_acc at (671, 135) {
+		label at (0, -1)
+		inPin connection_2
+		sequenceCall {
+			inPin connection_1
+		}
+	}
+	simpleIdentifier VehicleModel.DataDefinitionFiles.CruiseControlInterface.CC_ControlValue_brake at (671, 195) {
+		label at (0, -1)
+		inPin connection_4
+		sequenceCall {
+			inPin connection_3
+		}
+	}
+	simpleIdentifier VehicleModel.DataDefinitionFiles.CruiseControlInterface.RoadSlopeSet at (671, 265) {
+		label at (0, -1)
+		inPin connection_6
+		sequenceCall {
+			inPin connection_5
+		}
+	}
+	simpleIdentifier c_CC_ControlValue_acc at (451, 135) {
+		label at (0, -1)
+		outPin {
+			connection_2
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier c_CC_ControlValue_brake at (451, 195) {
+		label at (0, -1)
+		outPin {
+			connection_4
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier c_RoadSlopeSet at (451, 265) {
+		label at (0, -1)
+		outPin {
+			connection_6
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier VehicleModel.DataDefinitionFiles.CruiseControlInterface.WindSpeed at (671, 335) {
+		label at (0, -1)
+		inPin connection_8
+		sequenceCall {
+			inPin connection_7
+		}
+	}
+	simpleIdentifier c_WindSpeed at (451, 335) {
+		label at (0, -1)
+		outPin {
+			connection_8
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier Set_ACC_Velocity at (451, 395) {
+		label at (0, -1)
+		outPin {
+			connection_10
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.messages.Set_Velocity at (671, 395) {
+		label at (0, -1)
+		inPin connection_10
+		sequenceCall {
+			inPin connection_9
+		}
+	}
+	simpleIdentifier interfaces.messages.Actual_Velocity_LC at (671, 445) {
+		label at (0, -1)
+		inPin connection_12
+		sequenceCall {
+			inPin connection_11
+		}
+	}
+	simpleIdentifier Set_Velocity_LC at (451, 445) {
+		label at (0, -1)
+		outPin {
+			connection_12
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+}

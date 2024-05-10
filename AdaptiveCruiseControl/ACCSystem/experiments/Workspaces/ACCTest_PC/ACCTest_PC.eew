@@ -1,0 +1,23 @@
+<?SCHEMA schemaVersion="1.0"?>
+<Workspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Program%20Files/Common%20Files/ETAS/Experiment%20Environment/3.8/Schemas/EE.Data.Workspace.xsd" xsi:type="ETAS.EE.Data.WorkspaceType">
+  <PluginData xsi:type="ETAS.EE.Data.PluginDataListType">
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="ID574588d2-4e5f-4b48-93ff-2000dc8e16b8" pluginID="Options" rootFolder="Options_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="ID0fce0873-511f-4201-8b75-9f7409de14fd" type="" name="Options" file="Options.opt" />
+      </Documents>
+    </Item>
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="IDc9961a61-09b4-46ad-bf1a-61f6ab5f6568" pluginID="SignalSourceManager" rootFolder="SignalSourceManager_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="ID95ebdc53-0ce2-4449-ab9d-c78d383618c4" type="" name="SignalSourcesData" file="SignalSources.xml" />
+      </Documents>
+    </Item>
+  </PluginData>
+  <RecentExperiments xsi:type="ETAS.EE.Data.FileReferenceListType">
+    <Item xsi:type="ETAS.EE.Data.FileReferenceType" id="ID6deca74e-590b-43d9-b49b-1dcd8f2aa372" path="C:\Users\dya9fe\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\experiments\Experiments\system\ACCTest_PC\ACCTest_PC.eex" hintPath="..\..\Experiments\system\ACCTest_PC\ACCTest_PC.eex" />
+    <Item xsi:type="ETAS.EE.Data.FileReferenceType" id="ID2fe01cce-a47e-4c79-a886-0f13735d4257" path="C:\Users\mos9fe\ETAS\ASCET-DEVELOPER-7.9.0\BCW_Demo\ACCSystem\experiments\Experiments\system\ACCTest_PC1\ACCTest_PC1.eex" hintPath="..\..\Experiments\system\ACCTest_PC1\ACCTest_PC1.eex" />
+  </RecentExperiments>
+  <WorkspaceInfo xsi:type="ETAS.EE.Data.WorkspaceInfoType">
+    <DateTime xsi:type="ETAS.EE.Data.DateTimeInfoType" id="ID3173f34c-9828-4e56-8a3e-f041e4be8a47" Created="2024-02-07T09:51:01.477Z" LastOpened="2024-02-08T09:11:38.755Z" LastSaved="2024-02-08T09:08:00.377Z" />
+    <Version xsi:type="ETAS.EE.Data.VersionInfoType" id="ID27e970e9-6ba8-48ed-b87d-b6b2d9ff141a" Created="3.8.5.253" LastSaved="3.8.5.253" MinRequired="3.3.1" />
+  </WorkspaceInfo>
+</Workspace>

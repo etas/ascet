@@ -1,0 +1,15 @@
+package ACC_AUTOSAR;
+
+esdl mapping ACC_AUTOSAR.ACC_AR {
+
+	application ACC_AUTOSAR.ACC_AR_SWC;
+
+	sri ports {
+		interfaces.messages.Actual_Velocity_EC uses rp_bsw2asw.Actual_Velocity_EC;
+		interfaces.messages.Relative_Distance uses rp_asw2asw.Relative_Distance;
+		interfaces.messages.Relative_Velocity uses rp_asw2asw.Relative_Velocity;
+		interfaces.messages.Set_Velocity uses rp_bsw2asw.Set_Velocity;
+		interfaces.messages.Safe_Distance uses pp_asw2bsw.Safe_Distance;
+		interfaces.messages.Acceleration_EC uses pp_asw2bsw.Acceleration_EC;
+	}
+}

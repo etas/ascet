@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.etas.ascet.ehb.ui.EhbContainerBuildLauncher">
+    <stringAttribute key="com.etas.ascet.build.application.file" value="/ACCSystem/doc/ACC_ALL_DOC.app"/>
+    <stringAttribute key="com.etas.ascet.build.output.folder" value="${workspace_loc}\ACCSystem\doc"/>
+    <stringAttribute key="com.etas.ascet.ehb.additional.commands" value="-splitapp -gensvg -branding ${workspace_loc}\system\doc\ehb_configs\branding.properties -css ${workspace_loc}\system\doc\ehb_configs\css"/>
+    <stringAttribute key="com.etas.ascet.ehb.container.build.path" value="C:\ETAS\EHANDBOOK-Container-Build_11.3.0.RC-1_Windows\eHandbookCB.exe"/>
+    <booleanAttribute key="org.eclipse.debug.core.ATTR_FORCE_SYSTEM_CONSOLE_ENCODING" value="false"/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/System/doc/ACC_ALL_DOC.app"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+</launchConfiguration>

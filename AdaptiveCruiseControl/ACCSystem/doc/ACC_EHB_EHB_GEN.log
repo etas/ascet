@@ -1,0 +1,88 @@
+C:\ETAS\EHANDBOOK-Container-Build_11.3.0.RC-1_Windows\eHandbookCB.exe -i C:\Users\dya9fe\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\ACC_ALL_DOC.app -o C:\Users\dya9fe\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc -n ACC_EHB -splitapp -gensvg -branding C:\Users\dya9fe\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\system\doc\ehb_configs\branding.properties -css C:\Users\dya9fe\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\system\doc\ehb_configs\css
+1608 [main] INFO  c.e.e.c.l.manager.CbLicenseManager  - Reserving EHANDBOOK Container-Build licenses
+2129 [main] INFO  c.e.e.c.l.manager.CbLicenseManager  - License EHB_CB_CON_AUTOSAR_CLASSIC is reserved.
+2453 [main] INFO  c.e.e.c.l.manager.CbLicenseManager  - License EHB_CB_BASE_DIR is reserved.
+2766 [main] INFO  c.e.e.c.l.manager.CbLicenseManager  - License EHB_CB_MDL_ASCET is reserved.
+3074 [main] INFO  c.e.e.c.l.manager.CbLicenseManager  - License EHB_CB_BASE_ASAM is reserved.
+3386 [main] INFO  c.e.e.c.l.manager.CbLicenseManager  - License EHB_CB_MDL_CCODE is reserved.
+3682 [main] INFO  c.e.e.c.l.manager.CbLicenseManager  - License EHB_CB_PDFGEN is reserved.
+3976 [main] INFO  c.e.e.c.l.manager.CbLicenseManager  - License EHB_CB_MDL_SIMULINK is reserved.
+4222 [main] INFO  c.e.e.c.a.p.CommonCliArgumentLogger - EHANDBOOK Container Build started with the version of the product - 11.3.0 RC 1.
+4338 [main] INFO  c.e.e.c.a.p.CommonCliArgumentLogger - Input arguments passed:
+4338 [main] INFO  c.e.e.c.a.p.CommonCliArgumentLogger - i : C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\ACC_ALL_DOC.app
+4338 [main] INFO  c.e.e.c.a.p.CommonCliArgumentLogger - o : C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc
+4338 [main] INFO  c.e.e.c.a.p.CommonCliArgumentLogger - n : ACC_EHB
+4338 [main] INFO  c.e.e.c.a.p.CommonCliArgumentLogger - splitapp
+4338 [main] INFO  c.e.e.c.a.p.CommonCliArgumentLogger - gensvg
+4339 [main] INFO  c.e.e.c.a.p.CommonCliArgumentLogger - branding : C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\system\doc\ehb_configs\branding.properties
+4339 [main] INFO  c.e.e.c.a.p.CommonCliArgumentLogger - css : C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\system\doc\ehb_configs\css
+4341 [main] INFO  c.e.e.c.a.p.CommonCliArgumentLogger - All JVM arguments: [-Xms256m -Xmx8g -Dfile.encoding=UTF-8 -Dorg.eclipse.update.reconcile=false -Dcom.etas.esdl.disableAllValidations=true --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED -DrectangularBlocksWithMask=Subsystem,S-Function,Constant,ToFile,Polyval,Integrator,MinMax,Product,SignalSpecification,Display,ToWorkspace,DataTypeDuplicate,SampleTimeMath,DiscreteIntegrator,Signum,Bias,UnaryMinus,Math,Assignment,RelationalOperator,Abs,Logic,Trignometry,Rounding,Find,ArithShift -DtypesForMaskGenerationCaching=TL_Abs,TL_Arithshift,TL_Assignment,TL_BusInport,TL_BusOutport,TL_DataStoreMemory,TL_DataStoreRead,TL_DataStoreWrite,TL_Gain,TL_Inport,TL_LogicalOperator,TL_Lookup1D,TL_Lookup2D,TL_Math,TL_Merge,TL_MinMax,TL_MultiPortSwitch,TL_Outport,TL_Product,TL_RelationalOperator,TL_Saturate,TL_Signum,TL_Sqrt,TL_SRFlipFlop,TL_Sum,TL_Switch,TL_UnitDelay]
+4348 [main] INFO  c.e.e.c.util.ContainerStylingUtil   - Default CSS and XSL styling is used.
+4349 [main] INFO  c.e.e.c.util.ContainerStylingUtil   - Start CSS folder creation.
+4371 [main] INFO  c.e.e.c.util.ContainerStylingUtil   - CSS folder creation successful.
+11934 [Worker-2: Building] INFO  o.e.xtext.builder.impl.XtextBuilder - Built EUnitSupport in 3033 ms
+12126 [main] INFO  o.e.xtext.builder.impl.XtextBuilder - Built EUnitSupport in 149 ms
+12781 [main] INFO  o.e.xtext.builder.impl.XtextBuilder - Built Commons in 358 ms
+19635 [main] INFO  o.e.xtext.builder.impl.XtextBuilder - Built SystemLib in 6035 ms
+20698 [main] INFO  o.e.xtext.builder.impl.XtextBuilder - Built ACCSystem in 741 ms
+20900 [Worker-2: Building] INFO  o.e.xtext.builder.impl.XtextBuilder - Built Commons in 96 ms
+21207 [main] INFO  com.etas.ehcb.CommandExecutor       - No view is applied for container generation
+21274 [main] INFO  c.e.e.a.t.m.l.AppMetadataLoader     - Total number of valid class files collected for metadata processing are [2].
+21274 [main] INFO  c.e.e.a.t.m.l.AppMetadataLoader     - Loading of Metadata information is in progress.
+Please wait...
+21626 [main] INFO  c.e.e.a.t.m.l.AppMetadataLoader     - Loading of Metadata file successful.[C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\ACC\ACC_SWC.esdl]
+21674 [main] INFO  c.e.e.a.t.m.l.AppMetadataLoader     - Loading of Metadata file successful.[C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\SENSED_DATA\Sensed_Data_SWC.esdl]
+21674 [main] INFO  c.e.e.a.t.m.l.AppMetadataLoader     - Loading of Metadata information is complete.
+21804 [main] INFO  e.c.s.i.r.SimulinkLibraryModelCache - Simulink library cache size is set to 100
+22013 [main] INFO  c.e.e.b.c.ConversionProcessor       - Start conversion of FC EhbTitlePage
+22200 [main] INFO  c.e.e.c.dita.DitaTopicSerializer    - DITA serialization success: C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\temp_ID8199331905300\documentation\EhbTitlePage
+22204 [main] INFO  c.e.e.c.jobs.ConversionJobManager   - Waiting for image conversion job to complete...
+Please wait...
+24786 [main] INFO  c.e.e.b.c.ConversionProcessor       - End conversion of FC EhbTitlePage
+24788 [main] INFO  c.e.e.b.c.ConversionProcessor       - Start conversion of FC ACC_SWC
+66326 [main] INFO  com.etas.ehcb.mdx2dita.Converter    - Data definition to DITA conversion successful.
+66349 [main] INFO  c.e.e.c.dita.DitaTopicSerializer    - DITA serialization success: C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\temp_ID8199331905300\documentation\ACC_SWC
+67053 [main] INFO  c.e.e.c.a.c.Ascet7ModelProcessor    - Write manifest file to: C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\temp_ID8199331905300\documentation\ACC_SWC\models/ACC_SWC.componentmanifest
+67063 [main] INFO  c.e.e.a.Ascet7ToKaomFacade          - ASCET-DEVELOPER model conversion completed successfully C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\ACC_ALL_DOC.app
+67065 [main] INFO  c.e.e.a.Ascet7ToKaomFacade          - Number of elements converted: Static Classes: 1, Class Instances: 1, Containers: 1, Basic blocks, Elements: 17, StateMachine States: 0, StateMachine Regions: 0 & Deepest level of nesting: 3
+67660 [main] INFO  c.e.m.c.k.i.g.KlighdSvgGenerator    - SVG image generated by Klighd: C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\temp_ID8199331905300\documentation\ACC_SWC\images\aad1.svg
+67660 [main] INFO  c.e.e.c.jobs.ConversionJobManager   - Waiting for image conversion job to complete...
+Please wait...
+67677 [main] INFO  c.e.e.c.dita.DitaTopicSerializer    - DITA serialization success: C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\temp_ID8199331905300\documentation\ACC_SWC
+68552 [main] INFO  c.e.e.b.c.ConversionProcessor       - End conversion of FC ACC_SWC
+68556 [main] INFO  c.e.e.b.c.ConversionProcessor       - Start conversion of FC Sensed_Data_SWC
+68636 [main] INFO  com.etas.ehcb.mdx2dita.Converter    - Data definition to DITA conversion successful.
+68643 [main] INFO  c.e.e.c.dita.DitaTopicSerializer    - DITA serialization success: C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\temp_ID8199331905300\documentation\Sensed_Data_SWC
+68696 [main] INFO  c.e.e.c.a.c.Ascet7ModelProcessor    - Write manifest file to: C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\temp_ID8199331905300\documentation\Sensed_Data_SWC\models/Sensed_Data_SWC.componentmanifest
+68700 [main] INFO  c.e.e.a.Ascet7ToKaomFacade          - ASCET-DEVELOPER model conversion completed successfully C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\ACC_ALL_DOC.app
+68700 [main] INFO  c.e.e.a.Ascet7ToKaomFacade          - Number of elements converted: Static Classes: 1, Class Instances: 0, Containers: 0, Basic blocks, Elements: 8, StateMachine States: 0, StateMachine Regions: 0 & Deepest level of nesting: 1
+68774 [main] INFO  c.e.m.c.k.i.g.KlighdSvgGenerator    - SVG image generated by Klighd: C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\temp_ID8199331905300\documentation\Sensed_Data_SWC\images\aad2.svg
+68774 [main] INFO  c.e.e.c.jobs.ConversionJobManager   - Waiting for image conversion job to complete...
+Please wait...
+68781 [main] INFO  c.e.e.c.dita.DitaTopicSerializer    - DITA serialization success: C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\temp_ID8199331905300\documentation\Sensed_Data_SWC
+69483 [main] INFO  c.e.e.b.c.ConversionProcessor       - End conversion of FC Sensed_Data_SWC
+69516 [main] INFO  c.e.e.b.c.ConversionProcessor       - Conversion process complete for container input.
+69559 [main] INFO  c.e.e.c.u.SearchIndexGenerationUtil - Indexing in progress...
+Please wait...
+69606 [main] INFO  c.e.m.c.s.i.IndexGeneratorRunnable  - Input file is C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\temp_ID8199331905300\main.ditamap.
+69619 [main] INFO  c.e.m.c.s.i.IndexGeneratorRunnable  - Index will be written to C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\temp_ID8199331905300\.search_index.
+69664 [main] INFO  c.e.m.c.search.impl.MasterCrawler   - ref count map size is 11
+69677 [main] INFO  c.e.m.c.search.impl.MasterCrawler   - scheduling crawling done. Awaiting completion.
+69798 [main] INFO  c.e.m.c.s.i.IndexGeneratorRunnable  - Finished crawling round.
+70124 [main] INFO  c.e.m.c.s.impl.IndexingStatsDumper  -  Done!
+ Entities crawled: 11
+ Datagrams indexed: 109
+ Time: 0m 0s
+ Index size: 0MB 11KB
+
+70308 [main] INFO  com.etas.ehcb.CommandExecutor       - Indexing is complete.
+70464 [main] INFO  com.etas.ehcb.CommandExecutor       - Zipping is complete.
+70514 [main] INFO  com.etas.ehcb.CommandExecutor       - Container generation success.
+70514 [main] INFO  com.etas.ehcb.CommandExecutor       - Container has been generated at: C:\Users\******\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\ACC_EHB.ehb
+70514 [main] INFO  ROOT                                - Number of ERROR in log: 0
+70514 [main] INFO  ROOT                                - Number of WARNING in log: 0
+70514 [main] INFO  ROOT                                - Number of Broken Images in log: 0
+70523 [main] INFO  com.etas.ehcb.CommandExecutor       - Delete temporary files.
+70524 [main] INFO  com.etas.ehcb.CommandExecutor       - Start deleting temporary files/folders...
+70563 [main] INFO  com.etas.ehcb.CommandExecutor       - Deleting temporary files/folders completed!
+Generated EHB file C:\Users\dya9fe\ETAS\ASCET-DEVELOPER-7.9.0\ws_bcw\ACCSystem\doc\ACC_EHB.ehb

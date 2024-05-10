@@ -1,0 +1,111 @@
+classType SENSED_DATA.Sensed_Data_SWC
+blockdiagramSpecification Main {
+	methodBody proc_10ms {
+		outPin active {
+			connection_16, connection_17
+		}
+	}
+	subtraction at (271, 126) {
+		inPin connection_1 {
+			bendpoints (120, 0)
+		}
+		inPin connection_2 {
+			bendpoints (120, 0)
+		}
+		outPin {
+			connection_6
+		}
+	}
+	subtraction at (281, 276) {
+		inPin connection_3 {
+			bendpoints (130, 0)
+		}
+		inPin connection_4 {
+			bendpoints (130, 0)
+		}
+		outPin {
+			connection_8
+		}
+	}
+	simpleIdentifier interfaces.messages.Actual_Position_LC at (111, 95) {
+		label at (0, -1)
+		outPin {
+			connection_1
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.messages.Actual_Position_EC at (111, 165) {
+		label at (0, -1)
+		outPin {
+			connection_2
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.messages.Actual_Velocity_LC at (111, 245) {
+		label at (0, -1)
+		outPin {
+			connection_3
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.messages.Actual_Velocity_EC at (111, 315) {
+		label at (0, -1)
+		outPin {
+			connection_4
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier interfaces.messages.Relative_Distance at (391, 135) {
+		label at (0, -1)
+		inPin connection_6
+		sequenceCall {
+			inPin connection_16
+		}
+	}
+	simpleIdentifier interfaces.messages.Relative_Velocity at (381, 285) {
+		label at (0, -1)
+		inPin connection_8
+		sequenceCall {
+			inPin connection_17
+		}
+	}
+}
+blockdiagramSpecification Ini {
+	methodBody proc_ini {
+		outPin active {
+			connection_19, connection_18
+		}
+	}
+	literal Numeric "0.0" at (211, 153) size (49, 0) {
+		outPin {
+			connection_14
+		}
+	}
+	literal Numeric "0.0" at (211, 233) size (49, 0) {
+		outPin {
+			connection_12
+		}
+	}
+	simpleIdentifier interfaces.messages.Relative_Distance at (351, 155) {
+		label at (0, -1)
+		inPin connection_14
+		sequenceCall {
+			inPin connection_18
+		}
+	}
+	simpleIdentifier interfaces.messages.Relative_Velocity at (361, 235) {
+		label at (0, -1)
+		inPin connection_12
+		sequenceCall {
+			inPin connection_19
+		}
+	}
+}
