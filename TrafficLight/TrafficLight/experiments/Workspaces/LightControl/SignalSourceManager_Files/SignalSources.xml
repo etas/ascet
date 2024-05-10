@@ -1,0 +1,13 @@
+<?SCHEMA schemaVersion="1.0"?>
+<SignalSourcesConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/Program%20Files/Common%20Files/ETAS/Experiment%20Environment/3.8/Schemas/EE.Data.SignalSources.xsd" xsi:type="ETAS.EE.Data.SignalSourcesConfigurationType">
+  <SignalSourcesData xsi:type="ETAS.EE.Data.PluginDataListType">
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="IDf666a08e-c083-4b2f-b395-000bced3496c" pluginID="System" rootFolder="System_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="IDe0f359d1-0605-4625-8faa-c6e1605fefed" type="" name="Configuration" file="Configuration.xml" />
+      </Documents>
+    </Item>
+  </SignalSourcesData>
+  <SignalSourceDeclarations xsi:type="ETAS.EE.Data.SignalSourceDeclarationListType">
+    <Item xsi:type="ETAS.EE.Data.SignalSourceDeclarationType" id="ID4d3f2c68-b0dd-4cfe-b568-95f9fc89c5ba" type="VP" signalSourceId="System" name="LightControl" active="true" />
+  </SignalSourceDeclarations>
+</SignalSourcesConfiguration>

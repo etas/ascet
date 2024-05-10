@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PropertySets>
+  <PropertySet name="Options">
+    <PropertySet name="WorkspaceHandling">
+      <Property name="OpenMode" type="StringProperty">LastExperiment</Property>
+      <Property name="DefaultExperiment" type="StringProperty" />
+      <Property name="LastWorkspaceLocation" type="StringProperty">C:\Users\dya9fe\ETAS\ASCET-DEVELOPER-7.9.0\ws_acc\TrafficLight\experiments\Workspaces\LightControl\LightControl.eew</Property>
+    </PropertySet>
+    <PropertySet name="ETargetINTECRIO">
+      <PropertySet name="Options">
+        <Property name="DEFAULT_ACQUISITION_TASK" type="StringProperty">Task0</Property>
+      </PropertySet>
+    </PropertySet>
+    <PropertySet name="SignalSources">
+      <PropertySet name="StateManagement">
+        <Property name="DownloadAfterOpenExperiment" type="BoolProperty">False</Property>
+        <Property name="StartMeasurementAfterDownload" type="BoolProperty">True</Property>
+        <Property name="StartSimulationAfterDownload" type="BoolProperty">True</Property>
+        <Property name="ExecuteStartUpStepsWhenAutomated" type="BoolProperty">False</Property>
+        <Property name="SILSimulationTime" type="DoubleProperty">-1</Property>
+        <Property name="SILSimulationTimeUnit" type="StringProperty">seconds</Property>
+        <Property name="SILSimulationMode" type="StringProperty">Adaptive</Property>
+      </PropertySet>
+    </PropertySet>
+    <PropertySet name="SignalGenerator">
+      <Property name="DefaultStopBehaviour" type="StringProperty">Lastvalue</Property>
+    </PropertySet>
+  </PropertySet>
+</PropertySets>

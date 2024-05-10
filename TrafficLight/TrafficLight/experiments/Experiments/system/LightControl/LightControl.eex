@@ -1,0 +1,53 @@
+<?SCHEMA schemaVersion="1.0"?>
+<Experiment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:/Program%20Files/Common%20Files/ETAS/Experiment%20Environment/3.8/Schemas/EE.Data.Experiment.xsd" xsi:type="ETAS.EE.Data.ExperimentType">
+  <PluginData xsi:type="ETAS.EE.Data.PluginDataListType">
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="IDd0187f01-303b-4f1f-8872-6de7dcda5ef2" pluginID="Options" rootFolder="Options_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="ID0b20ffb5-8192-4dda-bbe7-5526f1e61b7a" type="" name="Options" file="Options.opt" />
+      </Documents>
+    </Item>
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="ID6f29143a-862f-45df-9f9f-712961d78ad9" pluginID="FilterDataPlugin" rootFolder="FilterDataPlugin_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="ID72176dd3-10e4-4b65-8c55-730042832ced" type="" name="FilterConfigurations" file="FilterConfigurations.xml" />
+      </Documents>
+    </Item>
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="ID8036e13b-4747-4fea-b0aa-ec50ab19c68f" pluginID="InstrumentationPlugin" rootFolder="InstrumentationPlugin_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="ID7c98641c-5299-4685-bb36-793bfd90da90" type="" name="WidgetsUIData" file="WidgetsUI.xml" />
+      </Documents>
+    </Item>
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="ID6abc9ab3-dff7-4d46-8094-6ace7f86762b" pluginID="DataloggerPlugin" rootFolder="DataloggerPlugin_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="IDce3672a5-5b63-41e2-89ef-d4689ca3a26c" type="" name="DataloggerData" file="Datalogger.xml" />
+      </Documents>
+    </Item>
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="ID42fa20f2-b8ac-4927-8f9d-f86eefcd9bc9" pluginID="CommonSignalGeneratorPlugin" rootFolder="CommonSignalGeneratorPlugin_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="IDc827c9c1-9e72-4b2c-8ea4-287400a0663f" type="" name="SGConfiguration" file="SignalGenerator.xml" />
+      </Documents>
+    </Item>
+  </PluginData>
+  <ExperimentFiles xsi:type="ETAS.EE.Data.ExperimentFilesType">
+    <mappingFiles xsi:type="ETAS.EE.Data.MappingFileListType" />
+    <dataloggerCfgFiles xsi:type="ETAS.EE.Data.DataloggerCfgFileListType" />
+    <parameterFiles xsi:type="ETAS.EE.Data.ParameterFileListType" />
+    <rtPluginFiles xsi:type="ETAS.EE.Data.RTPluginFileListType" />
+    <scriptRecorderFiles xsi:type="ETAS.EE.Data.ScriptRecorderFileListType" />
+  </ExperimentFiles>
+  <ExperimentInfo xsi:type="ETAS.EE.Data.ExperimentInfoType">
+    <DateTime xsi:type="ETAS.EE.Data.DateTimeInfoType" id="ID4bf54518-e196-493d-adbf-a8d30bb1bbd4" Created="2021-10-29T13:36:44.579Z" LastOpened="2024-05-10T11:44:22.068Z" LastSaved="2024-05-10T11:45:12.978Z" />
+    <Version xsi:type="ETAS.EE.Data.VersionInfoType" id="ID775627f5-1745-4068-8282-6fe33f536a72" Created="3.7.14.49047" LastSaved="3.8.5.253" MinRequired="3.7" />
+  </ExperimentInfo>
+  <ExperimentEventHooks xsi:type="ETAS.EE.Data.EventHooksListType">
+    <item xsi:type="ETAS.EE.Data.EventHooksType" hookName="OnPreCloseExperiment" externalFunction="" enabled="false" />
+    <item xsi:type="ETAS.EE.Data.EventHooksType" hookName="OnPostCloseExperiment" externalFunction="" enabled="false" />
+    <item xsi:type="ETAS.EE.Data.EventHooksType" hookName="OnPreDownloadExperiment" externalFunction="" enabled="false" />
+    <item xsi:type="ETAS.EE.Data.EventHooksType" hookName="OnPostDownloadExperiment" externalFunction="" enabled="false" />
+    <item xsi:type="ETAS.EE.Data.EventHooksType" hookName="OnPreStartSimulation" externalFunction="" enabled="false" />
+    <item xsi:type="ETAS.EE.Data.EventHooksType" hookName="OnPostStartSimulation" externalFunction="" enabled="false" />
+    <item xsi:type="ETAS.EE.Data.EventHooksType" hookName="OnPreStopSimulation" externalFunction="" enabled="false" />
+    <item xsi:type="ETAS.EE.Data.EventHooksType" hookName="OnPostStopSimulation" externalFunction="" enabled="false" />
+    <item xsi:type="ETAS.EE.Data.EventHooksType" hookName="OnPreDisconnected" externalFunction="" enabled="false" />
+    <item xsi:type="ETAS.EE.Data.EventHooksType" hookName="OnPostDisconnected" externalFunction="" enabled="false" />
+  </ExperimentEventHooks>
+</Experiment>
