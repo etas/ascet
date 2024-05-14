@@ -1,0 +1,350 @@
+classType ascet.Lib.LIB_4BitCountTest
+blockdiagramSpecification Main {
+	methodBody LIB_CheckOkay {
+		outPin active {
+			connection_4, connection_16, connection_36, connection_27, connection_25
+		}
+	}
+	methodArgumentIdentifier LIB_CheckOkay.LIB_CountIn at (201, 85) {
+		label at (-70, -1)
+		outPin {
+			connection_1
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	equal at (351, 86) {
+		inPin connection_1
+		inPin connection_2 {
+			bendpoints (100, 0), (100, -10)
+		}
+		outPin {
+			connection_3
+		}
+	}
+	literal Numeric "0" at (191, 113) size (49, 0) {
+		outPin {
+			connection_2
+		}
+	}
+	conditionalSelect at (461, 171) {
+		inPin connection_13 {
+			bendpoints (10, 0)
+		}
+		inPin CASE_CONDITION connection_3 {
+			bendpoints (90, 0)
+		}
+		inPin connection_7 {
+			bendpoints (110, 0)
+		}
+		outPin {
+			connection_5
+		}
+	}
+	simpleIdentifier LIB_OkayThisCycle at (621, 195) {
+		label at (0, -1)
+		inPin connection_5
+		outPin sequenceCall {
+			inPin connection_4
+		}
+	}
+	simpleIdentifier LIB_CounterPrevious at (191, 235) {
+		label at (-50, -1)
+		inPin outPin {
+			connection_6
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	equal at (311, 236) {
+		inPin connection_6
+		inPin connection_8 {
+			bendpoints (70, 0)
+		}
+		outPin {
+			connection_7
+		}
+	}
+	literal Numeric "15" at (191, 263) size (49, 0) {
+		outPin {
+			connection_8
+		}
+	}
+	methodArgumentIdentifier LIB_CheckOkay.LIB_CountIn at (201, 145) {
+		label at (-60, -1)
+		outPin {
+			connection_11
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier LIB_CounterPrevious at (191, 175) {
+		label at (-50, -1)
+		inPin outPin {
+			connection_9
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	addition at (311, 176) {
+		inPin connection_9
+		inPin connection_10 {
+			bendpoints (40, 0), (40, -10)
+		}
+		outPin {
+			connection_12
+		}
+	}
+	literal Numeric "1" at (191, 203) size (49, 0) {
+		outPin {
+			connection_10
+		}
+	}
+	equal at (411, 146) {
+		inPin connection_11
+		inPin connection_12 {
+			bendpoints (20, 0), (20, -20)
+		}
+		outPin {
+			connection_13
+		}
+	}
+	simpleIdentifier LIB_OkayThisCycle at (191, 315) {
+		label at (0, -1)
+		inPin outPin {
+			connection_14
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	conditionalSelect at (521, 371) {
+		inPin connection_33 {
+			bendpoints (40, 0)
+		}
+		inPin CASE_CONDITION connection_14 {
+			bendpoints (300, 0)
+		}
+		inPin connection_18 {
+			bendpoints (40, 0)
+		}
+		outPin {
+			connection_17
+		}
+	}
+	simpleIdentifier LIB_PASSCYCLESOKAY at (391, 375) {
+		label at (-90, -1)
+		outPin {
+			connection_32
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier LIB_Counter at (191, 415) {
+		label at (-60, -1)
+		inPin outPin {
+			connection_21
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier LIB_Counter at (611, 395) {
+		label at (0, -1)
+		inPin connection_17
+		outPin sequenceCall {
+			inPin connection_16
+		}
+	}
+	maximum at (441, 426) {
+		inPin connection_20
+		inPin connection_19 {
+			bendpoints (10, 0)
+		}
+		outPin {
+			connection_18
+		}
+	}
+	literal Numeric "0" at (381, 443) size (49, 0) {
+		outPin {
+			connection_19
+		}
+	}
+	subtraction at (291, 416) {
+		inPin connection_21
+		inPin connection_22 {
+			bendpoints (30, 0), (30, -10)
+		}
+		outPin {
+			connection_20
+		}
+	}
+	literal Numeric "1" at (201, 443) size (49, 0) {
+		outPin {
+			connection_22
+		}
+	}
+	simpleIdentifier LIB_Counter at (191, 535) {
+		label at (-60, -1)
+		inPin outPin {
+			connection_23
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	equal at (291, 536) {
+		inPin connection_23
+		inPin connection_24 {
+			bendpoints (50, 0)
+		}
+		outPin {
+			connection_38
+		}
+	}
+	literal Numeric "0" at (191, 563) size (49, 0) {
+		outPin {
+			connection_24
+		}
+	}
+	return at (611, 725) {
+		label at (0, 0)
+		inPin connection_41
+		sequenceCall {
+			inPin connection_25
+		}
+	}
+	simpleIdentifier LIB_CounterPrevious at (611, 675) {
+		label at (0, -1)
+		inPin connection_28
+		outPin sequenceCall {
+			inPin connection_27
+		}
+	}
+	methodArgumentIdentifier LIB_CheckOkay.LIB_CountIn at (201, 675) {
+		label at (0, -1)
+		outPin {
+			connection_28
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier LIB_Counter at (191, 345) {
+		label at (-60, -1)
+		inPin outPin {
+			connection_29
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	literal Numeric "1" at (201, 373) size (49, 0) {
+		outPin {
+			connection_30
+		}
+	}
+	addition at (291, 346) {
+		inPin connection_29
+		inPin connection_30 {
+			bendpoints (30, 0), (30, -10)
+		}
+		outPin {
+			connection_31
+		}
+	}
+	minimum at (441, 356) {
+		inPin connection_31
+		inPin connection_32
+		outPin {
+			connection_33
+		}
+	}
+	simpleIdentifier LIB_CheckOk at (191, 595) {
+		label at (0, -1)
+		inPin outPin {
+			connection_35
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	conditionalSelect at (441, 581) {
+		inPin connection_35
+		inPin CASE_CONDITION connection_38 {
+			bendpoints (130, 0)
+		}
+		inPin connection_39
+		outPin {
+			connection_34
+		}
+	}
+	conditionalSelect at (551, 591) {
+		inPin connection_34
+		inPin CASE_CONDITION connection_44 {
+			bendpoints (240, 0)
+		}
+		inPin connection_40
+		outPin {
+			connection_37
+		}
+	}
+	simpleIdentifier LIB_CheckOk at (611, 615) {
+		label at (0, -1)
+		inPin connection_37
+		outPin sequenceCall {
+			inPin connection_36
+		}
+	}
+	literal Boolean "true" at (381, 613) size (49, 0) {
+		outPin {
+			connection_39
+		}
+	}
+	literal Boolean "false" at (491, 623) size (49, 0) {
+		outPin {
+			connection_40
+		}
+	}
+	simpleIdentifier LIB_CheckOk at (191, 725) {
+		label at (0, -1)
+		inPin outPin {
+			connection_41
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier LIB_Counter at (191, 475) {
+		label at (-40, -1)
+		inPin outPin {
+			connection_42
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	greaterOrEqual at (291, 476) {
+		inPin connection_42
+		inPin connection_43 {
+			bendpoints (20, 0), (20, -10)
+		}
+		outPin {
+			connection_44
+		}
+	}
+	simpleIdentifier LIB_PASSCYCLESFAIL at (201, 505) {
+		label at (-60, -1)
+		outPin {
+			connection_43
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+}

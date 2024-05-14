@@ -1,0 +1,717 @@
+classType ascet.APP.APP_LeverLights
+blockdiagramSpecification Main {
+	methodBody APP_LightCtrl {
+		outPin active {
+			connection_3, connection_24, connection_23
+		}
+	}
+	sequenceableContainer APP_FlashGenerator at (211, 201) size (10, 10) {
+		label at (0, 1)
+		complexIdentifier APP_FlashCounter at (251, 71) size (14, 5) {
+			label at (0, 1)
+			methodCall ascet.Lib.LIB_TimerUp.LIB_Time {
+				argumentPin LIB_Reset at (left, 0) connection_9
+				argumentPin LIB_DT at (left, 2) connection_4 {
+					bendpoints (130, 0)
+				}
+				returnPin at (right, 1) {
+					connection_6
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier types.SY_10ms at (71, 125) {
+			label at (-20, -1)
+			outPin {
+				connection_4
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_FlashTime at (471, 85) {
+			label at (-20, -1)
+			inPin connection_6
+			outPin sequenceCall at (-40, -14) {
+				inPin connection_5
+			}
+		}
+		simpleIdentifier APP_FlashTime at (61, 65) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_7
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		greaterOrEqual at (161, 66) {
+			inPin connection_7
+			inPin connection_8 {
+				bendpoints (50, 0)
+			}
+			outPin {
+				connection_9
+			}
+		}
+		simpleIdentifier APP_FLASHTOGGLETIME at (71, 95) {
+			label at (-50, -1)
+			outPin {
+				connection_8
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_FlashTime at (61, 185) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_10
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		equal at (201, 186) {
+			inPin connection_10
+			inPin connection_11 {
+				bendpoints (90, 0)
+			}
+			outPin {
+				connection_12
+			}
+		}
+		literal Numeric "0.0" at (61, 213) size (49, 0) {
+			outPin {
+				connection_11
+			}
+		}
+		simpleIdentifier APP_FlashState at (471, 235) {
+			label at (-30, -1)
+			inPin connection_14
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_13
+			}
+		}
+		conditionalSelect at (401, 211) {
+			inPin connection_17 {
+				bendpoints (90, 0)
+			}
+			inPin CASE_CONDITION connection_12 {
+				bendpoints (180, 0)
+			}
+			inPin connection_16
+			outPin {
+				connection_14
+			}
+		}
+		simpleIdentifier APP_FlashState at (261, 245) {
+			label at (0, -1)
+			inPin outPin {
+				connection_15
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		not at (341, 241) {
+			inPin connection_15
+			outPin {
+				connection_16
+			}
+		}
+		simpleIdentifier APP_FlashState at (261, 215) {
+			label at (0, -1)
+			inPin outPin {
+				connection_17
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		freeComment at (71, 31) {
+			"Create a simple up timer which resets when a calibrated time is reached"
+		}
+		freeComment at (71, 161) {
+			"If the time is reset to zero (when time is reached), toggle the state of the \'flash\'"
+		}
+		simpleIdentifier APP_FlashState at (61, 315) {
+			label at (-20, -1)
+			inPin outPin {
+				connection_18
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		conditionalSelect at (281, 331) {
+			inPin connection_19
+			inPin CASE_CONDITION connection_18 {
+				bendpoints (190, 0)
+			}
+			inPin connection_20 {
+				bendpoints (100, 0)
+			}
+			outPin {
+				connection_22
+			}
+		}
+		simpleIdentifier APP_FLASHOFFDUTY at (141, 345) {
+			label at (-60, -1)
+			outPin {
+				connection_19
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_FLASHONDUTY at (141, 375) {
+			label at (-60, -1)
+			outPin {
+				connection_20
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_FlashDuty at (471, 355) {
+			label at (-30, -1)
+			inPin connection_22
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_21
+			}
+		}
+		freeComment at (71, 281) {
+			"Based on the state of the flash, set an \'on\' or an \'off\' duty cycle to request of the lamp drives"
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_5, connection_13, connection_21
+			}
+			sequenceCall {
+				inPin connection_3
+			}
+		}
+	}
+	sequenceableContainer APP_LightDuty at (531, 201) size (10, 10) {
+		label at (0, 1)
+		complexIdentifier APP_LightDuty at (251, 71) size (17, 12) {
+			label at (0, 1)
+			methodCall ascet.APP.APP_LightDutySwitch.APP_LightDuty {
+				argumentPin APP_SwitchState at (left, 0) connection_32 {
+					bendpoints (40, 0)
+				}
+				argumentPin APP_FlashDuty at (left, 3) connection_31
+				argumentPin APP_Backlight at (left, 6) connection_30
+				argumentPin APP_TCMOkay at (left, 9) connection_29
+				returnPin at (right, 5) {
+					connection_34
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier APP_TCMLinkOkay at (111, 165) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_29
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_FlashDuty at (111, 105) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_31
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexMethodArgumentIdentifier APP_LightCtrl.IN_LeverLights at (91, 61) size (10, 3) {
+			label at (-50, 1)
+			elementCall (types.T_LeverIn.TCM_ParkLight) {
+				returnPin at (right, 0) {
+					connection_32
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier APP_FlashDuty at (101, 255) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_35
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier APP_LightDuty at (251, 221) size (17, 12) {
+			label at (0, 1)
+			methodCall ascet.APP.APP_LightDutySwitch.APP_LightDuty {
+				argumentPin APP_SwitchState at (left, 0) connection_65 {
+					bendpoints (50, 0)
+				}
+				argumentPin APP_FlashDuty at (left, 3) connection_35
+				argumentPin APP_Backlight at (left, 6) connection_36
+				argumentPin APP_TCMOkay at (left, 9) connection_39
+				returnPin at (right, 5) {
+					connection_38
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier APP_TCMLinkOkay at (101, 315) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_39
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexMethodArgumentIdentifier APP_LightCtrl.IN_LeverLights at (81, 211) size (10, 3) {
+			label at (-50, 1)
+			elementCall (types.T_LeverIn.TCM_NeutralLight) {
+				returnPin at (right, 0) {
+					connection_65
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier APP_FlashDuty at (101, 415) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_41
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier APP_LightDuty at (251, 381) size (17, 12) {
+			label at (0, 1)
+			methodCall ascet.APP.APP_LightDutySwitch.APP_LightDuty {
+				argumentPin APP_SwitchState at (left, 0) connection_66 {
+					bendpoints (50, 0)
+				}
+				argumentPin APP_FlashDuty at (left, 3) connection_41
+				argumentPin APP_Backlight at (left, 6) connection_42
+				argumentPin APP_TCMOkay at (left, 9) connection_45
+				returnPin at (right, 5) {
+					connection_44
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier APP_TCMLinkOkay at (101, 475) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_45
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexMethodArgumentIdentifier APP_LightCtrl.IN_LeverLights at (81, 361) size (10, 3) {
+			label at (-50, 1)
+			elementCall (types.T_LeverIn.TCM_ReverseLight) {
+				returnPin at (right, 1) {
+					connection_66
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier APP_ReverseDuty at (481, 435) {
+			label at (-40, -1)
+			inPin connection_44
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_43
+			}
+		}
+		simpleIdentifier APP_FlashDuty at (651, 105) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_47
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier APP_LightDuty at (801, 71) size (17, 12) {
+			label at (0, 1)
+			methodCall ascet.APP.APP_LightDutySwitch.APP_LightDuty {
+				argumentPin APP_SwitchState at (left, 0) connection_67 {
+					bendpoints (50, 0)
+				}
+				argumentPin APP_FlashDuty at (left, 3) connection_47
+				argumentPin APP_Backlight at (left, 6) connection_48
+				argumentPin APP_TCMOkay at (left, 9) connection_51
+				returnPin at (right, 5) {
+					connection_50
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier APP_TCMLinkOkay at (651, 165) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_51
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexMethodArgumentIdentifier APP_LightCtrl.IN_LeverLights at (631, 61) size (10, 3) {
+			label at (-50, 1)
+			elementCall (types.T_LeverIn.TCM_DriveLight) {
+				returnPin at (right, 0) {
+					connection_67
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier APP_FlashDuty at (651, 255) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_53
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier APP_LightDuty at (801, 221) size (17, 12) {
+			label at (0, 1)
+			methodCall ascet.APP.APP_LightDutySwitch.APP_LightDuty {
+				argumentPin APP_SwitchState at (left, 0) connection_73 {
+					bendpoints (50, 0)
+				}
+				argumentPin APP_FlashDuty at (left, 3) connection_53
+				argumentPin APP_Backlight at (left, 6) connection_54
+				argumentPin APP_TCMOkay at (left, 9) connection_57
+				returnPin at (right, 5) {
+					connection_56
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier APP_TCMLinkOkay at (651, 315) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_57
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexMethodArgumentIdentifier APP_LightCtrl.IN_LeverLights at (631, 211) size (10, 3) {
+			label at (-50, 1)
+			elementCall (types.T_LeverIn.TCM_SportLight) {
+				returnPin at (right, 0) {
+					connection_73
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier APP_FlashDuty at (651, 415) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_59
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier APP_LightDuty at (801, 381) size (17, 12) {
+			label at (0, 1)
+			methodCall ascet.APP.APP_LightDutySwitch.APP_LightDuty {
+				argumentPin APP_SwitchState at (left, 0) connection_74 {
+					bendpoints (50, 0)
+				}
+				argumentPin APP_FlashDuty at (left, 3) connection_59
+				argumentPin APP_Backlight at (left, 6) connection_60
+				argumentPin APP_TCMOkay at (left, 9) connection_63
+				returnPin at (right, 5) {
+					connection_62
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier APP_TCMLinkOkay at (651, 475) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_63
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexMethodArgumentIdentifier APP_LightCtrl.IN_LeverLights at (631, 371) size (10, 3) {
+			label at (-50, 1)
+			elementCall (types.T_LeverIn.TCM_ManualLight) {
+				returnPin at (right, 0) {
+					connection_74
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier APP_ParkDuty at (481, 125) {
+			label at (-50, -1)
+			inPin connection_34
+			outPin sequenceCall at (-20, -14) {
+				inPin connection_68
+			}
+		}
+		simpleIdentifier APP_NeutralDuty at (481, 275) {
+			label at (-50, -1)
+			inPin connection_38
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_69
+			}
+		}
+		simpleIdentifier APP_DriveDuty at (1031, 125) {
+			label at (-50, -1)
+			inPin connection_50
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_70
+			}
+		}
+		simpleIdentifier APP_SportDuty at (1031, 275) {
+			label at (-50, -1)
+			inPin connection_56
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_71
+			}
+		}
+		simpleIdentifier APP_ManualDuty at (1031, 435) {
+			label at (-50, -1)
+			inPin connection_62
+			outPin sequenceCall at (-20, -14) {
+				inPin connection_72
+			}
+		}
+		freeComment at (131, 21) {
+			"Based on the requested state from the TCM, and the state of the backlight, set a duty for each light"
+		}
+		simpleIdentifier APP_Backlight at (111, 135) {
+			label at (-20, -1)
+			inPin outPin {
+				connection_30
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_Backlight at (101, 285) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_36
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_Backlight at (101, 445) {
+			label at (-20, -1)
+			inPin outPin {
+				connection_42
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_Backlight at (651, 135) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_48
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_Backlight at (651, 285) {
+			label at (-20, -1)
+			inPin outPin {
+				connection_54
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_Backlight at (651, 445) {
+			label at (-20, -1)
+			inPin outPin {
+				connection_60
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_68, connection_69, connection_43, connection_70, connection_71, connection_72
+			}
+			sequenceCall {
+				inPin connection_23
+			}
+		}
+	}
+	sequenceableContainer APP_TCMStatus at (371, 201) size (10, 10) {
+		label at (0, 1)
+		literal enum enumerations.H_Status.H_Okay at (311, 103) size (59, 0) {
+			outPin {
+				connection_25
+			}
+		}
+		equal at (391, 86) {
+			inPin connection_26
+			inPin connection_25
+			outPin {
+				connection_28
+			}
+		}
+		complexMethodArgumentIdentifier APP_LightCtrl.IN_LeverLights at (131, 71) size (14, 4) {
+			label at (-30, 1)
+			elementCall (types.T_LeverIn.TCM_Status) {
+				returnPin at (right, 1) {
+					connection_26
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier APP_TCMLinkOkay at (541, 95) {
+			label at (-40, -1)
+			inPin connection_28
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_27
+			}
+		}
+		freeComment at (191, 41) {
+			"Check for the status of the incoming data from the TCM"
+		}
+		simpleIdentifier APP_Backlight at (591, 355) {
+			label at (-30, -1)
+			inPin connection_76
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_75
+			}
+		}
+		conditionalSelect at (511, 331) {
+			inPin connection_83
+			inPin CASE_CONDITION connection_80 {
+				bendpoints (100, 0)
+			}
+			inPin connection_77 {
+				bendpoints (300, 0)
+			}
+			outPin {
+				connection_76
+			}
+		}
+		methodArgumentIdentifier APP_LightCtrl.IN_Backlight at (171, 385) {
+			label at (-60, -1)
+			outPin {
+				connection_77
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexMethodArgumentIdentifier APP_LightCtrl.IN_LeverLights at (131, 271) size (14, 3) {
+			label at (-30, 1)
+			elementCall (types.T_LeverIn.TCM_BackLight) {
+				returnPin at (right, 0) {
+					connection_78
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		equal at (391, 276) {
+			inPin connection_78
+			inPin connection_79
+			outPin {
+				connection_80
+			}
+		}
+		literal Numeric "3" at (321, 293) size (49, 0) {
+			outPin {
+				connection_79
+			}
+		}
+		freeComment at (311, 311) {
+			"Signal Not Available"
+		}
+		equal at (391, 336) {
+			inPin connection_82
+			inPin connection_81
+			outPin {
+				connection_84
+			}
+		}
+		freeComment at (311, 371) {
+			"Backlight Off\r\n"
+		}
+		literal Numeric "1" at (321, 353) size (49, 0) {
+			outPin {
+				connection_81
+			}
+		}
+		complexMethodArgumentIdentifier APP_LightCtrl.IN_LeverLights at (131, 331) size (14, 3) {
+			label at (-30, 1)
+			elementCall (types.T_LeverIn.TCM_BackLight) {
+				returnPin at (right, 0) {
+					connection_82
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		not at (451, 341) {
+			inPin connection_84
+			outPin {
+				connection_83
+			}
+		}
+		freeComment at (191, 191) {
+			"Logic for backlight (lighting at night)\r\n1. If signal not available from CAN, use the hardware input (if fitted) to determine state\r\n2. If signal is fitted, and in the off state, then no backlight\r\n3. Otherwise (fault or on) turn on the backlight"
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_27, connection_75
+			}
+			sequenceCall {
+				inPin connection_24
+			}
+		}
+	}
+}

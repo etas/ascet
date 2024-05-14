@@ -1,0 +1,11 @@
+Component ascet.IN.IN_CANMessageInit size ( 17 , 14 ) backgroundColor #80ffff {
+	labelPosition ( 0 , 1 )
+	methodLayout initCANMsg {
+		pin IN_CANChannel ( Left , 0 )
+		pin IN_CANID ( Left , 3 )
+		pin IN_TxMsg ( Left , 6 )
+		pin IN_ExtendedMsg ( Left , 9 )
+		pin IN_MsgLength ( Left , 12 )
+		pin initCANMsg ( Right , 6 )
+	}
+}

@@ -1,0 +1,8 @@
+Component ascet.OUT.OUT_PWMOutput size ( 14 , 8 ) backgroundColor #80ffff {
+	labelPosition ( 0 , 1 )
+	methodLayout setPWMOut {
+		pin port ( Left , 0 )
+		pin duty ( Left , 3 )
+		pin freq ( Left , 6 )
+	}
+}

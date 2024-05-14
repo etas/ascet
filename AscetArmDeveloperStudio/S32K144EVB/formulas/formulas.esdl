@@ -1,0 +1,29 @@
+package formulas;
+
+formula f_ident 	{	scale = 1.0;		offset = 0.0;	}
+formula f_0p1 		{	scale = 10.0;		offset = 0.0;	}
+formula f_0p01 		{	scale = 100.0;		offset = 0.0;	}
+formula f_0p001 	{	scale = 1000.0;		offset = 0.0;	}
+formula f_anin	 	{	scale = 13107.0;	offset = 0.0;	}
+formula f_aninhr 	{	scale = 13107000.0; offset = 0.0; 	}
+formula f_0bn0 		{	scale = 1.0;		offset = 0.0;	}
+formula f_0bn1 		{	scale = 2.0;		offset = 0.0;	}
+formula f_0bn2 		{	scale = 4.0;		offset = 0.0;	}
+formula f_0bn3 		{	scale = 8.0;		offset = 0.0;	}
+formula f_0bn4 		{	scale = 16.0;		offset = 0.0;	}
+formula f_0bn5 		{	scale = 32.0;		offset = 0.0;	}
+formula f_0bn6 		{	scale = 64.0;		offset = 0.0;	}
+formula f_0bn7 		{	scale = 128.0;		offset = 0.0;	}
+formula f_0bn8 		{	scale = 256.0;		offset = 0.0;	}
+formula f_0bn9 		{	scale = 512.0;		offset = 0.0;	}
+formula f_0bn10 	{	scale = 1024.0;		offset = 0.0;	}
+formula f_0bn11 	{	scale = 2048.0;		offset = 0.0;	}
+formula f_0bn12 	{	scale = 4096.0;		offset = 0.0;	}
+formula f_0bn13 	{	scale = 8192.0;		offset = 0.0;	}
+formula f_0bn14 	{	scale = 16384.0;	offset = 0.0;	}
+formula f_0bn15 	{	scale = 32768.0;	offset = 0.0;	}
+formula f_0bn16 	{	scale = 65536.0;	offset = 0.0;	}
+formula f_0bn17 	{	scale = 131072.0;	offset = 0.0;	}
+formula f_0bn18 	{	scale = 262144.0;	offset = 0.0;	}
+formula f_0bn19 	{	scale = 524288.0;	offset = 0.0;	}
+formula f_0bn20 	{	scale = 1048576.0;	offset = 0.0;	}

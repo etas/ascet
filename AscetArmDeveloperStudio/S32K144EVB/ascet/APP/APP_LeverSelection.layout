@@ -1,0 +1,14 @@
+Component ascet.APP.APP_LeverSelection size ( 20 , 27 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout APP_LeverSelect {
+		pin IN_ParkSwitch ( Left , 0 )
+		pin IN_ReverseSwitch ( Left , 3 )
+		pin IN_NeutralSwitch ( Left , 6 )
+		pin IN_DriveSwitch ( Left , 9 )
+		pin IN_SportSwitch ( Left , 12 )
+		pin IN_ManualSwitch ( Left , 15 )
+		pin IN_PlusSwitch ( Left , 18 )
+		pin IN_MinusSwitch ( Left , 21 )
+		pin APP_LeverSelect ( Right , 10 )
+	}
+}

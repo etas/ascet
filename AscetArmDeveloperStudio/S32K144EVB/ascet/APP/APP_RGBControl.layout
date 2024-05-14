@@ -1,0 +1,24 @@
+Component ascet.APP.APP_RGBControl size ( 21 , 28 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout APP_RGBStateMachineTrig {
+		pin APP_RGBStateMachineTrig ( Top , 9 )
+	}
+	memberLayout APP_RedDuty {
+		getPinPosition ( Right , 5 )
+	}
+	memberLayout APP_GreenDuty {
+		getPinPosition ( Right , 13 )
+	}
+	memberLayout APP_BlueDuty {
+		getPinPosition ( Right , 21 )
+	}
+	memberLayout APP_Sw2 {
+		setPinPosition ( Left , 5 )
+	}
+	memberLayout APP_Sw3 {
+		setPinPosition ( Left , 13 )
+	}
+	memberLayout APP_Pot {
+		setPinPosition ( Left , 21 )
+	}
+}

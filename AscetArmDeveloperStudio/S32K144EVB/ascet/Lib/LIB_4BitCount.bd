@@ -1,0 +1,112 @@
+classType ascet.Lib.LIB_4BitCount
+blockdiagramSpecification Main {
+	methodBody LIB_4BitCount {
+		outPin active {
+			connection_5, connection_12
+		}
+	}
+	simpleIdentifier LIB_Counter at (211, 85) {
+		label at (-40, -1)
+		inPin outPin {
+			connection_1
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	equal at (311, 86) {
+		inPin connection_1
+		inPin connection_2 {
+			bendpoints (40, 0)
+		}
+		outPin {
+			connection_10
+		}
+	}
+	literal Numeric "15" at (221, 113) size (49, 0) {
+		outPin {
+			connection_2
+		}
+	}
+	conditionalSelect at (501, 161) {
+		inPin connection_8
+		inPin CASE_CONDITION connection_3 {
+			bendpoints (120, 0)
+		}
+		inPin connection_4
+		outPin {
+			connection_6
+		}
+	}
+	literal Numeric "0" at (431, 193) size (49, 0) {
+		outPin {
+			connection_4
+		}
+	}
+	simpleIdentifier LIB_Counter at (621, 185) {
+		label at (-30, -1)
+		inPin connection_6
+		outPin sequenceCall at (-30, -14) {
+			inPin connection_5
+		}
+	}
+	simpleIdentifier LIB_Counter at (211, 165) {
+		label at (-30, -1)
+		inPin outPin {
+			connection_7
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	addition at (341, 166) {
+		inPin connection_7
+		inPin connection_9 {
+			bendpoints (80, 0)
+		}
+		outPin {
+			connection_8
+		}
+	}
+	literal Numeric "1" at (211, 193) size (49, 0) {
+		outPin {
+			connection_9
+		}
+	}
+	methodArgumentIdentifier LIB_4BitCount.LIB_Reset at (221, 135) {
+		label at (-50, -1)
+		outPin {
+			connection_11
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	or at (361, 106) {
+		inPin connection_10 {
+			bendpoints (10, 0)
+		}
+		inPin connection_11 {
+			bendpoints (100, 0)
+		}
+		outPin {
+			connection_3
+		}
+	}
+	simpleIdentifier LIB_Counter at (211, 245) {
+		label at (-20, -1)
+		inPin outPin {
+			connection_13
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	return at (611, 245) {
+		label at (-50, 0)
+		inPin connection_13
+		sequenceCall at (-20, -14) {
+			inPin connection_12
+		}
+	}
+}

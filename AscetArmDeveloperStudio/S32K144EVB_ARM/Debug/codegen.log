@@ -1,0 +1,2498 @@
+Component: ARM Compiler 6.15 Tool: armlink [5dd79300]
+
+==============================================================================
+
+Loading Objects.
+
+Loading object APPInterface_EVB.o.
+              definition:  APPInterface_APP_BlueLED
+              definition:  APPInterface_APP_D10_PTB5
+              definition:  APPInterface_APP_D11_PTB4
+              definition:  APPInterface_APP_D12_PTB3
+              definition:  APPInterface_APP_D13_PTB2
+              definition:  APPInterface_APP_D14_PTA9
+              definition:  APPInterface_APP_D15_PTA8
+              definition:  APPInterface_APP_D16_PTE12
+              definition:  APPInterface_APP_D17_PTD17
+              definition:  APPInterface_APP_D18_PTC9
+              definition:  APPInterface_APP_D19_PTC8
+              definition:  APPInterface_APP_D20_PTD8
+              definition:  APPInterface_APP_D21_PTD9
+              definition:  APPInterface_APP_D8_PTD13
+              definition:  APPInterface_APP_D9_PTD14
+              definition:  APPInterface_APP_GPIOPTD0
+              definition:  APPInterface_APP_GPIOPTD2
+              definition:  APPInterface_APP_GreenLED
+              definition:  APPInterface_APP_LeverOut
+              definition:  APPInterface_APP_RedLED
+Loading object APP_EVB.o.
+              definition:  APP
+              reference :  APPInterface_APP_BlueLED
+              reference :  APPInterface_APP_D10_PTB5
+              reference :  APPInterface_APP_D11_PTB4
+              reference :  APPInterface_APP_D12_PTB3
+              reference :  APPInterface_APP_D13_PTB2
+              reference :  APPInterface_APP_D14_PTA9
+              reference :  APPInterface_APP_D15_PTA8
+              reference :  APPInterface_APP_D16_PTE12
+              reference :  APPInterface_APP_D17_PTD17
+              reference :  APPInterface_APP_D18_PTC9
+              reference :  APPInterface_APP_D19_PTC8
+              reference :  APPInterface_APP_D20_PTD8
+              reference :  APPInterface_APP_D21_PTD9
+              reference :  APPInterface_APP_D8_PTD13
+              reference :  APPInterface_APP_D9_PTD14
+              reference :  APPInterface_APP_GPIOPTD0
+              reference :  APPInterface_APP_GPIOPTD2
+              reference :  APPInterface_APP_GreenLED
+              reference :  APPInterface_APP_LeverOut
+              reference :  APPInterface_APP_RedLED
+              definition:  APP_EFLASH
+              definition:  APP_EVB_APP_10ms
+              definition:  APP_EVB_APP_1ms
+              definition:  APP_IRAM
+              reference :  APP_LEVERLIGHTS_EVB_APP_LightCtrl
+              reference :  APP_LEVERSELECTION_EVB_APP_LeverSelect
+              reference :  APP_RGBCONTROL_EVB_APP_RGBStateMachineTrig
+              reference :  APP_SANITY_EVB_SanityReturn
+              reference :  INInterface_IN_D6_IC_PTC12
+              reference :  INInterface_IN_D7_IC_PTC13
+              reference :  INInterface_IN_GPIOPTA10
+              reference :  INInterface_IN_GPIOPTB6
+              reference :  INInterface_IN_GPIOPTB7
+              reference :  INInterface_IN_GPIOPTC4
+              reference :  INInterface_IN_GPIOPTC5
+              reference :  INInterface_IN_GPIOPTE0
+              reference :  INInterface_IN_GPIOPTE9
+              reference :  INInterface_IN_LeverIn
+              reference :  INInterface_IN_Potentiometer_PTC14
+              reference :  INInterface_IN_SW2_PTC12
+              reference :  INInterface_IN_SW3_PTC13
+Loading object APP_LeverLights_EVB.o.
+              definition:  APP_LEVERLIGHTS_EVB_APP_LightCtrl
+              reference :  APP_LIGHTDUTYSWITCH_EVB_APP_LightDuty
+              reference :  LIB_TIMERUP_EVB_LIB_Time
+Loading object APP_LeverSelection_EVB.o.
+              definition:  APP_LEVERSELECTION_EVB_APP_LeverSelect
+              reference :  APP_SWITCHINTERPRETATION_EVB_APP_SwitchState
+Loading object APP_LightDutySwitch_EVB.o.
+              definition:  APP_LIGHTDUTYSWITCH_EVB_APP_LightDuty
+Loading object APP_RGBControl_EVB.o.
+              definition:  APP_RGBCONTROL_EVB_APP_RGBStateMachineTrig
+              definition:  APP_RGBCONTROL_EVB_A_RGBFader
+              definition:  APP_RGBCONTROL_EVB_C_AntiClockwise
+              definition:  APP_RGBCONTROL_EVB_C_Clockwise
+              reference :  ESDL_Linear_CharTable1_getAt_u16u8
+              reference :  LIB_RISE_EVB_LIB_Rising
+              reference :  LIB_TIMERUP_EVB_LIB_Time
+Loading object APP_Sanity_EVB.o.
+              definition:  APP_SANITY_EVB_SanityReturn
+Loading object APP_SwitchInterpretation_EVB.o.
+              definition:  APP_SWITCHINTERPRETATION_EVB_APP_SwitchState
+              reference :  LIB_TIMERUP_EVB_LIB_Time
+Loading object ASCTask100ms.o.
+              definition:  ASCTask100ms
+              reference :  OUT_MAIN_EVB_OUT_100ms
+Loading object ASCTask10ms.o.
+              reference :  APP_EVB_APP_10ms
+              definition:  ASCTask10ms
+              reference :  OUT_MAIN_EVB_OUT_10ms
+Loading object ASCTask1ms.o.
+              reference :  APP_EVB_APP_1ms
+              definition:  ASCTask1ms
+              reference :  IN_MAIN_EVB_IN_dT
+              reference :  OUT_MAIN_EVB_OUT_1ms
+Loading object ASCTask5ms.o.
+              definition:  ASCTask5ms
+Loading object INInterface_EVB.o.
+              definition:  INInterface_IN_ADC0_PTD4
+              definition:  INInterface_IN_ADC10_PTA1
+              definition:  INInterface_IN_ADC11_PTA0
+              definition:  INInterface_IN_ADC12_PTA7
+              definition:  INInterface_IN_ADC13_PTB13
+              definition:  INInterface_IN_ADC14_PTC1
+              definition:  INInterface_IN_ADC15_PTC2
+              definition:  INInterface_IN_ADC1_PTB12
+              definition:  INInterface_IN_ADC2_PTB0
+              definition:  INInterface_IN_ADC3_PTB1
+              definition:  INInterface_IN_ADC4_PTA6
+              definition:  INInterface_IN_ADC5_PTC0
+              definition:  INInterface_IN_ADC6_PTE2
+              definition:  INInterface_IN_ADC7_PTE6
+              definition:  INInterface_IN_ADC8_PTA15
+              definition:  INInterface_IN_ADC9_PTA16
+              definition:  INInterface_IN_D0_IC_PTA2
+              definition:  INInterface_IN_D0_PTA2
+              definition:  INInterface_IN_D10_PTB5
+              definition:  INInterface_IN_D11_PTB4
+              definition:  INInterface_IN_D12_PTB3
+              definition:  INInterface_IN_D13_PTB2
+              definition:  INInterface_IN_D14_PTA9
+              definition:  INInterface_IN_D14_PTE11
+              definition:  INInterface_IN_D15_PTA8
+              definition:  INInterface_IN_D15_PTE10
+              definition:  INInterface_IN_D16_PTE12
+              definition:  INInterface_IN_D17_PTD17
+              definition:  INInterface_IN_D18_PTC9
+              definition:  INInterface_IN_D19_PTC8
+              definition:  INInterface_IN_D1_IC_PTA3
+              definition:  INInterface_IN_D1_PTA3
+              definition:  INInterface_IN_D20_PTD8_
+              definition:  INInterface_IN_D21_PTD9
+              definition:  INInterface_IN_D2_IC_PTB10
+              definition:  INInterface_IN_D2_PTB8
+              definition:  INInterface_IN_D3_IC_PTB11
+              definition:  INInterface_IN_D3_PTB9
+              definition:  INInterface_IN_D4_IC_PTC10
+              definition:  INInterface_IN_D4_PTB10
+              definition:  INInterface_IN_D5_IC_PTC11
+              definition:  INInterface_IN_D5_PTB11
+              definition:  INInterface_IN_D6_IC_PTC12
+              definition:  INInterface_IN_D6_PTC10
+              definition:  INInterface_IN_D7_IC_PTC13
+              definition:  INInterface_IN_D7_PTC11
+              definition:  INInterface_IN_D8_PTD13
+              definition:  INInterface_IN_D9_PTD14
+              definition:  INInterface_IN_GPIOPTA10
+              definition:  INInterface_IN_GPIOPTA11
+              definition:  INInterface_IN_GPIOPTA12
+              definition:  INInterface_IN_GPIOPTA13
+              definition:  INInterface_IN_GPIOPTA14
+              definition:  INInterface_IN_GPIOPTA17
+              definition:  INInterface_IN_GPIOPTA4
+              definition:  INInterface_IN_GPIOPTB14
+              definition:  INInterface_IN_GPIOPTB15
+              definition:  INInterface_IN_GPIOPTB16
+              definition:  INInterface_IN_GPIOPTB17
+              definition:  INInterface_IN_GPIOPTB6
+              definition:  INInterface_IN_GPIOPTB7
+              definition:  INInterface_IN_GPIOPTC12
+              definition:  INInterface_IN_GPIOPTC13
+              definition:  INInterface_IN_GPIOPTC14
+              definition:  INInterface_IN_GPIOPTC15
+              definition:  INInterface_IN_GPIOPTC16
+              definition:  INInterface_IN_GPIOPTC17
+              definition:  INInterface_IN_GPIOPTC3
+              definition:  INInterface_IN_GPIOPTC4
+              definition:  INInterface_IN_GPIOPTC5
+              definition:  INInterface_IN_GPIOPTC6
+              definition:  INInterface_IN_GPIOPTC7
+              definition:  INInterface_IN_GPIOPTD0
+              definition:  INInterface_IN_GPIOPTD0_
+              definition:  INInterface_IN_GPIOPTD1
+              definition:  INInterface_IN_GPIOPTD10
+              definition:  INInterface_IN_GPIOPTD11
+              definition:  INInterface_IN_GPIOPTD12
+              definition:  INInterface_IN_GPIOPTD15
+              definition:  INInterface_IN_GPIOPTD16
+              definition:  INInterface_IN_GPIOPTD2
+              definition:  INInterface_IN_GPIOPTD3
+              definition:  INInterface_IN_GPIOPTD3_
+              definition:  INInterface_IN_GPIOPTD5
+              definition:  INInterface_IN_GPIOPTD6
+              definition:  INInterface_IN_GPIOPTD7
+              definition:  INInterface_IN_GPIOPTE0
+              definition:  INInterface_IN_GPIOPTE1
+              definition:  INInterface_IN_GPIOPTE13
+              definition:  INInterface_IN_GPIOPTE14
+              definition:  INInterface_IN_GPIOPTE15
+              definition:  INInterface_IN_GPIOPTE16
+              definition:  INInterface_IN_GPIOPTE3
+              definition:  INInterface_IN_GPIOPTE4
+              definition:  INInterface_IN_GPIOPTE5
+              definition:  INInterface_IN_GPIOPTE7
+              definition:  INInterface_IN_GPIOPTE8
+              definition:  INInterface_IN_GPIOPTE9
+              definition:  INInterface_IN_LeverIn
+              definition:  INInterface_IN_Potentiometer_PTC14
+              definition:  INInterface_IN_SW2_PTC12
+              definition:  INInterface_IN_SW3_PTC13
+Loading object IN_AnaIn_EVB.o.
+              reference :  HA_getAdc
+              definition:  IN_ANAIN_EVB_getADCIn
+Loading object IN_CANConfig_EVB.o.
+              reference :  HA_CANInitialiseBus
+              definition:  IN_CANCONFIG_EVB_initCANChannel
+              definition:  IN_CANCONFIG_EVB_startCANChannel
+Loading object IN_CANMessageInit_EVB.o.
+              reference :  HA_CANInitialiseMessage
+              definition:  IN_CANMESSAGEINIT_EVB_initCANMsg
+Loading object IN_CANRxTCM_EVB.o.
+              reference :  HA_CANReceiveMessage
+              definition:  IN_CANRXTCM_EVB_rxCANMsg
+              definition:  IN_CANRXTCM_EVB_rxCANNewData
+Loading object IN_DigitalIn_EVB.o.
+              reference :  HA_GetGPIOIn
+              definition:  IN_DIGITALIN_EVB_getDigitalIn
+Loading object IN_InputCaptureIn_EVB.o.
+              reference :  HA_GetFTMDuty
+              reference :  HA_GetFTMFreq
+              reference :  HA_GetFTMHigh
+              reference :  HA_GetFTMPeriod
+              reference :  HA_GetGPIOIn
+              definition:  IN_INPUTCAPTUREIN_EVB_getSpeedIn
+Loading object IN_Main_EVB.o.
+              reference :  INInterface_IN_ADC0_PTD4
+              reference :  INInterface_IN_ADC10_PTA1
+              reference :  INInterface_IN_ADC11_PTA0
+              reference :  INInterface_IN_ADC12_PTA7
+              reference :  INInterface_IN_ADC13_PTB13
+              reference :  INInterface_IN_ADC14_PTC1
+              reference :  INInterface_IN_ADC15_PTC2
+              reference :  INInterface_IN_ADC1_PTB12
+              reference :  INInterface_IN_ADC2_PTB0
+              reference :  INInterface_IN_ADC3_PTB1
+              reference :  INInterface_IN_ADC4_PTA6
+              reference :  INInterface_IN_ADC5_PTC0
+              reference :  INInterface_IN_ADC6_PTE2
+              reference :  INInterface_IN_ADC7_PTE6
+              reference :  INInterface_IN_ADC8_PTA15
+              reference :  INInterface_IN_ADC9_PTA16
+              reference :  INInterface_IN_D0_IC_PTA2
+              reference :  INInterface_IN_D0_PTA2
+              reference :  INInterface_IN_D10_PTB5
+              reference :  INInterface_IN_D11_PTB4
+              reference :  INInterface_IN_D12_PTB3
+              reference :  INInterface_IN_D13_PTB2
+              reference :  INInterface_IN_D14_PTA9
+              reference :  INInterface_IN_D14_PTE11
+              reference :  INInterface_IN_D15_PTA8
+              reference :  INInterface_IN_D15_PTE10
+              reference :  INInterface_IN_D16_PTE12
+              reference :  INInterface_IN_D17_PTD17
+              reference :  INInterface_IN_D18_PTC9
+              reference :  INInterface_IN_D19_PTC8
+              reference :  INInterface_IN_D1_IC_PTA3
+              reference :  INInterface_IN_D1_PTA3
+              reference :  INInterface_IN_D20_PTD8_
+              reference :  INInterface_IN_D21_PTD9
+              reference :  INInterface_IN_D2_IC_PTB10
+              reference :  INInterface_IN_D2_PTB8
+              reference :  INInterface_IN_D3_IC_PTB11
+              reference :  INInterface_IN_D3_PTB9
+              reference :  INInterface_IN_D4_IC_PTC10
+              reference :  INInterface_IN_D4_PTB10
+              reference :  INInterface_IN_D5_IC_PTC11
+              reference :  INInterface_IN_D5_PTB11
+              reference :  INInterface_IN_D6_IC_PTC12
+              reference :  INInterface_IN_D6_PTC10
+              reference :  INInterface_IN_D7_IC_PTC13
+              reference :  INInterface_IN_D7_PTC11
+              reference :  INInterface_IN_D8_PTD13
+              reference :  INInterface_IN_D9_PTD14
+              reference :  INInterface_IN_GPIOPTA10
+              reference :  INInterface_IN_GPIOPTA11
+              reference :  INInterface_IN_GPIOPTA12
+              reference :  INInterface_IN_GPIOPTA13
+              reference :  INInterface_IN_GPIOPTA14
+              reference :  INInterface_IN_GPIOPTA17
+              reference :  INInterface_IN_GPIOPTA4
+              reference :  INInterface_IN_GPIOPTB14
+              reference :  INInterface_IN_GPIOPTB15
+              reference :  INInterface_IN_GPIOPTB16
+              reference :  INInterface_IN_GPIOPTB17
+              reference :  INInterface_IN_GPIOPTB6
+              reference :  INInterface_IN_GPIOPTB7
+              reference :  INInterface_IN_GPIOPTC12
+              reference :  INInterface_IN_GPIOPTC13
+              reference :  INInterface_IN_GPIOPTC14
+              reference :  INInterface_IN_GPIOPTC15
+              reference :  INInterface_IN_GPIOPTC16
+              reference :  INInterface_IN_GPIOPTC17
+              reference :  INInterface_IN_GPIOPTC3
+              reference :  INInterface_IN_GPIOPTC4
+              reference :  INInterface_IN_GPIOPTC5
+              reference :  INInterface_IN_GPIOPTC6
+              reference :  INInterface_IN_GPIOPTC7
+              reference :  INInterface_IN_GPIOPTD0
+              reference :  INInterface_IN_GPIOPTD0_
+              reference :  INInterface_IN_GPIOPTD1
+              reference :  INInterface_IN_GPIOPTD10
+              reference :  INInterface_IN_GPIOPTD11
+              reference :  INInterface_IN_GPIOPTD12
+              reference :  INInterface_IN_GPIOPTD15
+              reference :  INInterface_IN_GPIOPTD16
+              reference :  INInterface_IN_GPIOPTD2
+              reference :  INInterface_IN_GPIOPTD3
+              reference :  INInterface_IN_GPIOPTD3_
+              reference :  INInterface_IN_GPIOPTD5
+              reference :  INInterface_IN_GPIOPTD6
+              reference :  INInterface_IN_GPIOPTD7
+              reference :  INInterface_IN_GPIOPTE0
+              reference :  INInterface_IN_GPIOPTE1
+              reference :  INInterface_IN_GPIOPTE13
+              reference :  INInterface_IN_GPIOPTE14
+              reference :  INInterface_IN_GPIOPTE15
+              reference :  INInterface_IN_GPIOPTE16
+              reference :  INInterface_IN_GPIOPTE3
+              reference :  INInterface_IN_GPIOPTE4
+              reference :  INInterface_IN_GPIOPTE5
+              reference :  INInterface_IN_GPIOPTE7
+              reference :  INInterface_IN_GPIOPTE8
+              reference :  INInterface_IN_GPIOPTE9
+              reference :  INInterface_IN_LeverIn
+              reference :  INInterface_IN_Potentiometer_PTC14
+              reference :  INInterface_IN_SW2_PTC12
+              reference :  INInterface_IN_SW3_PTC13
+              reference :  IN_ANAIN_EVB_getADCIn
+              reference :  IN_CANCONFIG_EVB_initCANChannel
+              reference :  IN_CANCONFIG_EVB_startCANChannel
+              reference :  IN_CANMESSAGEINIT_EVB_initCANMsg
+              reference :  IN_CANRXTCM_EVB_rxCANMsg
+              reference :  IN_CANRXTCM_EVB_rxCANNewData
+              reference :  IN_DIGITALIN_EVB_getDigitalIn
+              reference :  IN_INPUTCAPTUREIN_EVB_getSpeedIn
+              definition:  IN_MAIN_EVB_IN_Init
+              definition:  IN_MAIN_EVB_IN_dT
+              definition:  IN_Main
+              definition:  IN_Main_EFLASH
+              definition:  IN_Main_IRAM
+              reference :  LIB_4BITCOUNTTEST_EVB_LIB_CheckOkay
+              reference :  LIB_CANSTATUS_EVB_LIB_Status
+Loading object LIB_4BitCountTest_EVB.o.
+              definition:  LIB_4BITCOUNTTEST_EVB_LIB_CheckOkay
+Loading object LIB_4BitCount_EVB.o.
+              definition:  LIB_4BITCOUNT_EVB_LIB_4BitCount
+Loading object LIB_CANStatus_EVB.o.
+              definition:  LIB_CANSTATUS_EVB_LIB_Status
+Loading object LIB_Rise_EVB.o.
+              definition:  LIB_RISE_EVB_LIB_Rising
+Loading object LIB_TimerUp_EVB.o.
+              definition:  LIB_TIMERUP_EVB_LIB_Time
+Loading object OUT_CANTxAnalogue_EVB.o.
+              reference :  HA_CANTransmitMessage
+              definition:  OUT_CANTXANALOGUE_EVB_txCANMsg
+Loading object OUT_CANTxIC_EVB.o.
+              reference :  HA_CANTransmitMessage
+              definition:  OUT_CANTXIC_EVB_txCANMsg
+Loading object OUT_CANTxLever_EVB.o.
+              reference :  HA_CANTransmitMessage
+              definition:  OUT_CANTXLEVER_EVB_txCANMsg
+Loading object OUT_DigitalOutput_EVB.o.
+              reference :  HA_SetGPIOOut
+              definition:  OUT_DIGITALOUTPUT_EVB_setDigOut
+Loading object OUT_Main_EVB.o.
+              reference :  APPInterface_APP_BlueLED
+              reference :  APPInterface_APP_D10_PTB5
+              reference :  APPInterface_APP_D11_PTB4
+              reference :  APPInterface_APP_D12_PTB3
+              reference :  APPInterface_APP_D13_PTB2
+              reference :  APPInterface_APP_D14_PTA9
+              reference :  APPInterface_APP_D15_PTA8
+              reference :  APPInterface_APP_D16_PTE12
+              reference :  APPInterface_APP_D17_PTD17
+              reference :  APPInterface_APP_D18_PTC9
+              reference :  APPInterface_APP_D19_PTC8
+              reference :  APPInterface_APP_D20_PTD8
+              reference :  APPInterface_APP_D21_PTD9
+              reference :  APPInterface_APP_D8_PTD13
+              reference :  APPInterface_APP_D9_PTD14
+              reference :  APPInterface_APP_GPIOPTD0
+              reference :  APPInterface_APP_GPIOPTD2
+              reference :  APPInterface_APP_GreenLED
+              reference :  APPInterface_APP_LeverOut
+              reference :  APPInterface_APP_RedLED
+              reference :  INInterface_IN_ADC0_PTD4
+              reference :  INInterface_IN_ADC10_PTA1
+              reference :  INInterface_IN_ADC11_PTA0
+              reference :  INInterface_IN_ADC12_PTA7
+              reference :  INInterface_IN_ADC13_PTB13
+              reference :  INInterface_IN_ADC14_PTC1
+              reference :  INInterface_IN_ADC15_PTC2
+              reference :  INInterface_IN_ADC1_PTB12
+              reference :  INInterface_IN_ADC2_PTB0
+              reference :  INInterface_IN_ADC3_PTB1
+              reference :  INInterface_IN_ADC4_PTA6
+              reference :  INInterface_IN_ADC5_PTC0
+              reference :  INInterface_IN_ADC6_PTE2
+              reference :  INInterface_IN_ADC7_PTE6
+              reference :  INInterface_IN_ADC8_PTA15
+              reference :  INInterface_IN_ADC9_PTA16
+              reference :  INInterface_IN_D0_IC_PTA2
+              reference :  INInterface_IN_D1_IC_PTA3
+              reference :  INInterface_IN_D2_IC_PTB10
+              reference :  INInterface_IN_D3_IC_PTB11
+              reference :  INInterface_IN_D4_IC_PTC10
+              reference :  INInterface_IN_D5_IC_PTC11
+              reference :  INInterface_IN_D6_IC_PTC12
+              reference :  INInterface_IN_D7_IC_PTC13
+              reference :  INInterface_IN_Potentiometer_PTC14
+              reference :  IN_CANMESSAGEINIT_EVB_initCANMsg
+              reference :  LIB_4BITCOUNT_EVB_LIB_4BitCount
+              reference :  OUT_CANTXANALOGUE_EVB_txCANMsg
+              reference :  OUT_CANTXIC_EVB_txCANMsg
+              reference :  OUT_CANTXLEVER_EVB_txCANMsg
+              reference :  OUT_DIGITALOUTPUT_EVB_setDigOut
+              definition:  OUT_MAIN_EVB_OUT_100ms
+              definition:  OUT_MAIN_EVB_OUT_10ms
+              definition:  OUT_MAIN_EVB_OUT_1ms
+              definition:  OUT_MAIN_EVB_OUT_Init
+              definition:  OUT_Main
+              definition:  OUT_Main_EFLASH
+              definition:  OUT_Main_IRAM
+              reference :  OUT_PWMOUTPUT_EVB_setPWMOut
+Loading object OUT_PWMOutput_EVB.o.
+              reference :  HA_SetPWM
+              definition:  OUT_PWMOUTPUT_EVB_setPWMOut
+Loading object S32K144Build_ARM_ArithmeticServices_EVB.o.
+              definition:  ASD_DT_SCALED
+Loading object StartupHook.o.
+              reference :  IN_MAIN_EVB_IN_Init
+              reference :  OUT_MAIN_EVB_OUT_Init
+              definition:  esdl_StartupHook
+Loading object FlashConfig.o.
+Loading object HA_ADC.o.
+              definition:  HA_ADCResults
+              definition:  HA_AdcStart
+              definition:  HA_CalibrateADC
+              definition:  HA_InitADC
+              definition:  HA_SetupADC
+              definition:  HA_getAdc
+Loading object HA_CANDriver.o.
+              definition:  HA_CANByteExchange
+              definition:  HA_CANGetBufferNumber
+              definition:  HA_CANGetMessage
+              definition:  HA_CANInit
+              definition:  HA_CANInitialiseBus
+              definition:  HA_CANInitialiseMessage
+              definition:  HA_CANReceiveMessage
+              definition:  HA_CANSendMessage
+              definition:  HA_CANTransmitMessage
+              definition:  HA_GetCANStatus
+              definition:  HA_SetupCANBuffer
+Loading object HA_FTM.o.
+              definition:  FTM3_Ch0_Ch1_IRQHandler
+              definition:  FTM3_Ch2_Ch3_IRQHandler
+              definition:  FTM3_Ch4_Ch5_IRQHandler
+              definition:  FTM3_Ch6_Ch7_IRQHandler
+              definition:  FTM3_Ovf_Reload_IRQHandler
+              definition:  HA_FTM0Init
+              definition:  HA_FTM1Init
+              definition:  HA_FTM2Init
+              definition:  HA_FTM3Init
+              definition:  HA_FTMInit
+              definition:  HA_FTMStart
+              definition:  HA_GetFTMDuty
+              definition:  HA_GetFTMFreq
+              definition:  HA_GetFTMHigh
+              definition:  HA_GetFTMPeriod
+              definition:  HA_SetPWM
+              reference :  __aeabi_uldivmod
+Loading object HA_Gpio.o.
+              definition:  HA_GPIOInit
+              definition:  HA_GetGPIOIn
+              definition:  HA_SetGPIOOut
+              definition:  HA_ToggleGPIOOut
+Loading object OS_Scheduler.o.
+              definition:  HA_DisableWatchdog
+              definition:  HA_LPIT0Init
+              definition:  HA_NVICInit
+              definition:  HA_SetupClocks
+              definition:  LPIT0_Ch0_IRQHandler
+              definition:  OS_Init
+              definition:  OS_RequestStop
+              definition:  OS_Scheduler
+              definition:  OS_Shutdown
+              reference :  OS_Task100ms
+              reference :  OS_Task10ms
+              reference :  OS_Task1ms
+              reference :  OS_Task1s
+              reference :  OS_Task5ms
+              reference :  OS_TaskInit
+              definition:  WDOG_EWM_IRQHandler
+Loading object OS_Task.o.
+              reference :  ASCTask100ms
+              reference :  ASCTask10ms
+              reference :  ASCTask1ms
+              reference :  ASCTask5ms
+              reference :  HA_AdcStart
+              reference :  HA_FTMInit
+              reference :  HA_FTMStart
+              reference :  HA_GPIOInit
+              reference :  HA_InitADC
+              reference :  HA_LPIT0Init
+              reference :  HA_NVICInit
+              reference :  HA_SetupClocks
+              definition:  OS_Task100ms
+              definition:  OS_Task10ms
+              definition:  OS_Task1ms
+              definition:  OS_Task1s
+              definition:  OS_Task5ms
+              definition:  OS_TaskInit
+              reference :  esdl_StartupHook
+Loading object exceptions.o.
+              definition:  ADC0_IRQHandler
+              definition:  ADC1_IRQHandler
+              definition:  BusFaultException
+              definition:  CAN0_Error_IRQHandler
+              definition:  CAN0_ORed_0_15_MB_IRQHandler
+              definition:  CAN0_ORed_16_31_MB_IRQHandler
+              definition:  CAN0_ORed_IRQHandler
+              definition:  CAN0_Wake_Up_IRQHandler
+              definition:  CAN1_Error_IRQHandler
+              definition:  CAN1_ORed_0_15_MB_IRQHandler
+              definition:  CAN1_ORed_IRQHandler
+              definition:  CAN2_Error_IRQHandler
+              definition:  CAN2_ORed_0_15_MB_IRQHandler
+              definition:  CAN2_ORed_IRQHandler
+              definition:  CMP0_IRQHandler
+              definition:  DMA0_IRQHandler
+              definition:  DMA10_IRQHandler
+              definition:  DMA11_IRQHandler
+              definition:  DMA12_IRQHandler
+              definition:  DMA13_IRQHandler
+              definition:  DMA14_IRQHandler
+              definition:  DMA15_IRQHandler
+              definition:  DMA1_IRQHandler
+              definition:  DMA2_IRQHandler
+              definition:  DMA3_IRQHandler
+              definition:  DMA4_IRQHandler
+              definition:  DMA5_IRQHandler
+              definition:  DMA6_IRQHandler
+              definition:  DMA7_IRQHandler
+              definition:  DMA8_IRQHandler
+              definition:  DMA9_IRQHandler
+              definition:  DMA_Error_IRQHandler
+              definition:  DebugMonitor
+              definition:  DefaultISR
+              definition:  ERM_double_fault_IRQHandler
+              definition:  ERM_single_fault_IRQHandler
+              definition:  FLEXIO_IRQHandler
+              definition:  FTFC_Fault_IRQHandler
+              definition:  FTFC_IRQHandler
+              definition:  FTM0_Ch0_Ch1_IRQHandler
+              definition:  FTM0_Ch2_Ch3_IRQHandler
+              definition:  FTM0_Ch4_Ch5_IRQHandler
+              definition:  FTM0_Ch6_Ch7_IRQHandler
+              definition:  FTM0_Fault_IRQHandler
+              definition:  FTM0_Ovf_Reload_IRQHandler
+              definition:  FTM1_Ch0_Ch1_IRQHandler
+              definition:  FTM1_Ch2_Ch3_IRQHandler
+              definition:  FTM1_Ch4_Ch5_IRQHandler
+              definition:  FTM1_Ch6_Ch7_IRQHandler
+              definition:  FTM1_Fault_IRQHandler
+              definition:  FTM1_Ovf_Reload_IRQHandler
+              definition:  FTM2_Ch0_Ch1_IRQHandler
+              definition:  FTM2_Ch2_Ch3_IRQHandler
+              definition:  FTM2_Ch4_Ch5_IRQHandler
+              definition:  FTM2_Ch6_Ch7_IRQHandler
+              definition:  FTM2_Fault_IRQHandler
+              definition:  FTM2_Ovf_Reload_IRQHandler
+              reference :  FTM3_Ch0_Ch1_IRQHandler
+              reference :  FTM3_Ch2_Ch3_IRQHandler
+              reference :  FTM3_Ch4_Ch5_IRQHandler
+              reference :  FTM3_Ch6_Ch7_IRQHandler
+              definition:  FTM3_Fault_IRQHandler
+              reference :  FTM3_Ovf_Reload_IRQHandler
+              definition:  HardFaultException
+              reference :  Image$$ARM_LIB_STACKHEAP$$ZI$$Limit
+              definition:  InterruptHandler
+              definition:  LPI2C0_Master_IRQHandler
+              definition:  LPI2C0_Slave_IRQHandler
+              reference :  LPIT0_Ch0_IRQHandler
+              definition:  LPIT0_Ch1_IRQHandler
+              definition:  LPIT0_Ch2_IRQHandler
+              definition:  LPIT0_Ch3_IRQHandler
+              definition:  LPSPI0_IRQHandler
+              definition:  LPSPI1_IRQHandler
+              definition:  LPSPI2_IRQHandler
+              definition:  LPTMR0_IRQHandler
+              definition:  LPUART0_RxTx_IRQHandler
+              definition:  LPUART1_RxTx_IRQHandler
+              definition:  LPUART2_RxTx_IRQHandler
+              definition:  LVD_LVW_IRQHandler
+              definition:  MCM_IRQHandler
+              definition:  MemManageException
+              definition:  NMIException
+              definition:  PDB0_IRQHandler
+              definition:  PDB1_IRQHandler
+              definition:  PORTA_IRQHandler
+              definition:  PORTB_IRQHandler
+              definition:  PORTC_IRQHandler
+              definition:  PORTD_IRQHandler
+              definition:  PORTE_IRQHandler
+              definition:  PendSVC
+              definition:  RCM_IRQHandler
+              definition:  RTC_IRQHandler
+              definition:  RTC_Seconds_IRQHandler
+              definition:  Read_Collision_IRQHandler
+              definition:  Reserved100_IRQHandler
+              definition:  Reserved103_IRQHandler
+              definition:  Reserved105_IRQHandler
+              definition:  Reserved106_IRQHandler
+              definition:  Reserved107_IRQHandler
+              definition:  Reserved110_IRQHandler
+              definition:  Reserved112_IRQHandler
+              definition:  Reserved113_IRQHandler
+              definition:  Reserved114_IRQHandler
+              definition:  Reserved45_IRQHandler
+              definition:  Reserved46_IRQHandler
+              definition:  Reserved48_IRQHandler
+              definition:  Reserved50_IRQHandler
+              definition:  Reserved52_IRQHandler
+              definition:  Reserved53_IRQHandler
+              definition:  Reserved54_IRQHandler
+              definition:  Reserved58_IRQHandler
+              definition:  Reserved59_IRQHandler
+              definition:  Reserved69_IRQHandler
+              definition:  Reserved70_IRQHandler
+              definition:  Reserved71_IRQHandler
+              definition:  Reserved72_IRQHandler
+              definition:  Reserved81_IRQHandler
+              definition:  Reserved82_IRQHandler
+              definition:  Reserved83_IRQHandler
+              definition:  Reserved86_IRQHandler
+              definition:  Reserved87_IRQHandler
+              definition:  Reserved88_IRQHandler
+              definition:  Reserved89_IRQHandler
+              definition:  Reserved90_IRQHandler
+              definition:  Reserved91_IRQHandler
+              definition:  Reserved92_IRQHandler
+              definition:  Reserved93_IRQHandler
+              definition:  Reserved99_IRQHandler
+              definition:  SCG_IRQHandler
+              definition:  SVCHandler
+              definition:  SWI_IRQHandler
+              definition:  SysTickHandler
+              definition:  UsageFaultException
+              reference :  WDOG_EWM_IRQHandler
+              reference :  __main
+              definition:  vector_table
+Loading object main.o.
+              reference :  HA_DisableWatchdog
+              reference :  Image$$VECTORS$$Base
+              reference :  OS_Init
+              reference :  OS_Scheduler
+              definition:  __ARM_use_no_argv
+              definition:  main
+Loading object scs.o.
+              reference :  Image$$ARM_LIB_STACKHEAP$$Base
+              reference :  Image$$DATA$$Base
+              reference :  Image$$PROCESS_STACK$$ZI$$Base
+              reference :  Image$$VECTORS$$Base
+              definition:  NVIC_enableISR
+              definition:  SCS
+              definition:  SCS_init
+Add decompression support symbols.
+              reference :  __decompress_flags
+              weak ref  :  __decompress_sizes
+Selecting member ESDL_CharTable1_u16u8.o(InterpolationS32.a) to define ESDL_Linear_CharTable1_getAt_u16u8.
+Loading member ESDL_CharTable1_u16u8.o from InterpolationS32.a.
+              definition:  ESDL_Linear_CharTable1_getAt_u16u8
+              reference :  ESDL_Linear_Interpolate_u16u8
+              reference :  ESDL_Linear_Search_u16
+Selecting member ESDL_Interpolate_u16u8.o(InterpolationS32.a) to define ESDL_Linear_Interpolate_u16u8.
+Selecting member ESDL_Search_u16.o(InterpolationS32.a) to define ESDL_Linear_Search_u16.
+Loading member ESDL_Interpolate_u16u8.o from InterpolationS32.a.
+              definition:  ESDL_Linear_Interpolate_u16u8
+Loading member ESDL_Search_u16.o from InterpolationS32.a.
+              definition:  ESDL_Linear_Search_u16
+
+==============================================================================
+
+Loading System Libraries.
+
+Searching for ARM libraries in directory C:\ARM\Development Studio 2020.1\sw\ARMCompiler6.15\bin\..\lib\armlib\
+Searching for ARM libraries in directory C:\ARM\Development Studio 2020.1\sw\ARMCompiler6.15\bin\..\lib\libcxx\
+Selecting library C:\ARM\Development Studio 2020.1\sw\ARMCompiler6.15\bin\..\lib\armlib\c_wu.l.
+Selecting library C:\ARM\Development Studio 2020.1\sw\ARMCompiler6.15\bin\..\lib\armlib\fz_ws.l.
+Selecting library C:\ARM\Development Studio 2020.1\sw\ARMCompiler6.15\bin\..\lib\armlib\h_wu.l.
+Selecting library C:\ARM\Development Studio 2020.1\sw\ARMCompiler6.15\bin\..\lib\libcxx\libcpp-experimental_wnu.l.
+Selecting library C:\ARM\Development Studio 2020.1\sw\ARMCompiler6.15\bin\..\lib\libcxx\libcpp_wnu.l.
+Selecting library C:\ARM\Development Studio 2020.1\sw\ARMCompiler6.15\bin\..\lib\libcxx\libcppabi_wnu.l.
+Selecting library C:\ARM\Development Studio 2020.1\sw\ARMCompiler6.15\bin\..\lib\armlib\m_ws.l.
+Selecting library C:\ARM\Development Studio 2020.1\sw\ARMCompiler6.15\bin\..\lib\armlib\vfpsupport.l.
+Selecting member lludivv7m.o(c_wu.l) to define __aeabi_uldivmod.
+Selecting member __main.o(c_wu.l) to define __main.
+Selecting member dc.o(c_wu.l) to define __decompress_flags.
+Loading member dc.o from c_wu.l.
+              definition:  __decompress_flags
+              definition:  __decompress_sizes
+Loading member lludivv7m.o from c_wu.l.
+              definition:  __aeabi_uldivmod
+              definition:  _ll_udiv
+              reference :  __aeabi_ldiv0
+Loading member __main.o from c_wu.l.
+              definition:  __main
+              reference :  __rt_entry
+              weak ref  :  __scatterload
+Running selection script in c_wu.l to resolve __aeabi_ldiv0.
+Selecting member aeabi_ldiv0.o(c_wu.l) to define __aeabi_ldiv0.
+Selecting member aeabi_ldiv0_sigfpe.o(c_wu.l) to define __aeabi_ldiv0$sigfpe.
+Selecting member __rtentry.o(c_wu.l) to define __rt_entry.
+Loading member __rtentry.o from c_wu.l.
+              definition:  __rt_entry
+              reference :  __rt_entry_li
+              reference :  __rt_entry_main
+              reference :  __rt_entry_postli_1
+              reference :  __rt_entry_postsh_1
+              reference :  __rt_entry_presh_1
+              reference :  __rt_entry_sh
+Loading member aeabi_ldiv0.o from c_wu.l.
+              definition:  __aeabi_ldiv0
+Loading member aeabi_ldiv0_sigfpe.o from c_wu.l.
+              definition:  __aeabi_ldiv0$sigfpe
+              reference :  __rt_div0
+Selecting member __rtentry2.o(c_wu.l) to define __rt_entry_li.
+Selecting member __rtentry2.o(c_wu.l) to define __rt_entry_main.
+Running selection script in c_wu.l to resolve __rt_entry_postli_1.
+Selecting member __rtentry2.o(c_wu.l) to define __rt_entry_postli_1.
+Selecting member __rtentry2.o(c_wu.l) to define __rt_entry_postli_2.
+Running selection script in c_wu.l to resolve __rt_entry_postsh_1.
+Selecting member __rtentry2.o(c_wu.l) to define __rt_entry_postsh_1.
+Selecting member __rtentry2.o(c_wu.l) to define __rt_entry_postsh_2.
+Running selection script in c_wu.l to resolve __rt_entry_presh_1.
+Selecting member __rtentry2.o(c_wu.l) to define __rt_entry_presh_1.
+Selecting member __rtentry2.o(c_wu.l) to define __rt_entry_presh_2.
+Running selection script in c_wu.l to resolve __rt_entry_sh.
+Selecting member __rtentry4.o(c_wu.l) to define __rt_entry_sh.
+Selecting member __rtentry6.o(c_wu.l) to define __rt_entry_sh$oneregion.
+Selecting member rt_div0.o(c_wu.l) to define __rt_div0.
+Loading member __rtentry2.o from c_wu.l.
+              definition:  __rt_entry_presh_1
+              definition:  __rt_entry_presh_2
+              definition:  __rt_entry_postsh_1
+              definition:  __rt_entry_postsh_2
+              definition:  __rt_entry_li
+              definition:  __rt_entry_postli_1
+              definition:  __rt_entry_postli_2
+              definition:  __rt_entry_main
+              reference :  __rt_lib_init
+              reference :  _platform_post_lib_init
+              reference :  _platform_post_stackheap_init
+              reference :  _platform_pre_stackheap_init
+              reference :  exit
+              reference :  main
+Loading member __rtentry4.o from c_wu.l.
+              definition:  __rt_entry_sh
+              reference :  __user_setup_stackheap
+Loading member __rtentry6.o from c_wu.l.
+              definition:  __rt_entry_sh$oneregion
+              definition:  __vectab_stack_and_reset$1
+              reference :  Image$$ARM_LIB_STACKHEAP$$ZI$$Limit
+              reference :  __main
+Loading member rt_div0.o from c_wu.l.
+              definition:  __rt_div0
+              reference :  __rt_SIGFPE
+Selecting member libinit.o(c_wu.l) to define __rt_lib_init.
+Selecting member boardinit3.o(c_wu.l) to define _platform_post_lib_init.
+Selecting member boardinit2.o(c_wu.l) to define _platform_post_stackheap_init.
+Selecting member boardinit1.o(c_wu.l) to define _platform_pre_stackheap_init.
+Selecting member exit.o(c_wu.l) to define exit.
+Selecting member sys_stackheap_outer.o(c_wu.l) to define __user_setup_stackheap.
+Running selection script in c_wu.l to resolve __rt_SIGFPE.
+Selecting member defsig_fpe_outer.o(c_wu.l) to define __rt_SIGFPE.
+Selecting member defsig_fpe_formal.o(c_wu.l) to define __rt_SIGFPE$formal.
+Loading member sys_stackheap_outer.o from c_wu.l.
+              definition:  __user_setup_stackheap
+              reference :  __user_initial_stackheap
+              reference :  __user_perproc_libspace
+Loading member exit.o from c_wu.l.
+              definition:  exit
+              reference :  __rt_exit
+              weak ref  :  _call_atexit_fns
+Loading member defsig_fpe_outer.o from c_wu.l.
+              definition:  __rt_SIGFPE
+              reference :  __rt_SIGFPE_inner
+              reference :  __sig_exit
+Loading member defsig_fpe_formal.o from c_wu.l.
+              definition:  __rt_SIGFPE$formal
+              reference :  __rt_raise
+Loading member boardinit1.o from c_wu.l.
+              definition:  _platform_pre_stackheap_init
+Loading member boardinit2.o from c_wu.l.
+              definition:  _platform_post_stackheap_init
+Loading member boardinit3.o from c_wu.l.
+              definition:  _platform_post_lib_init
+Loading member libinit.o from c_wu.l.
+              definition:  __rt_lib_init
+              reference :  __rt_lib_init_alloca_1
+              reference :  __rt_lib_init_argv_1
+              reference :  __rt_lib_init_atexit_1
+              reference :  __rt_lib_init_clock_1
+              reference :  __rt_lib_init_cpp_1
+              reference :  __rt_lib_init_exceptions_1
+              reference :  __rt_lib_init_fp_1
+              reference :  __rt_lib_init_fp_trap_1
+              reference :  __rt_lib_init_getenv_1
+              reference :  __rt_lib_init_heap_1
+              reference :  __rt_lib_init_lc_collate_1
+              reference :  __rt_lib_init_lc_ctype_1
+              reference :  __rt_lib_init_lc_monetary_1
+              reference :  __rt_lib_init_lc_numeric_1
+              reference :  __rt_lib_init_lc_time_1
+              reference :  __rt_lib_init_preinit_1
+              reference :  __rt_lib_init_rand_1
+              reference :  __rt_lib_init_return
+              reference :  __rt_lib_init_signal_1
+              reference :  __rt_lib_init_stdio_1
+              reference :  __rt_lib_init_user_alloc_1
+Running selection script in c_wu.l to resolve __user_initial_stackheap.
+Selecting member sys_stackheap.o(c_wu.l) to define __user_initial_stackheap.
+Selecting member sys_stackheap_hlt.o(c_wu.l) to define __user_initial_stackheap$hlt.
+Selecting member libspace.o(c_wu.l) to define __user_perproc_libspace.
+Selecting member rtexit.o(c_wu.l) to define __rt_exit.
+Running selection script in c_wu.l to resolve __rt_SIGFPE_inner.
+Selecting member defsig_fpe_inner.o(c_wu.l) to define __rt_SIGFPE_inner.
+Selecting member defsig_exit.o(c_wu.l) to define __sig_exit.
+Running selection script in c_wu.l to resolve __rt_raise.
+Selecting member rt_raise.o(c_wu.l) to define __rt_raise.
+Running selection script in c_wu.l to resolve __rt_lib_init_alloca_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_alloca_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_alloca_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_argv_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_argv_1$b.
+Selecting member libinit4.o(c_wu.l) to define __rt_lib_init_argv_1$b$oneregion.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_argv_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_atexit_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_atexit_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_atexit_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_clock_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_clock_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_clock_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_cpp_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_cpp_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_cpp_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_exceptions_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_exceptions_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_exceptions_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_fp_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_fp_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_fp_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_fp_trap_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_fp_trap_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_fp_trap_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_getenv_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_getenv_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_getenv_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_heap_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_heap_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_heap_2.
+Selecting member libinit4.o(c_wu.l) to define __rt_lib_init_heap_1$b$oneregion.
+Running selection script in c_wu.l to resolve __rt_lib_init_lc_collate_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_lc_collate_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_lc_collate_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_lc_ctype_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_lc_ctype_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_lc_ctype_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_lc_monetary_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_lc_monetary_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_lc_monetary_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_lc_numeric_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_lc_numeric_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_lc_numeric_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_lc_time_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_lc_time_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_lc_time_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_preinit_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_preinit_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_preinit_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_rand_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_rand_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_rand_2.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_return.
+Running selection script in c_wu.l to resolve __rt_lib_init_signal_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_signal_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_signal_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_stdio_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_stdio_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_stdio_2.
+Running selection script in c_wu.l to resolve __rt_lib_init_user_alloc_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_user_alloc_1.
+Selecting member libinit2.o(c_wu.l) to define __rt_lib_init_user_alloc_2.
+Loading member libspace.o from c_wu.l.
+              definition:  __libspace_start
+              definition:  __temporary_stack_top$libspace
+              weak defn :  __user_libspace
+              weak defn :  __user_perproc_libspace
+              weak defn :  __user_perthread_libspace
+Loading member sys_stackheap.o from c_wu.l.
+              definition:  __user_initial_stackheap
+              definition:  _RW_Limit
+              reference :  __I$use$semihosting
+              reference :  __semihosting_library_function
+              weak ref  :  Image$$ZI$$Limit
+Loading member sys_stackheap_hlt.o from c_wu.l.
+              definition:  __user_initial_stackheap$hlt
+              definition:  _RW_Limit$hlt
+              reference :  __I$use$semihosting
+              reference :  __semihosting_library_function
+              weak ref  :  Image$$ZI$$Limit
+Loading member rtexit.o from c_wu.l.
+              definition:  __rt_exit
+              reference :  __rt_exit_exit
+              reference :  __rt_exit_ls
+              reference :  __rt_exit_prels_1
+Loading member rt_raise.o from c_wu.l.
+              definition:  __rt_raise
+              reference :  __raise
+              reference :  _sys_exit
+Loading member defsig_exit.o from c_wu.l.
+              definition:  __sig_exit
+              reference :  _sys_exit
+Loading member defsig_fpe_inner.o from c_wu.l.
+              definition:  __rt_SIGFPE_inner
+              reference :  __default_signal_display
+Loading member libinit2.o from c_wu.l.
+              definition:  __rt_lib_init_fp_1
+              definition:  __rt_lib_init_fp_2
+              definition:  __rt_lib_init_preinit_1
+              definition:  __rt_lib_init_preinit_2
+              definition:  __rt_lib_init_heap_1
+              definition:  __rt_lib_init_heap_1$b$error
+              definition:  __rt_lib_init_heap_error
+              definition:  __rt_lib_init_heap_2
+              definition:  __rt_lib_init_user_alloc_1
+              definition:  __rt_lib_init_user_alloc_2
+              definition:  __rt_lib_init_rand_1
+              definition:  __rt_lib_init_rand_2
+              definition:  __rt_lib_init_lc_common
+              definition:  __rt_lib_init_lc_collate_1
+              definition:  __rt_lib_init_lc_collate_2
+              definition:  __rt_lib_init_lc_ctype_1
+              definition:  __rt_lib_init_lc_ctype_2
+              definition:  __rt_lib_init_lc_monetary_1
+              definition:  __rt_lib_init_lc_monetary_2
+              definition:  __rt_lib_init_lc_numeric_1
+              definition:  __rt_lib_init_lc_numeric_2
+              definition:  __rt_lib_init_lc_time_1
+              definition:  __rt_lib_init_lc_time_2
+              definition:  __rt_lib_init_atexit_1
+              definition:  __rt_lib_init_atexit_2
+              definition:  __rt_lib_init_signal_1
+              definition:  __rt_lib_init_signal_2
+              definition:  __rt_lib_init_fp_trap_1
+              definition:  __rt_lib_init_fp_trap_2
+              definition:  __rt_lib_init_clock_1
+              definition:  __rt_lib_init_clock_2
+              definition:  __rt_lib_init_getenv_1
+              definition:  __rt_lib_init_getenv_2
+              definition:  __rt_lib_init_stdio_1
+              definition:  __rt_lib_init_stdio_2
+              definition:  __rt_lib_init_argv_1
+              definition:  __rt_lib_init_argv_1$b
+              definition:  __rt_lib_init_heapregion_libspace_used
+              definition:  __rt_lib_init_argv_1$b$error
+              definition:  __rt_lib_init_heapregion_error
+              definition:  __rt_lib_init_argv_2
+              definition:  __rt_lib_init_alloca_1
+              definition:  __rt_lib_init_alloca_2
+              definition:  __rt_lib_init_exceptions_1
+              definition:  __rt_lib_init_exceptions_2
+              definition:  __rt_lib_init_cpp_1
+              definition:  __rt_lib_init_cpp_2
+              definition:  __rt_lib_init_return
+              reference :  __ARM_argv_veneer
+              reference :  _fp_init
+              weak ref  :  __ARM_exceptions_init
+              weak ref  :  __alloca_initialize
+              weak ref  :  __arm_preinit_
+              weak ref  :  __cpp_initialize__aeabi_
+              weak ref  :  __rt_locale
+              weak ref  :  _atexit_init
+              weak ref  :  _clock_init
+              weak ref  :  _fp_trap_init
+              weak ref  :  _get_lc_collate
+              weak ref  :  _get_lc_ctype
+              weak ref  :  _get_lc_monetary
+              weak ref  :  _get_lc_numeric
+              weak ref  :  _get_lc_time
+              weak ref  :  _getenv_init
+              weak ref  :  _init_alloc
+              weak ref  :  _init_user_alloc
+              weak ref  :  _initio
+              weak ref  :  _rand_init
+              weak ref  :  _signal_init
+Loading member libinit4.o from c_wu.l.
+              definition:  __rt_lib_init_heap_1$b$oneregion
+              definition:  __rt_lib_init_argv_1$b$oneregion
+              reference :  Image$$ARM_LIB_STACKHEAP$$ZI$$Base
+              reference :  Image$$ARM_LIB_STACKHEAP$$ZI$$Limit
+              reference :  __ARM_argv_veneer
+              weak ref  :  _init_alloc
+Running selection script in c_wu.l to resolve __I$use$semihosting.
+Selecting member use_no_semi.o(c_wu.l) to define __use_no_semihosting_swi.
+Selecting member indicate_semi.o(c_wu.l) to define __semihosting_library_function.
+Selecting member rtexit2.o(c_wu.l) to define __rt_exit_exit.
+Selecting member rtexit2.o(c_wu.l) to define __rt_exit_ls.
+Running selection script in c_wu.l to resolve __rt_exit_prels_1.
+Selecting member rtexit2.o(c_wu.l) to define __rt_exit_prels_1.
+Selecting member rtexit2.o(c_wu.l) to define __rt_exit_prels_2.
+Selecting member __raise.o(c_wu.l) to define __raise.
+Running selection script in c_wu.l to resolve _sys_exit.
+Selecting member sys_exit.o(c_wu.l) to define _sys_exit.
+Selecting member sys_exit_hlt.o(c_wu.l) to define _sys_exit$hlt.
+Selecting member defsig_general.o(c_wu.l) to define __default_signal_display.
+Selecting member argv_veneer.o(c_wu.l) to define __ARM_argv_veneer.
+Selecting member fpinit.o(fz_ws.l) to define _fp_init.
+Loading member sys_exit.o from c_wu.l.
+              definition:  _sys_exit
+              reference :  __I$use$semihosting
+              reference :  __semihosting_library_function
+Loading member sys_exit_hlt.o from c_wu.l.
+              definition:  _sys_exit$hlt
+              reference :  __I$use$semihosting
+              reference :  __semihosting_library_function
+Loading member use_no_semi.o from c_wu.l.
+              definition:  __semihosting$guard
+              definition:  __use_no_semihosting_swi
+Loading member indicate_semi.o from c_wu.l.
+              definition:  __semihosting_library_function
+Loading member rtexit2.o from c_wu.l.
+              definition:  __rt_exit_prels_1
+              definition:  __rt_exit_prels_2
+              definition:  __rt_exit_ls
+              definition:  __rt_exit_exit
+              reference :  __rt_lib_shutdown
+              reference :  _platform_pre_lib_shutdown
+              reference :  _sys_exit
+Loading member __raise.o from c_wu.l.
+              definition:  __raise
+              reference :  __default_signal_handler
+              weak ref  :  __sigvec_lookup
+Loading member defsig_general.o from c_wu.l.
+              definition:  __default_signal_display
+              reference :  _ttywrch
+Loading member argv_veneer.o from c_wu.l.
+              definition:  __ARM_argv_veneer
+              reference :  __ARM_get_argv
+Loading member fpinit.o from fz_ws.l.
+              definition:  __fplib_config_pureend_doubles
+              definition:  _fp_init
+              reference :  __fp_init_empty
+Running selection script in c_wu.l to resolve __I$use$semihosting.
+Running selection script in c_wu.l to resolve _sys_exit.
+Selecting member libshutdown.o(c_wu.l) to define __rt_lib_shutdown.
+Selecting member boardshut.o(c_wu.l) to define _platform_pre_lib_shutdown.
+Selecting member defsig.o(c_wu.l) to define __default_signal_handler.
+Running selection script in c_wu.l to resolve _ttywrch.
+Selecting member sys_wrch.o(c_wu.l) to define _ttywrch.
+Selecting member sys_wrch_hlt.o(c_wu.l) to define _ttywrch$hlt.
+Running selection script in c_wu.l to resolve __ARM_get_argv.
+Selecting member no_argv.o(c_wu.l) to define __ARM_get_argv$stub.
+Selecting member _get_argv_nomalloc.o(c_wu.l) to define __ARM_get_argv$nomalloc.
+Selecting member fpinit_empty.o(fz_ws.l) to define __fp_init_empty.
+Loading member sys_wrch.o from c_wu.l.
+              definition:  _ttywrch
+              reference :  __I$use$semihosting
+              reference :  __semihosting_library_function
+Loading member sys_wrch_hlt.o from c_wu.l.
+              definition:  _ttywrch$hlt
+              reference :  __I$use$semihosting
+              reference :  __semihosting_library_function
+Loading member defsig.o from c_wu.l.
+              definition:  __default_signal_handler
+              definition:  __rt_SIGABRT_inner$null
+              definition:  __rt_SIGCPPL_inner$null
+              definition:  __rt_SIGFPE_inner$null
+              definition:  __rt_SIGILL_inner$null
+              definition:  __rt_SIGINT_inner$null
+              definition:  __rt_SIGPVFN_inner$null
+              definition:  __rt_SIGRTMEM_inner$null
+              definition:  __rt_SIGRTRED_inner$null
+              definition:  __rt_SIGSEGV_inner$null
+              definition:  __rt_SIGSTAK_inner$null
+              definition:  __rt_SIGTERM_inner$null
+              definition:  __rt_SIGUSR1_inner$null
+              definition:  __rt_SIGUSR2_inner$null
+              definition:  __rt_sigother_inner$null
+              reference :  __rt_SIGABRT_inner
+              reference :  __rt_SIGCPPL_inner
+              reference :  __rt_SIGFPE_inner
+              reference :  __rt_SIGILL_inner
+              reference :  __rt_SIGINT_inner
+              reference :  __rt_SIGPVFN_inner
+              reference :  __rt_SIGRTMEM_inner
+              reference :  __rt_SIGRTRED_inner
+              reference :  __rt_SIGSEGV_inner
+              reference :  __rt_SIGSTAK_inner
+              reference :  __rt_SIGTERM_inner
+              reference :  __rt_SIGUSR1_inner
+              reference :  __rt_SIGUSR2_inner
+              reference :  __rt_sigother_inner
+Loading member boardshut.o from c_wu.l.
+              definition:  _platform_pre_lib_shutdown
+Loading member _get_argv_nomalloc.o from c_wu.l.
+              definition:  __argv_alloc
+              definition:  __ARM_get_argv$nomalloc
+              reference :  __heap_region$guard
+              reference :  __rt_SIGRTMEM
+              reference :  _sys_command_string
+              weak ref  :  _handle_redirection
+Loading member no_argv.o from c_wu.l.
+              definition:  __ARM_get_argv$stub
+Loading member libshutdown.o from c_wu.l.
+              definition:  __rt_lib_shutdown
+              reference :  __rt_lib_shutdown_cpp_1
+              reference :  __rt_lib_shutdown_fp_trap_1
+              reference :  __rt_lib_shutdown_heap_1
+              reference :  __rt_lib_shutdown_return
+              reference :  __rt_lib_shutdown_signal_1
+              reference :  __rt_lib_shutdown_stdio_1
+              reference :  __rt_lib_shutdown_user_alloc_1
+Loading member fpinit_empty.o from fz_ws.l.
+              definition:  __fp_init_empty
+Running selection script in c_wu.l to resolve __rt_SIGFPE_inner.
+Running selection script in c_wu.l to resolve __I$use$semihosting.
+Running selection script in c_wu.l to resolve __rt_SIGABRT_inner.
+Selecting member defsig_abrt_inner.o(c_wu.l) to define __rt_SIGABRT_inner.
+Running selection script in c_wu.l to resolve __rt_SIGCPPL_inner.
+Selecting member defsig_cppl_inner.o(c_wu.l) to define __rt_SIGCPPL_inner.
+Running selection script in c_wu.l to resolve __rt_SIGILL_inner.
+Selecting member defsig_other.o(c_wu.l) to define __rt_SIGILL_inner.
+Running selection script in c_wu.l to resolve __rt_SIGINT_inner.
+Selecting member defsig_other.o(c_wu.l) to define __rt_SIGINT_inner.
+Running selection script in c_wu.l to resolve __rt_SIGPVFN_inner.
+Selecting member defsig_pvfn_inner.o(c_wu.l) to define __rt_SIGPVFN_inner.
+Running selection script in c_wu.l to resolve __rt_SIGRTMEM_inner.
+Selecting member defsig_rtmem_inner.o(c_wu.l) to define __rt_SIGRTMEM_inner.
+Running selection script in c_wu.l to resolve __rt_SIGRTRED_inner.
+Selecting member defsig_rtred_inner.o(c_wu.l) to define __rt_SIGRTRED_inner.
+Running selection script in c_wu.l to resolve __rt_SIGSEGV_inner.
+Selecting member defsig_segv_inner.o(c_wu.l) to define __rt_SIGSEGV_inner.
+Running selection script in c_wu.l to resolve __rt_SIGSTAK_inner.
+Selecting member defsig_stak_inner.o(c_wu.l) to define __rt_SIGSTAK_inner.
+Running selection script in c_wu.l to resolve __rt_SIGTERM_inner.
+Selecting member defsig_other.o(c_wu.l) to define __rt_SIGTERM_inner.
+Running selection script in c_wu.l to resolve __rt_SIGUSR1_inner.
+Selecting member defsig_other.o(c_wu.l) to define __rt_SIGUSR1_inner.
+Running selection script in c_wu.l to resolve __rt_SIGUSR2_inner.
+Selecting member defsig_other.o(c_wu.l) to define __rt_SIGUSR2_inner.
+Running selection script in c_wu.l to resolve __rt_sigother_inner.
+Selecting member defsig_other.o(c_wu.l) to define __rt_sigother_inner.
+Running selection script in c_wu.l to resolve __heap_region$guard.
+Selecting member hrguard.o(c_wu.l) to define __use_no_heap_region.
+Running selection script in c_wu.l to resolve __rt_SIGRTMEM.
+Selecting member defsig_rtmem_outer.o(c_wu.l) to define __rt_SIGRTMEM.
+Selecting member defsig_rtmem_formal.o(c_wu.l) to define __rt_SIGRTMEM$formal.
+Running selection script in c_wu.l to resolve _sys_command_string.
+Selecting member sys_command.o(c_wu.l) to define _sys_command_string.
+Selecting member sys_command_hlt.o(c_wu.l) to define _sys_command_string$hlt.
+Running selection script in c_wu.l to resolve __rt_lib_shutdown_cpp_1.
+Selecting member libshutdown2.o(c_wu.l) to define __rt_lib_shutdown_cpp_1.
+Selecting member libshutdown2.o(c_wu.l) to define __rt_lib_shutdown_cpp_2.
+Running selection script in c_wu.l to resolve __rt_lib_shutdown_fp_trap_1.
+Selecting member libshutdown2.o(c_wu.l) to define __rt_lib_shutdown_fp_trap_1.
+Selecting member libshutdown2.o(c_wu.l) to define __rt_lib_shutdown_fp_trap_2.
+Running selection script in c_wu.l to resolve __rt_lib_shutdown_heap_1.
+Selecting member libshutdown2.o(c_wu.l) to define __rt_lib_shutdown_heap_1.
+Selecting member libshutdown2.o(c_wu.l) to define __rt_lib_shutdown_heap_2.
+Selecting member libshutdown2.o(c_wu.l) to define __rt_lib_shutdown_return.
+Running selection script in c_wu.l to resolve __rt_lib_shutdown_signal_1.
+Selecting member libshutdown2.o(c_wu.l) to define __rt_lib_shutdown_signal_1.
+Selecting member libshutdown2.o(c_wu.l) to define __rt_lib_shutdown_signal_2.
+Running selection script in c_wu.l to resolve __rt_lib_shutdown_stdio_1.
+Selecting member libshutdown2.o(c_wu.l) to define __rt_lib_shutdown_stdio_1.
+Selecting member libshutdown2.o(c_wu.l) to define __rt_lib_shutdown_stdio_2.
+Running selection script in c_wu.l to resolve __rt_lib_shutdown_user_alloc_1.
+Selecting member libshutdown2.o(c_wu.l) to define __rt_lib_shutdown_user_alloc_1.
+Selecting member libshutdown2.o(c_wu.l) to define __rt_lib_shutdown_user_alloc_2.
+Loading member sys_command.o from c_wu.l.
+              definition:  _sys_command_string
+              reference :  __I$use$semihosting
+              reference :  __semihosting_library_function
+Loading member sys_command_hlt.o from c_wu.l.
+              definition:  _sys_command_string$hlt
+              reference :  __I$use$semihosting
+              reference :  __semihosting_library_function
+Loading member hrguard.o from c_wu.l.
+              definition:  __use_no_heap_region
+              definition:  __I$use$heap_region
+Loading member defsig_abrt_inner.o from c_wu.l.
+              definition:  __rt_SIGABRT_inner
+              reference :  __default_signal_display
+Loading member defsig_rtred_inner.o from c_wu.l.
+              definition:  __rt_SIGRTRED_inner
+              reference :  __default_signal_display
+Loading member defsig_rtmem_inner.o from c_wu.l.
+              definition:  __rt_SIGRTMEM_inner
+              reference :  __default_signal_display
+Loading member defsig_rtmem_outer.o from c_wu.l.
+              definition:  __rt_SIGRTMEM
+              reference :  __rt_SIGRTMEM_inner
+              reference :  __sig_exit
+Loading member defsig_rtmem_formal.o from c_wu.l.
+              definition:  __rt_SIGRTMEM$formal
+              reference :  __rt_raise
+Loading member defsig_stak_inner.o from c_wu.l.
+              definition:  __rt_SIGSTAK_inner
+              reference :  __default_signal_display
+Loading member defsig_pvfn_inner.o from c_wu.l.
+              definition:  __rt_SIGPVFN_inner
+              reference :  __default_signal_display
+Loading member defsig_cppl_inner.o from c_wu.l.
+              definition:  __rt_SIGCPPL_inner
+              reference :  __default_signal_display
+Loading member defsig_segv_inner.o from c_wu.l.
+              definition:  __rt_SIGSEGV_inner
+              reference :  __default_signal_display
+Loading member defsig_other.o from c_wu.l.
+              definition:  __rt_SIGILL_inner
+              definition:  __rt_SIGINT_inner
+              definition:  __rt_SIGTERM_inner
+              definition:  __rt_SIGUSR1_inner
+              definition:  __rt_SIGUSR2_inner
+              definition:  __rt_sigother_inner
+              reference :  __default_signal_display
+Loading member libshutdown2.o from c_wu.l.
+              definition:  __rt_lib_shutdown_cpp_1
+              definition:  __rt_lib_shutdown_cpp_2
+              definition:  __rt_lib_shutdown_stdio_1
+              definition:  __rt_lib_shutdown_stdio_2
+              definition:  __rt_lib_shutdown_fp_trap_1
+              definition:  __rt_lib_shutdown_fp_trap_1$b
+              definition:  __rt_lib_shutdown_fp_trap_2
+              definition:  __rt_lib_shutdown_signal_1
+              definition:  __rt_lib_shutdown_signal_1$b
+              definition:  __rt_lib_shutdown_signal_2
+              definition:  __rt_lib_shutdown_user_alloc_1
+              definition:  __rt_lib_shutdown_user_alloc_2
+              definition:  __rt_lib_shutdown_heap_1
+              definition:  __rt_lib_shutdown_heap_1$b
+              definition:  __rt_lib_shutdown_heap_2
+              definition:  __rt_lib_shutdown_return
+              weak ref  :  __cxa_finalize
+              weak ref  :  _fp_trap_shutdown
+              weak ref  :  _signal_finish
+              weak ref  :  _terminate_alloc
+              weak ref  :  _terminate_user_alloc
+              weak ref  :  _terminateio
+Running selection script in c_wu.l to resolve __rt_raise.
+Running selection script in c_wu.l to resolve __I$use$semihosting.
+Running selection script in c_wu.l to resolve __rt_SIGRTMEM_inner.
+Cleaning up Comdat Group Sections
+Renaming symbol __rt_entry_sh to __rt_entry_sh$uss.
+Renaming symbol __rt_entry_sh$oneregion to __rt_entry_sh.
+Not renaming symbol __vectab_stack_and_reset to __vectab_stack_and_reset$orig due to its absence.
+Renaming symbol __vectab_stack_and_reset$1 to __vectab_stack_and_reset.
+Renaming symbol __rt_lib_init_heap_1 to __rt_lib_init_heap_1$old.
+Renaming symbol __rt_lib_init_heap_2 to __rt_lib_init_heap_1.
+Renaming symbol __rt_lib_init_heap_1$b$oneregion to __rt_lib_init_heap_2.
+Renaming symbol __semihosting$guard to __I$use$semihosting.
+Renaming symbol __ARM_get_argv to __ARM_get_argv$full.
+Renaming symbol __ARM_get_argv$stub to __ARM_get_argv.
+Renaming symbol __rt_SIGABRT_inner to __rt_SIGABRT_inner$real.
+Renaming symbol __rt_SIGABRT_inner$null to __rt_SIGABRT_inner.
+Renaming symbol __rt_SIGCPPL_inner to __rt_SIGCPPL_inner$real.
+Renaming symbol __rt_SIGCPPL_inner$null to __rt_SIGCPPL_inner.
+Renaming symbol __rt_SIGILL_inner to __rt_SIGILL_inner$real.
+Renaming symbol __rt_SIGILL_inner$null to __rt_SIGILL_inner.
+Renaming symbol __rt_SIGINT_inner to __rt_SIGINT_inner$real.
+Renaming symbol __rt_SIGINT_inner$null to __rt_SIGINT_inner.
+Renaming symbol __rt_SIGPVFN_inner to __rt_SIGPVFN_inner$real.
+Renaming symbol __rt_SIGPVFN_inner$null to __rt_SIGPVFN_inner.
+Renaming symbol __rt_SIGRTRED_inner to __rt_SIGRTRED_inner$real.
+Renaming symbol __rt_SIGRTRED_inner$null to __rt_SIGRTRED_inner.
+Renaming symbol __rt_SIGSEGV_inner to __rt_SIGSEGV_inner$real.
+Renaming symbol __rt_SIGSEGV_inner$null to __rt_SIGSEGV_inner.
+Renaming symbol __rt_SIGSTAK_inner to __rt_SIGSTAK_inner$real.
+Renaming symbol __rt_SIGSTAK_inner$null to __rt_SIGSTAK_inner.
+Renaming symbol __rt_SIGTERM_inner to __rt_SIGTERM_inner$real.
+Renaming symbol __rt_SIGTERM_inner$null to __rt_SIGTERM_inner.
+Renaming symbol __rt_SIGUSR1_inner to __rt_SIGUSR1_inner$real.
+Renaming symbol __rt_SIGUSR1_inner$null to __rt_SIGUSR1_inner.
+Renaming symbol __rt_SIGUSR2_inner to __rt_SIGUSR2_inner$real.
+Renaming symbol __rt_SIGUSR2_inner$null to __rt_SIGUSR2_inner.
+Renaming symbol __rt_sigother_inner to __rt_sigother_inner$real.
+Renaming symbol __rt_sigother_inner$null to __rt_sigother_inner.
+Renaming symbol __I$use$heap_region to __heap_region$guard.
+Renaming symbol __rt_lib_shutdown_fp_trap_1 to __rt_lib_shutdown_fp_trap_1$old.
+Renaming symbol __rt_lib_shutdown_fp_trap_2 to __rt_lib_shutdown_fp_trap_1.
+Renaming symbol __rt_lib_shutdown_fp_trap_1$b to __rt_lib_shutdown_fp_trap_2.
+Renaming symbol __rt_lib_shutdown_heap_1 to __rt_lib_shutdown_heap_1$old.
+Renaming symbol __rt_lib_shutdown_heap_2 to __rt_lib_shutdown_heap_1.
+Renaming symbol __rt_lib_shutdown_heap_1$b to __rt_lib_shutdown_heap_2.
+Renaming symbol __rt_lib_shutdown_signal_1 to __rt_lib_shutdown_signal_1$old.
+Renaming symbol __rt_lib_shutdown_signal_2 to __rt_lib_shutdown_signal_1.
+Renaming symbol __rt_lib_shutdown_signal_1$b to __rt_lib_shutdown_signal_2.
+Renaming symbol __rt_entry_postli_1 to $$Temp.
+Renaming symbol __rt_entry_postli_2 to __rt_entry_postli_1.
+Renaming symbol $$Temp to __rt_entry_postli_2.
+Renaming symbol __rt_entry_postsh_1 to $$Temp.
+Renaming symbol __rt_entry_postsh_2 to __rt_entry_postsh_1.
+Renaming symbol $$Temp to __rt_entry_postsh_2.
+Renaming symbol __rt_entry_presh_1 to $$Temp.
+Renaming symbol __rt_entry_presh_2 to __rt_entry_presh_1.
+Renaming symbol $$Temp to __rt_entry_presh_2.
+Renaming symbol __rt_lib_init_alloca_1 to $$Temp.
+Renaming symbol __rt_lib_init_alloca_2 to __rt_lib_init_alloca_1.
+Renaming symbol $$Temp to __rt_lib_init_alloca_2.
+Renaming symbol __rt_lib_init_argv_1 to $$Temp.
+Renaming symbol __rt_lib_init_argv_2 to __rt_lib_init_argv_1.
+Renaming symbol $$Temp to __rt_lib_init_argv_2.
+Renaming symbol __rt_lib_init_atexit_1 to $$Temp.
+Renaming symbol __rt_lib_init_atexit_2 to __rt_lib_init_atexit_1.
+Renaming symbol $$Temp to __rt_lib_init_atexit_2.
+Renaming symbol __rt_lib_init_clock_1 to $$Temp.
+Renaming symbol __rt_lib_init_clock_2 to __rt_lib_init_clock_1.
+Renaming symbol $$Temp to __rt_lib_init_clock_2.
+Renaming symbol __rt_lib_init_cpp_1 to $$Temp.
+Renaming symbol __rt_lib_init_cpp_2 to __rt_lib_init_cpp_1.
+Renaming symbol $$Temp to __rt_lib_init_cpp_2.
+Renaming symbol __rt_lib_init_exceptions_1 to $$Temp.
+Renaming symbol __rt_lib_init_exceptions_2 to __rt_lib_init_exceptions_1.
+Renaming symbol $$Temp to __rt_lib_init_exceptions_2.
+Renaming symbol __rt_lib_init_fp_1 to $$Temp.
+Renaming symbol __rt_lib_init_fp_2 to __rt_lib_init_fp_1.
+Renaming symbol $$Temp to __rt_lib_init_fp_2.
+Renaming symbol __rt_lib_init_fp_trap_1 to $$Temp.
+Renaming symbol __rt_lib_init_fp_trap_2 to __rt_lib_init_fp_trap_1.
+Renaming symbol $$Temp to __rt_lib_init_fp_trap_2.
+Renaming symbol __rt_lib_init_getenv_1 to $$Temp.
+Renaming symbol __rt_lib_init_getenv_2 to __rt_lib_init_getenv_1.
+Renaming symbol $$Temp to __rt_lib_init_getenv_2.
+Renaming symbol __rt_lib_init_lc_collate_1 to $$Temp.
+Renaming symbol __rt_lib_init_lc_collate_2 to __rt_lib_init_lc_collate_1.
+Renaming symbol $$Temp to __rt_lib_init_lc_collate_2.
+Renaming symbol __rt_lib_init_lc_ctype_1 to $$Temp.
+Renaming symbol __rt_lib_init_lc_ctype_2 to __rt_lib_init_lc_ctype_1.
+Renaming symbol $$Temp to __rt_lib_init_lc_ctype_2.
+Renaming symbol __rt_lib_init_lc_monetary_1 to $$Temp.
+Renaming symbol __rt_lib_init_lc_monetary_2 to __rt_lib_init_lc_monetary_1.
+Renaming symbol $$Temp to __rt_lib_init_lc_monetary_2.
+Renaming symbol __rt_lib_init_lc_numeric_1 to $$Temp.
+Renaming symbol __rt_lib_init_lc_numeric_2 to __rt_lib_init_lc_numeric_1.
+Renaming symbol $$Temp to __rt_lib_init_lc_numeric_2.
+Renaming symbol __rt_lib_init_lc_time_1 to $$Temp.
+Renaming symbol __rt_lib_init_lc_time_2 to __rt_lib_init_lc_time_1.
+Renaming symbol $$Temp to __rt_lib_init_lc_time_2.
+Renaming symbol __rt_lib_init_preinit_1 to $$Temp.
+Renaming symbol __rt_lib_init_preinit_2 to __rt_lib_init_preinit_1.
+Renaming symbol $$Temp to __rt_lib_init_preinit_2.
+Renaming symbol __rt_lib_init_rand_1 to $$Temp.
+Renaming symbol __rt_lib_init_rand_2 to __rt_lib_init_rand_1.
+Renaming symbol $$Temp to __rt_lib_init_rand_2.
+Renaming symbol __rt_lib_init_signal_1 to $$Temp.
+Renaming symbol __rt_lib_init_signal_2 to __rt_lib_init_signal_1.
+Renaming symbol $$Temp to __rt_lib_init_signal_2.
+Renaming symbol __rt_lib_init_stdio_1 to $$Temp.
+Renaming symbol __rt_lib_init_stdio_2 to __rt_lib_init_stdio_1.
+Renaming symbol $$Temp to __rt_lib_init_stdio_2.
+Renaming symbol __rt_lib_init_user_alloc_1 to $$Temp.
+Renaming symbol __rt_lib_init_user_alloc_2 to __rt_lib_init_user_alloc_1.
+Renaming symbol $$Temp to __rt_lib_init_user_alloc_2.
+Renaming symbol __rt_exit_prels_1 to $$Temp.
+Renaming symbol __rt_exit_prels_2 to __rt_exit_prels_1.
+Renaming symbol $$Temp to __rt_exit_prels_2.
+Renaming symbol __rt_lib_shutdown_cpp_1 to $$Temp.
+Renaming symbol __rt_lib_shutdown_cpp_2 to __rt_lib_shutdown_cpp_1.
+Renaming symbol $$Temp to __rt_lib_shutdown_cpp_2.
+Renaming symbol __rt_lib_shutdown_stdio_1 to $$Temp.
+Renaming symbol __rt_lib_shutdown_stdio_2 to __rt_lib_shutdown_stdio_1.
+Renaming symbol $$Temp to __rt_lib_shutdown_stdio_2.
+Renaming symbol __rt_lib_shutdown_user_alloc_1 to $$Temp.
+Renaming symbol __rt_lib_shutdown_user_alloc_2 to __rt_lib_shutdown_user_alloc_1.
+Renaming symbol $$Temp to __rt_lib_shutdown_user_alloc_2.
+              definition:  BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$WCHAR32$ENUMINT$~SHL$OTIME$ROPI$EBA8$UX$STANDARDLIB$REQ8$EABIv2
+Building image.
+Checking duplicate symbol definitions
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing APPInterface_EVB.o(.text), (0 bytes).
+    Removing APP_EVB.o(.text), (0 bytes).
+    Removing APP_EVB.o(.ARM.exidx.text.APP_EVB_APP_10ms), (8 bytes).
+    Removing APP_EVB.o(.ARM.exidx.text.APP_EVB_APP_1ms), (8 bytes).
+    Removing APP_LeverLights_EVB.o(.text), (0 bytes).
+    Removing APP_LeverLights_EVB.o(.ARM.exidx.text.APP_LEVERLIGHTS_EVB_APP_LightCtrl), (8 bytes).
+    Removing APP_LeverSelection_EVB.o(.text), (0 bytes).
+    Removing APP_LeverSelection_EVB.o(.ARM.exidx.text.APP_LEVERSELECTION_EVB_APP_LeverSelect), (8 bytes).
+    Removing APP_LightDutySwitch_EVB.o(.text), (0 bytes).
+    Removing APP_LightDutySwitch_EVB.o(.ARM.exidx.text.APP_LIGHTDUTYSWITCH_EVB_APP_LightDuty), (8 bytes).
+    Removing APP_RGBControl_EVB.o(.text), (0 bytes).
+    Removing APP_RGBControl_EVB.o(.ARM.exidx.text.APP_RGBCONTROL_EVB_A_RGBFader), (8 bytes).
+    Removing APP_RGBControl_EVB.o(.ARM.exidx.text.APP_RGBCONTROL_EVB_APP_RGBStateMachineTrig), (8 bytes).
+    Removing APP_RGBControl_EVB.o(.text.APP_RGBCONTROL_EVB_C_Clockwise), (10 bytes).
+    Removing APP_RGBControl_EVB.o(.ARM.exidx.text.APP_RGBCONTROL_EVB_C_Clockwise), (8 bytes).
+    Removing APP_RGBControl_EVB.o(.text.APP_RGBCONTROL_EVB_C_AntiClockwise), (10 bytes).
+    Removing APP_RGBControl_EVB.o(.ARM.exidx.text.APP_RGBCONTROL_EVB_C_AntiClockwise), (8 bytes).
+    Removing APP_Sanity_EVB.o(.text), (0 bytes).
+    Removing APP_Sanity_EVB.o(.ARM.exidx.text.APP_SANITY_EVB_SanityReturn), (8 bytes).
+    Removing APP_SwitchInterpretation_EVB.o(.text), (0 bytes).
+    Removing APP_SwitchInterpretation_EVB.o(.ARM.exidx.text.APP_SWITCHINTERPRETATION_EVB_APP_SwitchState), (8 bytes).
+    Removing ASCTask100ms.o(.text), (0 bytes).
+    Removing ASCTask100ms.o(.ARM.exidx.text.ASCTask100ms), (8 bytes).
+    Removing ASCTask10ms.o(.text), (0 bytes).
+    Removing ASCTask10ms.o(.ARM.exidx.text.ASCTask10ms), (8 bytes).
+    Removing ASCTask1ms.o(.text), (0 bytes).
+    Removing ASCTask1ms.o(.ARM.exidx.text.ASCTask1ms), (8 bytes).
+    Removing ASCTask5ms.o(.text), (0 bytes).
+    Removing ASCTask5ms.o(.ARM.exidx.text.ASCTask5ms), (8 bytes).
+    Removing INInterface_EVB.o(.text), (0 bytes).
+    Removing IN_AnaIn_EVB.o(.text), (0 bytes).
+    Removing IN_AnaIn_EVB.o(.ARM.exidx.text.IN_ANAIN_EVB_getADCIn), (8 bytes).
+    Removing IN_CANConfig_EVB.o(.text), (0 bytes).
+    Removing IN_CANConfig_EVB.o(.ARM.exidx.text.IN_CANCONFIG_EVB_initCANChannel), (8 bytes).
+    Removing IN_CANConfig_EVB.o(.ARM.exidx.text.IN_CANCONFIG_EVB_startCANChannel), (8 bytes).
+    Removing IN_CANMessageInit_EVB.o(.text), (0 bytes).
+    Removing IN_CANMessageInit_EVB.o(.ARM.exidx.text.IN_CANMESSAGEINIT_EVB_initCANMsg), (8 bytes).
+    Removing IN_CANRxTCM_EVB.o(.text), (0 bytes).
+    Removing IN_CANRxTCM_EVB.o(.ARM.exidx.text.IN_CANRXTCM_EVB_rxCANMsg), (8 bytes).
+    Removing IN_CANRxTCM_EVB.o(.ARM.exidx.text.IN_CANRXTCM_EVB_rxCANNewData), (8 bytes).
+    Removing IN_DigitalIn_EVB.o(.text), (0 bytes).
+    Removing IN_DigitalIn_EVB.o(.ARM.exidx.text.IN_DIGITALIN_EVB_getDigitalIn), (8 bytes).
+    Removing IN_InputCaptureIn_EVB.o(.text), (0 bytes).
+    Removing IN_InputCaptureIn_EVB.o(.ARM.exidx.text.IN_INPUTCAPTUREIN_EVB_getSpeedIn), (8 bytes).
+    Removing IN_Main_EVB.o(.text), (0 bytes).
+    Removing IN_Main_EVB.o(.ARM.exidx.text.IN_MAIN_EVB_IN_dT), (8 bytes).
+    Removing IN_Main_EVB.o(.ARM.exidx.text.IN_MAIN_EVB_IN_Init), (8 bytes).
+    Removing LIB_4BitCountTest_EVB.o(.text), (0 bytes).
+    Removing LIB_4BitCountTest_EVB.o(.ARM.exidx.text.LIB_4BITCOUNTTEST_EVB_LIB_CheckOkay), (8 bytes).
+    Removing LIB_4BitCount_EVB.o(.text), (0 bytes).
+    Removing LIB_4BitCount_EVB.o(.ARM.exidx.text.LIB_4BITCOUNT_EVB_LIB_4BitCount), (8 bytes).
+    Removing LIB_CANStatus_EVB.o(.text), (0 bytes).
+    Removing LIB_CANStatus_EVB.o(.ARM.exidx.text.LIB_CANSTATUS_EVB_LIB_Status), (8 bytes).
+    Removing LIB_Rise_EVB.o(.text), (0 bytes).
+    Removing LIB_Rise_EVB.o(.ARM.exidx.text.LIB_RISE_EVB_LIB_Rising), (8 bytes).
+    Removing LIB_TimerUp_EVB.o(.text), (0 bytes).
+    Removing LIB_TimerUp_EVB.o(.ARM.exidx.text.LIB_TIMERUP_EVB_LIB_Time), (8 bytes).
+    Removing OUT_CANTxAnalogue_EVB.o(.text), (0 bytes).
+    Removing OUT_CANTxAnalogue_EVB.o(.ARM.exidx.text.OUT_CANTXANALOGUE_EVB_txCANMsg), (8 bytes).
+    Removing OUT_CANTxIC_EVB.o(.text), (0 bytes).
+    Removing OUT_CANTxIC_EVB.o(.ARM.exidx.text.OUT_CANTXIC_EVB_txCANMsg), (8 bytes).
+    Removing OUT_CANTxLever_EVB.o(.text), (0 bytes).
+    Removing OUT_CANTxLever_EVB.o(.ARM.exidx.text.OUT_CANTXLEVER_EVB_txCANMsg), (8 bytes).
+    Removing OUT_DigitalOutput_EVB.o(.text), (0 bytes).
+    Removing OUT_DigitalOutput_EVB.o(.ARM.exidx.text.OUT_DIGITALOUTPUT_EVB_setDigOut), (8 bytes).
+    Removing OUT_Main_EVB.o(.text), (0 bytes).
+    Removing OUT_Main_EVB.o(.ARM.exidx.text.OUT_MAIN_EVB_OUT_100ms), (8 bytes).
+    Removing OUT_Main_EVB.o(.ARM.exidx.text.OUT_MAIN_EVB_OUT_10ms), (8 bytes).
+    Removing OUT_Main_EVB.o(.ARM.exidx.text.OUT_MAIN_EVB_OUT_1ms), (8 bytes).
+    Removing OUT_Main_EVB.o(.ARM.exidx.text.OUT_MAIN_EVB_OUT_Init), (8 bytes).
+    Removing OUT_PWMOutput_EVB.o(.text), (0 bytes).
+    Removing OUT_PWMOutput_EVB.o(.ARM.exidx.text.OUT_PWMOUTPUT_EVB_setPWMOut), (8 bytes).
+    Removing S32K144Build_ARM_ArithmeticServices_EVB.o(.text), (0 bytes).
+    Removing S32K144Build_ARM_ArithmeticServices_EVB.o(.bss.ASD_DT_SCALED), (4 bytes).
+    Removing StartupHook.o(.text), (0 bytes).
+    Removing StartupHook.o(.ARM.exidx.text.esdl_StartupHook), (8 bytes).
+    Removing FlashConfig.o(.text), (0 bytes).
+    Removing HA_ADC.o(.text), (0 bytes).
+    Removing HA_ADC.o(.ARM.exidx.text.HA_getAdc), (8 bytes).
+    Removing HA_ADC.o(.ARM.exidx.text.HA_AdcStart), (8 bytes).
+    Removing HA_ADC.o(.ARM.exidx.text.HA_InitADC), (8 bytes).
+    Removing HA_ADC.o(.text.HA_SetupADC), (22 bytes).
+    Removing HA_ADC.o(.ARM.exidx.text.HA_SetupADC), (8 bytes).
+    Removing HA_ADC.o(.text.HA_CalibrateADC), (130 bytes).
+    Removing HA_ADC.o(.ARM.exidx.text.HA_CalibrateADC), (8 bytes).
+    Removing HA_CANDriver.o(.text), (0 bytes).
+    Removing HA_CANDriver.o(.ARM.exidx.text.HA_CANInitialiseBus), (8 bytes).
+    Removing HA_CANDriver.o(.ARM.exidx.text.HA_CANInit), (8 bytes).
+    Removing HA_CANDriver.o(.ARM.exidx.text.HA_CANInitialiseMessage), (8 bytes).
+    Removing HA_CANDriver.o(.ARM.exidx.text.HA_SetupCANBuffer), (8 bytes).
+    Removing HA_CANDriver.o(.ARM.exidx.text.HA_CANReceiveMessage), (8 bytes).
+    Removing HA_CANDriver.o(.text.HA_CANGetMessage), (328 bytes).
+    Removing HA_CANDriver.o(.ARM.exidx.text.HA_CANGetMessage), (8 bytes).
+    Removing HA_CANDriver.o(.ARM.exidx.text.HA_CANTransmitMessage), (8 bytes).
+    Removing HA_CANDriver.o(.ARM.exidx.text.HA_CANSendMessage), (8 bytes).
+    Removing HA_CANDriver.o(.text.HA_CANGetBufferNumber), (82 bytes).
+    Removing HA_CANDriver.o(.ARM.exidx.text.HA_CANGetBufferNumber), (8 bytes).
+    Removing HA_CANDriver.o(.text.HA_GetCANStatus), (4 bytes).
+    Removing HA_CANDriver.o(.ARM.exidx.text.HA_GetCANStatus), (8 bytes).
+    Removing HA_FTM.o(.text), (0 bytes).
+    Removing HA_FTM.o(.ARM.exidx.text.HA_FTMInit), (8 bytes).
+    Removing HA_FTM.o(.text.HA_FTM0Init), (108 bytes).
+    Removing HA_FTM.o(.ARM.exidx.text.HA_FTM0Init), (8 bytes).
+    Removing HA_FTM.o(.text.HA_FTM1Init), (82 bytes).
+    Removing HA_FTM.o(.ARM.exidx.text.HA_FTM1Init), (8 bytes).
+    Removing HA_FTM.o(.text.HA_FTM2Init), (84 bytes).
+    Removing HA_FTM.o(.ARM.exidx.text.HA_FTM2Init), (8 bytes).
+    Removing HA_FTM.o(.text.HA_FTM3Init), (138 bytes).
+    Removing HA_FTM.o(.ARM.exidx.text.HA_FTM3Init), (8 bytes).
+    Removing HA_FTM.o(.ARM.exidx.text.HA_FTMStart), (8 bytes).
+    Removing HA_FTM.o(.ARM.exidx.text.HA_SetPWM), (8 bytes).
+    Removing HA_FTM.o(.ARM.exidx.text.HA_GetFTMHigh), (8 bytes).
+    Removing HA_FTM.o(.ARM.exidx.text.HA_GetFTMPeriod), (8 bytes).
+    Removing HA_FTM.o(.ARM.exidx.text.HA_GetFTMFreq), (8 bytes).
+    Removing HA_FTM.o(.ARM.exidx.text.HA_GetFTMDuty), (8 bytes).
+    Removing HA_FTM.o(.ARM.exidx.text.FTM3_Ch0_Ch1_IRQHandler), (8 bytes).
+    Removing HA_FTM.o(.ARM.exidx.text.FTM3_Ch2_Ch3_IRQHandler), (8 bytes).
+    Removing HA_FTM.o(.ARM.exidx.text.FTM3_Ch4_Ch5_IRQHandler), (8 bytes).
+    Removing HA_FTM.o(.ARM.exidx.text.FTM3_Ch6_Ch7_IRQHandler), (8 bytes).
+    Removing HA_FTM.o(.ARM.exidx.text.FTM3_Ovf_Reload_IRQHandler), (8 bytes).
+    Removing HA_Gpio.o(.text), (0 bytes).
+    Removing HA_Gpio.o(.ARM.exidx.text.HA_GPIOInit), (8 bytes).
+    Removing HA_Gpio.o(.ARM.exidx.text.HA_SetGPIOOut), (8 bytes).
+    Removing HA_Gpio.o(.ARM.exidx.text.HA_GetGPIOIn), (8 bytes).
+    Removing HA_Gpio.o(.text.HA_ToggleGPIOOut), (14 bytes).
+    Removing HA_Gpio.o(.ARM.exidx.text.HA_ToggleGPIOOut), (8 bytes).
+    Removing OS_Scheduler.o(.text), (0 bytes).
+    Removing OS_Scheduler.o(.ARM.exidx.text.HA_NVICInit), (8 bytes).
+    Removing OS_Scheduler.o(.ARM.exidx.text.HA_LPIT0Init), (8 bytes).
+    Removing OS_Scheduler.o(.ARM.exidx.text.HA_DisableWatchdog), (8 bytes).
+    Removing OS_Scheduler.o(.ARM.exidx.text.HA_SetupClocks), (8 bytes).
+    Removing OS_Scheduler.o(.ARM.exidx.text.LPIT0_Ch0_IRQHandler), (8 bytes).
+    Removing OS_Scheduler.o(.ARM.exidx.text.OS_Init), (8 bytes).
+    Removing OS_Scheduler.o(.ARM.exidx.text.OS_Scheduler), (8 bytes).
+    Removing OS_Scheduler.o(.text.OS_Shutdown), (6 bytes).
+    Removing OS_Scheduler.o(.ARM.exidx.text.OS_Shutdown), (8 bytes).
+    Removing OS_Scheduler.o(.text.OS_RequestStop), (14 bytes).
+    Removing OS_Scheduler.o(.ARM.exidx.text.OS_RequestStop), (8 bytes).
+    Removing OS_Scheduler.o(.ARM.exidx.text.WDOG_EWM_IRQHandler), (8 bytes).
+    Removing OS_Task.o(.text), (0 bytes).
+    Removing OS_Task.o(.ARM.exidx.text.OS_TaskInit), (8 bytes).
+    Removing OS_Task.o(.ARM.exidx.text.OS_Task1ms), (8 bytes).
+    Removing OS_Task.o(.ARM.exidx.text.OS_Task5ms), (8 bytes).
+    Removing OS_Task.o(.ARM.exidx.text.OS_Task10ms), (8 bytes).
+    Removing OS_Task.o(.ARM.exidx.text.OS_Task100ms), (8 bytes).
+    Removing OS_Task.o(.ARM.exidx.text.OS_Task1s), (8 bytes).
+    Removing exceptions.o(.text), (0 bytes).
+    Removing exceptions.o(.ARM.exidx.text.NMIException), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.HardFaultException), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.MemManageException), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.BusFaultException), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.UsageFaultException), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DebugMonitor), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.SVCHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.PendSVC), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.SysTickHandler), (8 bytes).
+    Removing exceptions.o(.text.InterruptHandler), (14 bytes).
+    Removing exceptions.o(.ARM.exidx.text.InterruptHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA0_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA1_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA2_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA3_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA4_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA5_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA6_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA7_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA8_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA9_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA10_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA11_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA12_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA13_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA14_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA15_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DMA_Error_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.MCM_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTFC_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Read_Collision_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.LVD_LVW_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTFC_Fault_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.RCM_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.LPI2C0_Master_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.LPI2C0_Slave_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.LPSPI0_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.LPSPI1_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.LPSPI2_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved45_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved46_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.LPUART0_RxTx_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved48_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.LPUART1_RxTx_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved50_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.LPUART2_RxTx_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved52_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved53_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved54_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.ADC0_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.ADC1_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.CMP0_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved58_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved59_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.ERM_single_fault_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.ERM_double_fault_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.RTC_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.RTC_Seconds_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.LPIT0_Ch1_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.LPIT0_Ch2_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.LPIT0_Ch3_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.PDB0_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved69_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved70_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved71_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved72_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.SCG_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.LPTMR0_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.PORTA_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.PORTB_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.PORTC_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.PORTD_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.PORTE_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.SWI_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved81_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved82_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved83_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.PDB1_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FLEXIO_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved86_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved87_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved88_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved89_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved90_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved91_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved92_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved93_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.CAN0_ORed_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.CAN0_Error_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.CAN0_Wake_Up_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.CAN0_ORed_0_15_MB_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.CAN0_ORed_16_31_MB_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved99_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved100_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.CAN1_ORed_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.CAN1_Error_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved103_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.CAN1_ORed_0_15_MB_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved105_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved106_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved107_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.CAN2_ORed_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.CAN2_Error_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved110_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.CAN2_ORed_0_15_MB_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved112_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved113_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.Reserved114_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM0_Ch0_Ch1_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM0_Ch2_Ch3_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM0_Ch4_Ch5_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM0_Ch6_Ch7_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM0_Fault_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM0_Ovf_Reload_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM1_Ch0_Ch1_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM1_Ch2_Ch3_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM1_Ch4_Ch5_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM1_Ch6_Ch7_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM1_Fault_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM1_Ovf_Reload_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM2_Ch0_Ch1_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM2_Ch2_Ch3_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM2_Ch4_Ch5_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM2_Ch6_Ch7_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM2_Fault_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM2_Ovf_Reload_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.FTM3_Fault_IRQHandler), (8 bytes).
+    Removing exceptions.o(.ARM.exidx.text.DefaultISR), (8 bytes).
+    Removing main.o(.text), (0 bytes).
+    Removing main.o(.ARM.exidx.text.main), (8 bytes).
+    Removing main.o(.ARM.use_no_argv), (4 bytes).
+    Removing scs.o(.text), (0 bytes).
+    Removing scs.o(.text.SCS_init), (140 bytes).
+    Removing scs.o(.ARM.exidx.text.SCS_init), (8 bytes).
+    Removing scs.o(.text.NVIC_enableISR), (30 bytes).
+    Removing scs.o(.ARM.exidx.text.NVIC_enableISR), (8 bytes).
+    Removing scs.o(.bss.scs_registers), (3492 bytes).
+    Removing ESDL_CharTable1_u16u8.o(.text), (0 bytes).
+    Removing ESDL_CharTable1_u16u8.o(.ARM.exidx.text.ESDL_Linear_CharTable1_getAt_u16u8), (8 bytes).
+    Removing ESDL_Interpolate_u16u8.o(.text), (0 bytes).
+    Removing ESDL_Interpolate_u16u8.o(.ARM.exidx.text.ESDL_Linear_Interpolate_u16u8), (8 bytes).
+    Removing ESDL_Search_u16.o(.text), (0 bytes).
+    Removing ESDL_Search_u16.o(.ARM.exidx.text.ESDL_Linear_Search_u16), (8 bytes).
+
+290 unused section(s) (total 6508 bytes) removed from the image.
+              reference :  __scatterload_copy
+              reference :  __scatterload_zeroinit
+              reference :  __scatterload_null
+              reference :  __scatterload_rt2
+Choosing data area compressor
+Data area too small to benefit from compression.
+Selecting member __scatter_copy.o(c_wu.l) to define __scatterload_copy.
+Selecting member __scatter_zi.o(c_wu.l) to define __scatterload_zeroinit.
+Selecting member __scatter.o(c_wu.l) to define __scatterload_null.
+Selecting member __scatter.o(c_wu.l) to define __scatterload_rt2.
+Loading member __scatter.o from c_wu.l.
+              definition:  __scatterload
+              definition:  __scatterload_rt2
+              definition:  __scatterload_rt2_thumb_only
+              definition:  __scatterload_null
+              reference :  Region$$Table$$Base
+              reference :  Region$$Table$$Limit
+              reference :  __rt_entry
+Loading member __scatter_copy.o from c_wu.l.
+              definition:  __scatterload_copy
+Loading member __scatter_zi.o from c_wu.l.
+              definition:  __scatterload_zeroinit
+Patching/Reducing relocations
+Creating output file C:\work\DSworkspaces\S32K144_ArmIDE_ASCET\S32K144EVB_ARM\Debug\S32K144EVB_ARM.elf.
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000411
+
+  Load Region LOAD_BOOT (Base: 0x00000000, Size: 0x000003fc, Max: 0x00000400, ABSOLUTE)
+
+    Execution Region VECTORS (Base: 0x00000000, Size: 0x000003fc, Max: 0x00000400, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x000003fc   Data   RO          882    vectors             exceptions.o
+
+
+
+  Load Region LOAD_FCFG (Base: 0x00000400, Size: 0x00000010, Max: 0x00000010, ABSOLUTE)
+
+    Execution Region FCFG (Base: 0x00000400, Size: 0x00000010, Max: 0x00000010, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000400   0x00000010   Data   RO          445    FlashConfig         FlashConfig.o
+
+
+
+  Load Region LOAD_CODE (Base: 0x00000410, Size: 0x000048a4, Max: 0x0007fbf0, ABSOLUTE)
+
+    Execution Region CODE (Base: 0x00000410, Size: 0x000046a8, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000410   0x00000008   Code   RO          939  * !!!main             c_wu.l(__main.o)
+    0x00000418   0x00000034   Code   RO         1125    !!!scatter          c_wu.l(__scatter.o)
+    0x0000044c   0x0000001a   Code   RO         1127    !!handler_copy      c_wu.l(__scatter_copy.o)
+    0x00000466   0x00000002   PAD
+    0x00000468   0x0000001c   Code   RO         1129    !!handler_zi        c_wu.l(__scatter_zi.o)
+    0x00000484   0x00000002   Code   RO          981    .ARM.Collect$$libinit$$00000000  c_wu.l(libinit.o)
+    0x00000486   0x00000000   Code   RO          998    .ARM.Collect$$libinit$$00000002  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1000    .ARM.Collect$$libinit$$00000004  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1003    .ARM.Collect$$libinit$$0000000A  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1005    .ARM.Collect$$libinit$$0000000C  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1007    .ARM.Collect$$libinit$$0000000E  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1010    .ARM.Collect$$libinit$$00000011  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1012    .ARM.Collect$$libinit$$00000013  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1014    .ARM.Collect$$libinit$$00000015  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1016    .ARM.Collect$$libinit$$00000017  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1018    .ARM.Collect$$libinit$$00000019  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1020    .ARM.Collect$$libinit$$0000001B  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1022    .ARM.Collect$$libinit$$0000001D  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1024    .ARM.Collect$$libinit$$0000001F  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1026    .ARM.Collect$$libinit$$00000021  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1028    .ARM.Collect$$libinit$$00000023  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1030    .ARM.Collect$$libinit$$00000025  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1034    .ARM.Collect$$libinit$$0000002C  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1036    .ARM.Collect$$libinit$$0000002E  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1038    .ARM.Collect$$libinit$$00000030  c_wu.l(libinit2.o)
+    0x00000486   0x00000000   Code   RO         1040    .ARM.Collect$$libinit$$00000032  c_wu.l(libinit2.o)
+    0x00000486   0x00000002   Code   RO         1041    .ARM.Collect$$libinit$$00000033  c_wu.l(libinit2.o)
+    0x00000488   0x00000002   Code   RO         1080    .ARM.Collect$$libshutdown$$00000000  c_wu.l(libshutdown.o)
+    0x0000048a   0x00000000   Code   RO         1108    .ARM.Collect$$libshutdown$$00000002  c_wu.l(libshutdown2.o)
+    0x0000048a   0x00000000   Code   RO         1110    .ARM.Collect$$libshutdown$$00000004  c_wu.l(libshutdown2.o)
+    0x0000048a   0x00000000   Code   RO         1113    .ARM.Collect$$libshutdown$$00000007  c_wu.l(libshutdown2.o)
+    0x0000048a   0x00000000   Code   RO         1116    .ARM.Collect$$libshutdown$$0000000A  c_wu.l(libshutdown2.o)
+    0x0000048a   0x00000000   Code   RO         1118    .ARM.Collect$$libshutdown$$0000000C  c_wu.l(libshutdown2.o)
+    0x0000048a   0x00000000   Code   RO         1121    .ARM.Collect$$libshutdown$$0000000F  c_wu.l(libshutdown2.o)
+    0x0000048a   0x00000002   Code   RO         1122    .ARM.Collect$$libshutdown$$00000010  c_wu.l(libshutdown2.o)
+    0x0000048c   0x00000000   Code   RO          941    .ARM.Collect$$rtentry$$00000000  c_wu.l(__rtentry.o)
+    0x0000048c   0x00000000   Code   RO          947    .ARM.Collect$$rtentry$$00000002  c_wu.l(__rtentry2.o)
+    0x0000048c   0x00000004   Code   RO          961    .ARM.Collect$$rtentry$$00000006  c_wu.l(__rtentry6.o)
+    0x00000490   0x00000000   Code   RO          949    .ARM.Collect$$rtentry$$00000009  c_wu.l(__rtentry2.o)
+    0x00000490   0x00000004   Code   RO          950    .ARM.Collect$$rtentry$$0000000A  c_wu.l(__rtentry2.o)
+    0x00000494   0x00000000   Code   RO          952    .ARM.Collect$$rtentry$$0000000C  c_wu.l(__rtentry2.o)
+    0x00000494   0x00000008   Code   RO          953    .ARM.Collect$$rtentry$$0000000D  c_wu.l(__rtentry2.o)
+    0x0000049c   0x00000004   Code   RO          962    .ARM.Collect$$rtentry$$00002717  c_wu.l(__rtentry6.o)
+    0x000004a0   0x00000002   Code   RO          989    .ARM.Collect$$rtexit$$00000000  c_wu.l(rtexit.o)
+    0x000004a2   0x00000000   Code   RO         1054    .ARM.Collect$$rtexit$$00000002  c_wu.l(rtexit2.o)
+    0x000004a2   0x00000004   Code   RO         1055    .ARM.Collect$$rtexit$$00000003  c_wu.l(rtexit2.o)
+    0x000004a6   0x00000006   Code   RO         1056    .ARM.Collect$$rtexit$$00000004  c_wu.l(rtexit2.o)
+    0x000004ac   0x000000f0   Code   RO          937    .text               c_wu.l(lludivv7m.o)
+    0x0000059c   0x00000012   Code   RO          970    .text               c_wu.l(exit.o)
+    0x000005ae   0x00000002   PAD
+    0x000005b0   0x0000000c   Code   RO         1046    .text               c_wu.l(sys_exit.o)
+    0x000005bc   0x00000002   Code   RO         1050    .text               c_wu.l(use_no_semi.o)
+    0x000005be   0x00000000   Code   RO         1052    .text               c_wu.l(indicate_semi.o)
+    0x000005be   0x00000002   PAD
+    0x000005c0   0x0000000e   Code   RO          724    .text.ADC0_IRQHandler  exceptions.o
+    0x000005ce   0x00000002   PAD
+    0x000005d0   0x0000000e   Code   RO          726    .text.ADC1_IRQHandler  exceptions.o
+    0x000005de   0x00000002   PAD
+    0x000005e0   0x00000150   Code   RO           29    .text.APP_EVB_APP_10ms  APP_EVB.o
+    0x00000730   0x0000010e   Code   RO           31    .text.APP_EVB_APP_1ms  APP_EVB.o
+    0x0000083e   0x00000002   PAD
+    0x00000840   0x000000ea   Code   RO           44    .text.APP_LEVERLIGHTS_EVB_APP_LightCtrl  APP_LeverLights_EVB.o
+    0x0000092a   0x00000002   PAD
+    0x0000092c   0x000000e8   Code   RO           53    .text.APP_LEVERSELECTION_EVB_APP_LeverSelect  APP_LeverSelection_EVB.o
+    0x00000a14   0x00000040   Code   RO           62    .text.APP_LIGHTDUTYSWITCH_EVB_APP_LightDuty  APP_LightDutySwitch_EVB.o
+    0x00000a54   0x000000ec   Code   RO           73    .text.APP_RGBCONTROL_EVB_APP_RGBStateMachineTrig  APP_RGBControl_EVB.o
+    0x00000b40   0x0000008c   Code   RO           71    .text.APP_RGBCONTROL_EVB_A_RGBFader  APP_RGBControl_EVB.o
+    0x00000bcc   0x0000000e   Code   RO           87    .text.APP_SANITY_EVB_SanityReturn  APP_Sanity_EVB.o
+    0x00000bda   0x00000002   PAD
+    0x00000bdc   0x00000034   Code   RO           96    .text.APP_SWITCHINTERPRETATION_EVB_APP_SwitchState  APP_SwitchInterpretation_EVB.o
+    0x00000c10   0x00000004   Code   RO          105    .text.ASCTask100ms  ASCTask100ms.o
+    0x00000c14   0x0000000e   Code   RO          113    .text.ASCTask10ms   ASCTask10ms.o
+    0x00000c22   0x00000002   PAD
+    0x00000c24   0x00000012   Code   RO          121    .text.ASCTask1ms    ASCTask1ms.o
+    0x00000c36   0x00000002   PAD
+    0x00000c38   0x00000002   Code   RO          129    .text.ASCTask5ms    ASCTask5ms.o
+    0x00000c3a   0x00000002   PAD
+    0x00000c3c   0x0000000e   Code   RO          634    .text.BusFaultException  exceptions.o
+    0x00000c4a   0x00000002   PAD
+    0x00000c4c   0x0000000e   Code   RO          802    .text.CAN0_Error_IRQHandler  exceptions.o
+    0x00000c5a   0x00000002   PAD
+    0x00000c5c   0x0000000e   Code   RO          806    .text.CAN0_ORed_0_15_MB_IRQHandler  exceptions.o
+    0x00000c6a   0x00000002   PAD
+    0x00000c6c   0x0000000e   Code   RO          808    .text.CAN0_ORed_16_31_MB_IRQHandler  exceptions.o
+    0x00000c7a   0x00000002   PAD
+    0x00000c7c   0x0000000e   Code   RO          800    .text.CAN0_ORed_IRQHandler  exceptions.o
+    0x00000c8a   0x00000002   PAD
+    0x00000c8c   0x0000000e   Code   RO          804    .text.CAN0_Wake_Up_IRQHandler  exceptions.o
+    0x00000c9a   0x00000002   PAD
+    0x00000c9c   0x0000000e   Code   RO          816    .text.CAN1_Error_IRQHandler  exceptions.o
+    0x00000caa   0x00000002   PAD
+    0x00000cac   0x0000000e   Code   RO          820    .text.CAN1_ORed_0_15_MB_IRQHandler  exceptions.o
+    0x00000cba   0x00000002   PAD
+    0x00000cbc   0x0000000e   Code   RO          814    .text.CAN1_ORed_IRQHandler  exceptions.o
+    0x00000cca   0x00000002   PAD
+    0x00000ccc   0x0000000e   Code   RO          830    .text.CAN2_Error_IRQHandler  exceptions.o
+    0x00000cda   0x00000002   PAD
+    0x00000cdc   0x0000000e   Code   RO          834    .text.CAN2_ORed_0_15_MB_IRQHandler  exceptions.o
+    0x00000cea   0x00000002   PAD
+    0x00000cec   0x0000000e   Code   RO          828    .text.CAN2_ORed_IRQHandler  exceptions.o
+    0x00000cfa   0x00000002   PAD
+    0x00000cfc   0x0000000e   Code   RO          728    .text.CMP0_IRQHandler  exceptions.o
+    0x00000d0a   0x00000002   PAD
+    0x00000d0c   0x0000000e   Code   RO          648    .text.DMA0_IRQHandler  exceptions.o
+    0x00000d1a   0x00000002   PAD
+    0x00000d1c   0x0000000e   Code   RO          668    .text.DMA10_IRQHandler  exceptions.o
+    0x00000d2a   0x00000002   PAD
+    0x00000d2c   0x0000000e   Code   RO          670    .text.DMA11_IRQHandler  exceptions.o
+    0x00000d3a   0x00000002   PAD
+    0x00000d3c   0x0000000e   Code   RO          672    .text.DMA12_IRQHandler  exceptions.o
+    0x00000d4a   0x00000002   PAD
+    0x00000d4c   0x0000000e   Code   RO          674    .text.DMA13_IRQHandler  exceptions.o
+    0x00000d5a   0x00000002   PAD
+    0x00000d5c   0x0000000e   Code   RO          676    .text.DMA14_IRQHandler  exceptions.o
+    0x00000d6a   0x00000002   PAD
+    0x00000d6c   0x0000000e   Code   RO          678    .text.DMA15_IRQHandler  exceptions.o
+    0x00000d7a   0x00000002   PAD
+    0x00000d7c   0x0000000e   Code   RO          650    .text.DMA1_IRQHandler  exceptions.o
+    0x00000d8a   0x00000002   PAD
+    0x00000d8c   0x0000000e   Code   RO          652    .text.DMA2_IRQHandler  exceptions.o
+    0x00000d9a   0x00000002   PAD
+    0x00000d9c   0x0000000e   Code   RO          654    .text.DMA3_IRQHandler  exceptions.o
+    0x00000daa   0x00000002   PAD
+    0x00000dac   0x0000000e   Code   RO          656    .text.DMA4_IRQHandler  exceptions.o
+    0x00000dba   0x00000002   PAD
+    0x00000dbc   0x0000000e   Code   RO          658    .text.DMA5_IRQHandler  exceptions.o
+    0x00000dca   0x00000002   PAD
+    0x00000dcc   0x0000000e   Code   RO          660    .text.DMA6_IRQHandler  exceptions.o
+    0x00000dda   0x00000002   PAD
+    0x00000ddc   0x0000000e   Code   RO          662    .text.DMA7_IRQHandler  exceptions.o
+    0x00000dea   0x00000002   PAD
+    0x00000dec   0x0000000e   Code   RO          664    .text.DMA8_IRQHandler  exceptions.o
+    0x00000dfa   0x00000002   PAD
+    0x00000dfc   0x0000000e   Code   RO          666    .text.DMA9_IRQHandler  exceptions.o
+    0x00000e0a   0x00000002   PAD
+    0x00000e0c   0x0000000e   Code   RO          680    .text.DMA_Error_IRQHandler  exceptions.o
+    0x00000e1a   0x00000002   PAD
+    0x00000e1c   0x0000000e   Code   RO          638    .text.DebugMonitor  exceptions.o
+    0x00000e2a   0x00000002   PAD
+    0x00000e2c   0x0000000e   Code   RO          880    .text.DefaultISR    exceptions.o
+    0x00000e3a   0x00000002   PAD
+    0x00000e3c   0x0000000e   Code   RO          736    .text.ERM_double_fault_IRQHandler  exceptions.o
+    0x00000e4a   0x00000002   PAD
+    0x00000e4c   0x0000000e   Code   RO          734    .text.ERM_single_fault_IRQHandler  exceptions.o
+    0x00000e5a   0x00000002   PAD
+    0x00000e5c   0x000000be   Code   RO          912    .text.ESDL_Linear_CharTable1_getAt_u16u8  InterpolationS32.a(ESDL_CharTable1_u16u8.o)
+    0x00000f1a   0x00000002   PAD
+    0x00000f1c   0x00000100   Code   RO          920    .text.ESDL_Linear_Interpolate_u16u8  InterpolationS32.a(ESDL_Interpolate_u16u8.o)
+    0x0000101c   0x000000f4   Code   RO          928    .text.ESDL_Linear_Search_u16  InterpolationS32.a(ESDL_Search_u16.o)
+    0x00001110   0x0000000e   Code   RO          782    .text.FLEXIO_IRQHandler  exceptions.o
+    0x0000111e   0x00000002   PAD
+    0x00001120   0x0000000e   Code   RO          690    .text.FTFC_Fault_IRQHandler  exceptions.o
+    0x0000112e   0x00000002   PAD
+    0x00001130   0x0000000e   Code   RO          684    .text.FTFC_IRQHandler  exceptions.o
+    0x0000113e   0x00000002   PAD
+    0x00001140   0x0000000e   Code   RO          842    .text.FTM0_Ch0_Ch1_IRQHandler  exceptions.o
+    0x0000114e   0x00000002   PAD
+    0x00001150   0x0000000e   Code   RO          844    .text.FTM0_Ch2_Ch3_IRQHandler  exceptions.o
+    0x0000115e   0x00000002   PAD
+    0x00001160   0x0000000e   Code   RO          846    .text.FTM0_Ch4_Ch5_IRQHandler  exceptions.o
+    0x0000116e   0x00000002   PAD
+    0x00001170   0x0000000e   Code   RO          848    .text.FTM0_Ch6_Ch7_IRQHandler  exceptions.o
+    0x0000117e   0x00000002   PAD
+    0x00001180   0x0000000e   Code   RO          850    .text.FTM0_Fault_IRQHandler  exceptions.o
+    0x0000118e   0x00000002   PAD
+    0x00001190   0x0000000e   Code   RO          852    .text.FTM0_Ovf_Reload_IRQHandler  exceptions.o
+    0x0000119e   0x00000002   PAD
+    0x000011a0   0x0000000e   Code   RO          854    .text.FTM1_Ch0_Ch1_IRQHandler  exceptions.o
+    0x000011ae   0x00000002   PAD
+    0x000011b0   0x0000000e   Code   RO          856    .text.FTM1_Ch2_Ch3_IRQHandler  exceptions.o
+    0x000011be   0x00000002   PAD
+    0x000011c0   0x0000000e   Code   RO          858    .text.FTM1_Ch4_Ch5_IRQHandler  exceptions.o
+    0x000011ce   0x00000002   PAD
+    0x000011d0   0x0000000e   Code   RO          860    .text.FTM1_Ch6_Ch7_IRQHandler  exceptions.o
+    0x000011de   0x00000002   PAD
+    0x000011e0   0x0000000e   Code   RO          862    .text.FTM1_Fault_IRQHandler  exceptions.o
+    0x000011ee   0x00000002   PAD
+    0x000011f0   0x0000000e   Code   RO          864    .text.FTM1_Ovf_Reload_IRQHandler  exceptions.o
+    0x000011fe   0x00000002   PAD
+    0x00001200   0x0000000e   Code   RO          866    .text.FTM2_Ch0_Ch1_IRQHandler  exceptions.o
+    0x0000120e   0x00000002   PAD
+    0x00001210   0x0000000e   Code   RO          868    .text.FTM2_Ch2_Ch3_IRQHandler  exceptions.o
+    0x0000121e   0x00000002   PAD
+    0x00001220   0x0000000e   Code   RO          870    .text.FTM2_Ch4_Ch5_IRQHandler  exceptions.o
+    0x0000122e   0x00000002   PAD
+    0x00001230   0x0000000e   Code   RO          872    .text.FTM2_Ch6_Ch7_IRQHandler  exceptions.o
+    0x0000123e   0x00000002   PAD
+    0x00001240   0x0000000e   Code   RO          874    .text.FTM2_Fault_IRQHandler  exceptions.o
+    0x0000124e   0x00000002   PAD
+    0x00001250   0x0000000e   Code   RO          876    .text.FTM2_Ovf_Reload_IRQHandler  exceptions.o
+    0x0000125e   0x00000002   PAD
+    0x00001260   0x000000b6   Code   RO          524    .text.FTM3_Ch0_Ch1_IRQHandler  HA_FTM.o
+    0x00001316   0x00000002   PAD
+    0x00001318   0x000000b6   Code   RO          526    .text.FTM3_Ch2_Ch3_IRQHandler  HA_FTM.o
+    0x000013ce   0x00000002   PAD
+    0x000013d0   0x000000b6   Code   RO          528    .text.FTM3_Ch4_Ch5_IRQHandler  HA_FTM.o
+    0x00001486   0x00000002   PAD
+    0x00001488   0x000000b6   Code   RO          530    .text.FTM3_Ch6_Ch7_IRQHandler  HA_FTM.o
+    0x0000153e   0x00000002   PAD
+    0x00001540   0x0000000e   Code   RO          878    .text.FTM3_Fault_IRQHandler  exceptions.o
+    0x0000154e   0x00000002   PAD
+    0x00001550   0x00000114   Code   RO          532    .text.FTM3_Ovf_Reload_IRQHandler  HA_FTM.o
+    0x00001664   0x000000b4   Code   RO          450    .text.HA_AdcStart   HA_ADC.o
+    0x00001718   0x000001b8   Code   RO          470    .text.HA_CANInit    HA_CANDriver.o
+    0x000018d0   0x00000032   Code   RO          468    .text.HA_CANInitialiseBus  HA_CANDriver.o
+    0x00001902   0x00000002   PAD
+    0x00001904   0x0000007e   Code   RO          472    .text.HA_CANInitialiseMessage  HA_CANDriver.o
+    0x00001982   0x00000002   PAD
+    0x00001984   0x0000014c   Code   RO          476    .text.HA_CANReceiveMessage  HA_CANDriver.o
+    0x00001ad0   0x0000016c   Code   RO          482    .text.HA_CANSendMessage  HA_CANDriver.o
+    0x00001c3c   0x0000006e   Code   RO          480    .text.HA_CANTransmitMessage  HA_CANDriver.o
+    0x00001caa   0x00000002   PAD
+    0x00001cac   0x00000020   Code   RO          575    .text.HA_DisableWatchdog  OS_Scheduler.o
+    0x00001ccc   0x00000188   Code   RO          502    .text.HA_FTMInit    HA_FTM.o
+    0x00001e54   0x00000032   Code   RO          512    .text.HA_FTMStart   HA_FTM.o
+    0x00001e86   0x00000002   PAD
+    0x00001e88   0x00000132   Code   RO          555    .text.HA_GPIOInit   HA_Gpio.o
+    0x00001fba   0x00000002   PAD
+    0x00001fbc   0x0000021a   Code   RO          522    .text.HA_GetFTMDuty  HA_FTM.o
+    0x000021d6   0x00000002   PAD
+    0x000021d8   0x00000226   Code   RO          520    .text.HA_GetFTMFreq  HA_FTM.o
+    0x000023fe   0x00000002   PAD
+    0x00002400   0x00000178   Code   RO          516    .text.HA_GetFTMHigh  HA_FTM.o
+    0x00002578   0x00000186   Code   RO          518    .text.HA_GetFTMPeriod  HA_FTM.o
+    0x000026fe   0x00000002   PAD
+    0x00002700   0x00000046   Code   RO          559    .text.HA_GetGPIOIn  HA_Gpio.o
+    0x00002746   0x00000002   PAD
+    0x00002748   0x00000222   Code   RO          452    .text.HA_InitADC    HA_ADC.o
+    0x0000296a   0x00000002   PAD
+    0x0000296c   0x0000003a   Code   RO          573    .text.HA_LPIT0Init  OS_Scheduler.o
+    0x000029a6   0x00000002   PAD
+    0x000029a8   0x0000001a   Code   RO          571    .text.HA_NVICInit   OS_Scheduler.o
+    0x000029c2   0x00000002   PAD
+    0x000029c4   0x000000e8   Code   RO          557    .text.HA_SetGPIOOut  HA_Gpio.o
+    0x00002aac   0x000000d8   Code   RO          514    .text.HA_SetPWM     HA_FTM.o
+    0x00002b84   0x000000f0   Code   RO          474    .text.HA_SetupCANBuffer  HA_CANDriver.o
+    0x00002c74   0x000001d2   Code   RO          577    .text.HA_SetupClocks  OS_Scheduler.o
+    0x00002e46   0x00000002   PAD
+    0x00002e48   0x000000aa   Code   RO          448    .text.HA_getAdc     HA_ADC.o
+    0x00002ef2   0x00000002   PAD
+    0x00002ef4   0x0000000e   Code   RO          630    .text.HardFaultException  exceptions.o
+    0x00002f02   0x00000002   PAD
+    0x00002f04   0x00000004   Code   RO          244    .text.IN_ANAIN_EVB_getADCIn  IN_AnaIn_EVB.o
+    0x00002f08   0x00000032   Code   RO          252    .text.IN_CANCONFIG_EVB_initCANChannel  IN_CANConfig_EVB.o
+    0x00002f3a   0x00000002   PAD
+    0x00002f3c   0x00000002   Code   RO          254    .text.IN_CANCONFIG_EVB_startCANChannel  IN_CANConfig_EVB.o
+    0x00002f3e   0x00000002   PAD
+    0x00002f40   0x0000002a   Code   RO          264    .text.IN_CANMESSAGEINIT_EVB_initCANMsg  IN_CANMessageInit_EVB.o
+    0x00002f6a   0x00000002   PAD
+    0x00002f6c   0x00000088   Code   RO          273    .text.IN_CANRXTCM_EVB_rxCANMsg  IN_CANRxTCM_EVB.o
+    0x00002ff4   0x0000001c   Code   RO          275    .text.IN_CANRXTCM_EVB_rxCANNewData  IN_CANRxTCM_EVB.o
+    0x00003010   0x00000004   Code   RO          287    .text.IN_DIGITALIN_EVB_getDigitalIn  IN_DigitalIn_EVB.o
+    0x00003014   0x00000046   Code   RO          295    .text.IN_INPUTCAPTUREIN_EVB_getSpeedIn  IN_InputCaptureIn_EVB.o
+    0x0000305a   0x00000002   PAD
+    0x0000305c   0x0000003a   Code   RO          307    .text.IN_MAIN_EVB_IN_Init  IN_Main_EVB.o
+    0x00003096   0x00000002   PAD
+    0x00003098   0x00000adc   Code   RO          305    .text.IN_MAIN_EVB_IN_dT  IN_Main_EVB.o
+    0x00003b74   0x0000007c   Code   RO          320    .text.LIB_4BITCOUNTTEST_EVB_LIB_CheckOkay  LIB_4BitCountTest_EVB.o
+    0x00003bf0   0x0000001c   Code   RO          329    .text.LIB_4BITCOUNT_EVB_LIB_4BitCount  LIB_4BitCount_EVB.o
+    0x00003c0c   0x00000038   Code   RO          338    .text.LIB_CANSTATUS_EVB_LIB_Status  LIB_CANStatus_EVB.o
+    0x00003c44   0x00000016   Code   RO          347    .text.LIB_RISE_EVB_LIB_Rising  LIB_Rise_EVB.o
+    0x00003c5a   0x00000002   PAD
+    0x00003c5c   0x0000001e   Code   RO          356    .text.LIB_TIMERUP_EVB_LIB_Time  LIB_TimerUp_EVB.o
+    0x00003c7a   0x00000002   PAD
+    0x00003c7c   0x0000000e   Code   RO          694    .text.LPI2C0_Master_IRQHandler  exceptions.o
+    0x00003c8a   0x00000002   PAD
+    0x00003c8c   0x0000000e   Code   RO          696    .text.LPI2C0_Slave_IRQHandler  exceptions.o
+    0x00003c9a   0x00000002   PAD
+    0x00003c9c   0x000000ea   Code   RO          579    .text.LPIT0_Ch0_IRQHandler  OS_Scheduler.o
+    0x00003d86   0x00000002   PAD
+    0x00003d88   0x0000000e   Code   RO          742    .text.LPIT0_Ch1_IRQHandler  exceptions.o
+    0x00003d96   0x00000002   PAD
+    0x00003d98   0x0000000e   Code   RO          744    .text.LPIT0_Ch2_IRQHandler  exceptions.o
+    0x00003da6   0x00000002   PAD
+    0x00003da8   0x0000000e   Code   RO          746    .text.LPIT0_Ch3_IRQHandler  exceptions.o
+    0x00003db6   0x00000002   PAD
+    0x00003db8   0x0000000e   Code   RO          698    .text.LPSPI0_IRQHandler  exceptions.o
+    0x00003dc6   0x00000002   PAD
+    0x00003dc8   0x0000000e   Code   RO          700    .text.LPSPI1_IRQHandler  exceptions.o
+    0x00003dd6   0x00000002   PAD
+    0x00003dd8   0x0000000e   Code   RO          702    .text.LPSPI2_IRQHandler  exceptions.o
+    0x00003de6   0x00000002   PAD
+    0x00003de8   0x0000000e   Code   RO          760    .text.LPTMR0_IRQHandler  exceptions.o
+    0x00003df6   0x00000002   PAD
+    0x00003df8   0x0000000e   Code   RO          708    .text.LPUART0_RxTx_IRQHandler  exceptions.o
+    0x00003e06   0x00000002   PAD
+    0x00003e08   0x0000000e   Code   RO          712    .text.LPUART1_RxTx_IRQHandler  exceptions.o
+    0x00003e16   0x00000002   PAD
+    0x00003e18   0x0000000e   Code   RO          716    .text.LPUART2_RxTx_IRQHandler  exceptions.o
+    0x00003e26   0x00000002   PAD
+    0x00003e28   0x0000000e   Code   RO          688    .text.LVD_LVW_IRQHandler  exceptions.o
+    0x00003e36   0x00000002   PAD
+    0x00003e38   0x0000000e   Code   RO          682    .text.MCM_IRQHandler  exceptions.o
+    0x00003e46   0x00000002   PAD
+    0x00003e48   0x0000000e   Code   RO          632    .text.MemManageException  exceptions.o
+    0x00003e56   0x00000002   PAD
+    0x00003e58   0x0000000e   Code   RO          628    .text.NMIException  exceptions.o
+    0x00003e66   0x00000002   PAD
+    0x00003e68   0x0000007a   Code   RO          581    .text.OS_Init       OS_Scheduler.o
+    0x00003ee2   0x00000002   PAD
+    0x00003ee4   0x00000096   Code   RO          583    .text.OS_Scheduler  OS_Scheduler.o
+    0x00003f7a   0x00000002   PAD
+    0x00003f7c   0x00000004   Code   RO          617    .text.OS_Task100ms  OS_Task.o
+    0x00003f80   0x00000004   Code   RO          615    .text.OS_Task10ms   OS_Task.o
+    0x00003f84   0x0000000e   Code   RO          611    .text.OS_Task1ms    OS_Task.o
+    0x00003f92   0x00000002   PAD
+    0x00003f94   0x00000002   Code   RO          619    .text.OS_Task1s     OS_Task.o
+    0x00003f96   0x00000002   PAD
+    0x00003f98   0x00000004   Code   RO          613    .text.OS_Task5ms    OS_Task.o
+    0x00003f9c   0x00000026   Code   RO          609    .text.OS_TaskInit   OS_Task.o
+    0x00003fc2   0x00000002   PAD
+    0x00003fc4   0x00000044   Code   RO          365    .text.OUT_CANTXANALOGUE_EVB_txCANMsg  OUT_CANTxAnalogue_EVB.o
+    0x00004008   0x0000006a   Code   RO          375    .text.OUT_CANTXIC_EVB_txCANMsg  OUT_CANTxIC_EVB.o
+    0x00004072   0x00000002   PAD
+    0x00004074   0x0000006a   Code   RO          385    .text.OUT_CANTXLEVER_EVB_txCANMsg  OUT_CANTxLever_EVB.o
+    0x000040de   0x00000002   PAD
+    0x000040e0   0x00000004   Code   RO          395    .text.OUT_DIGITALOUTPUT_EVB_setDigOut  OUT_DigitalOutput_EVB.o
+    0x000040e4   0x00000002   Code   RO          403    .text.OUT_MAIN_EVB_OUT_100ms  OUT_Main_EVB.o
+    0x000040e6   0x00000002   PAD
+    0x000040e8   0x0000004a   Code   RO          405    .text.OUT_MAIN_EVB_OUT_10ms  OUT_Main_EVB.o
+    0x00004132   0x00000002   PAD
+    0x00004134   0x000004ce   Code   RO          407    .text.OUT_MAIN_EVB_OUT_1ms  OUT_Main_EVB.o
+    0x00004602   0x00000002   PAD
+    0x00004604   0x0000011c   Code   RO          409    .text.OUT_MAIN_EVB_OUT_Init  OUT_Main_EVB.o
+    0x00004720   0x0000000a   Code   RO          422    .text.OUT_PWMOUTPUT_EVB_setPWMOut  OUT_PWMOutput_EVB.o
+    0x0000472a   0x00000002   PAD
+    0x0000472c   0x0000000e   Code   RO          748    .text.PDB0_IRQHandler  exceptions.o
+    0x0000473a   0x00000002   PAD
+    0x0000473c   0x0000000e   Code   RO          780    .text.PDB1_IRQHandler  exceptions.o
+    0x0000474a   0x00000002   PAD
+    0x0000474c   0x0000000e   Code   RO          762    .text.PORTA_IRQHandler  exceptions.o
+    0x0000475a   0x00000002   PAD
+    0x0000475c   0x0000000e   Code   RO          764    .text.PORTB_IRQHandler  exceptions.o
+    0x0000476a   0x00000002   PAD
+    0x0000476c   0x0000000e   Code   RO          766    .text.PORTC_IRQHandler  exceptions.o
+    0x0000477a   0x00000002   PAD
+    0x0000477c   0x0000000e   Code   RO          768    .text.PORTD_IRQHandler  exceptions.o
+    0x0000478a   0x00000002   PAD
+    0x0000478c   0x0000000e   Code   RO          770    .text.PORTE_IRQHandler  exceptions.o
+    0x0000479a   0x00000002   PAD
+    0x0000479c   0x0000000e   Code   RO          642    .text.PendSVC       exceptions.o
+    0x000047aa   0x00000002   PAD
+    0x000047ac   0x0000000e   Code   RO          692    .text.RCM_IRQHandler  exceptions.o
+    0x000047ba   0x00000002   PAD
+    0x000047bc   0x0000000e   Code   RO          738    .text.RTC_IRQHandler  exceptions.o
+    0x000047ca   0x00000002   PAD
+    0x000047cc   0x0000000e   Code   RO          740    .text.RTC_Seconds_IRQHandler  exceptions.o
+    0x000047da   0x00000002   PAD
+    0x000047dc   0x0000000e   Code   RO          686    .text.Read_Collision_IRQHandler  exceptions.o
+    0x000047ea   0x00000002   PAD
+    0x000047ec   0x0000000e   Code   RO          812    .text.Reserved100_IRQHandler  exceptions.o
+    0x000047fa   0x00000002   PAD
+    0x000047fc   0x0000000e   Code   RO          818    .text.Reserved103_IRQHandler  exceptions.o
+    0x0000480a   0x00000002   PAD
+    0x0000480c   0x0000000e   Code   RO          822    .text.Reserved105_IRQHandler  exceptions.o
+    0x0000481a   0x00000002   PAD
+    0x0000481c   0x0000000e   Code   RO          824    .text.Reserved106_IRQHandler  exceptions.o
+    0x0000482a   0x00000002   PAD
+    0x0000482c   0x0000000e   Code   RO          826    .text.Reserved107_IRQHandler  exceptions.o
+    0x0000483a   0x00000002   PAD
+    0x0000483c   0x0000000e   Code   RO          832    .text.Reserved110_IRQHandler  exceptions.o
+    0x0000484a   0x00000002   PAD
+    0x0000484c   0x0000000e   Code   RO          836    .text.Reserved112_IRQHandler  exceptions.o
+    0x0000485a   0x00000002   PAD
+    0x0000485c   0x0000000e   Code   RO          838    .text.Reserved113_IRQHandler  exceptions.o
+    0x0000486a   0x00000002   PAD
+    0x0000486c   0x0000000e   Code   RO          840    .text.Reserved114_IRQHandler  exceptions.o
+    0x0000487a   0x00000002   PAD
+    0x0000487c   0x0000000e   Code   RO          704    .text.Reserved45_IRQHandler  exceptions.o
+    0x0000488a   0x00000002   PAD
+    0x0000488c   0x0000000e   Code   RO          706    .text.Reserved46_IRQHandler  exceptions.o
+    0x0000489a   0x00000002   PAD
+    0x0000489c   0x0000000e   Code   RO          710    .text.Reserved48_IRQHandler  exceptions.o
+    0x000048aa   0x00000002   PAD
+    0x000048ac   0x0000000e   Code   RO          714    .text.Reserved50_IRQHandler  exceptions.o
+    0x000048ba   0x00000002   PAD
+    0x000048bc   0x0000000e   Code   RO          718    .text.Reserved52_IRQHandler  exceptions.o
+    0x000048ca   0x00000002   PAD
+    0x000048cc   0x0000000e   Code   RO          720    .text.Reserved53_IRQHandler  exceptions.o
+    0x000048da   0x00000002   PAD
+    0x000048dc   0x0000000e   Code   RO          722    .text.Reserved54_IRQHandler  exceptions.o
+    0x000048ea   0x00000002   PAD
+    0x000048ec   0x0000000e   Code   RO          730    .text.Reserved58_IRQHandler  exceptions.o
+    0x000048fa   0x00000002   PAD
+    0x000048fc   0x0000000e   Code   RO          732    .text.Reserved59_IRQHandler  exceptions.o
+    0x0000490a   0x00000002   PAD
+    0x0000490c   0x0000000e   Code   RO          750    .text.Reserved69_IRQHandler  exceptions.o
+    0x0000491a   0x00000002   PAD
+    0x0000491c   0x0000000e   Code   RO          752    .text.Reserved70_IRQHandler  exceptions.o
+    0x0000492a   0x00000002   PAD
+    0x0000492c   0x0000000e   Code   RO          754    .text.Reserved71_IRQHandler  exceptions.o
+    0x0000493a   0x00000002   PAD
+    0x0000493c   0x0000000e   Code   RO          756    .text.Reserved72_IRQHandler  exceptions.o
+    0x0000494a   0x00000002   PAD
+    0x0000494c   0x0000000e   Code   RO          774    .text.Reserved81_IRQHandler  exceptions.o
+    0x0000495a   0x00000002   PAD
+    0x0000495c   0x0000000e   Code   RO          776    .text.Reserved82_IRQHandler  exceptions.o
+    0x0000496a   0x00000002   PAD
+    0x0000496c   0x0000000e   Code   RO          778    .text.Reserved83_IRQHandler  exceptions.o
+    0x0000497a   0x00000002   PAD
+    0x0000497c   0x0000000e   Code   RO          784    .text.Reserved86_IRQHandler  exceptions.o
+    0x0000498a   0x00000002   PAD
+    0x0000498c   0x0000000e   Code   RO          786    .text.Reserved87_IRQHandler  exceptions.o
+    0x0000499a   0x00000002   PAD
+    0x0000499c   0x0000000e   Code   RO          788    .text.Reserved88_IRQHandler  exceptions.o
+    0x000049aa   0x00000002   PAD
+    0x000049ac   0x0000000e   Code   RO          790    .text.Reserved89_IRQHandler  exceptions.o
+    0x000049ba   0x00000002   PAD
+    0x000049bc   0x0000000e   Code   RO          792    .text.Reserved90_IRQHandler  exceptions.o
+    0x000049ca   0x00000002   PAD
+    0x000049cc   0x0000000e   Code   RO          794    .text.Reserved91_IRQHandler  exceptions.o
+    0x000049da   0x00000002   PAD
+    0x000049dc   0x0000000e   Code   RO          796    .text.Reserved92_IRQHandler  exceptions.o
+    0x000049ea   0x00000002   PAD
+    0x000049ec   0x0000000e   Code   RO          798    .text.Reserved93_IRQHandler  exceptions.o
+    0x000049fa   0x00000002   PAD
+    0x000049fc   0x0000000e   Code   RO          810    .text.Reserved99_IRQHandler  exceptions.o
+    0x00004a0a   0x00000002   PAD
+    0x00004a0c   0x0000000e   Code   RO          758    .text.SCG_IRQHandler  exceptions.o
+    0x00004a1a   0x00000002   PAD
+    0x00004a1c   0x0000000e   Code   RO          640    .text.SVCHandler    exceptions.o
+    0x00004a2a   0x00000002   PAD
+    0x00004a2c   0x0000000e   Code   RO          772    .text.SWI_IRQHandler  exceptions.o
+    0x00004a3a   0x00000002   PAD
+    0x00004a3c   0x0000000e   Code   RO          644    .text.SysTickHandler  exceptions.o
+    0x00004a4a   0x00000002   PAD
+    0x00004a4c   0x0000000e   Code   RO          636    .text.UsageFaultException  exceptions.o
+    0x00004a5a   0x00000002   PAD
+    0x00004a5c   0x00000002   Code   RO          589    .text.WDOG_EWM_IRQHandler  OS_Scheduler.o
+    0x00004a5e   0x00000002   PAD
+    0x00004a60   0x0000000e   Code   RO          437    .text.esdl_StartupHook  StartupHook.o
+    0x00004a6e   0x00000002   PAD
+    0x00004a70   0x0000001e   Code   RO          890    .text.main          main.o
+    0x00004a8e   0x00000008   Data   RO          488    .rodata.HA_CANByteExchange  HA_CANDriver.o
+    0x00004a96   0x00000002   PAD
+    0x00004a98   0x00000020   Data   RO         1124    Region$$Table       anon$$obj.o
+
+
+    Execution Region DATA (Base: 0x1fff8000, Size: 0x0000057c, Max: 0x00005c00, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x1fff8000   0x0000006c   Data   RW           35    .data.APP           APP_EVB.o
+    0x1fff806c   0x0000000c   Data   RW          311    .data.IN_Main       IN_Main_EVB.o
+    0x1fff8078   0x0000001c   Data   RW          310    .data.IN_Main_IRAM  IN_Main_EVB.o
+    0x1fff8094   0x00000004   Data   RW          413    .data.OUT_Main      OUT_Main_EVB.o
+    0x1fff8098   0x0000005e   Data   RW          412    .data.OUT_Main_IRAM  OUT_Main_EVB.o
+    0x1fff80f6   0x0000008e   Data   RW           33    .par_ram            APP_EVB.o
+    0x1fff8184   0x00000034   Data   RW          309    .par_ram            IN_Main_EVB.o
+    0x1fff81b8   0x00000044   Data   RW          411    .par_ram            OUT_Main_EVB.o
+    0x1fff81fc   0x00000002   Zero   RW            4    .bss.APPInterface_APP_BlueLED  APPInterface_EVB.o
+    0x1fff81fe   0x00000002   Zero   RW            5    .bss.APPInterface_APP_D10_PTB5  APPInterface_EVB.o
+    0x1fff8200   0x00000002   Zero   RW            6    .bss.APPInterface_APP_D11_PTB4  APPInterface_EVB.o
+    0x1fff8202   0x00000002   Zero   RW            7    .bss.APPInterface_APP_D12_PTB3  APPInterface_EVB.o
+    0x1fff8204   0x00000002   Zero   RW            8    .bss.APPInterface_APP_D13_PTB2  APPInterface_EVB.o
+    0x1fff8206   0x00000001   Zero   RW           14    .bss.APPInterface_APP_D14_PTA9  APPInterface_EVB.o
+    0x1fff8207   0x00000001   Zero   RW           15    .bss.APPInterface_APP_D15_PTA8  APPInterface_EVB.o
+    0x1fff8208   0x00000001   Zero   RW           16    .bss.APPInterface_APP_D16_PTE12  APPInterface_EVB.o
+    0x1fff8209   0x00000001   Zero   RW           17    .bss.APPInterface_APP_D17_PTD17  APPInterface_EVB.o
+    0x1fff820a   0x00000001   Zero   RW           18    .bss.APPInterface_APP_D18_PTC9  APPInterface_EVB.o
+    0x1fff820b   0x00000001   Zero   RW           19    .bss.APPInterface_APP_D19_PTC8  APPInterface_EVB.o
+    0x1fff820c   0x00000001   Zero   RW           20    .bss.APPInterface_APP_D20_PTD8  APPInterface_EVB.o
+    0x1fff820d   0x00000001   Zero   RW           21    .bss.APPInterface_APP_D21_PTD9  APPInterface_EVB.o
+    0x1fff820e   0x00000002   Zero   RW            9    .bss.APPInterface_APP_D8_PTD13  APPInterface_EVB.o
+    0x1fff8210   0x00000002   Zero   RW           10    .bss.APPInterface_APP_D9_PTD14  APPInterface_EVB.o
+    0x1fff8212   0x00000001   Zero   RW           22    .bss.APPInterface_APP_GPIOPTD0  APPInterface_EVB.o
+    0x1fff8213   0x00000001   Zero   RW           23    .bss.APPInterface_APP_GPIOPTD2  APPInterface_EVB.o
+    0x1fff8214   0x00000002   Zero   RW           11    .bss.APPInterface_APP_GreenLED  APPInterface_EVB.o
+    0x1fff8216   0x0000000a   Zero   RW           13    .bss.APPInterface_APP_LeverOut  APPInterface_EVB.o
+    0x1fff8220   0x00000002   Zero   RW           12    .bss.APPInterface_APP_RedLED  APPInterface_EVB.o
+    0x1fff8222   0x00000056   Zero   RW           34    .bss.APP_IRAM       APP_EVB.o
+    0x1fff8278   0x00000022   Zero   RW          458    .bss.HA_ADCResults  HA_ADC.o
+    0x1fff829a   0x00000001   Zero   RW          459    .bss.HA_AdcStart.channeltoggle  HA_ADC.o
+    0x1fff829b   0x0000001e   Zero   RW          491    .bss.HA_Buffer      HA_CANDriver.o
+    0x1fff82b9   0x0000001e   Zero   RW          490    .bss.HA_Bus         HA_CANDriver.o
+    0x1fff82d7   0x0000001e   Zero   RW          493    .bss.HA_Dlc         HA_CANDriver.o
+    0x1fff82f5   0x00000003   PAD
+    0x1fff82f8   0x00000004   Zero   RW          534    .bss.HA_FTM3HighResTmr  HA_FTM.o
+    0x1fff82fc   0x00000001   Zero   RW          489    .bss.HA_Handle      HA_CANDriver.o
+    0x1fff82fd   0x00000003   PAD
+    0x1fff8300   0x00000004   Zero   RW          539    .bss.HA_HighTime.0  HA_FTM.o
+    0x1fff8304   0x00000004   Zero   RW          540    .bss.HA_HighTime.1  HA_FTM.o
+    0x1fff8308   0x00000004   Zero   RW          541    .bss.HA_HighTime.2  HA_FTM.o
+    0x1fff830c   0x00000004   Zero   RW          542    .bss.HA_HighTime.3  HA_FTM.o
+    0x1fff8310   0x00000004   Zero   RW          543    .bss.HA_HighTime.4  HA_FTM.o
+    0x1fff8314   0x00000004   Zero   RW          544    .bss.HA_HighTime.5  HA_FTM.o
+    0x1fff8318   0x00000004   Zero   RW          545    .bss.HA_HighTime.6  HA_FTM.o
+    0x1fff831c   0x00000004   Zero   RW          546    .bss.HA_HighTime.7  HA_FTM.o
+    0x1fff8320   0x00000078   Zero   RW          492    .bss.HA_Id          HA_CANDriver.o
+    0x1fff8398   0x00000020   Zero   RW          537    .bss.HA_Period      HA_FTM.o
+    0x1fff83b8   0x00000020   Zero   RW          535    .bss.HA_PeriodMin   HA_FTM.o
+    0x1fff83d8   0x00000020   Zero   RW          538    .bss.HA_RiseLast    HA_FTM.o
+    0x1fff83f8   0x00000020   Zero   RW          536    .bss.HA_Timeout     HA_FTM.o
+    0x1fff8418   0x00000002   Zero   RW          137    .bss.INInterface_IN_ADC0_PTD4  INInterface_EVB.o
+    0x1fff841a   0x00000002   Zero   RW          138    .bss.INInterface_IN_ADC10_PTA1  INInterface_EVB.o
+    0x1fff841c   0x00000002   Zero   RW          139    .bss.INInterface_IN_ADC11_PTA0  INInterface_EVB.o
+    0x1fff841e   0x00000002   Zero   RW          140    .bss.INInterface_IN_ADC12_PTA7  INInterface_EVB.o
+    0x1fff8420   0x00000002   Zero   RW          141    .bss.INInterface_IN_ADC13_PTB13  INInterface_EVB.o
+    0x1fff8422   0x00000002   Zero   RW          142    .bss.INInterface_IN_ADC14_PTC1  INInterface_EVB.o
+    0x1fff8424   0x00000002   Zero   RW          143    .bss.INInterface_IN_ADC15_PTC2  INInterface_EVB.o
+    0x1fff8426   0x00000002   Zero   RW          144    .bss.INInterface_IN_ADC1_PTB12  INInterface_EVB.o
+    0x1fff8428   0x00000002   Zero   RW          145    .bss.INInterface_IN_ADC2_PTB0  INInterface_EVB.o
+    0x1fff842a   0x00000002   Zero   RW          146    .bss.INInterface_IN_ADC3_PTB1  INInterface_EVB.o
+    0x1fff842c   0x00000002   Zero   RW          147    .bss.INInterface_IN_ADC4_PTA6  INInterface_EVB.o
+    0x1fff842e   0x00000002   Zero   RW          148    .bss.INInterface_IN_ADC5_PTC0  INInterface_EVB.o
+    0x1fff8430   0x00000002   Zero   RW          149    .bss.INInterface_IN_ADC6_PTE2  INInterface_EVB.o
+    0x1fff8432   0x00000002   Zero   RW          150    .bss.INInterface_IN_ADC7_PTE6  INInterface_EVB.o
+    0x1fff8434   0x00000002   Zero   RW          151    .bss.INInterface_IN_ADC8_PTA15  INInterface_EVB.o
+    0x1fff8436   0x00000002   Zero   RW          152    .bss.INInterface_IN_ADC9_PTA16  INInterface_EVB.o
+    0x1fff8438   0x00000010   Zero   RW          154    .bss.INInterface_IN_D0_IC_PTA2  INInterface_EVB.o
+    0x1fff8448   0x00000001   Zero   RW          163    .bss.INInterface_IN_D0_PTA2  INInterface_EVB.o
+    0x1fff8449   0x00000001   Zero   RW          164    .bss.INInterface_IN_D10_PTB5  INInterface_EVB.o
+    0x1fff844a   0x00000001   Zero   RW          165    .bss.INInterface_IN_D11_PTB4  INInterface_EVB.o
+    0x1fff844b   0x00000001   Zero   RW          166    .bss.INInterface_IN_D12_PTB3  INInterface_EVB.o
+    0x1fff844c   0x00000001   Zero   RW          167    .bss.INInterface_IN_D13_PTB2  INInterface_EVB.o
+    0x1fff844d   0x00000001   Zero   RW          168    .bss.INInterface_IN_D14_PTA9  INInterface_EVB.o
+    0x1fff844e   0x00000001   Zero   RW          169    .bss.INInterface_IN_D14_PTE11  INInterface_EVB.o
+    0x1fff844f   0x00000001   Zero   RW          170    .bss.INInterface_IN_D15_PTA8  INInterface_EVB.o
+    0x1fff8450   0x00000001   Zero   RW          171    .bss.INInterface_IN_D15_PTE10  INInterface_EVB.o
+    0x1fff8451   0x00000001   Zero   RW          172    .bss.INInterface_IN_D16_PTE12  INInterface_EVB.o
+    0x1fff8452   0x00000001   Zero   RW          173    .bss.INInterface_IN_D17_PTD17  INInterface_EVB.o
+    0x1fff8453   0x00000001   Zero   RW          174    .bss.INInterface_IN_D18_PTC9  INInterface_EVB.o
+    0x1fff8454   0x00000001   Zero   RW          175    .bss.INInterface_IN_D19_PTC8  INInterface_EVB.o
+    0x1fff8455   0x00000003   PAD
+    0x1fff8458   0x00000010   Zero   RW          155    .bss.INInterface_IN_D1_IC_PTA3  INInterface_EVB.o
+    0x1fff8468   0x00000001   Zero   RW          176    .bss.INInterface_IN_D1_PTA3  INInterface_EVB.o
+    0x1fff8469   0x00000001   Zero   RW          177    .bss.INInterface_IN_D20_PTD8_  INInterface_EVB.o
+    0x1fff846a   0x00000001   Zero   RW          178    .bss.INInterface_IN_D21_PTD9  INInterface_EVB.o
+    0x1fff846b   0x00000001   PAD
+    0x1fff846c   0x00000010   Zero   RW          156    .bss.INInterface_IN_D2_IC_PTB10  INInterface_EVB.o
+    0x1fff847c   0x00000001   Zero   RW          179    .bss.INInterface_IN_D2_PTB8  INInterface_EVB.o
+    0x1fff847d   0x00000003   PAD
+    0x1fff8480   0x00000010   Zero   RW          157    .bss.INInterface_IN_D3_IC_PTB11  INInterface_EVB.o
+    0x1fff8490   0x00000001   Zero   RW          180    .bss.INInterface_IN_D3_PTB9  INInterface_EVB.o
+    0x1fff8491   0x00000003   PAD
+    0x1fff8494   0x00000010   Zero   RW          158    .bss.INInterface_IN_D4_IC_PTC10  INInterface_EVB.o
+    0x1fff84a4   0x00000001   Zero   RW          181    .bss.INInterface_IN_D4_PTB10  INInterface_EVB.o
+    0x1fff84a5   0x00000003   PAD
+    0x1fff84a8   0x00000010   Zero   RW          159    .bss.INInterface_IN_D5_IC_PTC11  INInterface_EVB.o
+    0x1fff84b8   0x00000001   Zero   RW          182    .bss.INInterface_IN_D5_PTB11  INInterface_EVB.o
+    0x1fff84b9   0x00000003   PAD
+    0x1fff84bc   0x00000010   Zero   RW          160    .bss.INInterface_IN_D6_IC_PTC12  INInterface_EVB.o
+    0x1fff84cc   0x00000001   Zero   RW          183    .bss.INInterface_IN_D6_PTC10  INInterface_EVB.o
+    0x1fff84cd   0x00000003   PAD
+    0x1fff84d0   0x00000010   Zero   RW          161    .bss.INInterface_IN_D7_IC_PTC13  INInterface_EVB.o
+    0x1fff84e0   0x00000001   Zero   RW          184    .bss.INInterface_IN_D7_PTC11  INInterface_EVB.o
+    0x1fff84e1   0x00000001   Zero   RW          185    .bss.INInterface_IN_D8_PTD13  INInterface_EVB.o
+    0x1fff84e2   0x00000001   Zero   RW          186    .bss.INInterface_IN_D9_PTD14  INInterface_EVB.o
+    0x1fff84e3   0x00000001   Zero   RW          187    .bss.INInterface_IN_GPIOPTA10  INInterface_EVB.o
+    0x1fff84e4   0x00000001   Zero   RW          188    .bss.INInterface_IN_GPIOPTA11  INInterface_EVB.o
+    0x1fff84e5   0x00000001   Zero   RW          189    .bss.INInterface_IN_GPIOPTA12  INInterface_EVB.o
+    0x1fff84e6   0x00000001   Zero   RW          190    .bss.INInterface_IN_GPIOPTA13  INInterface_EVB.o
+    0x1fff84e7   0x00000001   Zero   RW          191    .bss.INInterface_IN_GPIOPTA14  INInterface_EVB.o
+    0x1fff84e8   0x00000001   Zero   RW          192    .bss.INInterface_IN_GPIOPTA17  INInterface_EVB.o
+    0x1fff84e9   0x00000001   Zero   RW          193    .bss.INInterface_IN_GPIOPTA4  INInterface_EVB.o
+    0x1fff84ea   0x00000001   Zero   RW          194    .bss.INInterface_IN_GPIOPTB14  INInterface_EVB.o
+    0x1fff84eb   0x00000001   Zero   RW          195    .bss.INInterface_IN_GPIOPTB15  INInterface_EVB.o
+    0x1fff84ec   0x00000001   Zero   RW          196    .bss.INInterface_IN_GPIOPTB16  INInterface_EVB.o
+    0x1fff84ed   0x00000001   Zero   RW          197    .bss.INInterface_IN_GPIOPTB17  INInterface_EVB.o
+    0x1fff84ee   0x00000001   Zero   RW          198    .bss.INInterface_IN_GPIOPTB6  INInterface_EVB.o
+    0x1fff84ef   0x00000001   Zero   RW          199    .bss.INInterface_IN_GPIOPTB7  INInterface_EVB.o
+    0x1fff84f0   0x00000001   Zero   RW          200    .bss.INInterface_IN_GPIOPTC12  INInterface_EVB.o
+    0x1fff84f1   0x00000001   Zero   RW          201    .bss.INInterface_IN_GPIOPTC13  INInterface_EVB.o
+    0x1fff84f2   0x00000001   Zero   RW          202    .bss.INInterface_IN_GPIOPTC14  INInterface_EVB.o
+    0x1fff84f3   0x00000001   Zero   RW          203    .bss.INInterface_IN_GPIOPTC15  INInterface_EVB.o
+    0x1fff84f4   0x00000001   Zero   RW          204    .bss.INInterface_IN_GPIOPTC16  INInterface_EVB.o
+    0x1fff84f5   0x00000001   Zero   RW          205    .bss.INInterface_IN_GPIOPTC17  INInterface_EVB.o
+    0x1fff84f6   0x00000001   Zero   RW          206    .bss.INInterface_IN_GPIOPTC3  INInterface_EVB.o
+    0x1fff84f7   0x00000001   Zero   RW          207    .bss.INInterface_IN_GPIOPTC4  INInterface_EVB.o
+    0x1fff84f8   0x00000001   Zero   RW          208    .bss.INInterface_IN_GPIOPTC5  INInterface_EVB.o
+    0x1fff84f9   0x00000001   Zero   RW          209    .bss.INInterface_IN_GPIOPTC6  INInterface_EVB.o
+    0x1fff84fa   0x00000001   Zero   RW          210    .bss.INInterface_IN_GPIOPTC7  INInterface_EVB.o
+    0x1fff84fb   0x00000001   Zero   RW          211    .bss.INInterface_IN_GPIOPTD0  INInterface_EVB.o
+    0x1fff84fc   0x00000001   Zero   RW          212    .bss.INInterface_IN_GPIOPTD0_  INInterface_EVB.o
+    0x1fff84fd   0x00000001   Zero   RW          213    .bss.INInterface_IN_GPIOPTD1  INInterface_EVB.o
+    0x1fff84fe   0x00000001   Zero   RW          214    .bss.INInterface_IN_GPIOPTD10  INInterface_EVB.o
+    0x1fff84ff   0x00000001   Zero   RW          215    .bss.INInterface_IN_GPIOPTD11  INInterface_EVB.o
+    0x1fff8500   0x00000001   Zero   RW          216    .bss.INInterface_IN_GPIOPTD12  INInterface_EVB.o
+    0x1fff8501   0x00000001   Zero   RW          217    .bss.INInterface_IN_GPIOPTD15  INInterface_EVB.o
+    0x1fff8502   0x00000001   Zero   RW          218    .bss.INInterface_IN_GPIOPTD16  INInterface_EVB.o
+    0x1fff8503   0x00000001   Zero   RW          219    .bss.INInterface_IN_GPIOPTD2  INInterface_EVB.o
+    0x1fff8504   0x00000001   Zero   RW          220    .bss.INInterface_IN_GPIOPTD3  INInterface_EVB.o
+    0x1fff8505   0x00000001   Zero   RW          221    .bss.INInterface_IN_GPIOPTD3_  INInterface_EVB.o
+    0x1fff8506   0x00000001   Zero   RW          222    .bss.INInterface_IN_GPIOPTD5  INInterface_EVB.o
+    0x1fff8507   0x00000001   Zero   RW          223    .bss.INInterface_IN_GPIOPTD6  INInterface_EVB.o
+    0x1fff8508   0x00000001   Zero   RW          224    .bss.INInterface_IN_GPIOPTD7  INInterface_EVB.o
+    0x1fff8509   0x00000001   Zero   RW          225    .bss.INInterface_IN_GPIOPTE0  INInterface_EVB.o
+    0x1fff850a   0x00000001   Zero   RW          226    .bss.INInterface_IN_GPIOPTE1  INInterface_EVB.o
+    0x1fff850b   0x00000001   Zero   RW          227    .bss.INInterface_IN_GPIOPTE13  INInterface_EVB.o
+    0x1fff850c   0x00000001   Zero   RW          228    .bss.INInterface_IN_GPIOPTE14  INInterface_EVB.o
+    0x1fff850d   0x00000001   Zero   RW          229    .bss.INInterface_IN_GPIOPTE15  INInterface_EVB.o
+    0x1fff850e   0x00000001   Zero   RW          230    .bss.INInterface_IN_GPIOPTE16  INInterface_EVB.o
+    0x1fff850f   0x00000001   Zero   RW          231    .bss.INInterface_IN_GPIOPTE3  INInterface_EVB.o
+    0x1fff8510   0x00000001   Zero   RW          232    .bss.INInterface_IN_GPIOPTE4  INInterface_EVB.o
+    0x1fff8511   0x00000001   Zero   RW          233    .bss.INInterface_IN_GPIOPTE5  INInterface_EVB.o
+    0x1fff8512   0x00000001   Zero   RW          234    .bss.INInterface_IN_GPIOPTE7  INInterface_EVB.o
+    0x1fff8513   0x00000001   Zero   RW          235    .bss.INInterface_IN_GPIOPTE8  INInterface_EVB.o
+    0x1fff8514   0x00000001   Zero   RW          236    .bss.INInterface_IN_GPIOPTE9  INInterface_EVB.o
+    0x1fff8515   0x0000000d   Zero   RW          162    .bss.INInterface_IN_LeverIn  INInterface_EVB.o
+    0x1fff8522   0x00000002   Zero   RW          153    .bss.INInterface_IN_Potentiometer_PTC14  INInterface_EVB.o
+    0x1fff8524   0x00000001   Zero   RW          237    .bss.INInterface_IN_SW2_PTC12  INInterface_EVB.o
+    0x1fff8525   0x00000001   Zero   RW          238    .bss.INInterface_IN_SW3_PTC13  INInterface_EVB.o
+    0x1fff8526   0x0000000f   Zero   RW          277    .bss.IN_CANRXTCM_EVB_rxCANMsg.retval  IN_CANRxTCM_EVB.o
+    0x1fff8535   0x00000003   PAD
+    0x1fff8538   0x00000010   Zero   RW          297    .bss.IN_INPUTCAPTUREIN_EVB_getSpeedIn.retval  IN_InputCaptureIn_EVB.o
+    0x1fff8548   0x00000008   Zero   RW          367    .bss.OUT_CANTXANALOGUE_EVB_txCANMsg.msg  OUT_CANTxAnalogue_EVB.o
+    0x1fff8550   0x00000008   Zero   RW          377    .bss.OUT_CANTXIC_EVB_txCANMsg.msg  OUT_CANTxIC_EVB.o
+    0x1fff8558   0x00000008   Zero   RW          387    .bss.OUT_CANTXLEVER_EVB_txCANMsg.msg  OUT_CANTxLever_EVB.o
+    0x1fff8560   0x00000002   Zero   RW          594    .bss.os100mscount   OS_Scheduler.o
+    0x1fff8562   0x00000001   Zero   RW          599    .bss.os100mssched   OS_Scheduler.o
+    0x1fff8563   0x00000001   PAD
+    0x1fff8564   0x00000002   Zero   RW          593    .bss.os10mscount    OS_Scheduler.o
+    0x1fff8566   0x00000001   Zero   RW          598    .bss.os10mssched    OS_Scheduler.o
+    0x1fff8567   0x00000001   PAD
+    0x1fff8568   0x00000002   Zero   RW          591    .bss.os1mscount     OS_Scheduler.o
+    0x1fff856a   0x00000001   Zero   RW          596    .bss.os1mssched     OS_Scheduler.o
+    0x1fff856b   0x00000001   PAD
+    0x1fff856c   0x00000002   Zero   RW          595    .bss.os1scount      OS_Scheduler.o
+    0x1fff856e   0x00000001   Zero   RW          600    .bss.os1ssched      OS_Scheduler.o
+    0x1fff856f   0x00000001   PAD
+    0x1fff8570   0x00000002   Zero   RW          592    .bss.os5mscount     OS_Scheduler.o
+    0x1fff8572   0x00000001   Zero   RW          597    .bss.os5mssched     OS_Scheduler.o
+    0x1fff8573   0x00000001   Zero   RW          601    .bss.osRun          OS_Scheduler.o
+    0x1fff8574   0x00000008   Zero   RW          278    .bss.rxdata         IN_CANRxTCM_EVB.o
+
+
+
+  Load Region LOAD (Base: 0x1ffff000, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ARM_LIB_STACKHEAP (Base: 0x1ffff000, Size: 0x00000400, Max: 0x00000400, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x1ffff000   0x00000400   Zero   RW            1    ARM_LIB_STACKHEAP.bss  anon$$obj.o
+
+
+    Execution Region PROCESS_STACK (Base: 0x1ffff400, Size: 0x00000400, Max: 0x00000400, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x1ffff400   0x00000400   Zero   RW            2    PROCESS_STACK.bss   anon$$obj.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+         0          0          0          0         38       1712   APPInterface_EVB.o
+       606          0          0        250         86       8879   APP_EVB.o
+       234          0          0          0          0       2657   APP_LeverLights_EVB.o
+       232          0          0          0          0       3441   APP_LeverSelection_EVB.o
+        64          0          0          0          0       1464   APP_LightDutySwitch_EVB.o
+       376          0          0          0          0       3430   APP_RGBControl_EVB.o
+        14          0          0          0          0        755   APP_Sanity_EVB.o
+        52          0          0          0          0       1309   APP_SwitchInterpretation_EVB.o
+         4          0          0          0          0        432   ASCTask100ms.o
+        14          0          0          0          0        437   ASCTask10ms.o
+        18          0          0          0          0        434   ASCTask1ms.o
+         2          0          0          0          0        355   ASCTask5ms.o
+         0          0         16          0          0          0   FlashConfig.o
+       896         80          0          0         35       4636   HA_ADC.o
+      1662         12          8          0        211      11671   HA_CANDriver.o
+      3516        340          0          0        164      10989   HA_FTM.o
+       608          0          0          0          0       2958   HA_Gpio.o
+         0          0          0          0        251       5501   INInterface_EVB.o
+         4          0          0          0          0        761   IN_AnaIn_EVB.o
+        52          0          0          0          0       1149   IN_CANConfig_EVB.o
+        42          0          0          0          0       1060   IN_CANMessageInit_EVB.o
+       164          0          0          0         23       1811   IN_CANRxTCM_EVB.o
+         4          0          0          0          0        693   IN_DigitalIn_EVB.o
+        70          0          0          0         16       1160   IN_InputCaptureIn_EVB.o
+      2838          0          0         92          0      10382   IN_Main_EVB.o
+       124          0          0          0          0       1482   LIB_4BitCountTest_EVB.o
+        28          0          0          0          0        915   LIB_4BitCount_EVB.o
+        56          0          0          0          0       1249   LIB_CANStatus_EVB.o
+        22          0          0          0          0        888   LIB_Rise_EVB.o
+        30          0          0          0          0       1104   LIB_TimerUp_EVB.o
+      1090          0          0          0         16       4117   OS_Scheduler.o
+        66          0          0          0          0        935   OS_Task.o
+        68          0          0          0          8       1248   OUT_CANTxAnalogue_EVB.o
+       106          0          0          0          8       1459   OUT_CANTxIC_EVB.o
+       106          0          0          0          8       1540   OUT_CANTxLever_EVB.o
+         4          0          0          0          0        715   OUT_DigitalOutput_EVB.o
+      1590          0          0        166          0       7868   OUT_Main_EVB.o
+        10          0          0          0          0        832   OUT_PWMOutput_EVB.o
+        14          0          0          0          0        477   StartupHook.o
+      1764          0       1020          0          0      12892   exceptions.o
+        30          0          0          0          0        438   main.o
+
+    ----------------------------------------------------------------------
+     16922        432       1078        508       2944     116235   Object Totals
+         0          0         32          0       2048          0   (incl. Generated)
+       342          0          2          0         32          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+       190          0          0          0          0       1107   ESDL_CharTable1_u16u8.o
+       256          0          0          0          0       1024   ESDL_Interpolate_u16u8.o
+       244          0          0          0          0       1094   ESDL_Search_u16.o
+         8          0          0          0          0         68   __main.o
+         0          0          0          0          0          0   __rtentry.o
+        12          0          0          0          0          0   __rtentry2.o
+         8          4          0          0          0          0   __rtentry6.o
+        52          8          0          0          0          0   __scatter.o
+        26          0          0          0          0          0   __scatter_copy.o
+        28          0          0          0          0          0   __scatter_zi.o
+        18          0          0          0          0         80   exit.o
+         0          0          0          0          0          0   indicate_semi.o
+         2          0          0          0          0          0   libinit.o
+         2          0          0          0          0          0   libinit2.o
+         2          0          0          0          0          0   libshutdown.o
+         2          0          0          0          0          0   libshutdown2.o
+       240          0          0          0          0        100   lludivv7m.o
+         2          0          0          0          0          0   rtexit.o
+        10          0          0          0          0          0   rtexit2.o
+        12          4          0          0          0         68   sys_exit.o
+         2          0          0          0          0         68   use_no_semi.o
+
+    ----------------------------------------------------------------------
+      1124         16          0          0          0       3609   Library Totals
+         8          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       690          0          0          0          0       3225   InterpolationS32.a
+       426         16          0          0          0        384   c_wu.l
+
+    ----------------------------------------------------------------------
+      1124         16          0          0          0       3609   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     18046        448       1078        508       2944     119092   Grand Totals
+     18046        448       1078        508       2944     119092   ELF Image Totals
+     18046        448       1078        508          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                19124 (  18.68kB)
+    Total RW  Size (RW Data + ZI Data)              3452 (   3.37kB)
+    Total ROM Size (Code + RO Data + RW Data)      19632 (  19.17kB)
+
+==============================================================================
+

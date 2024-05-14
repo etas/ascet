@@ -1,0 +1,14 @@
+Component   ascet.Lib.LIB_TimerDnExp size ( 14 , 8 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout LIB_Expired {
+		pin LIB_DT ( Left , 4 )
+		pin LIB_Run ( Left , 6 )
+		pin LIB_Expired ( Right , 3 )
+	}
+	methodLayout LIB_Init {
+		pin LIB_TimeIn ( Left , 1 )
+	}
+	methodLayout LIB_Time {
+		pin LIB_Time ( Right , 5 )
+	}
+}

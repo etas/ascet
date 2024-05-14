@@ -1,0 +1,91 @@
+classType ascet.Lib.LIB_CounterUp
+blockdiagramSpecification Main {
+	methodBody LIB_Count {
+		outPin active
+	{
+			connection_10, connection_8
+		}
+	}
+
+	
+	conditionalSelect at (451, 161) {
+		inPin connection_5
+		inPin CASE_CONDITION connection_7 {
+			bendpoints 
+		(250, 0)
+		}
+		inPin connection_3
+		outPin {
+			connection_2
+		}
+	}
+	literal Numeric "0" at (391, 193) size (49, 0) {
+		outPin {
+			connection_3
+		}
+	}
+	addition at (321, 166) {
+		inPin connection_4
+		inPin connection_11 {
+			bendpoints (90, 0)
+		}
+		outPin {
+			connection_5
+		}
+	}
+	
+	methodArgumentIdentifier LIB_Count.LIB_Reset at  (181, 125) {
+		label at 
+		
+		(-40, 9)
+		outPin {
+			connection_7
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	return at (541, 265) {
+		label at 
+		
+		(0, 0)
+		inPin connection_9
+		sequenceCall at (-10, -14) {
+			inPin connection_8
+		}
+	}
+	simpleIdentifier LIB_TimeInternal at  (171, 165) {
+		label at 
+		(-30, -1)
+		inPin outPin {
+			connection_4
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier LIB_TimeInternal at (541, 185) {
+		label at (0, -1)
+		inPin connection_2
+		 
+	outPin sequenceCall at (-10, -14) {
+			inPin connection_10
+		}
+	}
+	
+	simpleIdentifier   LIB_TimeInternal at  (171, 265) {
+		label at 
+		(-20, -1)
+		inPin outPin {
+			connection_9
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	literal Numeric "1" at (181, 193) size (49, 0) {
+		outPin {
+			connection_11
+		}
+	}
+}

@@ -1,0 +1,43 @@
+#! armclang --target=arm-arm-none-eabi  -march=armv8-a -E -x c
+#include "S32K144EVB.h"
+
+LOAD_BOOT BOOT_BASE BOOT_LENGTH
+{
+	VECTORS +0 BOOT_LENGTH
+	{
+		* (vectors, +FIRST)
+	}
+}
+
+LOAD_FCFG 0x400 0x10
+{
+	FCFG +0 0x10
+	{
+		* (FlashConfig)
+	}
+}
+
+LOAD_CODE ROM_BASE NOCOMPRESS (ROM_LENGTH)
+{
+  CODE	ROM_BASE
+   {
+    * (+RO)      ; code (.text) and constants
+   }
+  DATA RAM_BASE RAM_LENGTH-STACK_SPACE
+   {
+    * (+RW)     ; initialised variables (.data)
+    * (+ZI)         ; zero initialised variables (.bss)
+   }
+  
+}
+
+LOAD HEAP_BASE
+{
+
+  ARM_LIB_STACKHEAP HEAP_BASE ALIGN 8 EMPTY HEAP_SPACE
+        { }
+  PROCESS_STACK STACK_END ALIGN 8 EMPTY -STACK_SPACE
+        { }
+} 
+
+

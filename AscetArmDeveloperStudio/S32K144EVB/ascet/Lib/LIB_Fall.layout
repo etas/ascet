@@ -1,0 +1,7 @@
+Component ascet.Lib.LIB_Fall size ( 14 , 3 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout LIB_Falling {
+		pin LIB_Input ( Left , 0 )
+		pin LIB_Falling ( Right , 0 )
+	}
+}

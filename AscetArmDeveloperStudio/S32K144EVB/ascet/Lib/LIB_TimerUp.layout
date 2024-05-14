@@ -1,0 +1,8 @@
+Component ascet.Lib.LIB_TimerUp size ( 14 , 5 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout LIB_Time {
+		pin LIB_Reset ( Left , 0 )
+		pin LIB_DT ( Left , 2 )
+		pin LIB_Time ( Right , 1 )
+	}
+}

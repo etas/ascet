@@ -1,0 +1,7 @@
+Component ascet.Lib.LIB_4BitCountTest size ( 16 , 3 ) {
+	labelPosition ( -20 , 1 )
+	methodLayout LIB_CheckOkay {
+		pin LIB_CountIn ( Left , 0 )
+		pin LIB_CheckOkay ( Right , 0 )
+	}
+}

@@ -1,0 +1,7 @@
+Component ascet.Lib.LIB_CounterUp size ( 14 , 3 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout LIB_Count {
+		pin LIB_Reset ( Left , 0 )
+		pin LIB_Count ( Right , 0 )
+	}
+}

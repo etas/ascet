@@ -1,0 +1,7 @@
+Component ascet.IN.IN_DigitalIn size ( 14 , 3 ) backgroundColor #80ffff {
+	labelPosition ( 0 , 1 )
+	methodLayout getDigitalIn {
+		pin port ( Left , 0 )
+		pin getDigitalIn ( Right , 0 )
+	}
+}

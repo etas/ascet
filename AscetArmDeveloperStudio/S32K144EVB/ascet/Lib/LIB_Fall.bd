@@ -1,0 +1,96 @@
+classType ascet.Lib.LIB_Fall
+blockdiagramSpecification Main {
+	methodBody LIB_Falling {
+		outPin active
+	{
+			connection_24
+		, connection_21, connection_12
+		}
+	}
+methodArgumentIdentifier LIB_Falling.LIB_Input at  (121, 95) {
+		label at (-50, -1)
+		outPin {
+			connection_26
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier LIB_Prev at  (111, 125) {
+		label at (-20, -1)
+		inPin outPin {
+			connection_27
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	and at  (271, 96) {
+		inPin connection_1
+		inPin connection_27 {
+			bendpoints (110, 0)
+		}
+		outPin {
+			connection_25
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	return at  (531, 205) {
+		label at (-50, 0)
+		inPin connection_20
+		sequenceCall at (-20, -14) {
+			inPin connection_12
+		}
+	}
+	
+	
+	
+	freeComment at   (121, 71) {
+		"Return true if input has falling edge"
+	}
+simpleIdentifier LIB_FallLocal at (111, 205) {
+		label at (-20, -1)
+		inPin outPin {
+			connection_20
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier LIB_FallLocal at (531, 105) {
+		label at 
+		(-30, -1)
+		inPin connection_25
+		outPin sequenceCall at (-20, -14) {
+			inPin connection_24
+		}
+	}
+	simpleIdentifier LIB_Prev at (531, 165) {
+		label at (-20, -1)
+		inPin connection_22
+		outPin sequenceCall at (-20, -14) {
+			inPin connection_21
+		}
+	}
+	methodArgumentIdentifier LIB_Falling.LIB_Input at (121, 165) {
+		label at (-40, -1)
+		outPin {
+			connection_22
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+not at (211, 91) {
+		inPin connection_26
+		outPin {
+			connection_1
+		}
+	}
+}

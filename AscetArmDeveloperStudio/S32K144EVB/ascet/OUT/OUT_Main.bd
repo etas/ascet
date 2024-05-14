@@ -1,0 +1,2965 @@
+classType ascet.OUT.OUT_Main
+blockdiagramSpecification Main {
+	methodBody OUT_1ms {
+		outPin active {
+			connection_869, connection_376, connection_457, connection_458
+		}
+	}
+	methodBody OUT_Init {
+		outPin {
+			connection_456
+		}
+	}
+	methodBody OUT_100ms {
+		outPin
+	}
+	methodBody OUT_10ms {
+		outPin {
+			connection_459
+		}
+	}
+	sequenceableContainer OUT_CANSchedule at (191, 321) size (10, 10) {
+		label at (0, 1)
+		simpleIdentifier OUT_AnaSched at (331, 115) {
+			label at (-50, -1)
+			inPin outPin {
+				connection_377
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		equal at (241, 96) {
+			inPin connection_379
+			inPin connection_380 {
+				bendpoints (70, 0)
+			}
+			outPin {
+				connection_378
+			}
+		}
+		simpleIdentifier OUT_AnaSched at (121, 95) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_379
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		literal Numeric "4" at (121, 123) size (49, 0) {
+			outPin {
+				connection_380
+			}
+		}
+		conditionalSelect at (521, 111) {
+			inPin connection_383
+			inPin CASE_CONDITION connection_378
+			inPin connection_385
+			outPin {
+				connection_382
+			}
+		}
+		addition at (421, 116) {
+			inPin connection_377
+			inPin connection_384 {
+				bendpoints (40, 0)
+			}
+			outPin {
+				connection_383
+			}
+		}
+		literal Numeric "1" at (331, 143) size (49, 0) {
+			outPin {
+				connection_384
+			}
+		}
+		literal Numeric "0" at (461, 143) size (49, 0) {
+			outPin {
+				connection_385
+			}
+		}
+		simpleIdentifier OUT_AnaSched at (611, 135) {
+			label at (-30, -1)
+			inPin connection_382
+			outPin sequenceCall at (-10, -14) {
+				inPin connection_381
+			}
+		}
+		conditionalSelect at (521, 211) {
+			inPin connection_393
+			inPin CASE_CONDITION connection_391
+			inPin connection_392
+			outPin {
+				connection_388
+			}
+		}
+		literal Numeric "1" at (331, 243) size (49, 0) {
+			outPin {
+				connection_389
+			}
+		}
+		literal Numeric "9" at (121, 223) size (49, 0) {
+			outPin {
+				connection_390
+			}
+		}
+		equal at (241, 196) {
+			inPin connection_386
+			inPin connection_390 {
+				bendpoints (70, 0)
+			}
+			outPin {
+				connection_406, connection_391
+			}
+		}
+		literal Numeric "0" at (461, 243) size (49, 0) {
+			outPin {
+				connection_392
+			}
+		}
+		addition at (421, 216) {
+			inPin connection_394
+			inPin connection_389 {
+				bendpoints (40, 0)
+			}
+			outPin {
+				connection_393
+			}
+		}
+		simpleIdentifier OUT_ICSched at (121, 195) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_386
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_ICSched at (331, 215) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_394
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_ICSched at (611, 235) {
+			label at (-30, -1)
+			inPin connection_388
+			outPin sequenceCall at (-20, -14) {
+				inPin connection_395
+			}
+		}
+		simpleIdentifier OUT_ICMux at (611, 315) {
+			label at (0, -1)
+			inPin connection_408
+			outPin sequenceCall at (-20, -14) {
+				inPin connection_407
+			}
+		}
+		simpleIdentifier OUT_ICMux at (331, 325) {
+			label at (0, -1)
+			inPin outPin {
+				connection_404
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		not at (461, 321) {
+			inPin connection_404
+			outPin {
+				connection_405
+			}
+		}
+		conditionalSelect at (521, 291) {
+			inPin connection_409 {
+				bendpoints (140, 0)
+			}
+			inPin CASE_CONDITION connection_406 {
+				bendpoints (280, 0), (280, 80)
+			}
+			inPin connection_405
+			outPin {
+				connection_408
+			}
+		}
+		simpleIdentifier OUT_ICMux at (331, 295) {
+			label at (0, -1)
+			inPin outPin {
+				connection_409
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_381, connection_395, connection_407
+			}
+			sequenceCall {
+				inPin connection_376
+			}
+		}
+	}
+	sequenceableContainer OUT_CANInitMsgs at (381, 31) size (10, 10) {
+		label at (0, 1)
+		simpleIdentifier OUT_IC1Handle at (461, 95) {
+			label at (-50, -1)
+			inPin connection_671
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_670
+			}
+		}
+		simpleIdentifier OUT_IC1ID at (101, 65) {
+			label at (-40, -1)
+			outPin {
+				connection_669
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC1CHANNEL at (101, 35) {
+			label at (-70, -1)
+			outPin {
+				connection_668
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC2CHANNEL at (91, 195) {
+			label at (-60, -1)
+			outPin {
+				connection_677
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC3CHANNEL at (91, 355) {
+			label at (-60, -1)
+			outPin {
+				connection_684
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC4CHANNEL at (91, 515) {
+			label at (-50, -1)
+			outPin {
+				connection_689
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC2ID at (91, 225) {
+			label at (-40, -1)
+			outPin {
+				connection_678
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC3ID at (91, 385) {
+			label at (-40, -1)
+			outPin {
+				connection_685
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC4ID at (91, 545) {
+			label at (-40, -1)
+			outPin {
+				connection_690
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC4Handle at (461, 575) {
+			label at (-50, -1)
+			inPin connection_692
+			outPin sequenceCall at (-40, -14) {
+				inPin connection_691
+			}
+		}
+		simpleIdentifier OUT_IC3Handle at (461, 415) {
+			label at (-50, -1)
+			inPin connection_683
+			outPin sequenceCall at (-40, -14) {
+				inPin connection_682
+			}
+		}
+		simpleIdentifier OUT_IC2Handle at (461, 255) {
+			label at (-50, -1)
+			inPin connection_676
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_675
+			}
+		}
+		simpleIdentifier OUT_IC8CHANNEL at (601, 355) {
+			label at (-60, -1)
+			outPin {
+				connection_705
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC8ID at (601, 385) {
+			label at (-40, -1)
+			outPin {
+				connection_706
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC7CHANNEL at (601, 195) {
+			label at (-60, -1)
+			outPin {
+				connection_707
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC7ID at (601, 225) {
+			label at (-50, -1)
+			outPin {
+				connection_708
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC6ID at (601, 65) {
+			label at (-40, -1)
+			outPin {
+				connection_714
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC6CHANNEL at (601, 35) {
+			label at (-60, -1)
+			outPin {
+				connection_713
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC5CHANNEL at (81, 675) {
+			label at (-60, -1)
+			outPin {
+				connection_696
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC5ID at (81, 705) {
+			label at (-40, -1)
+			outPin {
+				connection_697
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC5Handle at (461, 735) {
+			label at (-40, -1)
+			inPin connection_699
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_698
+			}
+		}
+		simpleIdentifier OUT_IC6Handle at (961, 95) {
+			label at (-50, -1)
+			inPin connection_712
+			outPin sequenceCall at (-40, -14) {
+				inPin connection_711
+			}
+		}
+		simpleIdentifier OUT_IC7Handle at (961, 255) {
+			label at (-60, -1)
+			inPin connection_710
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_709
+			}
+		}
+		simpleIdentifier OUT_IC8Handle at (961, 415) {
+			label at (-50, -1)
+			inPin connection_704
+			outPin sequenceCall at (-40, -14) {
+				inPin connection_703
+			}
+		}
+		complexIdentifier OUT_CANMsgInit at (221, 31) size (17, 14) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_CANMessageInit.initCANMsg {
+				argumentPin IN_CANChannel at (left, 0) connection_668
+				argumentPin IN_CANID at (left, 3) connection_669
+				argumentPin IN_TxMsg at (left, 6) connection_672
+				argumentPin IN_ExtendedMsg at (left, 9) connection_673
+				argumentPin IN_MsgLength at (left, 12) connection_674
+				returnPin at (right, 6) {
+					connection_671
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_CANMsgInit at (221, 191) size (17, 14) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_CANMessageInit.initCANMsg {
+				argumentPin IN_CANChannel at (left, 0) connection_677
+				argumentPin IN_CANID at (left, 3) connection_678
+				argumentPin IN_TxMsg at (left, 6) connection_679
+				argumentPin IN_ExtendedMsg at (left, 9) connection_680
+				argumentPin IN_MsgLength at (left, 12) connection_681
+				returnPin at (right, 6) {
+					connection_676
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_CANMsgInit at (221, 351) size (17, 14) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_CANMessageInit.initCANMsg {
+				argumentPin IN_CANChannel at (left, 0) connection_684
+				argumentPin IN_CANID at (left, 3) connection_685
+				argumentPin IN_TxMsg at (left, 6) connection_686
+				argumentPin IN_ExtendedMsg at (left, 9) connection_687
+				argumentPin IN_MsgLength at (left, 12) connection_688
+				returnPin at (right, 6) {
+					connection_683
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_CANMsgInit at (221, 511) size (17, 14) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_CANMessageInit.initCANMsg {
+				argumentPin IN_CANChannel at (left, 0) connection_689
+				argumentPin IN_CANID at (left, 3) connection_690
+				argumentPin IN_TxMsg at (left, 6) connection_693
+				argumentPin IN_ExtendedMsg at (left, 9) connection_694
+				argumentPin IN_MsgLength at (left, 12) connection_695
+				returnPin at (right, 6) {
+					connection_692
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_CANMsgInit at (221, 671) size (17, 14) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_CANMessageInit.initCANMsg {
+				argumentPin IN_CANChannel at (left, 0) connection_696
+				argumentPin IN_CANID at (left, 3) connection_697
+				argumentPin IN_TxMsg at (left, 6) connection_700
+				argumentPin IN_ExtendedMsg at (left, 9) connection_701
+				argumentPin IN_MsgLength at (left, 12) connection_702
+				returnPin at (right, 6) {
+					connection_699
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_CANMsgInit at (731, 31) size (17, 14) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_CANMessageInit.initCANMsg {
+				argumentPin IN_CANChannel at (left, 0) connection_713
+				argumentPin IN_CANID at (left, 3) connection_714
+				argumentPin IN_TxMsg at (left, 6) connection_715
+				argumentPin IN_ExtendedMsg at (left, 9) connection_716
+				argumentPin IN_MsgLength at (left, 12) connection_717
+				returnPin at (right, 6) {
+					connection_712
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_CANMsgInit at (731, 191) size (17, 14) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_CANMessageInit.initCANMsg {
+				argumentPin IN_CANChannel at (left, 0) connection_707
+				argumentPin IN_CANID at (left, 3) connection_708
+				argumentPin IN_TxMsg at (left, 6) connection_718
+				argumentPin IN_ExtendedMsg at (left, 9) connection_719
+				argumentPin IN_MsgLength at (left, 12) connection_720
+				returnPin at (right, 6) {
+					connection_710
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_CANMsgInit at (731, 351) size (17, 14) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_CANMessageInit.initCANMsg {
+				argumentPin IN_CANChannel at (left, 0) connection_705
+				argumentPin IN_CANID at (left, 3) connection_706
+				argumentPin IN_TxMsg at (left, 6) connection_721
+				argumentPin IN_ExtendedMsg at (left, 9) connection_722
+				argumentPin IN_MsgLength at (left, 12) connection_723
+				returnPin at (right, 6) {
+					connection_704
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		literal Boolean "true" at (91, 93) size (49, 0) {
+			outPin {
+				connection_672
+			}
+		}
+		literal Boolean "false" at (91, 123) size (49, 0) {
+			outPin {
+				connection_673
+			}
+		}
+		literal Numeric "8" at (91, 153) size (49, 0) {
+			outPin {
+				connection_674
+			}
+		}
+		literal Numeric "8" at (81, 313) size (49, 0) {
+			outPin {
+				connection_681
+			}
+		}
+		literal Boolean "true" at (81, 253) size (49, 0) {
+			outPin {
+				connection_679
+			}
+		}
+		literal Boolean "false" at (81, 283) size (49, 0) {
+			outPin {
+				connection_680
+			}
+		}
+		literal Numeric "8" at (81, 473) size (49, 0) {
+			outPin {
+				connection_688
+			}
+		}
+		literal Boolean "false" at (81, 443) size (49, 0) {
+			outPin {
+				connection_687
+			}
+		}
+		literal Boolean "true" at (81, 413) size (49, 0) {
+			outPin {
+				connection_686
+			}
+		}
+		literal Boolean "true" at (81, 573) size (49, 0) {
+			outPin {
+				connection_693
+			}
+		}
+		literal Boolean "false" at (81, 603) size (49, 0) {
+			outPin {
+				connection_694
+			}
+		}
+		literal Numeric "8" at (81, 633) size (49, 0) {
+			outPin {
+				connection_695
+			}
+		}
+		literal Numeric "8" at (71, 793) size (49, 0) {
+			outPin {
+				connection_702
+			}
+		}
+		literal Boolean "true" at (71, 733) size (49, 0) {
+			outPin {
+				connection_700
+			}
+		}
+		literal Boolean "false" at (71, 763) size (49, 0) {
+			outPin {
+				connection_701
+			}
+		}
+		literal Boolean "false" at (591, 123) size (49, 0) {
+			outPin {
+				connection_716
+			}
+		}
+		literal Boolean "true" at (591, 93) size (49, 0) {
+			outPin {
+				connection_715
+			}
+		}
+		literal Numeric "8" at (591, 153) size (49, 0) {
+			outPin {
+				connection_717
+			}
+		}
+		literal Boolean "false" at (601, 283) size (49, 0) {
+			outPin {
+				connection_719
+			}
+		}
+		literal Boolean "true" at (601, 253) size (49, 0) {
+			outPin {
+				connection_718
+			}
+		}
+		literal Numeric "8" at (601, 313) size (49, 0) {
+			outPin {
+				connection_720
+			}
+		}
+		literal Boolean "false" at (601, 443) size (49, 0) {
+			outPin {
+				connection_722
+			}
+		}
+		literal Boolean "true" at (601, 413) size (49, 0) {
+			outPin {
+				connection_721
+			}
+		}
+		literal Numeric "8" at (601, 473) size (49, 0) {
+			outPin {
+				connection_723
+			}
+		}
+		simpleIdentifier OUT_LEVERID at (601, 635) {
+			label at (-40, -1)
+			outPin {
+				connection_835
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_LEVERCHANNEL at (601, 605) {
+			label at (-60, -1)
+			outPin {
+				connection_834
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_LeverHandle at (961, 665) {
+			label at (-40, -1)
+			inPin connection_837
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_836
+			}
+		}
+		complexIdentifier OUT_CANMsgInit at (731, 601) size (17, 14) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_CANMessageInit.initCANMsg {
+				argumentPin IN_CANChannel at (left, 0) connection_834
+				argumentPin IN_CANID at (left, 3) connection_835
+				argumentPin IN_TxMsg at (left, 6) connection_838
+				argumentPin IN_ExtendedMsg at (left, 9) connection_839
+				argumentPin IN_MsgLength at (left, 12) connection_840
+				returnPin at (right, 6) {
+					connection_837
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		literal Numeric "8" at (601, 723) size (49, 0) {
+			outPin {
+				connection_840
+			}
+		}
+		literal Boolean "false" at (601, 693) size (49, 0) {
+			outPin {
+				connection_839
+			}
+		}
+		literal Boolean "true" at (601, 663) size (49, 0) {
+			outPin {
+				connection_838
+			}
+		}
+		complexIdentifier OUT_CANMsgInit at (1241, 31) size (17, 14) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_CANMessageInit.initCANMsg {
+				argumentPin IN_CANChannel at (left, 0) connection_841
+				argumentPin IN_CANID at (left, 3) connection_842
+				argumentPin IN_TxMsg at (left, 6) connection_845
+				argumentPin IN_ExtendedMsg at (left, 9) connection_846
+				argumentPin IN_MsgLength at (left, 12) connection_847
+				returnPin at (right, 6) {
+					connection_844
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier OUT_ANA4ID at (1101, 545) {
+			label at (-50, -1)
+			outPin {
+				connection_853
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_ANA4CHANNEL at (1101, 515) {
+			label at (-70, -1)
+			outPin {
+				connection_852
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_ANA1ID at (1101, 65) {
+			label at (-50, -1)
+			outPin {
+				connection_842
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_ANA2CHANNEL at (1101, 195) {
+			label at (-60, -1)
+			outPin {
+				connection_848
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_Ana4Handle at (1491, 575) {
+			label at (-60, -1)
+			inPin connection_859
+			outPin sequenceCall at (-40, -14) {
+				inPin connection_858
+			}
+		}
+		simpleIdentifier OUT_ANA3ID at (1101, 385) {
+			label at (-50, -1)
+			outPin {
+				connection_851
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_ANA3CHANNEL at (1101, 355) {
+			label at (-80, -1)
+			outPin {
+				connection_850
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_Ana2Handle at (1481, 255) {
+			label at (-40, -1)
+			inPin connection_855
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_854
+			}
+		}
+		simpleIdentifier OUT_ANA2ID at (1101, 225) {
+			label at (-30, -1)
+			outPin {
+				connection_849
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_Ana3Handle at (1481, 415) {
+			label at (-50, -1)
+			inPin connection_857
+			outPin sequenceCall at (-40, -14) {
+				inPin connection_856
+			}
+		}
+		simpleIdentifier OUT_ANA1CHANNEL at (1101, 35) {
+			label at (-80, -1)
+			outPin {
+				connection_841
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_Ana1Handle at (1481, 95) {
+			label at (-40, -1)
+			inPin connection_844
+			outPin sequenceCall at (-40, -14) {
+				inPin connection_843
+			}
+		}
+		literal Boolean "false" at (1091, 123) size (49, 0) {
+			outPin {
+				connection_846
+			}
+		}
+		literal Numeric "8" at (1091, 153) size (49, 0) {
+			outPin {
+				connection_847
+			}
+		}
+		literal Boolean "true" at (1091, 93) size (49, 0) {
+			outPin {
+				connection_845
+			}
+		}
+		complexIdentifier OUT_CANMsgInit at (1241, 191) size (17, 14) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_CANMessageInit.initCANMsg {
+				argumentPin IN_CANChannel at (left, 0) connection_848
+				argumentPin IN_CANID at (left, 3) connection_849
+				argumentPin IN_TxMsg at (left, 6) connection_860
+				argumentPin IN_ExtendedMsg at (left, 9) connection_861
+				argumentPin IN_MsgLength at (left, 12) connection_862
+				returnPin at (right, 6) {
+					connection_855
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_CANMsgInit at (1241, 351) size (17, 14) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_CANMessageInit.initCANMsg {
+				argumentPin IN_CANChannel at (left, 0) connection_850
+				argumentPin IN_CANID at (left, 3) connection_851
+				argumentPin IN_TxMsg at (left, 6) connection_863
+				argumentPin IN_ExtendedMsg at (left, 9) connection_864
+				argumentPin IN_MsgLength at (left, 12) connection_865
+				returnPin at (right, 6) {
+					connection_857
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_CANMsgInit at (1241, 511) size (17, 14) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_CANMessageInit.initCANMsg {
+				argumentPin IN_CANChannel at (left, 0) connection_852
+				argumentPin IN_CANID at (left, 3) connection_853
+				argumentPin IN_TxMsg at (left, 6) connection_866
+				argumentPin IN_ExtendedMsg at (left, 9) connection_867
+				argumentPin IN_MsgLength at (left, 12) connection_868
+				returnPin at (right, 6) {
+					connection_859
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		literal Boolean "true" at (1101, 253) size (49, 0) {
+			outPin {
+				connection_860
+			}
+		}
+		literal Numeric "8" at (1101, 313) size (49, 0) {
+			outPin {
+				connection_862
+			}
+		}
+		literal Boolean "false" at (1101, 283) size (49, 0) {
+			outPin {
+				connection_861
+			}
+		}
+		literal Boolean "true" at (1101, 413) size (49, 0) {
+			outPin {
+				connection_863
+			}
+		}
+		literal Numeric "8" at (1101, 473) size (49, 0) {
+			outPin {
+				connection_865
+			}
+		}
+		literal Boolean "false" at (1101, 443) size (49, 0) {
+			outPin {
+				connection_864
+			}
+		}
+		literal Boolean "true" at (1101, 573) size (49, 0) {
+			outPin {
+				connection_866
+			}
+		}
+		literal Numeric "8" at (1101, 633) size (49, 0) {
+			outPin {
+				connection_868
+			}
+		}
+		literal Boolean "false" at (1101, 603) size (49, 0) {
+			outPin {
+				connection_867
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_670, connection_675, connection_682, connection_691, connection_698, connection_711, connection_709, connection_703, connection_836, connection_843, connection_854, connection_856, connection_858
+			}
+			sequenceCall {
+				inPin connection_456
+			}
+		}
+	}
+	sequenceableContainer OUT_CANTxIC at (341, 321) size (10, 10) {
+		label at (0, 1)
+		simpleIdentifier OUT_IC1Handle at (91, 105) {
+			label at (-60, -1)
+			inPin outPin {
+				connection_468
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC1Status at (441, 125) {
+			label at (-30, -1)
+			inPin connection_534
+			outPin sequenceCall at (-10, -14) {
+				inPin connection_475 {
+					bendpoints (160, 0)
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D0_IC_PTA2 at (41, 141) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_D0_IC_PTA2) {
+				returnPin at (right, 0) {
+					connection_471
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier OUT_ICSched at (91, 15) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_472
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		equal at (171, 16) {
+			inPin connection_472
+			inPin connection_474 {
+				bendpoints (30, 0)
+			}
+			outPin {
+				connection_473
+			}
+		}
+		literal Numeric "0" at (91, 43) size (49, 0) {
+			outPin {
+				connection_474
+			}
+		}
+		if at (221, 21) {
+			inPin connection_473
+			ifControlFlowOutPin {
+				connection_475
+			}
+			sequenceCall {
+				inPin connection_460
+			}
+		}
+		literal Numeric "1" at (81, 233) size (49, 0) {
+			outPin {
+				connection_476
+			}
+		}
+		simpleIdentifier OUT_ICSched at (81, 205) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_477
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		equal at (161, 206) {
+			inPin connection_477
+			inPin connection_476 {
+				bendpoints (30, 0)
+			}
+			outPin {
+				connection_478
+			}
+		}
+		if at (221, 211) {
+			inPin connection_478
+			ifControlFlowOutPin {
+				connection_479
+			}
+			sequenceCall {
+				inPin connection_461
+			}
+		}
+		literal Numeric "2" at (81, 423) size (49, 0) {
+			outPin {
+				connection_480
+			}
+		}
+		simpleIdentifier OUT_ICSched at (81, 395) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_481
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		equal at (161, 396) {
+			inPin connection_481
+			inPin connection_480 {
+				bendpoints (30, 0)
+			}
+			outPin {
+				connection_482
+			}
+		}
+		if at (221, 401) {
+			inPin connection_482
+			ifControlFlowOutPin {
+				connection_483
+			}
+			sequenceCall at (-30, -20) {
+				inPin connection_462
+			}
+		}
+		literal Numeric "3" at (81, 613) size (49, 0) {
+			outPin {
+				connection_484
+			}
+		}
+		simpleIdentifier OUT_ICSched at (81, 585) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_485
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		equal at (161, 586) {
+			inPin connection_485
+			inPin connection_484 {
+				bendpoints (30, 0)
+			}
+			outPin {
+				connection_486
+			}
+		}
+		if at (211, 591) {
+			inPin connection_486
+			ifControlFlowOutPin {
+				connection_487
+			}
+			sequenceCall {
+				inPin connection_463
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D1_IC_PTA3 at (31, 331) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_D1_IC_PTA3) {
+				returnPin at (right, 0) {
+					connection_488
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D2_IC_PTB10 at (31, 521) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_D2_IC_PTB10) {
+				returnPin at (right, 0) {
+					connection_489
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D3_IC_PTB11 at (31, 711) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_D3_IC_PTB11) {
+				returnPin at (right, 0) {
+					connection_490
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D4_IC_PTC10 at (551, 141) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_D4_IC_PTC10) {
+				returnPin at (right, 0) {
+					connection_491
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D5_IC_PTC11 at (551, 331) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_D5_IC_PTC11) {
+				returnPin at (right, 0) {
+					connection_492
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D6_IC_PTC12 at (551, 521) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_D6_IC_PTC12) {
+				returnPin at (right, 0) {
+					connection_493
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D7_IC_PTC13 at (551, 711) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_D7_IC_PTC13) {
+				returnPin at (right, 0) {
+					connection_494
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier OUT_IC4Status at (441, 695) {
+			label at (-40, -1)
+			inPin connection_562
+			outPin sequenceCall {
+				inPin connection_487 {
+					bendpoints (170, 0)
+				}
+			}
+		}
+		simpleIdentifier OUT_IC3Status at (441, 505) {
+			label at (-40, -1)
+			inPin connection_554
+			outPin sequenceCall {
+				inPin connection_483 {
+					bendpoints (160, 0)
+				}
+			}
+		}
+		simpleIdentifier OUT_IC2Status at (441, 315) {
+			label at (-40, -1)
+			inPin connection_538
+			outPin sequenceCall {
+				inPin connection_479 {
+					bendpoints (160, 0)
+				}
+			}
+		}
+		simpleIdentifier OUT_IC4Handle at (81, 675) {
+			label at (-50, -1)
+			inPin outPin {
+				connection_501
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC3Handle at (81, 485) {
+			label at (-50, -1)
+			inPin outPin {
+				connection_502
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC2Handle at (81, 295) {
+			label at (-50, -1)
+			inPin outPin {
+				connection_503
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		literal Numeric "4" at (601, 43) size (49, 0) {
+			outPin {
+				connection_504
+			}
+		}
+		simpleIdentifier OUT_ICSched at (601, 15) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_505
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		equal at (681, 16) {
+			inPin connection_505
+			inPin connection_504 {
+				bendpoints (30, 0)
+			}
+			outPin {
+				connection_506
+			}
+		}
+		if at (731, 21) {
+			inPin connection_506
+			ifControlFlowOutPin {
+				connection_507
+			}
+			sequenceCall {
+				inPin connection_464
+			}
+		}
+		literal Numeric "5" at (601, 233) size (49, 0) {
+			outPin {
+				connection_508
+			}
+		}
+		simpleIdentifier OUT_ICSched at (601, 205) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_509
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		equal at (681, 206) {
+			inPin connection_509
+			inPin connection_508 {
+				bendpoints (30, 0)
+			}
+			outPin {
+				connection_510
+			}
+		}
+		if at (731, 211) {
+			inPin connection_510
+			ifControlFlowOutPin {
+				connection_511
+			}
+			sequenceCall {
+				inPin connection_465
+			}
+		}
+		literal Numeric "6" at (601, 423) size (49, 0) {
+			outPin {
+				connection_512
+			}
+		}
+		simpleIdentifier OUT_ICSched at (601, 395) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_513
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		equal at (681, 396) {
+			inPin connection_513
+			inPin connection_512 {
+				bendpoints (30, 0)
+			}
+			outPin {
+				connection_514
+			}
+		}
+		if at (731, 401) {
+			inPin connection_514
+			ifControlFlowOutPin {
+				connection_515
+			}
+			sequenceCall {
+				inPin connection_466
+			}
+		}
+		literal Numeric "7" at (601, 613) size (49, 0) {
+			outPin {
+				connection_516
+			}
+		}
+		simpleIdentifier OUT_ICSched at (601, 585) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_517
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		equal at (681, 586) {
+			inPin connection_517
+			inPin connection_516 {
+				bendpoints (30, 0)
+			}
+			outPin {
+				connection_518
+			}
+		}
+		if at (731, 591) {
+			inPin connection_518
+			ifControlFlowOutPin {
+				connection_519
+			}
+			sequenceCall {
+				inPin connection_467
+			}
+		}
+		simpleIdentifier OUT_IC5Handle at (601, 105) {
+			label at (-50, -1)
+			inPin outPin {
+				connection_528
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC5Status at (951, 125) {
+			label at (-50, -1)
+			inPin connection_542
+			outPin sequenceCall {
+				inPin connection_507 {
+					bendpoints (160, 0)
+				}
+			}
+		}
+		simpleIdentifier OUT_IC6Status at (951, 315) {
+			label at (-40, -1)
+			inPin connection_546
+			outPin sequenceCall {
+				inPin connection_511 {
+					bendpoints (160, 0)
+				}
+			}
+		}
+		simpleIdentifier OUT_IC6Handle at (601, 295) {
+			label at (-50, -1)
+			inPin outPin {
+				connection_529
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC7Status at (951, 505) {
+			label at (-50, -1)
+			inPin connection_550
+			outPin sequenceCall {
+				inPin connection_515 {
+					bendpoints (160, 0)
+				}
+			}
+		}
+		simpleIdentifier OUT_IC7Handle at (601, 485) {
+			label at (-50, -1)
+			inPin outPin {
+				connection_530
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_IC8Status at (951, 695) {
+			label at (-50, -1)
+			inPin connection_558
+			outPin sequenceCall {
+				inPin connection_519 {
+					bendpoints (160, 0)
+				}
+			}
+		}
+		simpleIdentifier OUT_IC8Handle at (601, 675) {
+			label at (-50, -1)
+			inPin outPin {
+				connection_531
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier OUT_CANTxIC1 at (221, 61) size (17, 11) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.OUT.OUT_CANTxIC.txCANMsg {
+				argumentPin OUT_CANTxHandle at (left, 4) connection_468
+				argumentPin OUT_CANTxMsg at (left, 8) connection_471
+				argumentPin OUT_CANTxMux at (left, 0) connection_535
+				returnPin at (right, 6) {
+					connection_534
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier OUT_ICMux at (91, 65) {
+			label at (-20, -1)
+			inPin outPin {
+				connection_535
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_ICMux at (81, 255) {
+			label at (0, -1)
+			inPin outPin {
+				connection_539
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_ICMux at (601, 65) {
+			label at (0, -1)
+			inPin outPin {
+				connection_543
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_ICMux at (601, 255) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_547
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_ICMux at (601, 445) {
+			label at (-20, -1)
+			inPin outPin {
+				connection_551
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_ICMux at (81, 445) {
+			label at (-20, -1)
+			inPin outPin {
+				connection_555
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_ICMux at (601, 635) {
+			label at (-20, -1)
+			inPin outPin {
+				connection_559
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_ICMux at (81, 635) {
+			label at (-20, -1)
+			inPin outPin {
+				connection_563
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier OUT_CANTxIC2 at (221, 251) size (17, 11) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.OUT.OUT_CANTxIC.txCANMsg {
+				argumentPin OUT_CANTxHandle at (left, 4) connection_503
+				argumentPin OUT_CANTxMsg at (left, 8) connection_488
+				argumentPin OUT_CANTxMux at (left, 0) connection_539
+				returnPin at (right, 6) {
+					connection_538
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_CANTxIC3 at (221, 441) size (17, 11) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.OUT.OUT_CANTxIC.txCANMsg {
+				argumentPin OUT_CANTxHandle at (left, 4) connection_502
+				argumentPin OUT_CANTxMsg at (left, 8) connection_489
+				argumentPin OUT_CANTxMux at (left, 0) connection_555
+				returnPin at (right, 6) {
+					connection_554
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_CANTxIC4 at (221, 631) size (17, 11) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.OUT.OUT_CANTxIC.txCANMsg {
+				argumentPin OUT_CANTxHandle at (left, 4) connection_501
+				argumentPin OUT_CANTxMsg at (left, 8) connection_490
+				argumentPin OUT_CANTxMux at (left, 0) connection_563
+				returnPin at (right, 6) {
+					connection_562
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_CANTxIC5 at (731, 61) size (17, 11) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.OUT.OUT_CANTxIC.txCANMsg {
+				argumentPin OUT_CANTxHandle at (left, 4) connection_528
+				argumentPin OUT_CANTxMsg at (left, 8) connection_491
+				argumentPin OUT_CANTxMux at (left, 0) connection_543
+				returnPin at (right, 6) {
+					connection_542
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_CANTxIC6 at (731, 251) size (17, 11) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.OUT.OUT_CANTxIC.txCANMsg {
+				argumentPin OUT_CANTxHandle at (left, 4) connection_529
+				argumentPin OUT_CANTxMsg at (left, 8) connection_492
+				argumentPin OUT_CANTxMux at (left, 0) connection_547
+				returnPin at (right, 6) {
+					connection_546
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_CANTxIC7 at (731, 441) size (17, 11) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.OUT.OUT_CANTxIC.txCANMsg {
+				argumentPin OUT_CANTxHandle at (left, 4) connection_530
+				argumentPin OUT_CANTxMsg at (left, 8) connection_493
+				argumentPin OUT_CANTxMux at (left, 0) connection_551
+				returnPin at (right, 6) {
+					connection_550
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_CANTxIC8 at (731, 631) size (17, 11) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.OUT.OUT_CANTxIC.txCANMsg {
+				argumentPin OUT_CANTxHandle at (left, 4) connection_531
+				argumentPin OUT_CANTxMsg at (left, 8) connection_494
+				argumentPin OUT_CANTxMux at (left, 0) connection_559
+				returnPin at (right, 6) {
+					connection_558
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_460, connection_461, connection_462, connection_463, connection_464, connection_465, connection_466, connection_467
+			}
+			sequenceCall {
+				inPin connection_457
+			}
+		}
+	}
+	sequenceableContainer OUT_CANTxAnalog at (491, 321) size (10, 10) {
+		label at (0, 1)
+		complexIdentifier OUT_CANTxAna1Data at (301, 41) size (14, 16) {
+			label at (0, 1)
+			elementCall (types.T_CANTxAnalogue.OUT_Analogue1) {
+				argumentPin at (left, 0) connection_730
+				sequenceCall at (-120, -30) {
+					inPin connection_729
+				}
+			}
+			elementCall (types.T_CANTxAnalogue.OUT_Analogue2) {
+				argumentPin at (left, 4) connection_732
+				sequenceCall at (-120, -30) {
+					inPin connection_731
+				}
+			}
+			elementCall (types.T_CANTxAnalogue.OUT_Analogue3) {
+				argumentPin at (left, 9) connection_734
+				sequenceCall at (-120, -30) {
+					inPin connection_733
+				}
+			}
+			elementCall (types.T_CANTxAnalogue.OUT_Analogue4) {
+				argumentPin at (left, 13) connection_736
+				sequenceCall at (-120, -30) {
+					inPin connection_735
+				}
+			}
+			elementCall (ascet.OUT.OUT_Main.OUT_CANTxAna1Data) {
+				returnPin at (right, 14) {
+					connection_728
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_ADC0_PTD4 at (71, 45) {
+			label at (-50, -1)
+			outPin {
+				connection_730
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_ADC1_PTB12 at (71, 85) {
+			label at (-50, -1)
+			outPin {
+				connection_732
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_ADC2_PTB0 at (71, 135) {
+			label at (-40, -1)
+			outPin {
+				connection_734
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_ADC3_PTB1 at (71, 175) {
+			label at (-40, -1)
+			outPin {
+				connection_736
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier OUT_TxAna1 at (611, 131) size (15, 8) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.OUT.OUT_CANTxAnalogue.txCANMsg {
+				argumentPin OUT_CANTxHandle at (left, 1) connection_741
+				argumentPin OUT_CANTxMsg at (left, 5) connection_728
+				returnPin at (right, 3) {
+					connection_740
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier OUT_Ana1Status at (831, 165) {
+			label at (-40, -1)
+			inPin connection_740
+			outPin sequenceCall at (-10, -14) {
+				inPin connection_792 {
+					bendpoints (120, 0)
+				}
+			}
+		}
+		simpleIdentifier OUT_Ana1Handle at (491, 145) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_741
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier OUT_CANTxAna2Data at (301, 251) size (14, 17) {
+			label at (0, 1)
+			elementCall (ascet.OUT.OUT_Main.OUT_CANTxAna2Data) {
+				returnPin at (right, 14) {
+					connection_744
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_CANTxAnalogue.OUT_Analogue1) {
+				argumentPin at (left, 0) connection_746
+				sequenceCall at (-130, -30) {
+					inPin connection_745
+				}
+			}
+			elementCall (types.T_CANTxAnalogue.OUT_Analogue2) {
+				argumentPin at (left, 4) connection_748
+				sequenceCall at (-130, -30) {
+					inPin connection_747
+				}
+			}
+			elementCall (types.T_CANTxAnalogue.OUT_Analogue3) {
+				argumentPin at (left, 9) connection_750
+				sequenceCall at (-130, -30) {
+					inPin connection_749
+				}
+			}
+			elementCall (types.T_CANTxAnalogue.OUT_Analogue4) {
+				argumentPin at (left, 13) connection_752
+				sequenceCall at (-130, -30) {
+					inPin connection_751
+				}
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_ADC4_PTA6 at (71, 255) {
+			label at (-50, -1)
+			outPin {
+				connection_746
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_ADC5_PTC0 at (71, 295) {
+			label at (-50, -1)
+			outPin {
+				connection_748
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_ADC6_PTE2 at (71, 345) {
+			label at (-50, -1)
+			outPin {
+				connection_750
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_ADC7_PTE6 at (71, 385) {
+			label at (-50, -1)
+			outPin {
+				connection_752
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_Ana2Handle at (491, 355) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_755
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_Ana2Status at (821, 375) {
+			label at (-50, -1)
+			inPin connection_759
+			outPin sequenceCall at (-10, -14) {
+				inPin connection_793 {
+					bendpoints (110, 0)
+				}
+			}
+		}
+		complexIdentifier OUT_CANTxAna3Data at (301, 461) size (14, 17) {
+			label at (0, 1)
+			elementCall (ascet.OUT.OUT_Main.OUT_CANTxAna3Data) {
+				returnPin at (right, 14) {
+					connection_760
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_CANTxAnalogue.OUT_Analogue1) {
+				argumentPin at (left, 0) connection_763
+				sequenceCall at (-130, -30) {
+					inPin connection_762
+				}
+			}
+			elementCall (types.T_CANTxAnalogue.OUT_Analogue2) {
+				argumentPin at (left, 4) connection_765
+				sequenceCall at (-130, -30) {
+					inPin connection_764
+				}
+			}
+			elementCall (types.T_CANTxAnalogue.OUT_Analogue3) {
+				argumentPin at (left, 9) connection_767
+				sequenceCall at (-130, -30) {
+					inPin connection_766
+				}
+			}
+			elementCall (types.T_CANTxAnalogue.OUT_Analogue4) {
+				argumentPin at (left, 14) connection_769
+				sequenceCall at (-130, -30) {
+					inPin connection_768
+				}
+			}
+		}
+		complexIdentifier OUT_CANTxAna4Data at (301, 671) size (14, 17) {
+			label at (0, 1)
+			elementCall (ascet.OUT.OUT_Main.OUT_CANTxAna4Data) {
+				returnPin at (right, 14) {
+					connection_761
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_CANTxAnalogue.OUT_Analogue1) {
+				argumentPin at (left, 0) connection_771
+				sequenceCall at (-130, -30) {
+					inPin connection_770
+				}
+			}
+			elementCall (types.T_CANTxAnalogue.OUT_Analogue2) {
+				argumentPin at (left, 4) connection_773
+				sequenceCall at (-130, -30) {
+					inPin connection_772
+				}
+			}
+			elementCall (types.T_CANTxAnalogue.OUT_Analogue3) {
+				argumentPin at (left, 9) connection_775
+				sequenceCall at (-130, -30) {
+					inPin connection_774
+				}
+			}
+			elementCall (types.T_CANTxAnalogue.OUT_Analogue4) {
+				argumentPin at (left, 14) connection_777 {
+					bendpoints (60, 0)
+				}
+				sequenceCall at (-130, -44) {
+					inPin connection_776
+				}
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_ADC8_PTA15 at (71, 465) {
+			label at (-50, -1)
+			outPin {
+				connection_763
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_ADC9_PTA16 at (71, 505) {
+			label at (-50, -1)
+			outPin {
+				connection_765
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_ADC10_PTA1 at (71, 555) {
+			label at (-50, -1)
+			outPin {
+				connection_767
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_ADC11_PTA0 at (71, 605) {
+			label at (-50, -1)
+			outPin {
+				connection_769
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_ADC12_PTA7 at (71, 675) {
+			label at (-50, -1)
+			outPin {
+				connection_771
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_ADC13_PTB13 at (71, 715) {
+			label at (-50, -1)
+			outPin {
+				connection_773
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_ADC14_PTC1 at (71, 765) {
+			label at (-50, -1)
+			outPin {
+				connection_775
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_ADC15_PTC2 at (71, 825) {
+			label at (-50, -1)
+			outPin {
+				connection_942
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_Ana3Handle at (491, 565) {
+			label at (-50, -1)
+			inPin outPin {
+				connection_786
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_Ana4Handle at (491, 775) {
+			label at (-60, -1)
+			inPin outPin {
+				connection_787
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier OUT_Ana3Status at (821, 585) {
+			label at (-30, -1)
+			inPin connection_781
+			outPin sequenceCall at (-10, -14) {
+				inPin connection_794 {
+					bendpoints (110, 0)
+				}
+			}
+		}
+		simpleIdentifier OUT_Ana4Status at (821, 795) {
+			label at (-40, -1)
+			inPin connection_785
+			outPin sequenceCall at (-10, -14) {
+				inPin connection_795 {
+					bendpoints (120, 0)
+				}
+			}
+		}
+		if at (651, 81) {
+			inPin connection_796
+			ifControlFlowOutPin {
+				connection_792
+			}
+			sequenceCall {
+				inPin connection_724
+			}
+		}
+		if at (651, 291) {
+			inPin connection_801
+			ifControlFlowOutPin {
+				connection_793
+			}
+			sequenceCall {
+				inPin connection_725
+			}
+		}
+		if at (651, 501) {
+			inPin connection_804
+			ifControlFlowOutPin {
+				connection_794
+			}
+			sequenceCall {
+				inPin connection_726
+			}
+		}
+		if at (641, 711) {
+			inPin connection_807
+			ifControlFlowOutPin {
+				connection_795
+			}
+			sequenceCall {
+				inPin connection_727
+			}
+		}
+		equal at (601, 76) {
+			inPin connection_797
+			inPin connection_798 {
+				bendpoints (60, 0)
+			}
+			outPin {
+				connection_796
+			}
+		}
+		simpleIdentifier OUT_AnaSched at (491, 75) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_797
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		literal Numeric "0" at (491, 103) size (49, 0) {
+			outPin {
+				connection_798
+			}
+		}
+		simpleIdentifier OUT_AnaSched at (491, 285) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_799
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		literal Numeric "1" at (491, 313) size (49, 0) {
+			outPin {
+				connection_800
+			}
+		}
+		equal at (601, 286) {
+			inPin connection_799
+			inPin connection_800 {
+				bendpoints (60, 0)
+			}
+			outPin {
+				connection_801
+			}
+		}
+		simpleIdentifier OUT_AnaSched at (491, 495) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_802
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		literal Numeric "2" at (491, 523) size (49, 0) {
+			outPin {
+				connection_803
+			}
+		}
+		equal at (601, 496) {
+			inPin connection_802
+			inPin connection_803 {
+				bendpoints (60, 0)
+			}
+			outPin {
+				connection_804
+			}
+		}
+		simpleIdentifier OUT_AnaSched at (491, 705) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_805
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		literal Numeric "3" at (491, 733) size (49, 0) {
+			outPin {
+				connection_806
+			}
+		}
+		equal at (591, 706) {
+			inPin connection_805
+			inPin connection_806 {
+				bendpoints (50, 0)
+			}
+			outPin {
+				connection_807
+			}
+		}
+		complexIdentifier OUT_TxAna2 at (611, 341) size (15, 8) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.OUT.OUT_CANTxAnalogue.txCANMsg {
+				argumentPin OUT_CANTxHandle at (left, 1) connection_755
+				argumentPin OUT_CANTxMsg at (left, 5) connection_744
+				returnPin at (right, 3) {
+					connection_759
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_TxAna3 at (611, 551) size (15, 8) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.OUT.OUT_CANTxAnalogue.txCANMsg {
+				argumentPin OUT_CANTxHandle at (left, 1) connection_786
+				argumentPin OUT_CANTxMsg at (left, 5) connection_760
+				returnPin at (right, 3) {
+					connection_781
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_TxAna4 at (611, 761) size (15, 8) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.OUT.OUT_CANTxAnalogue.txCANMsg {
+				argumentPin OUT_CANTxHandle at (left, 1) connection_787
+				argumentPin OUT_CANTxMsg at (left, 5) connection_761
+				returnPin at (right, 3) {
+					connection_785
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_Potentiometer_PTC14 at (71, 855) {
+			label at (-50, -1)
+			outPin {
+				connection_943
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		conditionalSelect at (191, 821) {
+			inPin connection_942 {
+				bendpoints (80, 0)
+			}
+			inPin CASE_CONDITION connection_944 {
+				bendpoints (100, 0)
+			}
+			inPin connection_943
+			outPin {
+				connection_777
+			}
+		}
+		simpleIdentifier OUT_SENDPOT at (71, 795) {
+			label at (-30, -1)
+			outPin {
+				connection_944
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_729, connection_731, connection_733, connection_735, connection_745, connection_747, connection_749, connection_751, connection_762, connection_764, connection_766, connection_768, connection_770, connection_772, connection_774, connection_776, connection_724, connection_725, connection_726, connection_727
+			}
+			sequenceCall {
+				inPin connection_458
+			}
+		}
+	}
+	sequenceableContainer OUT_CANTxLever at (641, 321) size (10, 10) {
+		label at (0, 1)
+		simpleIdentifier OUT_LeverStatus at (851, 85) {
+			label at (-40, -1)
+			inPin connection_811
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_810
+			}
+		}
+		simpleIdentifier OUT_LeverHandle at (521, 65) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_814
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier OUT_CANTxLeverData at (461, 101) size (14, 31) {
+			label at (-20, 1)
+			elementCall (ascet.OUT.OUT_Main.OUT_CANTxLeverData) {
+				returnPin at (right, 0) {
+					connection_815
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_CANLeverTCM.LVR_Counter) {
+				argumentPin at (left, 29) connection_941
+				sequenceCall at (-120, -24) {
+					inPin connection_940
+				}
+			}
+			elementCall (types.T_CANLeverTCM.LVR_DriveSwitch) {
+				argumentPin at (left, 9) connection_952
+				sequenceCall at (-120, -24) {
+					inPin connection_951
+				}
+			}
+			elementCall (types.T_CANLeverTCM.LVR_ManualSwitch) {
+				argumentPin at (left, 12) connection_954
+				sequenceCall at (-120, -24) {
+					inPin connection_953
+				}
+			}
+			elementCall (types.T_CANLeverTCM.LVR_MinusSwitch) {
+				argumentPin at (left, 18) connection_958
+				sequenceCall at (-120, -24) {
+					inPin connection_957
+				}
+			}
+			elementCall (types.T_CANLeverTCM.LVR_NeutralSwitch) {
+				argumentPin at (left, 6) connection_950
+				sequenceCall at (-120, -24) {
+					inPin connection_949
+				}
+			}
+			elementCall (types.T_CANLeverTCM.LVR_ParkSwitch) {
+				argumentPin at (left, 0) connection_946
+				sequenceCall at (-120, -24) {
+					inPin connection_945
+				}
+			}
+			elementCall (types.T_CANLeverTCM.LVR_PlusSwitch) {
+				argumentPin at (left, 15) connection_956
+				sequenceCall at (-120, -24) {
+					inPin connection_955
+				}
+			}
+			elementCall (types.T_CANLeverTCM.LVR_ReverseSwitch) {
+				argumentPin at (left, 3) connection_948
+				sequenceCall at (-120, -24) {
+					inPin connection_947
+				}
+			}
+			elementCall (types.T_CANLeverTCM.LVR_SportSwitch) {
+				argumentPin at (left, 21) connection_960
+				sequenceCall at (-120, -24) {
+					inPin connection_959
+				}
+			}
+			elementCall (types.T_CANLeverTCM.LVR_TestResponse) {
+				argumentPin at (left, 24) connection_962
+				sequenceCall at (-120, -24) {
+					inPin connection_961
+				}
+			}
+		}
+		complexIdentifier OUT_CANTx_Lever at (651, 51) size (14, 8) backgroundColor #80ffff {
+			label at (-10, 1)
+			methodCall ascet.OUT.OUT_CANTxLever.txCANMsg {
+				argumentPin OUT_CANTxHandle at (left, 1) connection_814
+				argumentPin OUT_CANTxMsg at (left, 5) connection_815
+				returnPin at (right, 3) {
+					connection_811
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier OUT_CANCount at (161, 391) size (17, 3) {
+			label at (0, 1)
+			methodCall ascet.Lib.LIB_4BitCount.LIB_4BitCount {
+				argumentPin LIB_Reset at (left, 0) connection_939
+				returnPin at (right, 0) {
+					connection_941
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		literal Boolean "false" at (101, 393) size (49, 0) {
+			outPin {
+				connection_939
+			}
+		}
+		complexIdentifier interfaces.APPInterface.APP_LeverOut at (91, 101) size (14, 27) {
+			label at (0, 1)
+			elementCall (types.T_LeverOut.LVR_DriveSwitch) {
+				returnPin at (right, 9) {
+					connection_952
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_LeverOut.LVR_ManualSwitch) {
+				returnPin at (right, 12) {
+					connection_954
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_LeverOut.LVR_MinusSwitch) {
+				returnPin at (right, 18) {
+					connection_958
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_LeverOut.LVR_NeutralSwitch) {
+				returnPin at (right, 6) {
+					connection_950
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_LeverOut.LVR_ParkSwitch) {
+				returnPin at (right, 0) {
+					connection_946
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_LeverOut.LVR_PlusSwitch) {
+				returnPin at (right, 15) {
+					connection_956
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_LeverOut.LVR_ReverseSwitch) {
+				returnPin at (right, 3) {
+					connection_948
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_LeverOut.LVR_SportSwitch) {
+				returnPin at (right, 21) {
+					connection_960
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_LeverOut.LVR_TestResponse) {
+				returnPin at (right, 24) {
+					connection_962
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_940, connection_810, connection_945, connection_947, connection_949, connection_951, connection_953, connection_955, connection_957, connection_959, connection_961
+			}
+			sequenceCall {
+				inPin connection_459
+			}
+		}
+	}
+	sequenceableContainer OUT_DirectOutputs at (381, 171) size (10, 10) {
+		label at (0, 1)
+		sequenceableContainer OUT_RGBLeds at (471, 401) size (10, 10) {
+			label at (0, 1)
+			complexIdentifier OUT_PWMOut at (321, 221) size (14, 8) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_PWMOutput.setPWMOut {
+					argumentPin port at (left, 0) connection_873
+					argumentPin duty at (left, 3) connection_884
+					argumentPin freq at (left, 6) connection_875
+					sequenceCall at (0, -34) {
+						inPin connection_883
+					}
+				}
+			}
+			complexIdentifier OUT_PWMOut at (321, 351) size (14, 8) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_PWMOutput.setPWMOut {
+					argumentPin port at (left, 0) connection_879
+					argumentPin duty at (left, 3) connection_877
+					argumentPin freq at (left, 6) connection_876
+					sequenceCall at (0, -34) {
+						inPin connection_878
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_16 at (161, 223) size (59, 0) {
+				outPin {
+					connection_873
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_RedLED at (171, 125) {
+				label at (-50, -1)
+				outPin {
+					connection_874
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			literal Numeric "1000.0" at (161, 283) size (49, 0) {
+				outPin {
+					connection_875
+				}
+			}
+			literal Numeric "1000.0" at (161, 413) size (49, 0) {
+				outPin {
+					connection_876
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_BlueLED at (171, 385) {
+				label at (-50, -1)
+				outPin {
+					connection_877
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_0 at (161, 353) size (59, 0) {
+				outPin {
+					connection_879
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_15 at (161, 93) size (59, 0) {
+				outPin {
+					connection_880
+				}
+			}
+			literal Numeric "1000.0" at (161, 153) size (49, 0) {
+				outPin {
+					connection_882
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_GreenLED at (171, 255) {
+				label at (-50, -1)
+				outPin {
+					connection_884
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			complexIdentifier OUT_PWMOut at (321, 91) size (14, 8) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_PWMOutput.setPWMOut {
+					argumentPin port at (left, 0) connection_880
+					argumentPin duty at (left, 3) connection_874
+					argumentPin freq at (left, 6) connection_882
+					sequenceCall at (0, -34) {
+						inPin connection_881
+					}
+				}
+			}
+			statementBlock {
+				controlFlowOutPin {
+					connection_881, connection_883, connection_878
+				}
+				sequenceCall {
+					inPin connection_870
+				}
+			}
+		}
+		sequenceableContainer OUT_Digital_J6_Arduino at (731, 301) size (10, 10) {
+			label at (0, 1)
+			literal enum enumerations.S32K144_Gpio.PortA_9 at (151, 123) size (59, 0) {
+				outPin {
+					connection_885
+				}
+			}
+			complexIdentifier OUT_DigitalOut at (321, 121) size (11, 4) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_DigitalOutput.setDigOut {
+					argumentPin port at (left, 0) connection_885
+					argumentPin stat at (left, 2) connection_896
+					sequenceCall at (-150, -30) {
+						inPin connection_895
+					}
+				}
+			}
+			complexIdentifier OUT_DigitalOut at (321, 211) size (11, 4) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_DigitalOutput.setDigOut {
+					argumentPin port at (left, 0) connection_886
+					argumentPin stat at (left, 2) connection_898
+					sequenceCall at (-150, -30) {
+						inPin connection_897
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_8 at (151, 213) size (59, 0) {
+				outPin {
+					connection_886
+				}
+			}
+			complexIdentifier OUT_DigitalOut at (321, 301) size (11, 4) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_DigitalOutput.setDigOut {
+					argumentPin port at (left, 0) connection_887
+					argumentPin stat at (left, 2) connection_900
+					sequenceCall at (-150, -30) {
+						inPin connection_899
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_12 at (151, 303) size (59, 0) {
+				outPin {
+					connection_887
+				}
+			}
+			complexIdentifier OUT_DigitalOut at (321, 391) size (11, 4) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_DigitalOutput.setDigOut {
+					argumentPin port at (left, 0) connection_888
+					argumentPin stat at (left, 2) connection_902
+					sequenceCall at (-150, -30) {
+						inPin connection_901
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_17 at (151, 393) size (59, 0) {
+				outPin {
+					connection_888
+				}
+			}
+			complexIdentifier OUT_DigitalOut at (721, 301) size (11, 4) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_DigitalOutput.setDigOut {
+					argumentPin port at (left, 0) connection_889
+					argumentPin stat at (left, 2) connection_908
+					sequenceCall at (-150, -30) {
+						inPin connection_907
+					}
+				}
+			}
+			complexIdentifier OUT_DigitalOut at (721, 391) size (11, 4) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_DigitalOutput.setDigOut {
+					argumentPin port at (left, 0) connection_891
+					argumentPin stat at (left, 2) connection_910
+					sequenceCall at (-150, -30) {
+						inPin connection_909
+					}
+				}
+			}
+			complexIdentifier OUT_DigitalOut at (721, 211) size (11, 4) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_DigitalOutput.setDigOut {
+					argumentPin port at (left, 0) connection_890
+					argumentPin stat at (left, 2) connection_906
+					sequenceCall at (-150, -30) {
+						inPin connection_905
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_8 at (541, 303) size (59, 0) {
+				outPin {
+					connection_889
+				}
+			}
+			complexIdentifier OUT_DigitalOut at (721, 121) size (11, 4) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_DigitalOutput.setDigOut {
+					argumentPin port at (left, 0) connection_892
+					argumentPin stat at (left, 2) connection_904
+					sequenceCall at (-150, -30) {
+						inPin connection_903
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_8 at (541, 213) size (59, 0) {
+				outPin {
+					connection_890
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_9 at (541, 393) size (59, 0) {
+				outPin {
+					connection_891
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_9 at (541, 123) size (59, 0) {
+				outPin {
+					connection_892
+				}
+			}
+			complexIdentifier OUT_DigitalOut at (321, 481) size (11, 4) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_DigitalOutput.setDigOut {
+					argumentPin port at (left, 0) connection_893
+					argumentPin stat at (left, 2) connection_912
+					sequenceCall at (-150, -30) {
+						inPin connection_911
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_2 at (151, 483) size (59, 0) {
+				outPin {
+					connection_893
+				}
+			}
+			complexIdentifier OUT_DigitalOut at (721, 481) size (11, 4) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_DigitalOutput.setDigOut {
+					argumentPin port at (left, 0) connection_894
+					argumentPin stat at (left, 2) connection_914
+					sequenceCall at (-160, -30) {
+						inPin connection_913
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_0 at (541, 483) size (59, 0) {
+				outPin {
+					connection_894
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_D14_PTA9 at (151, 145) {
+				label at (-30, -1)
+				outPin {
+					connection_896
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_D15_PTA8 at (151, 235) {
+				label at (-30, -1)
+				outPin {
+					connection_898
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_D16_PTE12 at (151, 325) {
+				label at (-30, -1)
+				outPin {
+					connection_900
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_D17_PTD17 at (151, 415) {
+				label at (-30, -1)
+				outPin {
+					connection_902
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_D18_PTC9 at (551, 145) {
+				label at (-40, -1)
+				outPin {
+					connection_904
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_D19_PTC8 at (541, 235) {
+				label at (-40, -1)
+				outPin {
+					connection_906
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_D20_PTD8 at (541, 325) {
+				label at (-40, -1)
+				outPin {
+					connection_908
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_D21_PTD9 at (541, 415) {
+				label at (-40, -1)
+				outPin {
+					connection_910
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_GPIOPTD2 at (161, 505) {
+				label at (-40, -1)
+				outPin {
+					connection_912
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_GPIOPTD0 at (541, 505) {
+				label at (-40, -1)
+				outPin {
+					connection_914
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			statementBlock {
+				controlFlowOutPin {
+					connection_895, connection_897, connection_899, connection_901, connection_903, connection_905, connection_907, connection_909, connection_911, connection_913
+				}
+				sequenceCall {
+					inPin connection_871
+				}
+			}
+		}
+		sequenceableContainer OUT_PWM_J2_Arduino at (731, 121) size (10, 10) {
+			label at (0, 1)
+			complexIdentifier OUT_PWMOut at (271, 201) size (14, 8) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_PWMOutput.setPWMOut {
+					argumentPin port at (left, 0) connection_915
+					argumentPin duty at (left, 3) connection_924
+					argumentPin freq at (left, 6) connection_916
+					sequenceCall at (0, -34) {
+						inPin connection_923
+					}
+				}
+			}
+			complexIdentifier OUT_PWMOut at (271, 331) size (14, 8) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_PWMOutput.setPWMOut {
+					argumentPin port at (left, 0) connection_918
+					argumentPin duty at (left, 3) connection_926
+					argumentPin freq at (left, 6) connection_917
+					sequenceCall at (0, -34) {
+						inPin connection_925
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_14 at (101, 203) size (59, 0) {
+				outPin {
+					connection_915
+				}
+			}
+			literal Numeric "1000.0" at (101, 263) size (49, 0) {
+				outPin {
+					connection_916
+				}
+			}
+			literal Numeric "1000.0" at (101, 393) size (49, 0) {
+				outPin {
+					connection_917
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_5 at (101, 333) size (59, 0) {
+				outPin {
+					connection_918
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_13 at (101, 73) size (59, 0) {
+				outPin {
+					connection_919
+				}
+			}
+			literal Numeric "1000.0" at (101, 133) size (49, 0) {
+				outPin {
+					connection_920
+				}
+			}
+			complexIdentifier OUT_PWMOut at (271, 71) size (14, 8) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_PWMOutput.setPWMOut {
+					argumentPin port at (left, 0) connection_919
+					argumentPin duty at (left, 3) connection_922
+					argumentPin freq at (left, 6) connection_920
+					sequenceCall at (0, -34) {
+						inPin connection_921
+					}
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_D8_PTD13 at (111, 105) {
+				label at (-50, -1)
+				outPin {
+					connection_922
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_D9_PTD14 at (111, 235) {
+				label at (-50, -1)
+				outPin {
+					connection_924
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_D10_PTB5 at (111, 365) {
+				label at (-50, -1)
+				outPin {
+					connection_926
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_D11_PTB4 at (521, 105) {
+				label at (-50, -1)
+				outPin {
+					connection_927
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_D12_PTB3 at (511, 245) {
+				label at (-50, -1)
+				outPin {
+					connection_928
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			simpleIdentifier interfaces.APPInterface.APP_D13_PTB2 at (511, 375) {
+				label at (-50, -1)
+				outPin {
+					connection_929
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			literal Numeric "1000.0" at (511, 133) size (49, 0) {
+				outPin {
+					connection_930
+				}
+			}
+			complexIdentifier OUT_PWMOut at (681, 71) size (14, 8) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_PWMOutput.setPWMOut {
+					argumentPin port at (left, 0) connection_932
+					argumentPin duty at (left, 3) connection_927
+					argumentPin freq at (left, 6) connection_930
+					sequenceCall at (0, -34) {
+						inPin connection_931
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_4 at (511, 73) size (59, 0) {
+				outPin {
+					connection_932
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_3 at (501, 213) size (59, 0) {
+				outPin {
+					connection_933
+				}
+			}
+			complexIdentifier OUT_PWMOut at (681, 341) size (14, 8) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_PWMOutput.setPWMOut {
+					argumentPin port at (left, 0) connection_938
+					argumentPin duty at (left, 3) connection_929
+					argumentPin freq at (left, 6) connection_934
+					sequenceCall at (0, -34) {
+						inPin connection_937
+					}
+				}
+			}
+			literal Numeric "1000.0" at (501, 403) size (49, 0) {
+				outPin {
+					connection_934
+				}
+			}
+			literal Numeric "1000.0" at (501, 273) size (49, 0) {
+				outPin {
+					connection_936
+				}
+			}
+			complexIdentifier OUT_PWMOut at (681, 211) size (14, 8) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.OUT.OUT_PWMOutput.setPWMOut {
+					argumentPin port at (left, 0) connection_933
+					argumentPin duty at (left, 3) connection_928
+					argumentPin freq at (left, 6) connection_936
+					sequenceCall at (0, -34) {
+						inPin connection_935
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_2 at (501, 343) size (59, 0) {
+				outPin {
+					connection_938
+				}
+			}
+			statementBlock {
+				controlFlowOutPin {
+					connection_921, connection_923, connection_925, connection_931, connection_935, connection_937
+				}
+				sequenceCall {
+					inPin connection_872
+				}
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_870, connection_871, connection_872
+			}
+			sequenceCall {
+				inPin connection_869
+			}
+		}
+	}
+}

@@ -1,0 +1,238 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+VAL_TABLE_ Gear 15 "SignalNotAvailable" 14 "Gear_Fault" 13 "Gear_13" 12 "Gear_12" 11 "Gear_11" 10 "Gear_10" 9 "Gear_9" 8 "Gear_Reverse" 7 "Gear_7th" 6 "Gear_6th" 5 "Gear_5th" 4 "Gear_4th" 3 "Gear_3rd" 2 "Gear_2nd" 1 "Gear_1st" 0 "Gear_Neutral" ;
+VAL_TABLE_ ShiftLock 3 "SignalNotAvailable" 2 "SolenoidOn" 1 "SolenoidOff" 0 "SignalFault" ;
+VAL_TABLE_ SwitchStatus 3 "SignalNotAvailable" 2 "Switch_On" 1 "Switch_Off" 0 "Switch_Fault" ;
+VAL_TABLE_ LightStatus 0 "Light_Flash" 3 "SignalNotAvailable" 2 "Light_On" 1 "Light_Off" ;
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ OUT_D1_IC_PTA3_Mux : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D2_IC_PTB10_Mux : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D3_IC_PTB11_Mux : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D4_IC_PTC10_Mux : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D5_IC_PTC11_Mux : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D6_IC_PTC12_Mux : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D7_IC_PTC13_Mux : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D0_IC_PTA2_Mux : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D1_IC_PTA3_Pin : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D2_IC_PTB10_Pin : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D3_IC_PTB11_Pin : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D4_IC_PTC10_Pin : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D5_IC_PTC11_Pin : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D6_IC_PTC12_Pin : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D7_IC_PTC13_Pin : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D0_IC_PTA2_Pin : 0|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D1_IC_PTA3_Period : 0|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D2_IC_PTB10_Period : 0|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D3_IC_PTB11_Period : 0|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D4_IC_PTC10_Period : 0|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D5_IC_PTC11_Period : 0|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D6_IC_PTC12_Period : 0|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D7_IC_PTC13_Period : 0|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D0_IC_PTA2_Period : 0|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D1_IC_PTA3_HighTime : 0|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D2_IC_PTB10_HighTime : 0|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D3_IC_PTB11_HighTime : 0|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D4_IC_PTC10_HighTime : 0|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D5_IC_PTC11_HighTime : 0|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D6_IC_PTC12_HighTime : 0|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D7_IC_PTC13_HighTime : 0|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D0_IC_PTA2_HighTime : 0|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D1_IC_PTA3_Duty : 0|14@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ OUT_D2_IC_PTB10_Duty : 0|14@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ OUT_D3_IC_PTB11_Duty : 0|14@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ OUT_D4_IC_PTC10_Duty : 0|14@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ OUT_D5_IC_PTC11_Duty : 0|14@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ OUT_D6_IC_PTC12_Duty : 0|14@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ OUT_D7_IC_PTC13_Duty : 0|14@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ OUT_D0_IC_PTA2_Duty : 0|14@0+ (0.01,0) [0|100] "%" Vector__XXX
+
+BO_ 1041 TCM_Lever: 8 Vector__XXX
+ SG_ TCM_BackLight : 9|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ TCM_TargetGear : 39|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ TCM_ActualGear : 35|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ TCM_TestData2 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_TestData1 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_ShiftLockSolenoid : 11|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ TCM_Counter : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ TCM_Checksum : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ TCM_SportLight : 15|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ TCM_ReverseLight : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ TCM_ParkLight : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ TCM_NeutralLight : 3|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ TCM_ManualLight : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ TCM_DriveLight : 1|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1040 LVR_LeverPosition: 8 Vector__XXX
+ SG_ LVR_NeutralSwitch : 3|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ LVR_TestResponse : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ LVR_SportSwitch : 15|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ LVR_ReverseSwitch : 5|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ LVR_PlusSwitch : 11|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ LVR_ParkSwitch : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ LVR_MinusSwitch : 9|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ LVR_ManualSwitch : 13|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ LVR_DriveSwitch : 1|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ LVR_Counter : 51|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ LVR_Checksum : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 284 OUT_IC8: 8 Vector__XXX
+ SG_ OUT_D7_IC_PTC13_Pin : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D7_IC_PTC13_Period m1 : 39|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D7_IC_PTC13_Mux M : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D7_IC_PTC13_HighTime m0 : 39|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D7_IC_PTC13_Duty : 5|14@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ OUT_D7_IC_PTC13_Speed : 23|16@0- (1,0) [-32768|32767] "" Vector__XXX
+
+BO_ 283 OUT_IC7: 8 Vector__XXX
+ SG_ OUT_D6_IC_PTC12_Pin : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D6_IC_PTC12_Period m1 : 39|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D6_IC_PTC12_Mux M : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D6_IC_PTC12_HighTime m0 : 39|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D6_IC_PTC12_Duty : 5|14@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ OUT_D6_IC_PTC12_Speed : 23|16@0- (1,0) [-32768|32767] "" Vector__XXX
+
+BO_ 282 OUT_IC6: 8 Vector__XXX
+ SG_ OUT_D5_IC_PTC11_Pin : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D5_IC_PTC11_Period m1 : 39|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D5_IC_PTC11_Mux M : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D5_IC_PTC11_HighTime m0 : 39|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D5_IC_PTC11_Duty : 5|14@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ OUT_D5_IC_PTC11_Speed : 23|16@0- (1,0) [-32768|32767] "" Vector__XXX
+
+BO_ 281 OUT_IC5: 8 Vector__XXX
+ SG_ OUT_D4_IC_PTC10_Pin : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D4_IC_PTC10_Period m1 : 39|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D4_IC_PTC10_Mux M : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D4_IC_PTC10_HighTime m0 : 39|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D4_IC_PTC10_Duty : 5|14@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ OUT_D4_IC_PTC10_Speed : 23|16@0- (1,0) [-32768|32767] "" Vector__XXX
+
+BO_ 280 OUT_IC4: 8 Vector__XXX
+ SG_ OUT_D3_IC_PTB11_Pin : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D3_IC_PTB11_Period m1 : 39|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D3_IC_PTB11_Mux M : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D3_IC_PTB11_HighTime m0 : 39|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D3_IC_PTB11_Duty : 5|14@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ OUT_D3_IC_PTB11_Speed : 23|16@0- (1,0) [-32768|32767] "" Vector__XXX
+
+BO_ 279 OUT_IC3: 8 Vector__XXX
+ SG_ OUT_D2_IC_PTB10_Pin : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D2_IC_PTB10_Period m1 : 39|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D2_IC_PTB10_Mux M : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D2_IC_PTB10_HighTime m0 : 39|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D2_IC_PTB10_Duty : 5|14@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ OUT_D2_IC_PTB10_Speed : 23|16@0- (1,0) [-32768|32767] "" Vector__XXX
+
+BO_ 278 OUT_IC2: 8 Vector__XXX
+ SG_ OUT_D1_IC_PTA3_Pin : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D1_IC_PTA3_Period m1 : 39|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D1_IC_PTA3_Mux M : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D1_IC_PTA3_HighTime m0 : 39|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D1_IC_PTA3_Duty : 5|14@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ OUT_D1_IC_PTA3_Speed : 23|16@0- (1,0) [-32768|32767] "" Vector__XXX
+
+BO_ 276 OUT_Ana4: 8 Vector__XXX
+ SG_ OUT_ADC15_PTC2 : 55|16@0+ (7.62939453125E-005,0) [0|5] "V" Vector__XXX
+ SG_ OUT_ADC14_PTC1 : 39|16@0+ (7.62939453125E-005,0) [0|5] "V" Vector__XXX
+ SG_ OUT_ADC13_PTB13 : 23|16@0+ (7.62939453125E-005,0) [0|5] "V" Vector__XXX
+ SG_ OUT_ADC12_PTA7 : 7|16@0+ (7.62939453125E-005,0) [0|5] "V" Vector__XXX
+
+BO_ 275 OUT_Ana3: 8 Vector__XXX
+ SG_ OUT_ADC9_PTA16 : 23|16@0+ (7.62939453125E-005,0) [0|5] "V" Vector__XXX
+ SG_ OUT_ADC8_PTA15 : 7|16@0+ (7.62939453125E-005,0) [0|5] "V" Vector__XXX
+ SG_ OUT_ADC11_PTA0 : 55|16@0+ (7.62939453125E-005,0) [0|5] "V" Vector__XXX
+ SG_ OUT_ADC10_PTA1 : 39|16@0+ (7.62939453125E-005,0) [0|5] "V" Vector__XXX
+
+BO_ 274 OUT_Ana2: 8 Vector__XXX
+ SG_ OUT_ADC7_PTE6 : 55|16@0+ (7.62939453125E-005,0) [0|5] "V" Vector__XXX
+ SG_ OUT_ADC6_PTE2 : 39|16@0+ (7.62939453125E-005,0) [0|5] "V" Vector__XXX
+ SG_ OUT_ADC5_PTC0 : 23|16@0+ (7.62939453125E-005,0) [0|5] "V" Vector__XXX
+ SG_ OUT_ADC4_PTA6 : 7|16@0+ (7.62939453125E-005,0) [0|5] "V" Vector__XXX
+
+BO_ 273 OUT_Ana1: 8 Vector__XXX
+ SG_ OUT_ADC3_PTB1 : 55|16@0+ (7.62939453125E-005,0) [0|5] "V" Vector__XXX
+ SG_ OUT_ADC2_PTB0 : 39|16@0+ (7.62939453125E-005,0) [0|5] "V" Vector__XXX
+ SG_ OUT_ADC1_PTB12 : 23|16@0+ (7.62939453125E-005,0) [0|5] "V" Vector__XXX
+ SG_ OUT_ADC0_PTD4 : 7|16@0+ (7.62939453125E-005,0) [0|5] "V" Vector__XXX
+
+BO_ 277 OUT_IC1: 8 Vector__XXX
+ SG_ OUT_D0_IC_PTA2_Pin : 6|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D0_IC_PTA2_Period m1 : 39|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D0_IC_PTA2_Mux M : 7|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ OUT_D0_IC_PTA2_HighTime m0 : 39|32@0+ (1,0) [0|4294967295] "us" Vector__XXX
+ SG_ OUT_D0_IC_PTA2_Duty : 5|14@0+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ OUT_D0_IC_PTA2_Speed : 23|16@0- (1,0) [-32768|32767] "" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 0;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","not_used","not_used","not_used","not_used","Cyclic","not_used","IfActive","NoMsgSendType";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "BusType" "";
+BA_ "DBName" "S32K144EVB";
+VAL_ 1041 TCM_BackLight 0 "Light_Flash" 3 "SignalNotAvailable" 2 "Light_On" 1 "Light_Off" ;
+VAL_ 1041 TCM_TargetGear 15 "SignalNotAvailable" 14 "Gear_Fault" 13 "Gear_13" 12 "Gear_12" 11 "Gear_11" 10 "Gear_10" 9 "Gear_9" 8 "Gear_Reverse" 7 "Gear_7th" 6 "Gear_6th" 5 "Gear_5th" 4 "Gear_4th" 3 "Gear_3rd" 2 "Gear_2nd" 1 "Gear_1st" 0 "Gear_Neutral" ;
+VAL_ 1041 TCM_ActualGear 15 "SignalNotAvailable" 14 "Gear_Fault" 13 "Gear_13" 12 "Gear_12" 11 "Gear_11" 10 "Gear_10" 9 "Gear_9" 8 "Gear_Reverse" 7 "Gear_7th" 6 "Gear_6th" 5 "Gear_5th" 4 "Gear_4th" 3 "Gear_3rd" 2 "Gear_2nd" 1 "Gear_1st" 0 "Gear_Neutral" ;
+VAL_ 1041 TCM_ShiftLockSolenoid 3 "SignalNotAvailable" 2 "SolenoidOn" 1 "SolenoidOff" 0 "SignalFault" ;
+VAL_ 1041 TCM_SportLight 0 "Light_Flash" 3 "SignalNotAvailable" 2 "Light_On" 1 "Light_Off" ;
+VAL_ 1041 TCM_ReverseLight 0 "Light_Flash" 3 "SignalNotAvailable" 2 "Light_On" 1 "Light_Off" ;
+VAL_ 1041 TCM_ParkLight 0 "Light_Flash" 3 "SignalNotAvailable" 2 "Light_On" 1 "Light_Off" ;
+VAL_ 1041 TCM_NeutralLight 0 "Light_Flash" 3 "SignalNotAvailable" 2 "Light_On" 1 "Light_Off" ;
+VAL_ 1041 TCM_ManualLight 0 "Light_Flash" 3 "SignalNotAvailable" 2 "Light_On" 1 "Light_Off" ;
+VAL_ 1041 TCM_DriveLight 0 "Light_Flash" 3 "SignalNotAvailable" 2 "Light_On" 1 "Light_Off" ;
+VAL_ 1040 LVR_NeutralSwitch 3 "SignalNotAvailable" 2 "Switch_On" 1 "Switch_Off" 0 "Switch_Fault" ;
+VAL_ 1040 LVR_SportSwitch 3 "SignalNotAvailable" 2 "Switch_On" 1 "Switch_Off" 0 "Switch_Fault" ;
+VAL_ 1040 LVR_ReverseSwitch 3 "SignalNotAvailable" 2 "Switch_On" 1 "Switch_Off" 0 "Switch_Fault" ;
+VAL_ 1040 LVR_PlusSwitch 3 "SignalNotAvailable" 2 "Switch_On" 1 "Switch_Off" 0 "Switch_Fault" ;
+VAL_ 1040 LVR_ParkSwitch 3 "SignalNotAvailable" 2 "Switch_On" 1 "Switch_Off" 0 "Switch_Fault" ;
+VAL_ 1040 LVR_MinusSwitch 3 "SignalNotAvailable" 2 "Switch_On" 1 "Switch_Off" 0 "Switch_Fault" ;
+VAL_ 1040 LVR_ManualSwitch 3 "SignalNotAvailable" 2 "Switch_On" 1 "Switch_Off" 0 "Switch_Fault" ;
+VAL_ 1040 LVR_DriveSwitch 3 "SignalNotAvailable" 2 "Switch_On" 1 "Switch_Off" 0 "Switch_Fault" ;
+

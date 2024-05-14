@@ -1,0 +1,163 @@
+classType ascet.APP.APP_SwitchInterpretation
+blockdiagramSpecification Main {
+	methodBody APP_SwitchState {
+		outPin active {
+			connection_9
+		}
+	}
+	methodArgumentIdentifier APP_SwitchState.APP_SwitchIn at (161, 155) {
+		label at (-60, -1)
+		outPin {
+			connection_2
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier APP_SwitchTimer at (511, 151) size (14, 5) {
+		label at (0, 1)
+		methodCall ascet.Lib.LIB_TimerUp.LIB_Time {
+			argumentPin LIB_Reset at (left, 0) connection_3
+			argumentPin LIB_DT at (left, 2) connection_4
+			returnPin at (right, 1) {
+				connection_11
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	not at (391, 151) {
+		inPin connection_2
+		outPin {
+			connection_3
+		}
+	}
+	simpleIdentifier types.SY_10ms at (401, 175) {
+		label at (-20, -1)
+		outPin {
+			connection_4
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	conditionalSelect at (751, 331) {
+		inPin connection_14 {
+			bendpoints (80, 0)
+		}
+		inPin CASE_CONDITION connection_5 {
+			bendpoints (30, 0)
+		}
+		inPin connection_13
+		outPin {
+			connection_6
+		}
+	}
+	conditionalSelect at (851, 341) {
+		inPin connection_6
+		inPin CASE_CONDITION connection_7 {
+			bendpoints (260, 0)
+		}
+		inPin connection_8
+		outPin {
+			connection_10
+		}
+	}
+	methodArgumentIdentifier APP_SwitchState.APP_SwitchFitted at (161, 105) {
+		label at (-60, -1)
+		outPin {
+			connection_19
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	literal Numeric "3" at (791, 373) size (49, 0) {
+		outPin {
+			connection_8
+		}
+	}
+	return at (941, 365) {
+		label at (-40, 0)
+		inPin connection_10
+		sequenceCall at (-30, -14) {
+			inPin connection_9
+		}
+	}
+	freeComment at (791, 391) {
+		"Signal Not Available"
+	}
+	greaterOrEqual at (701, 176) {
+		inPin connection_11 {
+			bendpoints (40, 0)
+		}
+		inPin connection_12 {
+			bendpoints (260, 0)
+		}
+		outPin {
+			connection_5
+		}
+	}
+	simpleIdentifier APP_MAXSWITCHPRESSTIME at (401, 215) {
+		label at (-60, -1)
+		outPin {
+			connection_12
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	literal Numeric "0" at (671, 363) size (49, 0) {
+		outPin {
+			connection_13
+		}
+	}
+	freeComment at (631, 361) {
+		"Failed"
+	}
+	conditionalSelect at (631, 301) {
+		inPin connection_16
+		inPin CASE_CONDITION connection_15 {
+			bendpoints (450, 0)
+		}
+		inPin connection_18
+		outPin {
+			connection_14
+		}
+	}
+	methodArgumentIdentifier APP_SwitchState.APP_SwitchIn at (161, 275) {
+		label at (-60, -1)
+		outPin {
+			connection_15
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	literal Numeric "1" at (541, 313) size (49, 0) {
+		outPin {
+			connection_16
+		}
+	}
+	literal Numeric "2" at (541, 333) size (49, 0) {
+		outPin {
+			connection_18
+		}
+	}
+	freeComment at (481, 311) {
+		"Switch Off\r\n"
+	}
+	freeComment at (481, 331) {
+		"Switch On\r\n"
+	}
+	freeComment at (231, 21) {
+		"Simple state setting based on:\r\n\t0 - Signal Not Available (SNA) when switch is not fitted\r\n\t1 - Signal is present, but switch not pressed\r\n\t2 - Signal is present, and switch pressed\r\n\t3 - Signal is present, but pressed for an implausibly long time (failure)"
+	}
+	not at (571, 101) {
+		inPin connection_19
+		outPin {
+			connection_7
+		}
+	}
+}

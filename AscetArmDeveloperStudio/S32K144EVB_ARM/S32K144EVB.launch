@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.arm.debug.cmsis.launch">
+    <mapAttribute key="AverageDurationTracker">
+        <mapEntry key="*Fetching Data Model" value="852974"/>
+        <mapEntry key="*list global low level symbols" value="26304964"/>
+        <mapEntry key="AddEventObserver" value="36155012"/>
+        <mapEntry key="Evaluate" value="3963183"/>
+        <mapEntry key="break" value="5324558"/>
+        <mapEntry key="compute execution mode" value="15225841"/>
+        <mapEntry key="continue" value="375129867"/>
+        <mapEntry key="disable" value="10221050"/>
+        <mapEntry key="disassemble" value="91286016"/>
+        <mapEntry key="file" value="217550097"/>
+        <mapEntry key="finish" value="48631400"/>
+        <mapEntry key="get capabilities" value="150272"/>
+        <mapEntry key="get cwd" value="153000"/>
+        <mapEntry key="get execution addresss" value="361116"/>
+        <mapEntry key="get source lines" value="368714"/>
+        <mapEntry key="initialize command help" value="42815169"/>
+        <mapEntry key="interrupt" value="219190762"/>
+        <mapEntry key="list breakpoint options" value="170601"/>
+        <mapEntry key="list breakpoints" value="583065"/>
+        <mapEntry key="list instruction sets" value="564439"/>
+        <mapEntry key="list signals" value="667813"/>
+        <mapEntry key="list watchpoint options" value="1913687"/>
+        <mapEntry key="list watchpoints" value="546523"/>
+        <mapEntry key="load" value="7005335"/>
+        <mapEntry key="next" value="80699400"/>
+        <mapEntry key="remove" value="12167562"/>
+        <mapEntry key="run script" value="6023040242"/>
+        <mapEntry key="set $pc" value="23246093"/>
+        <mapEntry key="set CWD" value="3861409"/>
+        <mapEntry key="set breakpoint properties" value="3411810"/>
+        <mapEntry key="set debug-from" value="683303"/>
+        <mapEntry key="start" value="237819556"/>
+        <mapEntry key="step" value="273899261"/>
+        <mapEntry key="target reset" value="75484028"/>
+        <mapEntry key="toggleBreakpoint" value="18590968"/>
+        <mapEntry key="toggleHardwareBreakpoint" value="20634200"/>
+        <mapEntry key="waitForTargetToStop" value="88763900"/>
+    </mapAttribute>
+    <stringAttribute key="CMSIS_DCORE" value="Cortex-M4"/>
+    <stringAttribute key="CMSIS_EXE_FILE" value="${workspace_loc:/S32K144EVB_ARM/Debug/S32K144EVB_ARM.elf}"/>
+    <booleanAttribute key="CMSIS_FILE_OVERRIDDEN" value="true"/>
+    <booleanAttribute key="CMSIS_FLASHABLE" value="true"/>
+    <mapAttribute key="CMSIS_FLASH_ALG_0_DEFAULTS">
+        <mapEntry key="CMSIS_FLASH_ALG_0_FILE" value="S32K144_P512_4KB_SEC.FLM"/>
+        <mapEntry key="CMSIS_FLASH_ALG_0_IS_DEFAULT" value="true"/>
+        <mapEntry key="CMSIS_FLASH_ALG_0_RAM_SIZE" value="28672"/>
+        <mapEntry key="CMSIS_FLASH_ALG_0_RAM_START" value="536870912"/>
+        <mapEntry key="CMSIS_FLASH_ALG_0_REGION_SIZE" value="524288"/>
+        <mapEntry key="CMSIS_FLASH_ALG_0_REGION_START" value="0"/>
+    </mapAttribute>
+    <stringAttribute key="CMSIS_FLASH_ALG_0_ERASE_METHOD" value="FULL_CHIP"/>
+    <stringAttribute key="CMSIS_FLASH_ALG_0_FILE" value="S32K144_P512_4KB_SEC.FLM"/>
+    <stringAttribute key="CMSIS_FLASH_ALG_0_FILE_PATH" value=""/>
+    <booleanAttribute key="CMSIS_FLASH_ALG_0_FORCE_PROGRAM" value="true"/>
+    <stringAttribute key="CMSIS_FLASH_ALG_0_IS_DEFAULT" value="true"/>
+    <booleanAttribute key="CMSIS_FLASH_ALG_0_PROGRAM" value="true"/>
+    <stringAttribute key="CMSIS_FLASH_ALG_0_RAM_SIZE" value="28672"/>
+    <stringAttribute key="CMSIS_FLASH_ALG_0_RAM_START" value="536870912"/>
+    <stringAttribute key="CMSIS_FLASH_ALG_0_REGION_SIZE" value="524288"/>
+    <stringAttribute key="CMSIS_FLASH_ALG_0_REGION_START" value="0"/>
+    <booleanAttribute key="CMSIS_FLASH_ALG_0_VERFIY" value="true"/>
+    <booleanAttribute key="CMSIS_FLASH_AS_CONNECT" value="true"/>
+    <booleanAttribute key="CMSIS_FLASH_SUPRESS" value="false"/>
+    <booleanAttribute key="CMSIS_LOAD_SYMBOLS_ONLY" value="false"/>
+    <stringAttribute key="CMSIS_PACK_NAME" value="S32_SDK_DFP_S32K144UAxxxLLx"/>
+    <stringAttribute key="CMSIS_PACK_VERSION" value="1.3.0"/>
+    <stringAttribute key="CMSIS_PNAME" value=""/>
+    <stringAttribute key="CMSIS_PREVIOUS_PRIMARY_FILE" value="C:\Elsense\Projects\0026\4000_Engineering\4201_Software\S32K144_ArmIDE_ASCET\S32K144EVB_ARM\Debug\S32K144EVB_ARM.elf"/>
+    <stringAttribute key="CMSIS_PRIMARY_FILE" value="${workspace_loc:/S32K144EVB_ARM/Debug/S32K144EVB_ARM.elf}"/>
+    <stringAttribute key="CMSIS_PROJ" value="__NEW_CONNECTION__"/>
+    <stringAttribute key="CMSIS_PROJECT_EXECUTABLE" value=""/>
+    <stringAttribute key="CMSIS_RESET_TYPE" value="reset.system"/>
+    <booleanAttribute key="CMSIS_RUN_CONTROL_OVERRIDDEN" value="true"/>
+    <stringAttribute key="CMSIS_SDF_DIR" value="C:\Elsense\Projects\0026\4000_Engineering\4201_Software\S32K144_ArmIDE_ASCET\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\S32_SDK_DFP_S32K144UAxxxLLx"/>
+    <stringAttribute key="CMSIS_SVD_DIR" value="C:\Elsense\Projects\0026\4000_Engineering\4201_Software\S32K144_ArmIDE_ASCET\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\SVD\S32K144"/>
+    <listAttribute key="FILES.ICE_DEBUG">
+        <listEntry value="ON_DEMAND_LOAD"/>
+        <listEntry value="ALSO_LOAD_SYMBOLS"/>
+    </listAttribute>
+    <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
+    <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
+    <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.0.TYPE" value="SYMBOLS_FILE"/>
+    <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.0.VALUE" value="C:\Elsense\Projects\0026\4000_Engineering\4201_Software\S32K144_ArmIDE_ASCET\S32K144EVB_ARM\Debug\S32K144EVB_ARM.elf"/>
+    <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.1.TYPE" value="SFR_SEARCH_DIRS"/>
+    <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.1.VALUE" value="C:\Elsense\Projects\0026\4000_Engineering\4201_Software\S32K144_ArmIDE_ASCET\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\SVD\S32K144"/>
+    <intAttribute key="FILES.ICE_DEBUG.RESOURCES.COUNT" value="2"/>
+    <stringAttribute key="FILES.SELECTED_DEBUG_OPEATION" value="ICE_DEBUG"/>
+    <booleanAttribute key="KEY_COMMANDS_AFTER_CONNECT" value="false"/>
+    <booleanAttribute key="KEY_COMMANDS_AS_CONNECT" value="true"/>
+    <stringAttribute key="KEY_COMMANDS_AS_CONNECT_TEXT" value="reset reset.system&#13;&#10;flash load-multiple &quot;C:\Elsense\Projects\0026\4000_Engineering\4201_Software\S32K144_ArmIDE_ASCET\S32K144EVB_ARM\Debug\S32K144EVB_ARM.elf&quot;"/>
+    <booleanAttribute key="SWD" value="true"/>
+    <booleanAttribute key="SWJ" value="true"/>
+    <stringAttribute key="ULP_CONFIG" value="C:\Elsense\Projects\0026\4000_Engineering\4201_Software\S32K144_ArmIDE_ASCET\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\S32_SDK_DFP_S32K144UAxxxLLx\ulp-config.txt"/>
+    <stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints order=&quot;ALPHA&quot;&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;false&quot; version=&quot;2&quot; debugFile=&quot;C:/Elsense/Projects/0026/4000_Engineering/4200_Software/S32K144_ArmIDE_ASCET/S32K144EVB_ARM/src/OUT_Main_EVB.c&quot; hostFile=&quot;C:\Elsense\Projects\0026\4000_Engineering\4200_Software\S32K144_ArmIDE_ASCET\S32K144EVB_ARM\src\OUT_Main_EVB.c&quot; line=&quot;680&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;false&quot; version=&quot;2&quot; debugFile=&quot;C:/Elsense/Projects/0026/4000_Engineering/4200_Software/S32K144_ArmIDE_ASCET/S32K144EVB_ARM/src/OUT_Main_EVB.c&quot; hostFile=&quot;C:\Elsense\Projects\0026\4000_Engineering\4200_Software\S32K144_ArmIDE_ASCET\S32K144EVB_ARM\src\OUT_Main_EVB.c&quot; line=&quot;680&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;RAW_EXEC_ADDRESS&quot; hardwareBreakpoint=&quot;yes&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;0x000004A8&quot; function=&quot;__rt_entry_main&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;false&quot; version=&quot;2&quot; address=&quot;0x000004A8&quot; function=&quot;__rt_entry_main&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
+    <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.addresses">
+        <listEntry value="&lt;Next Instruction&gt;"/>
+    </listAttribute>
+    <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.ranges">
+        <listEntry value="100"/>
+    </listAttribute>
+    <stringAttribute key="config_db_connection_keys" value="FILES.SELECTED_DEBUG_OPEATION rvi_address connection_type CMSIS_PROJ"/>
+    <stringAttribute key="config_db_connection_type" value="Bare Metal Debug"/>
+    <stringAttribute key="config_db_platform_name" value="S32_SDK_DFP_S32K144UAxxxLLx"/>
+    <stringAttribute key="config_db_project_type" value="Bare Metal Debug"/>
+    <stringAttribute key="config_db_project_type_id" value="BARE_METAL"/>
+    <stringAttribute key="config_file" value="C:\Elsense\Projects\0026\4000_Engineering\4201_Software\S32K144_ArmIDE_ASCET\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\S32_SDK_DFP_S32K144UAxxxLLx\platform.sdf"/>
+    <booleanAttribute key="connectOnly" value="false"/>
+    <stringAttribute key="connection_type" value="CMSIS-DAP"/>
+    <booleanAttribute key="debugSequenceLogging" value="false"/>
+    <listAttribute key="debugger.view.DisassemblyView:current">
+        <listEntry value="&lt;Next Instruction&gt;"/>
+        <listEntry value="100"/>
+    </listAttribute>
+    <stringAttribute key="dtsl_config" value="DtslScript_DebugAndOnChipTrace"/>
+    <stringAttribute key="dtsl_config_script" value="C:\Elsense\Projects\0026\4000_Engineering\4201_Software\S32K144_ArmIDE_ASCET\.metadata\.plugins\com.arm.debug.cmsis\DS-MDK\S32_SDK_DFP_S32K144UAxxxLLx\dtsl_config_script.py"/>
+    <stringAttribute key="dtsl_options_file" value=""/>
+    <booleanAttribute key="holdReset" value="false"/>
+    <intAttribute key="launch_configuration_version" value="3"/>
+    <booleanAttribute key="preReset" value="false"/>
+    <stringAttribute key="rvi_address" value="A000000001"/>
+    <stringAttribute key="stopAtExpression" value="*$ENTRYPOINT"/>
+    <stringAttribute key="watchpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;watchpoints&gt;&#10;&lt;/watchpoints&gt;&#10;"/>
+</launchConfiguration>

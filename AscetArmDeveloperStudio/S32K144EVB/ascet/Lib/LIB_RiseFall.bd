@@ -1,0 +1,156 @@
+classType ascet.Lib.LIB_RiseFall
+blockdiagramSpecification Main {
+	methodBody LIB_RiseFall {
+		outPin active
+	{
+			connection_18
+		, connection_21, connection_12
+		}
+	}
+methodArgumentIdentifier LIB_RiseFall.LIB_Input at (101, 115) {
+		label at (-50, -1)
+		outPin {
+			connection_1
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier LIB_Prev at (91, 145) {
+		label at (-20, -1)
+		inPin outPin {
+			connection_2
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	and at (251, 116) {
+		inPin connection_1
+		inPin connection_3 {
+			bendpoints (20, 0)
+		}
+		outPin {
+			connection_9
+		}
+	}
+	not at (191, 141) {
+		inPin connection_2
+		outPin {
+			connection_3
+		}
+	}
+	simpleIdentifier LIB_Prev at (91, 205) {
+		label at (-20, -1)
+		inPin outPin {
+			connection_8
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier LIB_RiseFall.LIB_Input at (101, 175) {
+		label at (-50, -1)
+		outPin {
+			connection_7
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	and at (251, 176) {
+		inPin connection_5
+		inPin connection_8 {
+			bendpoints (110, 0)
+		}
+		outPin {
+			connection_10
+		}
+	}
+	not at (191, 171) {
+		inPin connection_7
+		outPin {
+			connection_5
+		}
+	}
+	conditionalSelect at (451, 241) {
+		inPin connection_11
+		inPin CASE_CONDITION connection_9 {
+			bendpoints (180, 0)
+		}
+		inPin connection_17 {
+			bendpoints (150, 0)
+		}
+		outPin {
+			connection_19
+		}
+	}
+	conditionalSelect at (371, 231) {
+		inPin connection_23
+		inPin CASE_CONDITION connection_10 {
+			bendpoints (100, 0)
+		}
+		inPin connection_16
+		outPin {
+			connection_11
+		}
+	}
+	return at  (521, 365) {
+		label at (-50, 0)
+		inPin connection_20
+		sequenceCall at (-20, -14) {
+			inPin connection_12
+		}
+	}
+	
+	literal enum enumerations.LB_RiseFall.LB_Fall at (231, 263) size (49, 0) {
+		outPin {
+			connection_16
+		}
+	}
+	literal enum enumerations.LB_RiseFall.LB_Rise at (231, 283) size (59, 0) {
+		outPin {
+			connection_17
+		}
+	}
+	freeComment at (101, 91) {
+		"Return enumeration indicating if input is rising, falling, or unchanged"
+	}
+simpleIdentifier LIB_RiseFallLocal at (521, 265) {
+		label at (-30, -1)
+		inPin connection_19
+		outPin sequenceCall at (-20, -14) {
+			inPin connection_18
+		}
+	}
+	simpleIdentifier LIB_RiseFallLocal at (101, 365) {
+		label at (-40, -1)
+		inPin outPin {
+			connection_20
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier LIB_Prev at (521, 315) {
+		label at (-20, -1)
+		inPin connection_22
+		outPin sequenceCall at (-20, -14) {
+			inPin connection_21
+		}
+	}
+	methodArgumentIdentifier LIB_RiseFall.LIB_Input at (101, 315) {
+		label at (-40, -1)
+		outPin {
+			connection_22
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+literal enum enumerations.LB_RiseFall.LB_Unchanged at (231, 243) size (89, 0) {
+		outPin {
+			connection_23
+		}
+	}
+}

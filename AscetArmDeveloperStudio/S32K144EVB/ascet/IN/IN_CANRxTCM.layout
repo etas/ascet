@@ -1,0 +1,10 @@
+Component ascet.IN.IN_CANRxTCM size ( 14 , 8 ) backgroundColor #80ffff {
+	labelPosition ( 0 , 1 )
+	methodLayout rxCANNewData {
+		pin IN_CANRxHandle ( Left , 1 )
+		pin rxCANNewData ( Right , 0 )
+	}
+	methodLayout rxCANMsg {
+		pin rxCANMsg ( Right , 6 )
+	}
+}

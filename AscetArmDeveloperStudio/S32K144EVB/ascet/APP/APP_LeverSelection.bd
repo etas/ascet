@@ -1,0 +1,496 @@
+classType ascet.APP.APP_LeverSelection
+blockdiagramSpecification Main {
+	methodBody APP_LeverSelect {
+		outPin active {
+			connection_3, connection_15, connection_1
+		}
+	}
+	complexIdentifier APP_LeverSwitch at (121, 261) size (14, 5) {
+		label at (0, 1)
+		elementCall (ascet.APP.APP_LeverSelection.APP_LeverSwitch) {
+			returnPin at (right, 1) {
+				connection_2
+			}
+			sequenceCall at (0, 0) {
+				inPin
+			}
+		}
+	}
+	return at (331, 275) {
+		label at (-50, 6)
+		inPin connection_2
+		sequenceCall at (-30, -14) {
+			inPin connection_1
+		}
+	}
+	sequenceableContainer APP_PaddleAnalogue at (121, 101) size (10, 10) {
+		label at (0, 1)
+		methodArgumentIdentifier APP_LeverSelect.IN_SteeringWheel at (121, 65) {
+			label at (-80, -1)
+			outPin {
+				connection_57
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		between at (311, 86) {
+			inPin connection_57 {
+				bendpoints (130, 0), (130, 20)
+			}
+			inPin connection_58
+			inPin connection_6 {
+				bendpoints (130, 0), (130, -20)
+			}
+			outPin {
+				connection_8
+			}
+		}
+		simpleIdentifier APP_MINUSSWITCHMIN at (121, 95) {
+			label at (-60, -1)
+			outPin {
+				connection_58
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_MINUSSWITCHMAX at (121, 125) {
+			label at (-70, -1)
+			outPin {
+				connection_6
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_AnalogueMinus at (471, 95) {
+			label at (-40, -1)
+			inPin connection_8
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_7
+			}
+		}
+		methodArgumentIdentifier APP_LeverSelect.IN_SteeringWheel at (121, 165) {
+			label at (-80, -1)
+			outPin {
+				connection_56
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		between at (311, 186) {
+			inPin connection_56 {
+				bendpoints (150, 0)
+			}
+			inPin connection_55
+			inPin connection_10 {
+				bendpoints (150, 0)
+			}
+			outPin {
+				connection_13
+			}
+		}
+		simpleIdentifier APP_AnaloguePlus at (471, 195) {
+			label at (-40, -1)
+			inPin connection_13
+			outPin sequenceCall at (-40, -14) {
+				inPin connection_14
+			}
+		}
+		simpleIdentifier APP_PLUSSWITCHMAX at (121, 225) {
+			label at (-60, -1)
+			outPin {
+				connection_10
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_PLUSSWITCHMIN at (121, 195) {
+			label at (-70, -1)
+			outPin {
+				connection_55
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		freeComment at (101, 31) {
+			"Simple read of analogue feedback from clockspring on steeringwheel to see if plus or minus paddle are pressed"
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_7, connection_14
+			}
+			sequenceCall {
+				inPin connection_3
+			}
+		}
+	}
+	sequenceableContainer APP_Switches at (291, 101) size (10, 10) {
+		label at (0, 1)
+		methodArgumentIdentifier APP_LeverSelect.IN_ParkSwitch at (121, 45) {
+			label at (-70, -1)
+			outPin {
+				connection_17
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier APP_ParkSwitchInterp at (531, 41) size (16, 5) {
+			label at (-30, 1)
+			methodCall ascet.APP.APP_SwitchInterpretation.APP_SwitchState {
+				argumentPin APP_SwitchIn at (left, 0) connection_17
+				argumentPin APP_SwitchFitted at (left, 3) connection_18
+				returnPin at (right, 0) {
+					connection_20
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier APP_PARKSWFITTED at (121, 75) {
+			label at (-50, -1)
+			outPin {
+				connection_18
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier APP_LeverSwitch at (871, 31) size (14, 58) {
+			label at (0, 1)
+			elementCall (types.T_LeverOut.LVR_ParkSwitch) {
+				argumentPin at (left, 1) connection_20
+				sequenceCall at (-120, -24) {
+					inPin connection_19
+				}
+			}
+			elementCall (types.T_LeverOut.LVR_ReverseSwitch) {
+				argumentPin at (left, 8) connection_24
+				sequenceCall at (-120, -24) {
+					inPin connection_23
+				}
+			}
+			elementCall (types.T_LeverOut.LVR_NeutralSwitch) {
+				argumentPin at (left, 15) connection_26
+				sequenceCall at (-120, -30) {
+					inPin connection_25
+				}
+			}
+			elementCall (types.T_LeverOut.LVR_DriveSwitch) {
+				argumentPin at (left, 22) connection_28
+				sequenceCall at (-110, -30) {
+					inPin connection_27
+				}
+			}
+			elementCall (types.T_LeverOut.LVR_SportSwitch) {
+				argumentPin at (left, 29) connection_30
+				sequenceCall at (-110, -30) {
+					inPin connection_29
+				}
+			}
+			elementCall (types.T_LeverOut.LVR_ManualSwitch) {
+				argumentPin at (left, 36) connection_32
+				sequenceCall at (-110, -30) {
+					inPin connection_31
+				}
+			}
+			elementCall (types.T_LeverOut.LVR_PlusSwitch) {
+				argumentPin at (left, 46) connection_34
+				sequenceCall at (-100, -24) {
+					inPin connection_33
+				}
+			}
+			elementCall (types.T_LeverOut.LVR_MinusSwitch) {
+				argumentPin at (left, 54) connection_36
+				sequenceCall at (-100, -24) {
+					inPin connection_35
+				}
+			}
+		}
+		methodArgumentIdentifier APP_LeverSelect.IN_ReverseSwitch at (121, 115) {
+			label at (-70, -1)
+			outPin {
+				connection_21
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_REVERSESWFITTED at (121, 145) {
+			label at (-50, -1)
+			outPin {
+				connection_22
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier APP_ReverseSwitchInterp at (531, 111) size (16, 5) {
+			label at (-30, 1)
+			methodCall ascet.APP.APP_SwitchInterpretation.APP_SwitchState {
+				argumentPin APP_SwitchIn at (left, 0) connection_21
+				argumentPin APP_SwitchFitted at (left, 3) connection_22
+				returnPin at (right, 0) {
+					connection_24
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier APP_NeutralSwitchInterp at (531, 181) size (16, 5) {
+			label at (-30, 1)
+			methodCall ascet.APP.APP_SwitchInterpretation.APP_SwitchState {
+				argumentPin APP_SwitchIn at (left, 0) connection_37
+				argumentPin APP_SwitchFitted at (left, 3) connection_49
+				returnPin at (right, 0) {
+					connection_26
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier APP_DriveSwitchInterp at (531, 251) size (16, 5) {
+			label at (-30, 1)
+			methodCall ascet.APP.APP_SwitchInterpretation.APP_SwitchState {
+				argumentPin APP_SwitchIn at (left, 0) connection_38
+				argumentPin APP_SwitchFitted at (left, 3) connection_52
+				returnPin at (right, 0) {
+					connection_28
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier APP_SportSwitchInterp at (531, 321) size (16, 5) {
+			label at (-30, 1)
+			methodCall ascet.APP.APP_SwitchInterpretation.APP_SwitchState {
+				argumentPin APP_SwitchIn at (left, 0) connection_39
+				argumentPin APP_SwitchFitted at (left, 3) connection_51
+				returnPin at (right, 0) {
+					connection_30
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier APP_ManualSwitchInterp at (531, 391) size (16, 5) {
+			label at (-30, 1)
+			methodCall ascet.APP.APP_SwitchInterpretation.APP_SwitchState {
+				argumentPin APP_SwitchIn at (left, 0) connection_40
+				argumentPin APP_SwitchFitted at (left, 3) connection_50
+				returnPin at (right, 0) {
+					connection_32
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier APP_PlusSwitchInterp at (531, 491) size (16, 5) {
+			label at (-30, 1)
+			methodCall ascet.APP.APP_SwitchInterpretation.APP_SwitchState {
+				argumentPin APP_SwitchIn at (left, 0) connection_41
+				argumentPin APP_SwitchFitted at (left, 3) connection_53
+				returnPin at (right, 0) {
+					connection_34
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier APP_MinusSwitchInterp at (531, 571) size (16, 5) {
+			label at (-30, 1)
+			methodCall ascet.APP.APP_SwitchInterpretation.APP_SwitchState {
+				argumentPin APP_SwitchIn at (left, 0) connection_42
+				argumentPin APP_SwitchFitted at (left, 3) connection_54
+				returnPin at (right, 0) {
+					connection_36
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		methodArgumentIdentifier APP_LeverSelect.IN_NeutralSwitch at (121, 185) {
+			label at (-70, -1)
+			outPin {
+				connection_37
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		methodArgumentIdentifier APP_LeverSelect.IN_DriveSwitch at (121, 255) {
+			label at (-80, -1)
+			outPin {
+				connection_38
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		methodArgumentIdentifier APP_LeverSelect.IN_SportSwitch at (121, 325) {
+			label at (-70, -1)
+			outPin {
+				connection_39
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		methodArgumentIdentifier APP_LeverSelect.IN_ManualSwitch at (121, 395) {
+			label at (-70, -1)
+			outPin {
+				connection_40
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		methodArgumentIdentifier APP_LeverSelect.IN_PlusSwitch at (121, 485) {
+			label at (-70, -1)
+			outPin {
+				connection_43
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		methodArgumentIdentifier APP_LeverSelect.IN_MinusSwitch at (121, 565) {
+			label at (-70, -1)
+			outPin {
+				connection_44
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_AnalogueMinus at (111, 595) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_46
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_AnaloguePlus at (111, 515) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_45
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		conditionalSelect at (251, 471) {
+			inPin connection_43
+			inPin CASE_CONDITION connection_47 {
+				bendpoints (110, 0)
+			}
+			inPin connection_45 {
+				bendpoints (90, 0)
+			}
+			outPin {
+				connection_41
+			}
+		}
+		conditionalSelect at (251, 551) {
+			inPin connection_44
+			inPin CASE_CONDITION connection_48 {
+				bendpoints (140, 0), (140, 90)
+			}
+			inPin connection_46 {
+				bendpoints (90, 0)
+			}
+			outPin {
+				connection_42
+			}
+		}
+		simpleIdentifier APP_ANALOGUEPLUSMINUS at (121, 455) {
+			label at (-50, -1)
+			outPin {
+				connection_48, connection_47
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_NEUTRALSWFITTED at (121, 215) {
+			label at (-60, -1)
+			outPin {
+				connection_49
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_DRIVESWFITTED at (121, 285) {
+			label at (-60, -1)
+			outPin {
+				connection_52
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_SPORTSWFITTED at (121, 355) {
+			label at (-60, -1)
+			outPin {
+				connection_51
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_MANUALSWFITTED at (121, 425) {
+			label at (-60, -1)
+			outPin {
+				connection_50
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_PLUSSWFITTED at (371, 525) {
+			label at (-60, -1)
+			outPin {
+				connection_53
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_MINUSSWFITTED at (371, 605) {
+			label at (-60, -1)
+			outPin {
+				connection_54
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		freeComment at (161, 21) {
+			"Interpret the switch inputs and place the data into lever switch structure\r\n"
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_19, connection_23, connection_25, connection_27, connection_29, connection_31, connection_33, connection_35
+			}
+			sequenceCall {
+				inPin connection_15
+			}
+		}
+	}
+}

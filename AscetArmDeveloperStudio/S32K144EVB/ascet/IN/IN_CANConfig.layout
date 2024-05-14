@@ -1,0 +1,10 @@
+Component ascet.IN.IN_CANConfig size ( 9 , 5 ) backgroundColor #80ffff {
+	labelPosition ( 0 , 1 )
+	methodLayout initCANChannel {
+		pin IN_Channel ( Left , 0 )
+		pin IN_Baud ( Left , 3 )
+	}
+	methodLayout startCANChannel {
+		pin IN_Channel ( Left , 2 )
+	}
+}

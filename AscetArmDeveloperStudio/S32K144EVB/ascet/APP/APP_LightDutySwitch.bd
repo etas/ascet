@@ -1,0 +1,268 @@
+classType ascet.APP.APP_LightDutySwitch
+blockdiagramSpecification Main {
+	methodBody APP_LightDuty {
+		outPin active {
+			connection_3
+		}
+	}
+	methodArgumentIdentifier APP_LightDuty.APP_TCMOkay at (171, 165) {
+		label at (-70, -1)
+		outPin {
+			connection_14
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	conditionalSelect at (601, 231) {
+		inPin connection_2
+		inPin CASE_CONDITION connection_1 {
+			bendpoints (180, 0)
+		}
+		inPin connection_6 {
+			bendpoints (10, 0)
+		}
+		outPin {
+			connection_9
+		}
+	}
+	methodArgumentIdentifier APP_LightDuty.APP_FlashDuty at (171, 245) {
+		label at (-80, -1)
+		outPin {
+			connection_2
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	return at (941, 275) {
+		label at (-50, 0)
+		inPin connection_4
+		sequenceCall at (-30, -14) {
+			inPin connection_3
+		}
+	}
+	methodArgumentIdentifier APP_LightDuty.APP_Backlight at (171, 275) {
+		label at (-60, -1)
+		outPin {
+			connection_5
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	conditionalSelect at (551, 381) {
+		inPin connection_19 {
+			bendpoints (90, 0)
+		}
+		inPin CASE_CONDITION connection_5 {
+			bendpoints (360, 0)
+		}
+		inPin connection_21 {
+			bendpoints (90, 0)
+		}
+		outPin {
+			connection_6
+		}
+	}
+	methodArgumentIdentifier APP_LightDuty.APP_SwitchState at (171, 115) {
+		label at (-70, -1)
+		outPin {
+			connection_7
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	equal at (331, 116) {
+		inPin connection_7
+		inPin connection_8 {
+			bendpoints (110, 0)
+		}
+		outPin {
+			connection_10
+		}
+	}
+	literal Numeric "3" at (171, 143) size (49, 0) {
+		outPin {
+			connection_8
+		}
+	}
+	conditionalSelect at (691, 241) {
+		inPin connection_9
+		inPin CASE_CONDITION connection_10 {
+			bendpoints (340, 0)
+		}
+		inPin connection_11
+		outPin {
+			connection_28, connection_26
+		}
+	}
+	literal Numeric "1.0" at (641, 273) size (49, 0) {
+		outPin {
+			connection_11
+		}
+	}
+	notEqual at (331, 196) {
+		inPin connection_13
+		inPin connection_12 {
+			bendpoints (110, 0)
+		}
+		outPin {
+			connection_15
+		}
+	}
+	literal Numeric "0" at (171, 223) size (49, 0) {
+		outPin {
+			connection_12
+		}
+	}
+	methodArgumentIdentifier APP_LightDuty.APP_SwitchState at (171, 195) {
+		label at (-70, -1)
+		outPin {
+			connection_13
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	and at (401, 176) {
+		inPin connection_14 {
+			bendpoints (190, 0)
+		}
+		inPin connection_15 {
+			bendpoints (30, 0)
+		}
+		outPin {
+			connection_1
+		}
+	}
+	freeComment at (91, 141) {
+		"Not Available\r\n"
+	}
+	freeComment at (121, 221) {
+		"Flash"
+	}
+	equal at (331, 306) {
+		inPin connection_17
+		inPin connection_16 {
+			bendpoints (110, 0)
+		}
+		outPin {
+			connection_20, connection_18
+		}
+	}
+	literal Numeric "1" at (171, 333) size (49, 0) {
+		outPin {
+			connection_16
+		}
+	}
+	methodArgumentIdentifier APP_LightDuty.APP_SwitchState at (171, 305) {
+		label at (-70, -1)
+		outPin {
+			connection_17
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	freeComment at (131, 331) {
+		"Off\r\n"
+	}
+	conditionalSelect at (421, 351) {
+		inPin connection_24 {
+			bendpoints (210, 0)
+		}
+		inPin CASE_CONDITION connection_18 {
+			bendpoints (100, 0), (100, 30)
+		}
+		inPin connection_22
+		outPin {
+			connection_19
+		}
+	}
+	conditionalSelect at (421, 411) {
+		inPin connection_23
+		inPin CASE_CONDITION connection_20 {
+			bendpoints (100, 0), (100, 90)
+		}
+		inPin connection_25 {
+			bendpoints (210, 0)
+		}
+		outPin {
+			connection_21
+		}
+	}
+	simpleIdentifier APP_LIGHTOFFNOBACKDUTY at (171, 385) {
+		label at (-70, -1)
+		outPin {
+			connection_22
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier APP_LIGHTONWITHBACKDUTY at (171, 425) {
+		label at (-80, -1)
+		outPin {
+			connection_23
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier APP_LIGHTONNOBACKDUTY at (171, 355) {
+		label at (-70, -1)
+		outPin {
+			connection_24
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier APP_LIGHTOFFWITHBACKDUTY at (171, 455) {
+		label at (-70, -1)
+		outPin {
+			connection_25
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	freeComment at (151, 31) {
+		"Switch selects a suitable duty cycle for the light in the lever based on:\r\n1. Is there actually a light request (signal not available = no light)\r\n2. Is the CAN link with the TCM okay, and is the TCM not requesting a flashing (failure) state\r\n3. Are the vehicle lights on (requiring a backlight on the lever lights)\r\n4. Which state is the lamp in?"
+	}
+	conditionalSelect at (841, 251) {
+		inPin connection_26
+		inPin CASE_CONDITION connection_30 {
+			bendpoints (200, 0)
+		}
+		inPin connection_29
+		outPin {
+			connection_4
+		}
+	}
+	literal Numeric "100.0" at (751, 283) size (49, 0) {
+		outPin {
+			connection_27
+		}
+	}
+	subtraction at (801, 286) {
+		inPin connection_27
+		inPin connection_28 {
+			bendpoints (10, 0), (10, 40)
+		}
+		outPin {
+			connection_29
+		}
+	}
+	simpleIdentifier APP_INVERTDUTY at (621, 95) {
+		label at (-50, -1)
+		outPin {
+			connection_30
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+}

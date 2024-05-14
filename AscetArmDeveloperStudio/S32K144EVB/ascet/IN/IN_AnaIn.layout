@@ -1,0 +1,7 @@
+Component ascet.IN.IN_AnaIn size ( 14 , 3 ) backgroundColor #80ffff {
+	labelPosition ( 0 , 1 )
+	methodLayout getADCIn {
+		pin port ( Left , 0 )
+		pin getADCIn ( Right , 0 )
+	}
+}

@@ -1,0 +1,8 @@
+Component ascet.APP.APP_Sanity size ( 20 , 6 ) backgroundColor #80ffff {
+	labelPosition ( 20 , 1 )
+	methodLayout SanityReturn {
+		pin APP_Sanity1 ( Left , 0 )
+		pin APP_Sanity2 ( Left , 3 )
+		pin SanityReturn ( Right , 1 )
+	}
+}

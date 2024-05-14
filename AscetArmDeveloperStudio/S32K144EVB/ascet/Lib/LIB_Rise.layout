@@ -1,0 +1,7 @@
+Component ascet.Lib.LIB_Rise size ( 14 , 3 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout LIB_Rising {
+		pin LIB_Input ( Left , 0 )
+		pin LIB_Rising ( Right , 0 )
+	}
+}

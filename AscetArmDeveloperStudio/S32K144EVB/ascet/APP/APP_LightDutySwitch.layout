@@ -1,0 +1,10 @@
+Component ascet.APP.APP_LightDutySwitch size ( 17 , 12 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout APP_LightDuty {
+		pin APP_SwitchState ( Left , 0 )
+		pin APP_FlashDuty ( Left , 3 )
+		pin APP_Backlight ( Left , 6 )
+		pin APP_TCMOkay ( Left , 9 )
+		pin APP_LightDuty ( Right , 5 )
+	}
+}

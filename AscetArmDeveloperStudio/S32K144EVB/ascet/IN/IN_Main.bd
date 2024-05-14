@@ -1,0 +1,3398 @@
+classType ascet.IN.IN_Main
+blockdiagramSpecification Main {
+	methodBody IN_dT {
+		outPin active {
+			connection_1286, connection_97, connection_98, connection_817, connection_1846
+		}
+	}
+	methodBody IN_Init {
+		outPin {
+			connection_1284, connection_1838
+		}
+	}
+	sequenceableContainer IN_Analogues at (151, 181) size (10, 10) {
+		label at (0, 1)
+		sequenceableContainer IN_Analogue_J4_Arduino at (151, 81) size (10, 10) {
+			label at (-10, 1)
+			freeComment at (591, 331) {
+				"Arduino ADC5\r\n\r\n\r\n"
+			}
+			complexIdentifier IN_GetAnalog at (281, 381) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1709
+					returnPin at (right, 0) {
+						connection_1700
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			freeComment at (591, 431) {
+				"Arduino ADC7\r\n"
+			}
+			freeComment at (591, 281) {
+				"Arduino ADC4"
+			}
+			complexIdentifier IN_GetAnalog at (281, 131) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1713
+					returnPin at (right, 0) {
+						connection_1702
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_6 at (131, 433) size (59, 0) {
+				outPin {
+					connection_1703
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_6 at (131, 283) size (59, 0) {
+				outPin {
+					connection_1704
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_0 at (131, 333) size (59, 0) {
+				outPin {
+					connection_1705
+				}
+			}
+			complexIdentifier IN_GetAnalog at (281, 231) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1708
+					returnPin at (right, 0) {
+						connection_1707
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_1 at (131, 233) size (59, 0) {
+				outPin {
+					connection_1708
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_2 at (131, 383) size (59, 0) {
+				outPin {
+					connection_1709
+				}
+			}
+			complexIdentifier IN_GetAnalog at (281, 431) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1703
+					returnPin at (right, 0) {
+						connection_1711
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_0 at (131, 183) size (59, 0) {
+				outPin {
+					connection_1712
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_12 at (131, 133) size (59, 0) {
+				outPin {
+					connection_1713
+				}
+			}
+			freeComment at (591, 181) {
+				"Arduino ADC2"
+			}
+			complexIdentifier IN_GetAnalog at (281, 281) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1704
+					returnPin at (right, 0) {
+						connection_1715
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			freeComment at (591, 131) {
+				"Arduino ADC1\r\n\r\n"
+			}
+			freeComment at (591, 381) {
+				"Arduino ADC6\r\n"
+			}
+			complexIdentifier IN_GetAnalog at (281, 331) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1705
+					returnPin at (right, 0) {
+						connection_1717
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_4 at (131, 83) size (59, 0) {
+				outPin {
+					connection_1718
+				}
+			}
+			complexIdentifier IN_GetAnalog at (281, 181) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1712
+					returnPin at (right, 0) {
+						connection_1720
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			freeComment at (741, 261) {
+				"J4\r\n"
+			}
+			freeComment at (591, 81) {
+				"Arduino ADC0"
+			}
+			complexIdentifier IN_GetAnalog at (281, 81) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1718
+					returnPin at (right, 0) {
+						connection_1722
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			freeComment at (591, 231) {
+				"Arduino ADC3\r\n"
+			}
+			simpleIdentifier interfaces.INInterface.IN_ADC0_PTD4 at (491, 85) {
+				label at (-20, -1)
+				inPin connection_1722
+				sequenceCall at (-30, -14) {
+					inPin connection_1721
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_ADC1_PTB12 at (491, 135) {
+				label at (-20, -1)
+				inPin connection_1702
+				sequenceCall at (-30, -14) {
+					inPin connection_1701
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_ADC2_PTB0 at (491, 185) {
+				label at (-20, -1)
+				inPin connection_1720
+				sequenceCall at (-30, -14) {
+					inPin connection_1719
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_ADC3_PTB1 at (491, 235) {
+				label at (-20, -1)
+				inPin connection_1707
+				sequenceCall at (-30, -14) {
+					inPin connection_1706
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_ADC4_PTA6 at (491, 285) {
+				label at (-20, -1)
+				inPin connection_1715
+				sequenceCall at (-30, -14) {
+					inPin connection_1714
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_ADC5_PTC0 at (491, 335) {
+				label at (-20, -1)
+				inPin connection_1717
+				sequenceCall at (-30, -14) {
+					inPin connection_1716
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_ADC6_PTE2 at (491, 385) {
+				label at (-20, -1)
+				inPin connection_1700
+				sequenceCall at (-30, -14) {
+					inPin connection_1699
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_ADC7_PTE6 at (491, 435) {
+				label at (-20, -1)
+				inPin connection_1711
+				sequenceCall at (-30, -14) {
+					inPin connection_1710
+				}
+			}
+			statementBlock {
+				controlFlowOutPin {
+					connection_1721, connection_1701, connection_1719, connection_1706, connection_1714, connection_1716, connection_1699, connection_1710
+				}
+				sequenceCall {
+					inPin connection_1698
+				}
+			}
+		}
+		sequenceableContainer IN_Analogue_J5_Arduino at (151, 231) size (10, 10) {
+			label at (-10, 1)
+			literal enum enumerations.S32K144_Gpio.PortA_7 at (101, 293) size (59, 0) {
+				outPin {
+					connection_1724
+				}
+			}
+			complexIdentifier IN_GetAnalog at (251, 241) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1735
+					returnPin at (right, 0) {
+						connection_1726
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			freeComment at (561, 241) {
+				"Arduino ADC11\r\n\r\n"
+			}
+			complexIdentifier IN_GetAnalog at (251, 441) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1736
+					returnPin at (right, 0) {
+						connection_1728
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_1 at (101, 393) size (59, 0) {
+				outPin {
+					connection_1729
+				}
+			}
+			freeComment at (561, 91) {
+				"Arduino ADC8\r\n"
+			}
+			complexIdentifier IN_GetAnalog at (251, 341) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1740
+					returnPin at (right, 0) {
+						connection_1731
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			freeComment at (561, 441) {
+				"Arduino ADC15\r\n"
+			}
+			freeComment at (561, 341) {
+				"Arduino ADC13\r\n\r\n\r\n"
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_1 at (101, 193) size (59, 0) {
+				outPin {
+					connection_1732
+				}
+			}
+			complexIdentifier IN_GetAnalog at (251, 141) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1743
+					returnPin at (right, 0) {
+						connection_1734
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_0 at (101, 243) size (59, 0) {
+				outPin {
+					connection_1735
+				}
+			}
+			freeComment at (561, 191) {
+				"Arduino ADC10"
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_2 at (101, 443) size (59, 0) {
+				outPin {
+					connection_1736
+				}
+			}
+			complexIdentifier IN_GetAnalog at (251, 391) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1729
+					returnPin at (right, 0) {
+						connection_1738
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			freeComment at (711, 221) {
+				"J5\r\n"
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_15 at (101, 93) size (59, 0) {
+				outPin {
+					connection_1739
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_13 at (101, 343) size (59, 0) {
+				outPin {
+					connection_1740
+				}
+			}
+			complexIdentifier IN_GetAnalog at (251, 91) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1739
+					returnPin at (right, 0) {
+						connection_1742
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_16 at (101, 143) size (59, 0) {
+				outPin {
+					connection_1743
+				}
+			}
+			freeComment at (561, 141) {
+				"Arduino ADC9\r\n\r\n\r\n\r\n"
+			}
+			freeComment at (561, 291) {
+				"Arduino ADC12"
+			}
+			freeComment at (561, 391) {
+				"Arduino ADC14\r\n\r\n"
+			}
+			complexIdentifier IN_GetAnalog at (251, 191) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1732
+					returnPin at (right, 0) {
+						connection_1745
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_GetAnalog at (251, 291) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1724
+					returnPin at (right, 0) {
+						connection_1747
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_ADC8_PTA15 at (461, 95) {
+				label at (-20, -1)
+				inPin connection_1742
+				sequenceCall at (-20, -14) {
+					inPin connection_1741
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_ADC9_PTA16 at (461, 145) {
+				label at (-20, -1)
+				inPin connection_1734
+				sequenceCall at (-20, -14) {
+					inPin connection_1733
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_ADC10_PTA1 at (461, 195) {
+				label at (-20, -1)
+				inPin connection_1745
+				sequenceCall at (-20, -14) {
+					inPin connection_1744
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_ADC11_PTA0 at (461, 245) {
+				label at (-20, -1)
+				inPin connection_1726
+				sequenceCall at (-20, -14) {
+					inPin connection_1725
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_ADC12_PTA7 at (461, 295) {
+				label at (-20, -1)
+				inPin connection_1747
+				sequenceCall at (-20, -14) {
+					inPin connection_1746
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_ADC13_PTB13 at (461, 345) {
+				label at (-20, -1)
+				inPin connection_1731
+				sequenceCall at (-20, -14) {
+					inPin connection_1730
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_ADC14_PTC1 at (461, 395) {
+				label at (-20, -1)
+				inPin connection_1738
+				sequenceCall at (-20, -14) {
+					inPin connection_1737
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_ADC15_PTC2 at (461, 445) {
+				label at (-20, -1)
+				inPin connection_1728
+				sequenceCall at (-20, -14) {
+					inPin connection_1727
+				}
+			}
+			statementBlock {
+				controlFlowOutPin {
+					connection_1741, connection_1733, connection_1744, connection_1725, connection_1746, connection_1730, connection_1737, connection_1727
+				}
+				sequenceCall {
+					inPin connection_1723
+				}
+			}
+		}
+		sequenceableContainer IN_Analogue_Potentiometer at (151, 381) size (10, 10) {
+			label at (-20, 1)
+			freeComment at (561, 111) {
+				"User Potentiometer"
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_14 at (101, 113) size (59, 0) {
+				outPin {
+					connection_1749
+				}
+			}
+			complexIdentifier IN_GetAnalog at (231, 111) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_AnaIn.getADCIn {
+					argumentPin port at (left, 0) connection_1749
+					returnPin at (right, 0) {
+						connection_1751
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_Potentiometer_PTC14 at (461, 115) {
+				label at (-60, -1)
+				inPin connection_1751
+				sequenceCall at (-50, -14) {
+					inPin connection_1752
+				}
+			}
+			statementBlock {
+				controlFlowOutPin {
+					connection_1752
+				}
+				sequenceCall {
+					inPin connection_1748
+				}
+			}
+		}
+		freeComment at (261, 31) {
+			"Inputs represent a complete set found on the S32K144EVB. The user is free to remove/delete the inputs when not used."
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_1698, connection_1723, connection_1748
+			}
+			sequenceCall {
+				inPin connection_97
+			}
+		}
+	}
+	sequenceableContainer IN_InputCapture at (321, 181) size (10, 10) {
+		label at (0, 1)
+		simpleIdentifier IN_D0_IC_PTA2_TIMEOUT at (101, 115) {
+			label at (-60, -1)
+			outPin {
+				connection_650
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_D0_IC_PTA2_PPR at (101, 85) {
+			label at (-50, -1)
+			outPin {
+				connection_651
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier IN_InputCapture at (241, 41) size (15, 10) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_InputCaptureIn.getSpeedIn {
+				argumentPin port at (left, 1) connection_1755
+				argumentPin timeout at (left, 7) connection_650
+				argumentPin ppr at (left, 4) connection_651
+				returnPin at (right, 4) {
+					connection_1754
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D0_IC_PTA2 at (451, 81) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_D0_IC_PTA2) {
+				argumentPin at (left, 0) connection_1754
+				sequenceCall at (0, -34) {
+					inPin connection_1753
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D1_IC_PTA3 at (451, 211) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_D1_IC_PTA3) {
+				argumentPin at (left, 0) connection_1778
+				sequenceCall at (0, -34) {
+					inPin connection_1777
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D2_IC_PTB10 at (451, 341) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_D2_IC_PTB10) {
+				argumentPin at (left, 0) connection_1780
+				sequenceCall at (0, -34) {
+					inPin connection_1779
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D3_IC_PTB11 at (451, 471) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_D3_IC_PTB11) {
+				argumentPin at (left, 0) connection_1782
+				sequenceCall at (0, -34) {
+					inPin connection_1781
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D4_IC_PTC10 at (1091, 81) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_D4_IC_PTC10) {
+				argumentPin at (left, 0) connection_1784
+				sequenceCall at (0, -34) {
+					inPin connection_1783
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D5_IC_PTC11 at (1101, 211) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_D5_IC_PTC11) {
+				argumentPin at (left, 0) connection_1786
+				sequenceCall at (0, -34) {
+					inPin connection_1785
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D6_IC_PTC12 at (1101, 351) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_D6_IC_PTC12) {
+				argumentPin at (left, 0) connection_1788
+				sequenceCall at (0, -34) {
+					inPin connection_1787
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D7_IC_PTC13 at (1101, 481) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_D7_IC_PTC13) {
+				argumentPin at (left, 0) connection_1790
+				sequenceCall at (0, -34) {
+					inPin connection_1789
+				}
+			}
+		}
+		literal enum enumerations.S32K144_Gpio.PortA_2 at (91, 53) size (59, 0) {
+			outPin {
+				connection_1755
+			}
+		}
+		literal enum enumerations.S32K144_Gpio.PortA_3 at (91, 183) size (59, 0) {
+			outPin {
+				connection_1756
+			}
+		}
+		complexIdentifier IN_InputCapture at (241, 171) size (15, 10) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_InputCaptureIn.getSpeedIn {
+				argumentPin port at (left, 1) connection_1756
+				argumentPin timeout at (left, 7) connection_1757
+				argumentPin ppr at (left, 4) connection_1758
+				returnPin at (right, 4) {
+					connection_1778
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		literal enum enumerations.S32K144_Gpio.PortB_10 at (91, 313) size (59, 0) {
+			outPin {
+				connection_1759
+			}
+		}
+		complexIdentifier IN_InputCapture at (241, 301) size (15, 10) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_InputCaptureIn.getSpeedIn {
+				argumentPin port at (left, 1) connection_1759
+				argumentPin timeout at (left, 7) connection_1760
+				argumentPin ppr at (left, 4) connection_1761
+				returnPin at (right, 4) {
+					connection_1780
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		literal enum enumerations.S32K144_Gpio.PortB_11 at (91, 443) size (59, 0) {
+			outPin {
+				connection_1762
+			}
+		}
+		complexIdentifier IN_InputCapture at (241, 431) size (15, 10) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_InputCaptureIn.getSpeedIn {
+				argumentPin port at (left, 1) connection_1762
+				argumentPin timeout at (left, 7) connection_1763
+				argumentPin ppr at (left, 4) connection_1764
+				returnPin at (right, 4) {
+					connection_1782
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		literal enum enumerations.S32K144_Gpio.PortC_10 at (711, 53) size (59, 0) {
+			outPin {
+				connection_1765
+			}
+		}
+		complexIdentifier IN_InputCapture at (861, 41) size (15, 10) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_InputCaptureIn.getSpeedIn {
+				argumentPin port at (left, 1) connection_1765
+				argumentPin timeout at (left, 7) connection_1766
+				argumentPin ppr at (left, 4) connection_1767
+				returnPin at (right, 4) {
+					connection_1784
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		literal enum enumerations.S32K144_Gpio.PortC_11 at (711, 183) size (59, 0) {
+			outPin {
+				connection_1768
+			}
+		}
+		complexIdentifier IN_InputCapture at (861, 171) size (15, 10) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_InputCaptureIn.getSpeedIn {
+				argumentPin port at (left, 1) connection_1768
+				argumentPin timeout at (left, 7) connection_1769
+				argumentPin ppr at (left, 4) connection_1770
+				returnPin at (right, 4) {
+					connection_1786
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		literal enum enumerations.S32K144_Gpio.PortC_12 at (711, 323) size (59, 0) {
+			outPin {
+				connection_1771
+			}
+		}
+		complexIdentifier IN_InputCapture at (861, 311) size (15, 10) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_InputCaptureIn.getSpeedIn {
+				argumentPin port at (left, 1) connection_1771
+				argumentPin timeout at (left, 7) connection_1772
+				argumentPin ppr at (left, 4) connection_1773
+				returnPin at (right, 4) {
+					connection_1788
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		literal enum enumerations.S32K144_Gpio.PortC_13 at (711, 453) size (59, 0) {
+			outPin {
+				connection_1774
+			}
+		}
+		complexIdentifier IN_InputCapture at (861, 441) size (15, 10) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_InputCaptureIn.getSpeedIn {
+				argumentPin port at (left, 1) connection_1774
+				argumentPin timeout at (left, 7) connection_1775
+				argumentPin ppr at (left, 4) connection_1776
+				returnPin at (right, 4) {
+					connection_1790
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier IN_D1_IC_PTA3_PPR at (101, 215) {
+			label at (-60, -1)
+			outPin {
+				connection_1758
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_D2_IC_PTB10_PPR at (101, 345) {
+			label at (-60, -1)
+			outPin {
+				connection_1761
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_D3_IC_PTB11_PPR at (101, 475) {
+			label at (-60, -1)
+			outPin {
+				connection_1764
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_D4_IC_PTC10_PPR at (721, 85) {
+			label at (-60, -1)
+			outPin {
+				connection_1767
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_D5_IC_PTC11_PPR at (721, 215) {
+			label at (-60, -1)
+			outPin {
+				connection_1770
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_D6_IC_PTC12_PPR at (721, 355) {
+			label at (-60, -1)
+			outPin {
+				connection_1773
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_D7_IC_PTC13_PPR at (721, 485) {
+			label at (-60, -1)
+			outPin {
+				connection_1776
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_D7_IC_PTC13_TIMEOUT at (721, 515) {
+			label at (-60, -1)
+			outPin {
+				connection_1775
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_D6_IC_PTC12_TIMEOUT at (721, 385) {
+			label at (-70, -1)
+			outPin {
+				connection_1772
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_D5_IC_PTC11_TIMEOUT at (721, 245) {
+			label at (-60, -1)
+			outPin {
+				connection_1769
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_D4_IC_PTC10_TIMEOUT at (721, 115) {
+			label at (-60, -1)
+			outPin {
+				connection_1766
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_D3_IC_PTB11_TIMEOUT at (101, 505) {
+			label at (-60, -1)
+			outPin {
+				connection_1763
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_D2_IC_PTB10_TIMEOUT at (101, 375) {
+			label at (-60, -1)
+			outPin {
+				connection_1760
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_D1_IC_PTA3_TIMEOUT at (101, 245) {
+			label at (-60, -1)
+			outPin {
+				connection_1757
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_1753, connection_1777, connection_1779, connection_1781, connection_1783, connection_1785, connection_1787, connection_1789
+			}
+			sequenceCall {
+				inPin connection_98
+			}
+		}
+	}
+	sequenceableContainer IN_Digitals at (491, 181) size (10, 10) {
+		label at (0, 1)
+		sequenceableContainer IN_Digitals_J3 at (141, 101) size (10, 10) {
+			label at (0, 1)
+			complexIdentifier IN_DigitalInput at (241, 61) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1373
+					returnPin at (right, 0) {
+						connection_1382
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 121) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1378
+					returnPin at (right, 0) {
+						connection_1384
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 181) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1379
+					returnPin at (right, 0) {
+						connection_1386
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 241) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1380
+					returnPin at (right, 0) {
+						connection_1388
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_6 at (101, 63) size (59, 0) {
+				outPin {
+					connection_1373
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_7 at (101, 123) size (59, 0) {
+				outPin {
+					connection_1378
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_0 at (101, 183) size (59, 0) {
+				outPin {
+					connection_1379
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_9 at (101, 243) size (59, 0) {
+				outPin {
+					connection_1380
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTB6 at (461, 65) {
+				label at (-30, -1)
+				inPin connection_1382
+				sequenceCall at (-30, -14) {
+					inPin connection_1381
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTB7 at (461, 125) {
+				label at (-30, -1)
+				inPin connection_1384
+				sequenceCall at (-30, -14) {
+					inPin connection_1383
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTE0 at (461, 185) {
+				label at (-30, -1)
+				inPin connection_1386
+				sequenceCall at (-30, -14) {
+					inPin connection_1385
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTE9 at (461, 245) {
+				label at (-30, -1)
+				inPin connection_1388
+				sequenceCall at (-30, -14) {
+					inPin connection_1387
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTC5 at (461, 305) {
+				label at (-30, -1)
+				inPin connection_1394
+				sequenceCall at (-30, -14) {
+					inPin connection_1393
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTC4 at (461, 365) {
+				label at (-30, -1)
+				inPin connection_1396
+				sequenceCall at (-30, -14) {
+					inPin connection_1395
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTA10 at (461, 425) {
+				label at (-30, -1)
+				inPin connection_1398
+				sequenceCall at (-30, -14) {
+					inPin connection_1397
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTA4 at (461, 485) {
+				label at (-30, -1)
+				inPin connection_1400
+				sequenceCall at (-30, -14) {
+					inPin connection_1399
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 361) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1390
+					returnPin at (right, 0) {
+						connection_1396
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 421) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1389
+					returnPin at (right, 0) {
+						connection_1398
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_10 at (101, 423) size (59, 0) {
+				outPin {
+					connection_1389
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 481) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1391
+					returnPin at (right, 0) {
+						connection_1400
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_4 at (101, 363) size (59, 0) {
+				outPin {
+					connection_1390
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_4 at (101, 483) size (59, 0) {
+				outPin {
+					connection_1391
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_5 at (101, 303) size (59, 0) {
+				outPin {
+					connection_1392
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 301) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1392
+					returnPin at (right, 0) {
+						connection_1394
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			statementBlock {
+				controlFlowOutPin {
+					connection_1381, connection_1383, connection_1385, connection_1387, connection_1393, connection_1395, connection_1397, connection_1399
+				}
+				sequenceCall {
+					inPin connection_1365
+				}
+			}
+		}
+		sequenceableContainer IN_Digitals_J4 at (141, 261) size (10, 10) {
+			label at (0, 1)
+			complexIdentifier IN_DigitalInput at (241, 81) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1410
+					returnPin at (right, 0) {
+						connection_1403
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 141) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1411
+					returnPin at (right, 0) {
+						connection_1405
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 201) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1412
+					returnPin at (right, 0) {
+						connection_1407
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 261) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1413
+					returnPin at (right, 0) {
+						connection_1409
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_7 at (91, 83) size (59, 0) {
+				outPin {
+					connection_1410
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_6 at (91, 143) size (59, 0) {
+				outPin {
+					connection_1411
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_17 at (91, 203) size (59, 0) {
+				outPin {
+					connection_1412
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_14 at (91, 263) size (59, 0) {
+				outPin {
+					connection_1413
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 381) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1421
+					returnPin at (right, 0) {
+						connection_1415
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 441) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1418
+					returnPin at (right, 0) {
+						connection_1417
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_14 at (91, 443) size (59, 0) {
+				outPin {
+					connection_1418
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 501) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1422
+					returnPin at (right, 0) {
+						connection_1420
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_16 at (91, 383) size (59, 0) {
+				outPin {
+					connection_1421
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_3 at (91, 503) size (59, 0) {
+				outPin {
+					connection_1422
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_15 at (91, 323) size (59, 0) {
+				outPin {
+					connection_1423
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 321) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1423
+					returnPin at (right, 0) {
+						connection_1425
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTC7 at (451, 85) {
+				label at (-20, -1)
+				inPin connection_1403
+				sequenceCall at (-20, -14) {
+					inPin connection_1426
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTC6 at (451, 145) {
+				label at (-20, -1)
+				inPin connection_1405
+				sequenceCall at (-20, -14) {
+					inPin connection_1427
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTB17 at (451, 205) {
+				label at (-20, -1)
+				inPin connection_1407
+				sequenceCall at (-20, -14) {
+					inPin connection_1428
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTB14 at (451, 265) {
+				label at (-20, -1)
+				inPin connection_1409
+				sequenceCall at (-20, -14) {
+					inPin connection_1429
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTB15 at (451, 325) {
+				label at (-20, -1)
+				inPin connection_1425
+				sequenceCall at (-20, -14) {
+					inPin connection_1430
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTB16 at (451, 385) {
+				label at (-20, -1)
+				inPin connection_1415
+				sequenceCall at (-20, -14) {
+					inPin connection_1431
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTC14 at (451, 445) {
+				label at (-20, -1)
+				inPin connection_1417
+				sequenceCall at (-20, -14) {
+					inPin connection_1432
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTC3 at (451, 505) {
+				label at (-20, -1)
+				inPin connection_1420
+				sequenceCall at (-20, -14) {
+					inPin connection_1433
+				}
+			}
+			statementBlock {
+				controlFlowOutPin {
+					connection_1426, connection_1427, connection_1428, connection_1429, connection_1430, connection_1431, connection_1432, connection_1433
+				}
+				sequenceCall {
+					inPin connection_1401
+				}
+			}
+		}
+		sequenceableContainer IN_Digitals_J5 at (141, 421) size (10, 10) {
+			label at (0, 1)
+			complexIdentifier IN_DigitalInput at (221, 71) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1443
+					returnPin at (right, 0) {
+						connection_1436
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (221, 131) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1444
+					returnPin at (right, 0) {
+						connection_1438
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (221, 191) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1445
+					returnPin at (right, 0) {
+						connection_1440
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (221, 251) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1446
+					returnPin at (right, 0) {
+						connection_1442
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_16 at (81, 73) size (59, 0) {
+				outPin {
+					connection_1443
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_15 at (81, 133) size (59, 0) {
+				outPin {
+					connection_1444
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_14 at (81, 193) size (59, 0) {
+				outPin {
+					connection_1445
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_13 at (81, 253) size (59, 0) {
+				outPin {
+					connection_1446
+				}
+			}
+			complexIdentifier IN_DigitalInput at (221, 371) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1454
+					returnPin at (right, 0) {
+						connection_1448
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (221, 431) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1451
+					returnPin at (right, 0) {
+						connection_1450
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_6 at (81, 433) size (59, 0) {
+				outPin {
+					connection_1451
+				}
+			}
+			complexIdentifier IN_DigitalInput at (221, 491) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1455
+					returnPin at (right, 0) {
+						connection_1453
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_7 at (81, 373) size (59, 0) {
+				outPin {
+					connection_1454
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_15 at (81, 493) size (59, 0) {
+				outPin {
+					connection_1455
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_1 at (81, 313) size (59, 0) {
+				outPin {
+					connection_1456
+				}
+			}
+			complexIdentifier IN_DigitalInput at (221, 311) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1456
+					returnPin at (right, 0) {
+						connection_1458
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTE16 at (451, 75) {
+				label at (-20, -1)
+				inPin connection_1436
+				sequenceCall at (-20, -14) {
+					inPin connection_1459
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTE15 at (451, 135) {
+				label at (-20, -1)
+				inPin connection_1438
+				sequenceCall at (-20, -14) {
+					inPin connection_1460
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTE14 at (451, 195) {
+				label at (-20, -1)
+				inPin connection_1440
+				sequenceCall at (-20, -14) {
+					inPin connection_1461
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTE13 at (451, 255) {
+				label at (-20, -1)
+				inPin connection_1442
+				sequenceCall at (-20, -14) {
+					inPin connection_1462
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTE1 at (451, 315) {
+				label at (-20, -1)
+				inPin connection_1458
+				sequenceCall at (-20, -14) {
+					inPin connection_1463
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTD7 at (451, 375) {
+				label at (-20, -1)
+				inPin connection_1448
+				sequenceCall at (-20, -14) {
+					inPin connection_1464
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTD6 at (451, 435) {
+				label at (-20, -1)
+				inPin connection_1450
+				sequenceCall at (-20, -14) {
+					inPin connection_1465
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTC15 at (451, 495) {
+				label at (-20, -1)
+				inPin connection_1453
+				sequenceCall at (-20, -14) {
+					inPin connection_1466
+				}
+			}
+			statementBlock {
+				controlFlowOutPin {
+					connection_1459, connection_1460, connection_1461, connection_1462, connection_1463, connection_1464, connection_1465, connection_1466
+				}
+				sequenceCall {
+					inPin connection_1434
+				}
+			}
+		}
+		sequenceableContainer IN_Digitals_J2 at (801, 101) size (10, 10) {
+			label at (0, 1)
+			complexIdentifier IN_DigitalInput at (241, 61) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1492
+					returnPin at (right, 0) {
+						connection_1485
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 121) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1493
+					returnPin at (right, 0) {
+						connection_1487
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 181) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1494
+					returnPin at (right, 0) {
+						connection_1489
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 241) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1495
+					returnPin at (right, 0) {
+						connection_1491
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_14 at (91, 63) size (59, 0) {
+				outPin {
+					connection_1492
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_7 at (91, 123) size (59, 0) {
+				outPin {
+					connection_1493
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_13 at (91, 183) size (59, 0) {
+				outPin {
+					connection_1494
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_12 at (91, 243) size (59, 0) {
+				outPin {
+					connection_1495
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 361) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1503
+					returnPin at (right, 0) {
+						connection_1497
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 421) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1500
+					returnPin at (right, 0) {
+						connection_1499
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_16 at (91, 423) size (59, 0) {
+				outPin {
+					connection_1500
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 481) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1504
+					returnPin at (right, 0) {
+						connection_1502
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_0 at (91, 363) size (59, 0) {
+				outPin {
+					connection_1503
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_15 at (91, 483) size (59, 0) {
+				outPin {
+					connection_1504
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_8 at (91, 303) size (59, 0) {
+				outPin {
+					connection_1505
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 301) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1505
+					returnPin at (right, 0) {
+						connection_1507
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTA14 at (451, 65) {
+				label at (-30, -1)
+				inPin connection_1485
+				sequenceCall at (-20, -14) {
+					inPin connection_1583
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTE7 at (451, 125) {
+				label at (-30, -1)
+				inPin connection_1487
+				sequenceCall at (-20, -14) {
+					inPin connection_1584
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTC13 at (451, 185) {
+				label at (-30, -1)
+				inPin connection_1489
+				sequenceCall at (-20, -14) {
+					inPin connection_1585
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTC12 at (451, 245) {
+				label at (-30, -1)
+				inPin connection_1491
+				sequenceCall at (-20, -14) {
+					inPin connection_1586
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTE8 at (451, 305) {
+				label at (-30, -1)
+				inPin connection_1507
+				sequenceCall at (-20, -14) {
+					inPin connection_1587
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTD0 at (451, 365) {
+				label at (-30, -1)
+				inPin connection_1497
+				sequenceCall at (-20, -14) {
+					inPin connection_1588
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTD16 at (451, 425) {
+				label at (-30, -1)
+				inPin connection_1499
+				sequenceCall at (-20, -14) {
+					inPin connection_1589
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTD15 at (451, 485) {
+				label at (-30, -1)
+				inPin connection_1502
+				sequenceCall at (-20, -14) {
+					inPin connection_1590
+				}
+			}
+			statementBlock {
+				controlFlowOutPin {
+					connection_1583, connection_1584, connection_1585, connection_1586, connection_1587, connection_1588, connection_1589, connection_1590
+				}
+				sequenceCall {
+					inPin connection_1483
+				}
+			}
+		}
+		sequenceableContainer IN_Digitals_J1 at (801, 261) size (10, 10) {
+			label at (0, 1)
+			complexIdentifier IN_DigitalInput at (331, 61) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1517
+					returnPin at (right, 0) {
+						connection_1510
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (331, 121) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1518
+					returnPin at (right, 0) {
+						connection_1512
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (331, 181) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1519
+					returnPin at (right, 0) {
+						connection_1514
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (331, 241) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1520
+					returnPin at (right, 0) {
+						connection_1516
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_3 at (171, 63) size (59, 0) {
+				outPin {
+					connection_1517
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_3 at (171, 123) size (59, 0) {
+				outPin {
+					connection_1518
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_5 at (171, 183) size (59, 0) {
+				outPin {
+					connection_1519
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_12 at (171, 243) size (59, 0) {
+				outPin {
+					connection_1520
+				}
+			}
+			complexIdentifier IN_DigitalInput at (331, 361) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1528
+					returnPin at (right, 0) {
+						connection_1522
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (331, 421) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1525
+					returnPin at (right, 0) {
+						connection_1524
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_17 at (171, 423) size (59, 0) {
+				outPin {
+					connection_1525
+				}
+			}
+			complexIdentifier IN_DigitalInput at (331, 481) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1529
+					returnPin at (right, 0) {
+						connection_1527
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_10 at (171, 363) size (59, 0) {
+				outPin {
+					connection_1528
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_11 at (171, 483) size (59, 0) {
+				outPin {
+					connection_1529
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_11 at (171, 303) size (59, 0) {
+				outPin {
+					connection_1530
+				}
+			}
+			complexIdentifier IN_DigitalInput at (331, 301) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1530
+					returnPin at (right, 0) {
+						connection_1532
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTE3 at (561, 65) {
+				label at (-30, -1)
+				inPin connection_1510
+				sequenceCall at (-30, -14) {
+					inPin connection_1591
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTD3 at (561, 125) {
+				label at (-30, -1)
+				inPin connection_1512
+				sequenceCall at (-30, -14) {
+					inPin connection_1592
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTD5 at (561, 185) {
+				label at (-30, -1)
+				inPin connection_1514
+				sequenceCall at (-30, -14) {
+					inPin connection_1593
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTD12 at (561, 245) {
+				label at (-30, -1)
+				inPin connection_1516
+				sequenceCall at (-30, -14) {
+					inPin connection_1594
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTD11 at (561, 305) {
+				label at (-30, -1)
+				inPin connection_1532
+				sequenceCall at (-30, -14) {
+					inPin connection_1595
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTD10 at (561, 365) {
+				label at (-30, -1)
+				inPin connection_1522
+				sequenceCall at (-30, -14) {
+					inPin connection_1596
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTA17 at (561, 425) {
+				label at (-30, -1)
+				inPin connection_1524
+				sequenceCall at (-30, -14) {
+					inPin connection_1597
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTA11 at (561, 485) {
+				label at (-30, -1)
+				inPin connection_1527
+				sequenceCall at (-30, -14) {
+					inPin connection_1598
+				}
+			}
+			statementBlock {
+				controlFlowOutPin {
+					connection_1591, connection_1592, connection_1593, connection_1594, connection_1595, connection_1596, connection_1597, connection_1598
+				}
+				sequenceCall {
+					inPin connection_1508
+				}
+			}
+		}
+		sequenceableContainer IN_Digitals_J6 at (801, 421) size (10, 10) {
+			label at (0, 1)
+			complexIdentifier IN_DigitalInput at (191, 61) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1542
+					returnPin at (right, 0) {
+						connection_1535
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (191, 121) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1543
+					returnPin at (right, 0) {
+						connection_1537
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (191, 181) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1544
+					returnPin at (right, 0) {
+						connection_1539
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (191, 241) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1545
+					returnPin at (right, 0) {
+						connection_1541
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_4 at (41, 63) size (59, 0) {
+				outPin {
+					connection_1542
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_5 at (41, 123) size (59, 0) {
+				outPin {
+					connection_1543
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_12 at (41, 183) size (59, 0) {
+				outPin {
+					connection_1544
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_13 at (41, 243) size (59, 0) {
+				outPin {
+					connection_1545
+				}
+			}
+			complexIdentifier IN_DigitalInput at (191, 361) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1553
+					returnPin at (right, 0) {
+						connection_1547
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (191, 421) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1550
+					returnPin at (right, 0) {
+						connection_1549
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_3 at (41, 423) size (59, 0) {
+				outPin {
+					connection_1550
+				}
+			}
+			complexIdentifier IN_DigitalInput at (191, 481) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1554
+					returnPin at (right, 0) {
+						connection_1552
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_17 at (41, 363) size (59, 0) {
+				outPin {
+					connection_1553
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_1 at (41, 483) size (59, 0) {
+				outPin {
+					connection_1554
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_16 at (41, 303) size (59, 0) {
+				outPin {
+					connection_1555
+				}
+			}
+			complexIdentifier IN_DigitalInput at (191, 301) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1555
+					returnPin at (right, 0) {
+						connection_1557
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTE4 at (401, 65) {
+				label at (-20, -1)
+				inPin connection_1535
+				sequenceCall at (-30, -14) {
+					inPin connection_1599
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTE5 at (401, 125) {
+				label at (-30, -1)
+				inPin connection_1537
+				sequenceCall at (-30, -14) {
+					inPin connection_1600
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTA12 at (401, 185) {
+				label at (-30, -1)
+				inPin connection_1539
+				sequenceCall at (-30, -14) {
+					inPin connection_1601
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTA13 at (401, 245) {
+				label at (-30, -1)
+				inPin connection_1541
+				sequenceCall at (-30, -14) {
+					inPin connection_1602
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTC16 at (401, 305) {
+				label at (-30, -1)
+				inPin connection_1557
+				sequenceCall at (-30, -14) {
+					inPin connection_1603
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTC17 at (401, 365) {
+				label at (-30, -1)
+				inPin connection_1547
+				sequenceCall at (-30, -14) {
+					inPin connection_1604
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTD3_ at (401, 425) {
+				label at (-30, -1)
+				inPin connection_1549
+				sequenceCall at (-30, -14) {
+					inPin connection_1605
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTD1 at (401, 485) {
+				label at (-30, -1)
+				inPin connection_1552
+				sequenceCall at (-30, -14) {
+					inPin connection_1606
+				}
+			}
+			statementBlock {
+				controlFlowOutPin {
+					connection_1599, connection_1600, connection_1601, connection_1602, connection_1603, connection_1604, connection_1605, connection_1606
+				}
+				sequenceCall {
+					inPin connection_1533
+				}
+			}
+		}
+		sequenceableContainer IN_Digitals_J2_Arduino at (591, 101) size (10, 10) {
+			label at (0, 1)
+			complexIdentifier IN_DigitalInput at (261, 61) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1567
+					returnPin at (right, 0) {
+						connection_1560
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (261, 121) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1568
+					returnPin at (right, 0) {
+						connection_1562
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (261, 181) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1569
+					returnPin at (right, 0) {
+						connection_1564
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (261, 241) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1570
+					returnPin at (right, 0) {
+						connection_1566
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_10 at (121, 63) size (59, 0) {
+				outPin {
+					connection_1567
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_11 at (121, 123) size (59, 0) {
+				outPin {
+					connection_1568
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_2 at (121, 183) size (59, 0) {
+				outPin {
+					connection_1569
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_3 at (121, 243) size (59, 0) {
+				outPin {
+					connection_1570
+				}
+			}
+			complexIdentifier IN_DigitalInput at (261, 361) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1578
+					returnPin at (right, 0) {
+						connection_1572
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (261, 421) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1575
+					returnPin at (right, 0) {
+						connection_1574
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_14 at (121, 423) size (59, 0) {
+				outPin {
+					connection_1575
+				}
+			}
+			complexIdentifier IN_DigitalInput at (261, 481) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1579
+					returnPin at (right, 0) {
+						connection_1577
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_5 at (121, 363) size (59, 0) {
+				outPin {
+					connection_1578
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_13 at (121, 483) size (59, 0) {
+				outPin {
+					connection_1579
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_4 at (121, 303) size (59, 0) {
+				outPin {
+					connection_1580
+				}
+			}
+			complexIdentifier IN_DigitalInput at (261, 301) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1580
+					returnPin at (right, 0) {
+						connection_1582
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D15_PTE10 at (481, 65) {
+				label at (-30, -1)
+				inPin connection_1560
+				sequenceCall at (-40, -14) {
+					inPin connection_1607
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D14_PTE11 at (481, 125) {
+				label at (-30, -1)
+				inPin connection_1562
+				sequenceCall at (-40, -14) {
+					inPin connection_1608
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D13_PTB2 at (481, 185) {
+				label at (-30, -1)
+				inPin connection_1564
+				sequenceCall at (-40, -14) {
+					inPin connection_1609
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D12_PTB3 at (481, 245) {
+				label at (-30, -1)
+				inPin connection_1566
+				sequenceCall at (-40, -14) {
+					inPin connection_1610
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D11_PTB4 at (481, 305) {
+				label at (-30, -1)
+				inPin connection_1582
+				sequenceCall at (-40, -14) {
+					inPin connection_1611
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D10_PTB5 at (481, 365) {
+				label at (-30, -1)
+				inPin connection_1572
+				sequenceCall at (-40, -14) {
+					inPin connection_1612
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D9_PTD14 at (481, 425) {
+				label at (-30, -1)
+				inPin connection_1574
+				sequenceCall at (-40, -14) {
+					inPin connection_1613
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D8_PTD13 at (481, 485) {
+				label at (-30, -1)
+				inPin connection_1577
+				sequenceCall at (-40, -14) {
+					inPin connection_1614
+				}
+			}
+			statementBlock {
+				controlFlowOutPin {
+					connection_1607, connection_1608, connection_1609, connection_1610, connection_1611, connection_1612, connection_1613, connection_1614
+				}
+				sequenceCall {
+					inPin connection_1558
+				}
+			}
+		}
+		sequenceableContainer IN_Digitals_J1_Arduino at (591, 261) size (10, 10) {
+			label at (0, 1)
+			complexIdentifier IN_DigitalInput at (241, 71) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1624
+					returnPin at (right, 0) {
+						connection_1617
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 131) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1625
+					returnPin at (right, 0) {
+						connection_1619
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 191) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1626
+					returnPin at (right, 0) {
+						connection_1621
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 251) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1627
+					returnPin at (right, 0) {
+						connection_1623
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_11 at (111, 73) size (59, 0) {
+				outPin {
+					connection_1624
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_10 at (111, 133) size (59, 0) {
+				outPin {
+					connection_1625
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_11 at (111, 193) size (59, 0) {
+				outPin {
+					connection_1626
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_10 at (111, 253) size (59, 0) {
+				outPin {
+					connection_1627
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 371) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1635
+					returnPin at (right, 0) {
+						connection_1629
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 431) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1632
+					returnPin at (right, 0) {
+						connection_1631
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_3 at (111, 433) size (59, 0) {
+				outPin {
+					connection_1632
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 491) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1636
+					returnPin at (right, 0) {
+						connection_1634
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_8 at (111, 373) size (59, 0) {
+				outPin {
+					connection_1635
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_2 at (111, 493) size (59, 0) {
+				outPin {
+					connection_1636
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortB_9 at (111, 313) size (59, 0) {
+				outPin {
+					connection_1637
+				}
+			}
+			complexIdentifier IN_DigitalInput at (241, 311) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1637
+					returnPin at (right, 0) {
+						connection_1639
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D7_PTC11 at (471, 75) {
+				label at (-30, -1)
+				inPin connection_1617
+				sequenceCall at (-50, -14) {
+					inPin connection_1640
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D6_PTC10 at (471, 135) {
+				label at (-30, -1)
+				inPin connection_1619
+				sequenceCall at (-50, -14) {
+					inPin connection_1641
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D5_PTB11 at (471, 195) {
+				label at (-30, -1)
+				inPin connection_1621
+				sequenceCall at (-50, -14) {
+					inPin connection_1642
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D4_PTB10 at (471, 255) {
+				label at (-30, -1)
+				inPin connection_1623
+				sequenceCall at (-50, -14) {
+					inPin connection_1643
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D3_PTB9 at (471, 315) {
+				label at (-30, -1)
+				inPin connection_1639
+				sequenceCall at (-40, -14) {
+					inPin connection_1644
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D2_PTB8 at (471, 375) {
+				label at (-30, -1)
+				inPin connection_1629
+				sequenceCall at (-40, -14) {
+					inPin connection_1645
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D1_PTA3 at (471, 435) {
+				label at (-30, -1)
+				inPin connection_1631
+				sequenceCall at (-40, -14) {
+					inPin connection_1646
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D0_PTA2 at (471, 495) {
+				label at (-30, -1)
+				inPin connection_1634
+				sequenceCall at (-40, -14) {
+					inPin connection_1647
+				}
+			}
+			statementBlock {
+				controlFlowOutPin {
+					connection_1640, connection_1641, connection_1642, connection_1643, connection_1644, connection_1645, connection_1646, connection_1647
+				}
+				sequenceCall {
+					inPin connection_1615
+				}
+			}
+		}
+		sequenceableContainer IN_Digitals_J6_Arduino at (591, 421) size (10, 10) {
+			label at (0, 1)
+			complexIdentifier IN_DigitalInput at (261, 81) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1657
+					returnPin at (right, 0) {
+						connection_1650
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (261, 141) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1658
+					returnPin at (right, 0) {
+						connection_1652
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (261, 201) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1659
+					returnPin at (right, 0) {
+						connection_1654
+					}
+					sequenceCall at (0, 16) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (261, 261) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1660
+					returnPin at (right, 0) {
+						connection_1656
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_9 at (121, 83) size (59, 0) {
+				outPin {
+					connection_1657
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortA_8 at (121, 143) size (59, 0) {
+				outPin {
+					connection_1658
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortE_12 at (121, 203) size (59, 0) {
+				outPin {
+					connection_1659
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_17 at (121, 263) size (59, 0) {
+				outPin {
+					connection_1660
+				}
+			}
+			complexIdentifier IN_DigitalInput at (261, 381) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1668
+					returnPin at (right, 0) {
+						connection_1662
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (261, 441) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1665
+					returnPin at (right, 0) {
+						connection_1664
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_8 at (121, 443) size (59, 0) {
+				outPin {
+					connection_1665
+				}
+			}
+			complexIdentifier IN_DigitalInput at (261, 501) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1669
+					returnPin at (right, 0) {
+						connection_1667
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_8 at (121, 383) size (59, 0) {
+				outPin {
+					connection_1668
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_9 at (121, 503) size (59, 0) {
+				outPin {
+					connection_1669
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_9 at (121, 323) size (59, 0) {
+				outPin {
+					connection_1670
+				}
+			}
+			complexIdentifier IN_DigitalInput at (261, 321) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1670
+					returnPin at (right, 0) {
+						connection_1672
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D14_PTA9 at (481, 85) {
+				label at (-30, -1)
+				inPin connection_1650
+				sequenceCall at (-50, -14) {
+					inPin connection_1679
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D15_PTA8 at (481, 145) {
+				label at (-30, -1)
+				inPin connection_1652
+				sequenceCall at (-50, -14) {
+					inPin connection_1680
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D16_PTE12 at (481, 205) {
+				label at (-30, -1)
+				inPin connection_1654
+				sequenceCall at (-50, -14) {
+					inPin connection_1681
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D17_PTD17 at (481, 265) {
+				label at (-30, -1)
+				inPin connection_1656
+				sequenceCall at (-50, -14) {
+					inPin connection_1682
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D18_PTC9 at (481, 325) {
+				label at (-30, -1)
+				inPin connection_1672
+				sequenceCall at (-50, -14) {
+					inPin connection_1683
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D19_PTC8 at (481, 385) {
+				label at (-30, -1)
+				inPin connection_1662
+				sequenceCall at (-40, -14) {
+					inPin connection_1684
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D20_PTD8_ at (481, 445) {
+				label at (-30, -1)
+				inPin connection_1664
+				sequenceCall at (-40, -14) {
+					inPin connection_1685
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_D21_PTD9 at (481, 505) {
+				label at (-30, -1)
+				inPin connection_1667
+				sequenceCall at (-40, -14) {
+					inPin connection_1686
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTD2 at (481, 565) {
+				label at (-30, -1)
+				inPin connection_1676
+				sequenceCall at (-50, -14) {
+					inPin connection_1687
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_GPIOPTD0_ at (481, 625) {
+				label at (-30, -1)
+				inPin connection_1674
+				sequenceCall at (-50, -14) {
+					inPin connection_1688
+				}
+			}
+			complexIdentifier IN_DigitalInput at (261, 621) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1678
+					returnPin at (right, 0) {
+						connection_1674
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			complexIdentifier IN_DigitalInput at (261, 561) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1677
+					returnPin at (right, 0) {
+						connection_1676
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_2 at (121, 563) size (59, 0) {
+				outPin {
+					connection_1677
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortD_0 at (121, 623) size (59, 0) {
+				outPin {
+					connection_1678
+				}
+			}
+			statementBlock {
+				controlFlowOutPin {
+					connection_1679, connection_1680, connection_1681, connection_1682, connection_1683, connection_1684, connection_1685, connection_1686, connection_1687, connection_1688
+				}
+				sequenceCall {
+					inPin connection_1648
+				}
+			}
+		}
+		sequenceableContainer IN_DigitalSW2SW3 at (361, 571) size (10, 10) {
+			label at (0, 1)
+			complexIdentifier IN_DigitalInput at (221, 71) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1693
+					returnPin at (right, 0) {
+						connection_1691
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_13 at (91, 133) size (59, 0) {
+				outPin {
+					connection_1692
+				}
+			}
+			literal enum enumerations.S32K144_Gpio.PortC_12 at (91, 73) size (59, 0) {
+				outPin {
+					connection_1693
+				}
+			}
+			complexIdentifier IN_DigitalInput at (221, 131) size (14, 3) backgroundColor #80ffff {
+				label at (0, 1)
+				methodCall ascet.IN.IN_DigitalIn.getDigitalIn {
+					argumentPin port at (left, 0) connection_1692
+					returnPin at (right, 0) {
+						connection_1695
+					}
+					sequenceCall at (0, 6) {
+						inPin
+					}
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_SW2_PTC12 at (451, 75) {
+				label at (-30, -1)
+				inPin connection_1691
+				sequenceCall at (-40, -14) {
+					inPin connection_1696
+				}
+			}
+			simpleIdentifier interfaces.INInterface.IN_SW3_PTC13 at (451, 135) {
+				label at (-30, -1)
+				inPin connection_1695
+				sequenceCall at (-30, -14) {
+					inPin connection_1697
+				}
+			}
+			freeComment at (571, 101) {
+				"User switches on S32K144EVB"
+			}
+			statementBlock {
+				controlFlowOutPin {
+					connection_1696, connection_1697
+				}
+				sequenceCall {
+					inPin connection_1689
+				}
+			}
+		}
+		freeComment at (221, 41) {
+			"Inputs represent a complete set found on the S32K144EVB. The user is free to remove/delete the inputs when not used."
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_1365, connection_1401, connection_1434, connection_1558, connection_1615, connection_1648, connection_1483, connection_1508, connection_1533, connection_1689
+			}
+			sequenceCall {
+				inPin connection_817
+			}
+		}
+	}
+	container IN_System at (321, 21) size (10, 10) {
+		label at (0, 1)
+		literal Numeric "0" at (161, 113) size (49, 0) {
+			outPin {
+				connection_1287, connection_1285
+			}
+		}
+		literal Numeric "500" at (161, 143) size (49, 0) {
+			outPin {
+				connection_1283
+			}
+		}
+		complexIdentifier IN_CAN1Config at (321, 111) size (9, 5) backgroundColor #80ffff {
+			label at (-30, 1)
+			methodCall ascet.IN.IN_CANConfig.initCANChannel {
+				argumentPin IN_Channel at (left, 0) connection_1285
+				argumentPin IN_Baud at (left, 3) connection_1283
+				sequenceCall at (-10, -34) {
+					inPin connection_1284
+				}
+			}
+			methodCall ascet.IN.IN_CANConfig.startCANChannel {
+				argumentPin IN_Channel at (left, 2) connection_1287 {
+					bendpoints (20, 0), (20, 20)
+				}
+				sequenceCall at (70, -54) {
+					inPin connection_1286
+				}
+			}
+		}
+	}
+	sequenceableContainer IN_CANMsgInitialise at (241, 331) size (10, 10) {
+		label at (0, 1)
+		complexIdentifier IN_CANMsgInit at (261, 91) size (17, 14) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_CANMessageInit.initCANMsg {
+				argumentPin IN_CANChannel at (left, 0) connection_1839
+				argumentPin IN_CANID at (left, 3) connection_1840
+				argumentPin IN_TxMsg at (left, 6) connection_1841
+				argumentPin IN_ExtendedMsg at (left, 9) connection_1842
+				argumentPin IN_MsgLength at (left, 12) connection_1845
+				returnPin at (right, 6) {
+					connection_1844
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier IN_CANRXTCMCHAN at (121, 95) {
+			label at (-70, -1)
+			outPin {
+				connection_1839
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_CANRXTCMID at (121, 125) {
+			label at (-50, -1)
+			outPin {
+				connection_1840
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		literal Boolean "false" at (121, 153) size (49, 0) {
+			outPin {
+				connection_1841
+			}
+		}
+		literal Boolean "false" at (121, 183) size (49, 0) {
+			outPin {
+				connection_1842
+			}
+		}
+		simpleIdentifier IN_RxTCMHandle at (521, 155) {
+			label at (-30, -1)
+			inPin connection_1844
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_1843
+			}
+		}
+		simpleIdentifier IN_CANRXTCMLEN at (121, 215) {
+			label at (-70, -1)
+			outPin {
+				connection_1845
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_1843
+			}
+			sequenceCall {
+				inPin connection_1838
+			}
+		}
+	}
+	sequenceableContainer IN_CANRxLever at (411, 331) size (10, 10) {
+		label at (0, 1)
+		simpleIdentifier IN_RxTCMHandle at (41, 55) {
+			label at (-60, -1)
+			inPin outPin {
+				connection_1850
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		if at (451, 41) {
+			inPin connection_1853
+			ifControlFlowOutPin {
+				connection_1922, connection_1918, connection_1920, connection_1876
+			}
+			sequenceCall at (-30, -20) {
+				inPin connection_1847
+			}
+		}
+		simpleIdentifier IN_CANRxNewData at (361, 45) {
+			label at (-50, -1)
+			inPin connection_1899
+			outPin {
+				connection_1853
+			}
+			sequenceCall at (-30, -14) {
+				inPin connection_1898
+			}
+		}
+		simpleIdentifier IN_RxTCMChkOkay at (651, 105) {
+			label at (-50, -1)
+			inPin connection_1919
+			outPin sequenceCall at (-10, -14) {
+				inPin connection_1918 {
+					bendpoints (80, 0), (80, 50)
+				}
+			}
+		}
+		complexIdentifier IN_CANTxTCMCountTest at (361, 211) size (16, 3) {
+			label at (-20, 1)
+			methodCall ascet.Lib.LIB_4BitCountTest.LIB_CheckOkay {
+				argumentPin LIB_CountIn at (left, 0) connection_1907
+				returnPin at (right, 0) {
+					connection_1878
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier IN_RxTCMCounter at (651, 155) {
+			label at (-60, -1)
+			inPin connection_1921
+			outPin sequenceCall at (-10, -14) {
+				inPin connection_1920 {
+					bendpoints (80, 0), (80, 100)
+				}
+			}
+		}
+		simpleIdentifier IN_RxTCMCounterOkay at (651, 215) {
+			label at (-40, -1)
+			inPin connection_1878
+			outPin sequenceCall at (-10, -14) {
+				inPin connection_1876 {
+					bendpoints (80, 0), (80, 160)
+				}
+			}
+		}
+		simpleIdentifier IN_RxTCMCounterOkay at (281, 435) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_1910
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		if at (441, 441) {
+			inPin connection_1880
+			ifControlFlowOutPin {
+				connection_1946, connection_1948, connection_1944, connection_1942, connection_1940, connection_1938, connection_1936, connection_1934, connection_1926, connection_1928, connection_1930, connection_1932
+			}
+			sequenceCall {
+				inPin connection_1849
+			}
+		}
+		simpleIdentifier IN_CANRxNewData at (211, 275) {
+			label at (-50, -1)
+			inPin outPin {
+				connection_1890
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_RxTCMCounterOkay at (211, 305) {
+			label at (-50, -1)
+			inPin outPin {
+				connection_1891
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_CANRXTCMTIMEOUT at (221, 335) {
+			label at (-50, -1)
+			outPin {
+				connection_1892
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IN_CANRxTCMStatus at (651, 305) {
+			label at (-40, -1)
+			inPin connection_1896
+			outPin sequenceCall at (-10, -14) {
+				inPin connection_1895
+			}
+		}
+		simpleIdentifier IN_CANRxTCMStatus at (381, 865) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_1925
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier IN_CANRxTCMStatCheck at (371, 271) size (14, 12) {
+			label at (0, 1)
+			methodCall ascet.Lib.LIB_CANStatus.LIB_Status {
+				argumentPin LIB_NewData at (left, 0) connection_1890
+				argumentPin LIB_Plausible at (left, 3) connection_1891
+				argumentPin LIB_Timeout at (left, 6) connection_1892
+				argumentPin LIB_dT at (left, 9) connection_1897
+				returnPin at (right, 3) {
+					connection_1896
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier types.SY_1ms at (221, 365) {
+			label at (-10, -1)
+			outPin {
+				connection_1897
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier IN_CAN_RxTCM at (161, 41) size (14, 8) backgroundColor #80ffff {
+			label at (0, 1)
+			methodCall ascet.IN.IN_CANRxTCM.rxCANNewData {
+				argumentPin IN_CANRxHandle at (left, 1) connection_1850
+				returnPin at (right, 0) {
+					connection_1899
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+			methodCall ascet.IN.IN_CANRxTCM.rxCANMsg {
+				returnPin at (right, 6) {
+					connection_1923
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier IN_RxTCMCounter at (211, 215) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_1907
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		and at (401, 436) {
+			inPin connection_1910
+			inPin connection_1911 {
+				bendpoints (70, 0)
+			}
+			outPin {
+				connection_1880
+			}
+		}
+		simpleIdentifier IN_CANRxNewData at (281, 465) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_1911
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier IN_CANTCMData at (371, 101) size (14, 8) {
+			label at (0, 1)
+			elementCall (ascet.IN.IN_Main.IN_CANTCMData) {
+				argumentPin at (left, 0) connection_1923
+				sequenceCall at (150, -24) {
+					inPin connection_1922 {
+						bendpoints (0, 40)
+					}
+				}
+			}
+			elementCall (types.T_CANTCMLever.TCM_ChecksumOkay) {
+				returnPin at (right, 0) {
+					connection_1919
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_CANTCMLever.TCM_Counter) {
+				returnPin at (right, 5) {
+					connection_1921
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		complexIdentifier IN_CANTCMData at (131, 501) size (14, 36) {
+			label at (0, 1)
+			elementCall (types.T_CANTCMLever.TCM_ActualGear) {
+				returnPin at (right, 24) {
+					connection_1927
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_CANTCMLever.TCM_BackLight) {
+				returnPin at (right, 21) {
+					connection_1935
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_CANTCMLever.TCM_DriveLight) {
+				returnPin at (right, 9) {
+					connection_1943
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_CANTCMLever.TCM_ManualLight) {
+				returnPin at (right, 12) {
+					connection_1941
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_CANTCMLever.TCM_NeutralLight) {
+				returnPin at (right, 6) {
+					connection_1945
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_CANTCMLever.TCM_ParkLight) {
+				returnPin at (right, 0) {
+					connection_1947
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_CANTCMLever.TCM_ReverseLight) {
+				returnPin at (right, 3) {
+					connection_1949
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_CANTCMLever.TCM_ShiftLock) {
+				returnPin at (right, 18) {
+					connection_1937
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_CANTCMLever.TCM_SportLight) {
+				returnPin at (right, 15) {
+					connection_1939
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_CANTCMLever.TCM_TargetGear) {
+				returnPin at (right, 27) {
+					connection_1929
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_CANTCMLever.TCM_TestData1) {
+				returnPin at (right, 30) {
+					connection_1931
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_CANTCMLever.TCM_TestData2) {
+				returnPin at (right, 33) {
+					connection_1933
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_LeverIn at (651, 501) size (14, 38) {
+			label at (0, 1)
+			elementCall (types.T_LeverIn.TCM_ActualGear) {
+				argumentPin at (left, 24) connection_1927
+				sequenceCall at (-110, -24) {
+					inPin connection_1926 {
+						bendpoints (20, 0), (20, 280)
+					}
+				}
+			}
+			elementCall (types.T_LeverIn.TCM_BackLight) {
+				argumentPin at (left, 21) connection_1935
+				sequenceCall at (-110, -24) {
+					inPin connection_1934 {
+						bendpoints (20, 0), (20, 250)
+					}
+				}
+			}
+			elementCall (types.T_LeverIn.TCM_DriveLight) {
+				argumentPin at (left, 9) connection_1943
+				sequenceCall at (-110, -24) {
+					inPin connection_1942 {
+						bendpoints (20, 0), (20, 130)
+					}
+				}
+			}
+			elementCall (types.T_LeverIn.TCM_ManualLight) {
+				argumentPin at (left, 12) connection_1941
+				sequenceCall at (-110, -24) {
+					inPin connection_1940 {
+						bendpoints (20, 0), (20, 160)
+					}
+				}
+			}
+			elementCall (types.T_LeverIn.TCM_NeutralLight) {
+				argumentPin at (left, 6) connection_1945
+				sequenceCall at (-110, -24) {
+					inPin connection_1944 {
+						bendpoints (20, 0), (20, 100)
+					}
+				}
+			}
+			elementCall (types.T_LeverIn.TCM_ParkLight) {
+				argumentPin at (left, 0) connection_1947
+				sequenceCall at (-110, -24) {
+					inPin connection_1946 {
+						bendpoints (20, 0), (20, 40)
+					}
+				}
+			}
+			elementCall (types.T_LeverIn.TCM_ReverseLight) {
+				argumentPin at (left, 3) connection_1949
+				sequenceCall at (-110, -24) {
+					inPin connection_1948 {
+						bendpoints (20, 0), (20, 70)
+					}
+				}
+			}
+			elementCall (types.T_LeverIn.TCM_ShiftLock) {
+				argumentPin at (left, 18) connection_1937
+				sequenceCall at (-110, -24) {
+					inPin connection_1936 {
+						bendpoints (20, 0), (20, 220)
+					}
+				}
+			}
+			elementCall (types.T_LeverIn.TCM_SportLight) {
+				argumentPin at (left, 15) connection_1939
+				sequenceCall at (-110, -24) {
+					inPin connection_1938 {
+						bendpoints (20, 0), (20, 190)
+					}
+				}
+			}
+			elementCall (types.T_LeverIn.TCM_Status) {
+				argumentPin at (left, 36) connection_1925
+				sequenceCall at (-110, -24) {
+					inPin connection_1924
+				}
+			}
+			elementCall (types.T_LeverIn.TCM_TargetGear) {
+				argumentPin at (left, 27) connection_1929
+				sequenceCall at (-110, -24) {
+					inPin connection_1928 {
+						bendpoints (20, 0), (20, 310)
+					}
+				}
+			}
+			elementCall (types.T_LeverIn.TCM_TestData1) {
+				argumentPin at (left, 30) connection_1931
+				sequenceCall at (-110, -24) {
+					inPin connection_1930 {
+						bendpoints (20, 0), (20, 340)
+					}
+				}
+			}
+			elementCall (types.T_LeverIn.TCM_TestData2) {
+				argumentPin at (left, 33) connection_1933
+				sequenceCall at (-110, -24) {
+					inPin connection_1932 {
+						bendpoints (20, 0), (20, 370)
+					}
+				}
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_1898, connection_1847, connection_1895, connection_1849, connection_1924
+			}
+			sequenceCall {
+				inPin connection_1846
+			}
+		}
+	}
+}

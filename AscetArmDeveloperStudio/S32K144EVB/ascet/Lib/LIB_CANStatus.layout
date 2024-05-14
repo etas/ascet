@@ -1,0 +1,9 @@
+Component ascet.Lib.LIB_CANStatus size ( 14 , 9 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout LIB_Status {
+		pin LIB_NewData ( Left , 0 )
+		pin LIB_Plausible ( Left , 3 )
+		pin LIB_Timeout ( Left , 6 )
+		pin LIB_Status ( Right , 3 )
+	}
+}

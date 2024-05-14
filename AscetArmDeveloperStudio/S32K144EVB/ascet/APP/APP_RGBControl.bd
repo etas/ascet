@@ -1,0 +1,464 @@
+classType ascet.APP.APP_RGBControl
+blockdiagramSpecification Main {
+	methodBody C_AntiClockwise {
+		outPin {
+			connection_1
+		}
+	}
+	methodBody C_Clockwise {
+		outPin {
+			connection_4
+		}
+	}
+	methodBody A_RGBFader {
+		outPin active {
+			connection_8, connection_15, connection_18, connection_30, connection_38, connection_42, connection_48, connection_54, connection_56, connection_58
+		}
+	}
+	container C_Conditions at (271, 211) size (10, 10) {
+		label at (0, 1)
+		return at (591, 295) {
+			label at (-30, 0)
+			inPin connection_61
+			sequenceCall at (-30, -14) {
+				inPin connection_1
+			}
+		}
+		complexIdentifier APP_Rise2 at (341, 121) size (14, 3) {
+			label at (0, 1)
+			methodCall ascet.Lib.LIB_Rise.LIB_Rising {
+				argumentPin LIB_Input at (left, 0) connection_3
+				returnPin at (right, 0) {
+					connection_60
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier APP_Sw2 at (181, 125) {
+			label at (0, -1)
+			inPin outPin {
+				connection_3
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		freeComment at (171, 91) {
+			"Block diagram (BDE) form of statement \'APP_Rise2.LIB_Rising(APP_Sw2)\'"
+		}
+		return at (581, 125) {
+			label at (-30, 0)
+			inPin connection_60
+			sequenceCall at (-20, -14) {
+				inPin connection_4
+			}
+		}
+		complexIdentifier APP_Rise3 at (341, 291) size (14, 3) {
+			label at (0, 1)
+			methodCall ascet.Lib.LIB_Rise.LIB_Rising {
+				argumentPin LIB_Input at (left, 0) connection_6
+				returnPin at (right, 0) {
+					connection_61
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier APP_Sw3 at (181, 295) {
+			label at (0, -1)
+			inPin outPin {
+				connection_6
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		freeComment at (161, 271) {
+			"Block diagram (BDE) form of statement \'APP_Rise3.LIB_Rising(APP_Sw3)\'"
+		}
+	}
+	container A_Actions at (521, 211) size (10, 10) {
+		label at (0, 1)
+		multiplication at (751, 306) {
+			inPin connection_23
+			inPin connection_20
+			outPin {
+				connection_59
+			}
+		}
+		complexIdentifier APP_LedTimer at (291, 141) size (14, 5) {
+			label at (0, 1)
+			methodCall ascet.Lib.LIB_TimerUp.LIB_Time {
+				argumentPin LIB_Reset at (left, 0) connection_10 {
+					bendpoints (30, 0)
+				}
+				argumentPin LIB_DT at (left, 2) connection_26 {
+					bendpoints (130, 0)
+				}
+				returnPin at (right, 1) {
+					connection_9
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		greaterOrEqual at (201, 126) {
+			inPin connection_35
+			inPin connection_34 {
+				bendpoints (60, 0)
+			}
+			outPin {
+				connection_10
+			}
+		}
+		literal Numeric "100.0" at (671, 233) size (49, 0) {
+			outPin {
+				connection_11
+			}
+		}
+		simpleIdentifier APP_GreenIntensity at (671, 255) {
+			label at (0, -1)
+			inPin outPin {
+				connection_14
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_REDLEDINTENSITY at (281, 261) {
+			label at (-80, 1)
+			inPin connection_27
+			outPin {
+				connection_16
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_LedTime at (91, 415) {
+			label at (0, -1)
+			inPin outPin {
+				connection_17
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_GREENLEDINTENSITY at (281, 331) {
+			label at (-80, 1)
+			inPin connection_29
+			outPin {
+				connection_19
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_BlueIntensity at (671, 325) {
+			label at (0, -1)
+			inPin outPin {
+				connection_20
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		literal Numeric "100.0" at (671, 303) size (49, 0) {
+			outPin {
+				connection_23
+			}
+		}
+		literal Numeric "100.0" at (671, 153) size (49, 0) {
+			outPin {
+				connection_24
+			}
+		}
+		multiplication at (751, 156) {
+			inPin connection_24
+			inPin connection_33
+			outPin {
+				connection_55
+			}
+		}
+		simpleIdentifier types.SY_1ms at (101, 185) {
+			label at (-20, -1)
+			outPin {
+				connection_26
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_LedTime at (91, 275) {
+			label at (-10, -1)
+			inPin outPin {
+				connection_27
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		multiplication at (751, 236) {
+			inPin connection_11
+			inPin connection_14
+			outPin {
+				connection_57
+			}
+		}
+		simpleIdentifier APP_LedTime at (91, 345) {
+			label at (-10, -1)
+			inPin outPin {
+				connection_29
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_BLUELEDINTENSITY at (281, 401) {
+			label at (-80, 1)
+			inPin connection_17
+			outPin {
+				connection_31
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_RedIntensity at (671, 175) {
+			label at (0, -1)
+			inPin outPin {
+				connection_33
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_LEDRESETTIME at (101, 155) {
+			label at (-40, -1)
+			outPin {
+				connection_34
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_LedTime at (91, 125) {
+			label at (-20, -1)
+			inPin outPin {
+				connection_35
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_LedTime at (481, 155) {
+			label at (0, -1)
+			inPin connection_9
+			outPin sequenceCall at (-20, -14) {
+				inPin connection_8
+			}
+		}
+		simpleIdentifier APP_RedIntensityMap at (481, 275) {
+			label at (-40, -1)
+			inPin connection_16
+			outPin sequenceCall at (-20, -14) {
+				inPin connection_15
+			}
+		}
+		simpleIdentifier APP_GreenIntensityMap at (481, 345) {
+			label at (-40, -1)
+			inPin connection_19
+			outPin sequenceCall at (-20, -14) {
+				inPin connection_18
+			}
+		}
+		simpleIdentifier APP_BlueIntensityMap at (481, 415) {
+			label at (-40, -1)
+			inPin connection_31
+			outPin sequenceCall at (-20, -14) {
+				inPin connection_30
+			}
+		}
+		freeComment at (91, 31) {
+			"State is too complex to easily represent in ESDL code within the state machine diagram, so we use a call to the block diagram code instead, greatly improving readability. "
+		}
+		freeComment at (91, 91) {
+			"Run a timer until it reaches a calibrated value (APP_LEDRESETTIME), then reset it to 0.0Seconds and start again"
+		}
+		freeComment at (91, 221) {
+			"Use a 1D lookup table to convert time into a base intensity for each LED. The tables are set to cycle through a rainbow. Intensity is normalised (0.0 - 1.0)"
+		}
+		freeComment at (101, 471) {
+			"Use the board potentiometer to set a master brightness for the LEDs. APP_Pot is the potentiometer voltage (in volts) between 0.0 and 5.0, so we divide by 5.0 after the multiply."
+		}
+		simpleIdentifier APP_BlueIntensityMap at (91, 655) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_37
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		division at (321, 596) {
+			inPin connection_47
+			inPin connection_50
+			outPin {
+				connection_39
+			}
+		}
+		simpleIdentifier APP_RedIntensityMap at (91, 515) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_41
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		division at (321, 526) {
+			inPin connection_46
+			inPin connection_44
+			outPin {
+				connection_43
+			}
+		}
+		literal Numeric "5.0" at (261, 543) size (49, 0) {
+			outPin {
+				connection_44
+			}
+		}
+		simpleIdentifier APP_GreenIntensityMap at (91, 585) {
+			label at (-50, -1)
+			inPin outPin {
+				connection_45
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		multiplication at (221, 516) {
+			inPin connection_41
+			inPin connection_52 {
+				bendpoints (80, 0)
+			}
+			outPin {
+				connection_46
+			}
+		}
+		multiplication at (221, 586) {
+			inPin connection_45
+			inPin connection_40 {
+				bendpoints (80, 0)
+			}
+			outPin {
+				connection_47
+			}
+		}
+		division at (321, 666) {
+			inPin connection_53
+			inPin connection_51
+			outPin {
+				connection_49
+			}
+		}
+		literal Numeric "5.0" at (261, 613) size (49, 0) {
+			outPin {
+				connection_50
+			}
+		}
+		literal Numeric "5.0" at (261, 683) size (49, 0) {
+			outPin {
+				connection_51
+			}
+		}
+		multiplication at (221, 656) {
+			inPin connection_37
+			inPin connection_36 {
+				bendpoints (80, 0)
+			}
+			outPin {
+				connection_53
+			}
+		}
+		simpleIdentifier APP_RedIntensity at (481, 535) {
+			label at (-30, -1)
+			inPin connection_43
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_42
+			}
+		}
+		simpleIdentifier APP_GreenIntensity at (481, 605) {
+			label at (-50, -1)
+			inPin connection_39
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_38
+			}
+		}
+		simpleIdentifier APP_BlueIntensity at (481, 675) {
+			label at (-50, -1)
+			inPin connection_49
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_48
+			}
+		}
+		simpleIdentifier APP_Pot at (91, 545) {
+			label at (-20, -1)
+			inPin outPin {
+				connection_52
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_Pot at (91, 615) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_40
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_Pot at (91, 685) {
+			label at (-30, -1)
+			inPin outPin {
+				connection_36
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		freeComment at (661, 101) {
+			"The PWM generators for the LEDs are scaled into % (0.0-100.0). We multiply the resulting intensity (0.0 - 1.0) by 100% to get the actual percentage on time that we want to drive."
+		}
+		simpleIdentifier APP_RedDuty at (961, 165) {
+			label at (0, -1)
+			inPin connection_55
+			outPin sequenceCall at (-20, -14) {
+				inPin connection_54
+			}
+		}
+		simpleIdentifier APP_GreenDuty at (961, 245) {
+			label at (0, -1)
+			inPin connection_57
+			outPin sequenceCall at (-20, -14) {
+				inPin connection_56
+			}
+		}
+		simpleIdentifier APP_BlueDuty at (961, 315) {
+			label at (0, -1)
+			inPin connection_59
+			outPin sequenceCall at (-20, -14) {
+				inPin connection_58
+			}
+		}
+	}
+	freeComment at (261, 111) {
+		"The containers below contain conditions and actions for states that are referred to from the state machine. This enables the user to make the state machines very clear, and enables the use of larger sections of code within a statemachine without the need for triggered systems externally. The use of BDE (block diagrams) within ASCET statemachines is one of the most powerful features, and the use of \'handcode\' in other tools is a source of many defects."
+	}
+}

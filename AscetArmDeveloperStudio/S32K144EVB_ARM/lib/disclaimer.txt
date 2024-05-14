@@ -1,0 +1,24 @@
+/******************************************************************************/
+/*                                                                            */
+/*                                          ETAS GmbH                         */
+/*                                          Stuttgart                         */
+/*                                          All rights reserved               */
+/*                                          Alle Rechte vorbehalten           */
+/*                                                                            */
+/*                                                                            */
+/*  Library:  ESDL_Linear_Interpolation                                       */
+/*                                                                            */
+/*  Description:                                                              */
+/*  This is a library for interpolation functions for 1 and 2 dimensional     */
+/*  characteristic tables.                                                    */
+/*  This library for interpolation routines for target optimized code is      */
+/*  provided in the form of an example only. The provided library is          */
+/*  intended as a mere example.                                               */
+/*  It is not permitted to use this library of interpolation routines         */
+/*  in production code or within ECUs running in any vehicles.                */
+/*                                                                            */
+/*  THE ETAS GROUP OF COMPANIES AND THEIR REPRESENTATIVES, AGENTS AND         */
+/*  AFFILIATED COMPANIES SHALL NOT BE LIABLE FOR ANY DAMAGE OR INJURY CAUSED  */
+/*  BY USE OF THIS ROUTINES.                                                  */
+/*                                                                            */
+/******************************************************************************/

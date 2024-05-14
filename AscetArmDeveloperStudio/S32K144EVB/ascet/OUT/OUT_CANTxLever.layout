@@ -1,0 +1,8 @@
+Component ascet.OUT.OUT_CANTxLever size ( 14 , 8 ) backgroundColor #80ffff {
+	labelPosition ( -10 , 1 )
+	methodLayout txCANMsg {
+		pin OUT_CANTxHandle ( Left , 1 )
+		pin OUT_CANTxMsg ( Left , 5 )
+		pin txCANMsg ( Right , 3 )
+	}
+}

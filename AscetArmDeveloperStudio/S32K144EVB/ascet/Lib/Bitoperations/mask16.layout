@@ -1,0 +1,8 @@
+Component ascet.Lib.Bitoperations.mask16 size ( 10 , 4 ) backgroundColor #80ffff {
+	labelPosition ( 0 , 1 )
+	methodLayout getmask16 {
+		pin input ( Left , 0 )
+		pin mask ( Left , 2 )
+		pin getmask16 ( Right , 1 )
+	}
+}

@@ -1,0 +1,8 @@
+Component ascet.Lib.Bitoperations.anyBitSet size ( 13 , 4 ) backgroundColor #80ffff {
+	labelPosition ( 0 , 1 )
+	methodLayout checkAnyBitSet {
+		pin bitArray ( Left , 0 )
+		pin bitMask ( Left , 2 )
+		pin checkAnyBitSet ( Right , 0 )
+	}
+}

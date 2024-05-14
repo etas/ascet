@@ -1,0 +1,155 @@
+classType ascet.Lib.LIB_CANStatus
+blockdiagramSpecification Main {
+	methodBody LIB_Status {
+		outPin active {
+			connection_32, connection_7
+		}
+	}
+	methodArgumentIdentifier LIB_Status.LIB_NewData at (151, 125) {
+		label at (-40, -1)
+		outPin {
+			connection_30
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier LIB_Status.LIB_Plausible at (151, 305) {
+		label at (-40, -1)
+		outPin {
+			connection_3
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	not at (331, 301) {
+		inPin connection_3
+		outPin {
+			connection_27
+		}
+	}
+	return at (611, 385) {
+		label at (0, 0)
+		inPin connection_29
+		sequenceCall {
+			inPin connection_7
+		}
+	}
+	conditionalSelect at (511, 361) {
+		inPin connection_11 {
+			bendpoints (40, 0)
+		}
+		inPin CASE_CONDITION connection_19 {
+			bendpoints (200, 0)
+		}
+		inPin connection_10
+		outPin {
+			connection_29
+		}
+	}
+	simpleIdentifier LIB_TimeSinceLast at (611, 185) {
+		label at (-40, -1)
+		inPin connection_33
+		outPin sequenceCall {
+			inPin connection_32
+		}
+	}
+	methodArgumentIdentifier LIB_Status.LIB_Timeout at (151, 265) {
+		label at (-40, -1)
+		outPin {
+			connection_18
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier LIB_TimeSinceLast at (141, 235) {
+		label at (-40, -1)
+		inPin outPin {
+			connection_17
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	greaterOrEqual at (291, 236) {
+		inPin connection_17
+		inPin connection_18 {
+			bendpoints (100, 0)
+		}
+		outPin {
+			connection_19
+		}
+	}
+	simpleIdentifier LIB_TimeSinceLast at (141, 165) {
+		label at (-20, -1)
+		inPin outPin {
+			connection_20
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	addition at (291, 166) {
+		inPin connection_20
+		inPin connection_24 {
+			bendpoints (100, 0)
+		}
+		outPin {
+			connection_31
+		}
+	}
+	freeComment at (581, 331) {
+		"Status of CAN message"
+	}
+	conditionalSelect at (431, 341) {
+		inPin connection_26
+		inPin CASE_CONDITION connection_27 {
+			bendpoints (80, 0)
+		}
+		inPin connection_28
+		outPin {
+			connection_11
+		}
+	}
+	literal enum enumerations.H_Status.H_Okay at (271, 353) size (59, 0) {
+		outPin {
+			connection_26
+		}
+	}
+	literal enum enumerations.H_Status.H_Implausible at (271, 373) size (89, 0) {
+		outPin {
+			connection_28
+		}
+	}
+	literal enum enumerations.H_Status.H_Timeout at (271, 393) size (69, 0) {
+		outPin {
+			connection_10
+		}
+	}
+	conditionalSelect at (481, 161) {
+		inPin connection_31
+		inPin CASE_CONDITION connection_30 {
+			bendpoints (310, 0)
+		}
+		inPin connection_34
+		outPin {
+			connection_33
+		}
+	}
+	literal Numeric "0.0" at (381, 193) size (49, 0) {
+		outPin {
+			connection_34
+		}
+	}
+	methodArgumentIdentifier LIB_Status.LIB_dT at (151, 195) {
+		label at (-40, -1)
+		outPin {
+			connection_24
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+}

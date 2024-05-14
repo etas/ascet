@@ -1,0 +1,704 @@
+classType ascet.APP.APP
+blockdiagramSpecification Main {
+	methodBody APP_1ms {
+		outPin active {
+			connection_1, connection_89, connection_211
+		}
+	}
+	methodBody APP_10ms {
+		outPin {
+			connection_134
+		}
+	}
+	sequenceableContainer APP_UpdateLED at (201, 101) size (10, 10) {
+		label at (0, 1)
+		complexIdentifier APP_RGBSM at (441, 241) size (21, 28) {
+			label at (0, 1)
+			methodCall ascet.APP.APP_RGBControl.APP_RGBStateMachineTrig {
+				methodVoidPin at (top, 9) sequenceCall at (-54, -30) {
+					inPin connection_185
+				}
+			}
+			elementCall (ascet.APP.APP_RGBControl.APP_RedDuty) {
+				returnPin at (right, 5) {
+					connection_199
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			elementCall (ascet.APP.APP_RGBControl.APP_GreenDuty) {
+				returnPin at (right, 13) {
+					connection_202
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			elementCall (ascet.APP.APP_RGBControl.APP_BlueDuty) {
+				returnPin at (right, 21) {
+					connection_203
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			elementCall (ascet.APP.APP_RGBControl.APP_Sw2) {
+				argumentPin at (left, 5) connection_189
+				sequenceCall at (-100, -24) {
+					inPin connection_188
+				}
+			}
+			elementCall (ascet.APP.APP_RGBControl.APP_Sw3) {
+				argumentPin at (left, 13) connection_191
+				sequenceCall at (-100, -24) {
+					inPin connection_190
+				}
+			}
+			elementCall (ascet.APP.APP_RGBControl.APP_Pot) {
+				argumentPin at (left, 21) connection_187
+				sequenceCall at (-100, -24) {
+					inPin connection_186
+				}
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_Potentiometer_PTC14 at (191, 455) {
+			label at (-60, -1)
+			outPin {
+				connection_187
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_SW2_PTC12 at (181, 295) {
+			label at (-40, -1)
+			outPin {
+				connection_189
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_SW3_PTC13 at (181, 375) {
+			label at (-40, -1)
+			outPin {
+				connection_191
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_RedLED at (861, 285) {
+			label at (-30, -1)
+			inPin connection_205
+			outPin sequenceCall at (-30, -14) {
+				inPin connection_204
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_GreenLED at (861, 365) {
+			label at (-30, -1)
+			inPin connection_207
+			sequenceCall at (-30, -14) {
+				inPin connection_206
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_BlueLED at (861, 445) {
+			label at (-20, -1)
+			inPin connection_209
+			sequenceCall at (-30, -14) {
+				inPin connection_208
+			}
+		}
+		freeComment at (371, 51) {
+			"A simple statemachine to control the RGB LED on the development board using sw2, sw3 and the potentiometer.\r\n\r\nIt is unnecessary to use a statemachine to do this, but this is a good introduction to the statemachines that can be used, and the coding methods that can be used also.\r\n\r\nSw2 and Sw3 will cycle throught red->green->blue->rainbow->(repeat)\r\n\r\nR13 (pot) will vary the intensity of each"
+		}
+		literal Numeric "100.0" at (701, 273) size (49, 0) {
+			outPin {
+				connection_198
+			}
+		}
+		subtraction at (781, 276) {
+			inPin connection_198
+			inPin connection_199
+			outPin {
+				connection_205
+			}
+		}
+		literal Numeric "100.0" at (701, 353) size (49, 0) {
+			outPin {
+				connection_200
+			}
+		}
+		subtraction at (781, 356) {
+			inPin connection_200
+			inPin connection_202
+			outPin {
+				connection_207
+			}
+		}
+		literal Numeric "100.0" at (701, 433) size (49, 0) {
+			outPin {
+				connection_201
+			}
+		}
+		subtraction at (781, 436) {
+			inPin connection_201
+			inPin connection_203
+			outPin {
+				connection_209
+			}
+		}
+		freeComment at (691, 251) {
+			"Duty for LED = (100.0% - demand).  This is due to invert in LED drive hardware."
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_188, connection_190, connection_186, connection_185, connection_204, connection_206, connection_208
+			}
+			sequenceCall {
+				inPin connection_1
+			}
+		}
+	}
+	sequenceableContainer APP_StimDig at (371, 101) size (10, 10) {
+		label at (0, 1)
+		simpleIdentifier interfaces.APPInterface.APP_D14_PTA9 at (631, 75) {
+			label at (0, -1)
+			inPin connection_94
+			sequenceCall at (-10, -14) {
+				inPin connection_93
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_D15_PTA8 at (631, 125) {
+			label at (0, -1)
+			inPin connection_96 {
+				bendpoints (110, 0), (110, 50)
+			}
+			sequenceCall at (-10, -14) {
+				inPin connection_95
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_D16_PTE12 at (631, 175) {
+			label at (0, -1)
+			inPin connection_98 {
+				bendpoints (110, 0), (110, 100)
+			}
+			sequenceCall at (-10, -14) {
+				inPin connection_97
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_D17_PTD17 at (631, 225) {
+			label at (0, -1)
+			inPin connection_100 {
+				bendpoints (110, 0), (110, 150)
+			}
+			sequenceCall at (-10, -14) {
+				inPin connection_99
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_D18_PTC9 at (631, 275) {
+			label at (0, -1)
+			inPin connection_102 {
+				bendpoints (110, 0), (110, 200)
+			}
+			sequenceCall at (-10, -14) {
+				inPin connection_101
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_D19_PTC8 at (631, 325) {
+			label at (0, -1)
+			inPin connection_104 {
+				bendpoints (110, 0), (110, 250)
+			}
+			sequenceCall at (-20, -14) {
+				inPin connection_103
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_D20_PTD8 at (631, 375) {
+			label at (0, -1)
+			inPin connection_106 {
+				bendpoints (110, 0), (110, 300)
+			}
+			sequenceCall at (-10, -14) {
+				inPin connection_105
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_D21_PTD9 at (631, 425) {
+			label at (0, -1)
+			inPin connection_108 {
+				bendpoints (110, 0), (110, 350)
+			}
+			sequenceCall at (-20, -14) {
+				inPin connection_107
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_GPIOPTD2 at (631, 465) {
+			label at (0, -1)
+			inPin connection_110 {
+				bendpoints (110, 0), (110, 390)
+			}
+			sequenceCall at (-20, -14) {
+				inPin connection_109
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_GPIOPTD0 at (631, 515) {
+			label at (0, -1)
+			inPin connection_112 {
+				bendpoints (110, 0), (110, 440)
+			}
+			sequenceCall at (-20, -14) {
+				inPin connection_111
+			}
+		}
+		not at (221, 71) {
+			inPin connection_92
+			outPin {
+				connection_91
+			}
+		}
+		simpleIdentifier APP_Toggle at (51, 75) {
+			label at (0, -1)
+			inPin outPin {
+				connection_92
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier APP_Toggle at (331, 75) {
+			label at (0, -1)
+			inPin connection_91
+			outPin {
+				connection_96, connection_98, connection_100, connection_102, connection_104, connection_106, connection_108, connection_110, connection_112, connection_94
+			}
+			sequenceCall at (-10, -14) {
+				inPin connection_90
+			}
+		}
+		freeComment at (81, 41) {
+			"Simple code to toggle the states of the direct outputs - replace with your own code"
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_90, connection_93, connection_95, connection_97, connection_99, connection_101, connection_103, connection_105, connection_107, connection_109, connection_111
+			}
+			sequenceCall {
+				inPin connection_89
+			}
+		}
+	}
+	sequenceableContainer APP_Lever at (281, 281) size (10, 10) {
+		label at (0, 1)
+		simpleIdentifier interfaces.INInterface.IN_SW2_PTC12 at (201, 95) {
+			label at (-40, -1)
+			outPin {
+				connection_172
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_SW3_PTC13 at (201, 125) {
+			label at (-40, -1)
+			outPin {
+				connection_173
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_GPIOPTB6 at (201, 35) {
+			label at (-40, -1)
+			outPin {
+				connection_174
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_GPIOPTB7 at (201, 65) {
+			label at (-40, -1)
+			outPin {
+				connection_175
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier APP_LeverLightControl at (391, 401) size (20, 24) {
+			label at (0, 1)
+			methodCall ascet.APP.APP_LeverLights.APP_LightCtrl {
+				argumentPin IN_LeverLights at (left, 1) connection_157
+				argumentPin IN_Backlight at (left, 7) connection_155
+				sequenceCall at (210, -24) {
+					inPin connection_156
+				}
+			}
+			elementCall (ascet.APP.APP_LeverLights.APP_ReverseDuty) {
+				returnPin at (right, 5) {
+					connection_161
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			elementCall (ascet.APP.APP_LeverLights.APP_ParkDuty) {
+				returnPin at (right, 1) {
+					connection_159
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			elementCall (ascet.APP.APP_LeverLights.APP_NeutralDuty) {
+				returnPin at (right, 9) {
+					connection_163
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			elementCall (ascet.APP.APP_LeverLights.APP_DriveDuty) {
+				returnPin at (right, 13) {
+					connection_165
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			elementCall (ascet.APP.APP_LeverLights.APP_SportDuty) {
+				returnPin at (right, 17) {
+					connection_167
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+			elementCall (ascet.APP.APP_LeverLights.APP_ManualDuty) {
+				returnPin at (right, 21) {
+					connection_169
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_LeverIn at (91, 411) size (14, 3) {
+			label at (0, 1)
+			elementCall (interfaces.INInterface.IN_LeverIn) {
+				returnPin at (right, 0) {
+					connection_157
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_D12_PTB3 at (731, 575) {
+			label at (-30, -1)
+			inPin connection_167
+			sequenceCall at (-30, -14) {
+				inPin connection_166
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_D8_PTD13 at (731, 415) {
+			label at (-30, -1)
+			inPin connection_159
+			sequenceCall at (-20, -14) {
+				inPin connection_158
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_D10_PTB5 at (731, 495) {
+			label at (-30, -1)
+			inPin connection_163
+			sequenceCall at (-30, -14) {
+				inPin connection_162
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_D13_PTB2 at (731, 615) {
+			label at (-40, -1)
+			inPin connection_169
+			sequenceCall at (-30, -14) {
+				inPin connection_168
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_D11_PTB4 at (731, 535) {
+			label at (-30, -1)
+			inPin connection_165
+			sequenceCall at (-30, -14) {
+				inPin connection_164
+			}
+		}
+		simpleIdentifier interfaces.APPInterface.APP_D9_PTD14 at (731, 455) {
+			label at (-30, -1)
+			inPin connection_161
+			sequenceCall at (-20, -14) {
+				inPin connection_160
+			}
+		}
+		complexIdentifier interfaces.APPInterface.APP_LeverOut at (671, 121) size (14, 4) {
+			label at (0, 1)
+			elementCall (interfaces.APPInterface.APP_LeverOut) {
+				argumentPin at (left, 1) connection_171
+				sequenceCall at (30, -44) {
+					inPin connection_170
+				}
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_GPIOPTE0 at (201, 155) {
+			label at (-40, -1)
+			outPin {
+				connection_176
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_GPIOPTE9 at (201, 185) {
+			label at (-40, -1)
+			outPin {
+				connection_177
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_GPIOPTC5 at (201, 215) {
+			label at (-30, -1)
+			outPin {
+				connection_178
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_GPIOPTC4 at (201, 245) {
+			label at (-40, -1)
+			outPin {
+				connection_179
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_Potentiometer_PTC14 at (201, 275) {
+			label at (-50, -1)
+			outPin {
+				connection_180
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier APP_LeverSelect at (391, 31) size (20, 27) {
+			label at (0, 1)
+			methodCall ascet.APP.APP_LeverSelection.APP_LeverSelect {
+				argumentPin IN_ParkSwitch at (left, 0) connection_174
+				argumentPin IN_ReverseSwitch at (left, 3) connection_175
+				argumentPin IN_NeutralSwitch at (left, 6) connection_172
+				argumentPin IN_DriveSwitch at (left, 9) connection_173
+				argumentPin IN_SportSwitch at (left, 12) connection_176
+				argumentPin IN_ManualSwitch at (left, 15) connection_177
+				argumentPin IN_PlusSwitch at (left, 18) connection_178
+				argumentPin IN_MinusSwitch at (left, 21) connection_179
+				argumentPin IN_SteeringWheel at (left, 24) connection_180
+				returnPin at (right, 10) {
+					connection_171
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier interfaces.INInterface.IN_GPIOPTA10 at (131, 475) {
+			label at (-40, -1)
+			outPin {
+				connection_155
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		complexIdentifier APP_SanityCheck at (391, 321) size (20, 6) backgroundColor #80ffff {
+			label at (20, 1)
+			methodCall ascet.APP.APP_Sanity.SanityReturn {
+				argumentPin APP_Sanity1 at (left, 0) connection_181
+				argumentPin APP_Sanity2 at (left, 3) connection_182
+				returnPin at (right, 1) {
+					connection_184
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_LeverIn at (91, 321) size (14, 5) {
+			label at (0, 1)
+			elementCall (types.T_LeverIn.TCM_TestData1) {
+				returnPin at (right, 0) {
+					connection_181
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+			elementCall (types.T_LeverIn.TCM_TestData2) {
+				returnPin at (right, 3) {
+					connection_182
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		complexIdentifier interfaces.APPInterface.APP_LeverOut at (671, 331) size (14, 3) {
+			label at (0, 1)
+			elementCall (types.T_LeverOut.LVR_TestResponse) {
+				argumentPin at (left, 0) connection_184
+				sequenceCall at (20, -34) {
+					inPin connection_183
+				}
+			}
+		}
+		freeComment at (621, 21) {
+			"Lever application in 3 separate parts:\r\n1. Read switches\r\n2. Sanity check\r\n3. Control lights"
+		}
+		freeComment at (891, 491) {
+			"These are PWM outputs. "
+		}
+		freeComment at (71, 131) {
+			"Digital inputs"
+		}
+		freeComment at (61, 271) {
+			"Analogue input"
+		}
+		freeComment at (831, 141) {
+			"A stucture as a send message"
+		}
+		freeComment at (61, 391) {
+			"A structure as a receive message"
+		}
+		freeComment at (111, 501) {
+			"Digital input"
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_170, connection_183, connection_156, connection_158, connection_160, connection_162, connection_164, connection_166, connection_168
+			}
+			sequenceCall {
+				inPin connection_134
+			}
+		}
+	}
+	sequenceableContainer APP_ArithmeticExample at (541, 101) size (10, 10) {
+		label at (0, 1)
+		freeComment at (311, 41) {
+			"Simple sum and subtraction of two speed inputs . This is to give an example of the software changes for Arithmetic services.\r\nThere are two \'Run Configurations\' for this project, one with normal arithmetic services, and the other with customer arithmetic services (see the callbacks tab in the Run Configuration). This enables the user to manipulate the generated code to use different calls to mathematical functions, as defined in the ArithmeticServices_S32.ini example file."
+		}
+		complexIdentifier interfaces.INInterface.IN_D6_IC_PTC12 at (121, 181) size (14, 3) {
+			label at (0, 1)
+			elementCall (types.T_InputCapture.IN_Speed) {
+				returnPin at (right, 0) {
+					connection_223
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		complexIdentifier interfaces.INInterface.IN_D7_IC_PTC13 at (121, 231) size (14, 3) {
+			label at (0, 1)
+			elementCall (types.T_InputCapture.IN_Speed) {
+				returnPin at (right, 0) {
+					connection_225
+				}
+				sequenceCall at (0, 0) {
+					inPin
+				}
+			}
+		}
+		addition at (571, 206) {
+			inPin connection_218 {
+				bendpoints (120, 0)
+			}
+			inPin connection_219 {
+				bendpoints (120, 0)
+			}
+			outPin {
+				connection_221
+			}
+		}
+		simpleIdentifier APP_SpeedSum at (721, 215) {
+			label at (-40, -1)
+			inPin connection_221
+			outPin sequenceCall at (-40, -14) {
+				inPin connection_220
+			}
+		}
+		simpleIdentifier APP_SpeedOperand1 at (401, 185) {
+			label at (-40, -1)
+			inPin connection_223
+			outPin {
+				connection_218
+			}
+			sequenceCall at (-40, -14) {
+				inPin connection_222
+			}
+		}
+		simpleIdentifier APP_SpeedOperand2 at (401, 235) {
+			label at (-40, -1)
+			inPin connection_225
+			outPin {
+				connection_219
+			}
+			sequenceCall at (-40, -14) {
+				inPin connection_224
+			}
+		}
+		subtraction at (571, 286) {
+			inPin connection_226 {
+				bendpoints (120, 0)
+			}
+			inPin connection_227 {
+				bendpoints (120, 0)
+			}
+			outPin {
+				connection_229
+			}
+		}
+		simpleIdentifier APP_SpeedOperand1 at (401, 275) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_226
+			}
+			sequenceCall at (-40, -14) {
+				inPin
+			}
+		}
+		simpleIdentifier APP_SpeedOperand2 at (401, 315) {
+			label at (-40, -1)
+			inPin outPin {
+				connection_227
+			}
+			sequenceCall at (-40, -14) {
+				inPin
+			}
+		}
+		simpleIdentifier APP_SpeedSubtraction at (721, 295) {
+			label at (-40, -1)
+			inPin connection_229
+			outPin sequenceCall at (-40, -14) {
+				inPin connection_234
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_222, connection_224, connection_220, connection_234
+			}
+			sequenceCall {
+				inPin connection_211
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+Component ascet.APP.APP_SwitchInterpretation size ( 16 , 5 ) {
+	labelPosition ( -30 , 1 )
+	methodLayout APP_SwitchState {
+		pin APP_SwitchIn ( Left , 0 )
+		pin APP_SwitchFitted ( Left , 3 )
+		pin APP_SwitchState ( Right , 0 )
+	}
+}
