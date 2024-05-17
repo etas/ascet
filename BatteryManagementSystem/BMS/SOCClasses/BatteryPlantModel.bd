@@ -1,0 +1,768 @@
+classType SOCClasses.BatteryPlantModel
+blockdiagramSpecification Main {
+	comment at (1, 21) {
+		""
+	}
+	methodBody calc {
+		outPin active {
+			connection_5, connection_12, connection_75, connection_95, connection_31, connection_101
+		}
+	}
+	simpleIdentifier Interfaces.akku_messages.T_Cell at (661, 75) {
+		comment at (0, 25) {
+			"[°K]"
+		}
+		label at (0, 9)
+		inPin connection_13
+		sequenceCall {
+			inPin connection_12
+		}
+	}
+	simpleIdentifier Interfaces.akku_messages.voltage at (691, 255) {
+		comment at (0, 25) {
+			"[V]"
+		}
+		label at (0, 9)
+		inPin connection_96
+		sequenceCall {
+			inPin connection_95
+		}
+	}
+	sequenceableContainer ThermoModel at (321, 71) size (28, 13) {
+		label at (0, 1)
+		containerInPin current at (left, 10) connection_11 {
+			bendpoints (40, 0), (40, -80)
+		}
+		containerInPin temperature_ambient at (left, 1) connection_14
+		containerOutPin T_cell at (right, 0) {
+			connection_71, connection_99, connection_13
+		}
+		simpleIdentifier C_ThermoConst at (51, 205) {
+			label at (0, -1)
+			outPin {
+				connection_7
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		multiplication at (181, 186) {
+			inPin connection_10
+			inPin connection_7
+			outPin {
+				connection_9
+			}
+		}
+		simpleIdentifier PW at (261, 195) {
+			label at (0, -1)
+			inPin connection_9
+			outPin sequenceCall {
+				inPin connection_8
+			}
+		}
+		containerPinIdentifier current at (51, 183) size (6, 1) {
+			outPin {
+				connection_10
+			}
+		}
+		containerPinIdentifier T_cell at (1201, 353) size (6, 1) {
+			inPin connection_20
+		}
+		addition at (921, 346) {
+			inPin connection_17 {
+				bendpoints (100, 0)
+			}
+			inPin connection_19
+			outPin {
+				connection_26, connection_20
+			}
+		}
+		complexIdentifier IntegratorK_instance_T_Cell at (521, 291) size (8, 6) backgroundColor #ffffff {
+			label at (0, 11)
+			methodCall SystemLib.Transferfunction.Integrator.IntegratorK.compute {
+				argumentPin val at (left, 2) connection_22
+				argumentPin K at (top, 3) connection_15 {
+					bendpoints (190, 10)
+				}
+				sequenceCall at (-100, -30) {
+					inPin connection_21
+				}
+			}
+			methodCall SystemLib.Transferfunction.Integrator.IntegratorK.value {
+				returnPin at (right, 2) {
+					connection_16
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		simpleIdentifier C_ThermicDampCoeff at (51, 365) {
+			comment at (0, 25) {
+				"Thermic Transmission Coefficient [W/K]"
+			}
+			label at (0, -1)
+			outPin {
+				connection_25
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier C_Bat at (671, 335) {
+			comment at (-90, 35) {
+				"Thermic capacity [J/K]\r\n"
+			}
+			label at (0, -1)
+			outPin {
+				connection_18
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier T0 at (841, 365) {
+			comment at (0, 25) {
+				"Initial temperature [°K]\r\n"
+			}
+			label at (0, -1)
+			outPin {
+				connection_19
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		literal Numeric "1.0" at (341, 243) size (49, 0) {
+			label at (0, 4)
+			outPin {
+				connection_15
+			}
+		}
+		division at (781, 316) {
+			inPin connection_16
+			inPin connection_18
+			outPin {
+				connection_17
+			}
+		}
+		addition at (351, 306) {
+			inPin connection_23
+			inPin connection_24 {
+				bendpoints (30, 0), (30, -50)
+			}
+			outPin {
+				connection_22
+			}
+		}
+		simpleIdentifier PW at (251, 305) {
+			label at (0, -1)
+			inPin outPin {
+				connection_23
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		multiplication at (271, 366) {
+			inPin connection_25
+			inPin connection_27 {
+				bendpoints (30, 0), (30, 170), (-830, 170), (-830, 80)
+			}
+			outPin {
+				connection_24
+			}
+		}
+		subtraction at (1051, 296) {
+			inPin connection_28
+			inPin connection_26 {
+				bendpoints (80, 0), (80, -40)
+			}
+			outPin {
+				connection_27
+			}
+		}
+		containerPinIdentifier temperature_ambient at (891, 293) size (12, 1) {
+			outPin {
+				connection_28
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_8, connection_21
+			}
+			sequenceCall {
+				inPin connection_5
+			}
+		}
+	}
+	sequenceableContainer ChargeModel at (321, 431) size (28, 13) {
+		label at (0, 1)
+		containerInPin T_cell at (left, 0) connection_71 {
+			bendpoints (0, 140), (-350, 140), (-350, 360)
+		}
+		containerInPin current at (left, 5) connection_72 {
+			bendpoints (30, 0), (30, 230)
+		}
+		containerInPin U_cell at (left, 10) connection_97 {
+			bendpoints (30, 0), (30, 320), (-350, 320), (-350, 280)
+		}
+		containerOutPin SOC_cell at (right, 0) {
+			connection_98, connection_70
+		}
+		complexIdentifier MathLib_instance at (641, 161) size (14, 7) {
+			label at (0, 1)
+			methodCall SystemLib.Math.MathLib.exp {
+				argumentPin val at (left, 0) connection_38 {
+					bendpoints (30, 0)
+				}
+				returnPin at (right, 0) {
+					connection_32
+				}
+				sequenceCall at (0, 6) {
+					inPin
+				}
+			}
+		}
+		multiplication at (831, 166) {
+			inPin connection_32
+			inPin connection_33 {
+				bendpoints (30, 0)
+			}
+			outPin {
+				connection_35
+			}
+		}
+		simpleIdentifier I0 at (761, 275) {
+			label at (0, -1)
+			outPin {
+				connection_33
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier IV at (981, 175) {
+			label at (0, -1)
+			inPin connection_35
+			outPin sequenceCall {
+				inPin connection_34
+			}
+		}
+		addition at (561, 156) {
+			inPin connection_37
+			inPin connection_36 {
+				bendpoints (30, 0), (30, -70)
+			}
+			outPin {
+				connection_38
+			}
+		}
+		division at (481, 146) {
+			inPin connection_41
+			inPin connection_42 {
+				bendpoints (20, 0), (20, -20)
+			}
+			outPin {
+				connection_37
+			}
+		}
+		division at (481, 236) {
+			inPin connection_43
+			inPin connection_52 {
+				bendpoints (110, 0), (110, -70)
+			}
+			outPin {
+				connection_36
+			}
+		}
+		containerPinIdentifier U_cell at (311, 133) size (6, 1) {
+			outPin {
+				connection_39
+			}
+		}
+		subtraction at (411, 136) {
+			inPin connection_39
+			inPin connection_40 {
+				bendpoints (30, 0), (30, 0)
+			}
+			outPin {
+				connection_41
+			}
+		}
+		simpleIdentifier UN at (331, 165) {
+			label at (0, -1)
+			outPin {
+				connection_40
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier K1 at (411, 185) {
+			label at (0, -1)
+			outPin {
+				connection_42
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		multiplication at (411, 226) {
+			inPin connection_45
+			inPin connection_44
+			outPin {
+				connection_43
+			}
+		}
+		simpleIdentifier K2 at (371, 245) {
+			label at (0, -1)
+			outPin {
+				connection_44
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		containerPinIdentifier T_cell at (221, 213) size (6, 1) {
+			outPin {
+				connection_48
+			}
+		}
+		containerPinIdentifier T_cell at (221, 353) size (6, 1) {
+			outPin {
+				connection_50
+			}
+		}
+		subtraction at (321, 216) {
+			inPin connection_48
+			inPin connection_49 {
+				bendpoints (30, 0), (30, -80)
+			}
+			outPin {
+				connection_45
+			}
+		}
+		simpleIdentifier TN at (241, 315) {
+			label at (0, -1)
+			outPin {
+				connection_51, connection_49
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		multiplication at (321, 316) {
+			inPin connection_51
+			inPin connection_50 {
+				bendpoints (30, 0), (30, -20)
+			}
+			outPin {
+				connection_52
+			}
+		}
+		simpleIdentifier IV at (311, 425) {
+			label at (0, -1)
+			inPin outPin {
+				connection_54
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		containerPinIdentifier current at (201, 403) size (6, 1) {
+			outPin {
+				connection_53
+			}
+		}
+		subtraction at (401, 406) {
+			inPin connection_53
+			inPin connection_54
+			outPin {
+				connection_55
+			}
+		}
+		multiplication at (471, 476) {
+			inPin connection_55 {
+				bendpoints (20, 0), (20, 60)
+			}
+			inPin connection_56
+			outPin {
+				connection_60
+			}
+		}
+		subtraction at (401, 486) {
+			inPin connection_57
+			inPin connection_58
+			outPin {
+				connection_56
+			}
+		}
+		literal Numeric "1.0" at (211, 483) size (49, 0) {
+			label at (0, 4)
+			outPin {
+				connection_57
+			}
+		}
+		division at (311, 496) {
+			inPin connection_65 {
+				bendpoints (30, 0), (30, 50), (-700, 50), (-700, -30)
+			}
+			inPin connection_59
+			outPin {
+				connection_58
+			}
+		}
+		literal Numeric "100.0" at (221, 513) size (49, 0) {
+			label at (0, 4)
+			outPin {
+				connection_59
+			}
+		}
+		division at (881, 536) {
+			inPin connection_61 {
+				bendpoints (130, 0)
+			}
+			inPin connection_62
+			outPin {
+				connection_63
+			}
+		}
+		simpleIdentifier KN at (701, 555) {
+			label at (0, -1)
+			outPin {
+				connection_62
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		addition at (971, 526) {
+			inPin connection_64 {
+				bendpoints (30, 0), (30, 30)
+			}
+			inPin connection_63
+			outPin {
+				connection_66, connection_65
+			}
+		}
+		simpleIdentifier P0 at (891, 495) {
+			label at (0, -1)
+			outPin {
+				connection_64
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		containerPinIdentifier SOC_cell at (1051, 533) size (11, 1) {
+			inPin connection_66 {
+				bendpoints (40, 0)
+			}
+		}
+		literal Numeric "1.0" at (461, 403) size (49, 0) {
+			label at (0, 4)
+			outPin {
+				connection_68
+			}
+		}
+		freeComment at (931, 561) {
+			"-41.653 - 58.347"
+		}
+		freeComment at (761, 461) {
+			"-1041,325 - 1458.675"
+		}
+		complexIdentifier IntegratorKLimited_instance at (661, 461) size (8, 6) backgroundColor #ffffff {
+			label at (0, 1)
+			methodCall SystemLib.Transferfunction.Integrator.IntegratorKLimited.reset {
+				argumentPin initValue at (bottom, 3) sequenceCall {
+					inPin
+				}
+			}
+			methodCall SystemLib.Transferfunction.Integrator.IntegratorKLimited.compute {
+				argumentPin val at (left, 2) connection_60
+				argumentPin K at (top, 3) connection_68 {
+					bendpoints (190, 0)
+				}
+				argumentPin mn at (top, 0) connection_102 {
+					bendpoints (50, 0)
+				}
+				argumentPin mx at (top, 6) connection_104 {
+					bendpoints (110, 0)
+				}
+				sequenceCall at (-90, -28) {
+					inPin connection_103
+				}
+			}
+			methodCall SystemLib.Transferfunction.Integrator.IntegratorKLimited.value {
+				returnPin at (right, 2) {
+					connection_61
+				}
+				sequenceCall {
+					inPin
+				}
+			}
+		}
+		freeComment at (1021, 501) {
+			"0 - 100"
+		}
+		literal Numeric "-1041.325" at (571, 423) size (69, 0) {
+			comment at (0, 24) {
+				"-1.041,325"
+			}
+			label at (0, 4)
+			outPin {
+				connection_102
+			}
+		}
+		literal Numeric "1458.675" at (571, 383) size (69, 0) {
+			label at (0, 4)
+			outPin {
+				connection_104
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_34, connection_103
+			}
+			sequenceCall {
+				inPin connection_31
+			}
+		}
+	}
+	sequenceableContainer VoltageModel at (321, 251) size (28, 13) {
+		label at (0, 1)
+		containerInPin current at (left, 0) connection_100
+		containerInPin SOC_cell at (left, 5) connection_98 {
+			bendpoints (0, -40), (-330, -40), (-330, -130)
+		}
+		containerInPin T_cell at (left, 10) connection_99 {
+			bendpoints (0, 140), (-350, 140), (-350, 280)
+		}
+		containerOutPin U_cell at (right, 0) {
+			connection_97, connection_96
+		}
+		simpleIdentifier T_SOC_2_RV at (201, 71) {
+			label at (0, 1)
+			inPin connection_76
+			inPin connection_77
+			outPin {
+				connection_78
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		containerPinIdentifier T_cell at (101, 73) size (6, 1) {
+			outPin {
+				connection_76
+			}
+		}
+		containerPinIdentifier SOC_cell at (101, 93) size (6, 1) {
+			outPin {
+				connection_77
+			}
+		}
+		multiplication at (371, 86) {
+			inPin connection_78
+			inPin connection_79 {
+				bendpoints (220, 0)
+			}
+			outPin {
+				connection_80
+			}
+		}
+		simpleIdentifier R_V_0 at (111, 145) {
+			label at (0, -1)
+			outPin {
+				connection_81, connection_79
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		addition at (451, 96) {
+			inPin connection_80
+			inPin connection_81 {
+				bendpoints (300, 0)
+			}
+			outPin {
+				connection_83
+			}
+		}
+		simpleIdentifier R_V at (541, 105) {
+			label at (0, -1)
+			inPin connection_83
+			outPin sequenceCall {
+				inPin connection_82
+			}
+		}
+		containerPinIdentifier U_cell at (661, 283) size (6, 1) {
+			inPin connection_84
+		}
+		multiplication at (571, 276) {
+			inPin connection_86
+			inPin connection_85 {
+				bendpoints (40, 0)
+			}
+			outPin {
+				connection_84
+			}
+		}
+		division at (491, 316) {
+			inPin connection_87
+			inPin connection_88
+			outPin {
+				connection_85
+			}
+		}
+		subtraction at (391, 266) {
+			inPin connection_94 {
+				bendpoints (280, 0)
+			}
+			inPin connection_93
+			outPin {
+				connection_86
+			}
+		}
+		simpleIdentifier R_V at (411, 315) {
+			label at (0, -1)
+			inPin outPin {
+				connection_87
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		addition at (311, 326) {
+			inPin connection_89
+			inPin connection_90 {
+				bendpoints (190, 0)
+			}
+			outPin {
+				connection_88
+			}
+		}
+		simpleIdentifier R_P at (81, 325) {
+			label at (0, -1)
+			outPin {
+				connection_92, connection_89
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		simpleIdentifier R_V at (71, 385) {
+			label at (0, -1)
+			inPin outPin {
+				connection_90
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		containerPinIdentifier current at (61, 273) size (6, 1) {
+			outPin {
+				connection_91
+			}
+		}
+		multiplication at (181, 276) {
+			inPin connection_91
+			inPin connection_92 {
+				bendpoints (60, 0)
+			}
+			outPin {
+				connection_93
+			}
+		}
+		simpleIdentifier U_0 at (71, 225) {
+			label at (0, -1)
+			outPin {
+				connection_94
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		statementBlock {
+			controlFlowOutPin {
+				connection_82
+			}
+			sequenceCall {
+				inPin connection_75
+			}
+		}
+	}
+	simpleIdentifier Interfaces.akku_messages.T_ambient at (191, 85) {
+		label at (0, -1)
+		outPin {
+			connection_14
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier Interfaces.akku_messages.current at (181, 255) {
+		label at (0, -1)
+		outPin {
+			connection_72, connection_100, connection_11
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier Interfaces.akku_messages.SOC_model at (701, 435) {
+		comment at (0, 15) {
+			"[%]"
+		}
+		label at (0, -1)
+		inPin connection_70
+		sequenceCall {
+			inPin connection_101
+		}
+	}
+}
+blockdiagramSpecification Init {
+	methodBody init {
+		outPin active {
+			connection_29, connection_73
+		}
+	}
+	complexIdentifier IntegratorK_instance_T_Cell at (331, 131) size (8, 6) backgroundColor #ffffff {
+		label at (90, -19)
+		methodCall SystemLib.Transferfunction.Integrator.IntegratorK.reset {
+			argumentPin initValue at (bottom, 3) connection_30 {
+				bendpoints (60, 0)
+			}
+			sequenceCall at (-74, 1) {
+				inPin connection_29
+			}
+		}
+	}
+	simpleIdentifier Interfaces.akku_messages.T_ambient at (271, 225) {
+		label at (0, 9)
+		outPin {
+			connection_30
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier IntegratorK_instance_SOC at (331, 301) size (8, 6) backgroundColor #ffffff {
+		label at (90, -19)
+		methodCall SystemLib.Transferfunction.Integrator.IntegratorK.reset {
+			argumentPin initValue at (bottom, 3) connection_74 {
+				bendpoints (70, 0)
+			}
+			sequenceCall at (-64, 11) {
+				inPin connection_73
+			}
+		}
+	}
+	literal Numeric "0.0" at (251, 403) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_74
+		}
+	}
+}

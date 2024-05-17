@@ -1,0 +1,167 @@
+classType SOCClasses.SOC
+blockdiagramSpecification Main {
+	methodBody method_100ms {
+		outPin active {
+			connection_13, connection_10, connection_15, connection_17, connection_22, connection_27
+		}
+	}
+	simpleIdentifier Interfaces.akku_messages.voltage at (71, 155) {
+		label at (-10, -1)
+		outPin {
+			connection_6
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier accu at (201, 151) size (14, 8) {
+		label at (0, 1)
+		methodCall SOCClasses.AccuCharacteristic.calc {
+			argumentPin U at (left, 0) connection_6
+			argumentPin T at (left, 3) connection_9
+			returnPin at (right, 0) {
+				connection_12
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier Interfaces.akku_messages.T_Cell at (71, 185) {
+		label at (0, 9)
+		outPin {
+			connection_9
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	complexIdentifier battState at (471, 141) size (16, 8) {
+		label at (0, 1)
+		methodCall SOCClasses.BatteryState.batteryState1StatemachineTrigger {
+			methodVoidPin at (top, 0) sequenceCall at (-44, -30) {
+				inPin connection_10
+			}
+		}
+		elementCall (SOCClasses.BatteryState.current_measure) {
+			argumentPin at (left, 5) connection_14
+			sequenceCall at (0, 36) {
+				inPin connection_13
+			}
+		}
+		elementCall (SOCClasses.BatteryState.SOC_in) {
+			argumentPin at (left, 1) connection_12
+			sequenceCall at (-100, -54) {
+				inPin connection_11 {
+					bendpoints (30, 0), (30, -80), (-430, -80)
+				}
+			}
+		}
+		elementCall (SOCClasses.BatteryState.SOC_request) {
+			returnPin at (right, 0) {
+				connection_16
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+		elementCall (SOCClasses.BatteryState.SOC_value) {
+			returnPin at (right, 5) {
+				connection_20, connection_24, connection_8
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	simpleIdentifier Interfaces.akku_messages.current at (381, 195) {
+		label at (0, 9)
+		outPin {
+			connection_14
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	if at (741, 141) {
+		inPin connection_16
+		ifControlFlowOutPin {
+			connection_11
+		}
+		sequenceCall at (-30, -20) {
+			inPin connection_15
+		}
+	}
+	simpleIdentifier Interfaces.akku_messages.SOC_estimated at (881, 195) {
+		label at (0, -1)
+		inPin connection_8
+		sequenceCall {
+			inPin connection_17
+		}
+	}
+	less at (751, 256) {
+		inPin connection_20 {
+			bendpoints (110, 0)
+		}
+		inPin connection_21
+		outPin {
+			connection_23
+		}
+	}
+	literal Numeric "12.0" at (691, 273) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_21
+		}
+	}
+	simpleIdentifier Interfaces.akku_messages.SOC_low at (881, 265) {
+		label at (0, -1)
+		inPin connection_23
+		sequenceCall {
+			inPin connection_22
+		}
+	}
+	simpleIdentifier Interfaces.akku_messages.SOC_symbol at (881, 355) {
+		label at (0, -1)
+		inPin connection_28
+		sequenceCall {
+			inPin connection_27
+		}
+	}
+	division at (701, 336) {
+		inPin connection_24 {
+			bendpoints (20, 0), (20, 140)
+		}
+		inPin connection_25
+		outPin {
+			connection_26
+		}
+	}
+	literal Numeric "12.5" at (611, 353) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_25
+		}
+	}
+	typeConverter Interfaces.S32 at (741, 341) {
+		inPin connection_26
+		outPin {
+			connection_29
+		}
+	}
+	addition at (781, 346) {
+		inPin connection_29
+		inPin connection_30 {
+			bendpoints (30, 0)
+		}
+		outPin {
+			connection_28
+		}
+	}
+	literal Numeric "1" at (701, 393) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_30
+		}
+	}
+}

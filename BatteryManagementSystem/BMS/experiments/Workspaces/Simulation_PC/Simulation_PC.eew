@@ -1,0 +1,22 @@
+<?SCHEMA schemaVersion="1.0"?>
+<Workspace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Program%20Files/Common%20Files/ETAS/Experiment%20Environment/3.8/Schemas/EE.Data.Workspace.xsd" xsi:type="ETAS.EE.Data.WorkspaceType">
+  <PluginData xsi:type="ETAS.EE.Data.PluginDataListType">
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="ID81487c94-4a6b-42ce-b0d6-9e9dc4b1b9a7" pluginID="Options" rootFolder="Options_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="ID3dd1eade-508f-487c-ac7f-a6ee7a2568fc" type="" name="Options" file="Options.opt" />
+      </Documents>
+    </Item>
+    <Item xsi:type="ETAS.EE.Data.PluginDataType" id="IDb21350d7-2ac1-4a83-a22f-a15431bfc61e" pluginID="SignalSourceManager" rootFolder="SignalSourceManager_Files">
+      <Documents xsi:type="ETAS.EE.Data.ExternalDocumentListType">
+        <Item xsi:type="ETAS.EE.Data.ExternalDocumentType" id="IDe27689ef-93d6-4410-b153-7ea20c5e37c8" type="" name="SignalSourcesData" file="SignalSources.xml" />
+      </Documents>
+    </Item>
+  </PluginData>
+  <RecentExperiments xsi:type="ETAS.EE.Data.FileReferenceListType">
+    <Item xsi:type="ETAS.EE.Data.FileReferenceType" id="IDf13ce847-7a43-41ff-a59a-1c86e1a75752" path="C:\Users\dya9fe\ETAS\ASCET-DEVELOPER-7.9.0\ws_battery\BMS\experiments\Experiments\system\Simulation_PC\Simulation_PC.eex" hintPath="..\..\Experiments\system\Simulation_PC\Simulation_PC.eex" />
+  </RecentExperiments>
+  <WorkspaceInfo xsi:type="ETAS.EE.Data.WorkspaceInfoType">
+    <DateTime xsi:type="ETAS.EE.Data.DateTimeInfoType" id="ID901f77ca-c491-489c-bcac-89ed16fa9ea0" Created="2024-05-16T08:10:39.301Z" LastOpened="2024-05-17T12:01:01.557Z" LastSaved="2024-05-17T14:40:46.404Z" />
+    <Version xsi:type="ETAS.EE.Data.VersionInfoType" id="ID8b226357-87f3-4ed2-b7de-97c130b306bd" Created="3.8.5.253" LastSaved="3.8.5.253" MinRequired="3.3.1" />
+  </WorkspaceInfo>
+</Workspace>

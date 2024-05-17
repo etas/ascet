@@ -1,0 +1,7 @@
+Component   SOCClasses.AccuCharacteristic size ( 14 , 8 ) {
+	labelPosition ( 0 , 1 )
+	methodLayout calc {
+		pin U ( Left , 0 )
+		pin calc ( Right , 0 )
+	}
+}

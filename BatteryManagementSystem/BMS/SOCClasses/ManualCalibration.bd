@@ -1,0 +1,64 @@
+classType SOCClasses.ManualCalibration
+blockdiagramSpecification Main {
+	methodBody calc {
+		outPin active {
+			connection_1
+		}
+	}
+	if at (281, 71) {
+		inPin connection_7
+		ifControlFlowOutPin {
+			connection_3, connection_5
+		}
+		sequenceCall {
+			inPin connection_1
+		}
+	}
+	simpleIdentifier Interfaces.akku_messages.current at (461, 115) {
+		label at (0, -1)
+		inPin connection_4
+		sequenceCall {
+			inPin connection_3 {
+				bendpoints (120, 0)
+			}
+		}
+	}
+	simpleIdentifier Interfaces.akku_messages.T_ambient at (461, 175) {
+		label at (0, -1)
+		inPin connection_6 {
+			bendpoints (99, 0)
+		}
+		sequenceCall {
+			inPin connection_5 {
+				bendpoints (120, 0)
+			}
+		}
+	}
+	simpleIdentifier c_Current at (321, 115) {
+		label at (0, -1)
+		outPin {
+			connection_4
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier c_T_ambient at (321, 175) {
+		label at (0, -1)
+		outPin {
+			connection_6
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier ManualCalibration_ at (141, 75) {
+		label at (0, -1)
+		outPin {
+			connection_7
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+}

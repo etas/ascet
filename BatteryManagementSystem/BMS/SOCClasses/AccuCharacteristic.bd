@@ -1,0 +1,146 @@
+classType SOCClasses.AccuCharacteristic
+blockdiagramSpecification SOC_spec {
+	methodBody calc {
+		outPin active {
+			LConnection__lv11YBKIEe010Lab2K0xoptg
+		}
+	}
+	methodArgumentIdentifier calc.U at (61, 155) {
+		label at (0, -1)
+		outPin {
+			LConnection__lvsrcBKIEe010Lab2K0xoptg
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	methodArgumentIdentifier calc.T at (61, 215) {
+		label at (0, -1)
+		outPin {
+			LConnection__lvgeMBKIEe010Lab2K0xoptg
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	simpleIdentifier temp_curve at (131, 201) {
+		label at (0, 1)
+		inPin LConnection__lvgeMBKIEe010Lab2K0xoptg
+		outPin {
+			LConnection__lvsrcRKIEe010Lab2K0xoptg
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	addition at (241, 196) {
+		inPin LConnection__lvsrcBKIEe010Lab2K0xoptg {
+			bendpoints (130, 0), (130, 40)
+		}
+		inPin LConnection__lvsrcRKIEe010Lab2K0xoptg
+		outPin {
+			connection_10
+		}
+	}
+	simpleIdentifier BaseVoltage at (321, 275) {
+		label at (0, -1)
+		outPin {
+			LConnection__lvt5kRKIEe010Lab2K0xoptg
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	subtraction at (501, 206) {
+		inPin LConnection__lvt5kBKIEe010Lab2K0xoptg
+		inPin LConnection__lvt5kRKIEe010Lab2K0xoptg {
+			bendpoints (120, 0), (120, -50)
+		}
+		outPin {
+			LConnection__lvugoBKIEe010Lab2K0xoptg
+		}
+	}
+	simpleIdentifier GainVoltage_inv at (501, 335) {
+		label at (0, -1)
+		outPin {
+			LConnection__lvugoRKIEe010Lab2K0xoptg
+		}
+		sequenceCall {
+			inPin
+		}
+	}
+	multiplication at (621, 316) {
+		inPin LConnection__lvugoBKIEe010Lab2K0xoptg {
+			bendpoints (60, 0), (60, 100)
+		}
+		inPin LConnection__lvugoRKIEe010Lab2K0xoptg
+		outPin {
+			connection_7
+		}
+	}
+	return at (851, 325) {
+		label at (0, 0)
+		inPin LConnection__lv2ccBKIEe010Lab2K0xoptg
+		sequenceCall {
+			inPin LConnection__lv11YBKIEe010Lab2K0xoptg
+		}
+	}
+	complexIdentifier Limiter_instance at (701, 311) size (6, 4) backgroundColor #ffffff {
+		label at (0, 1)
+		methodCall SystemLib.Nonlinears.Limiter.value {
+			argumentPin mn at (top, 0) connection_8 {
+				bendpoints (40, 0)
+			}
+			argumentPin x at (left, 1) connection_7
+			argumentPin mx at (top, 4) connection_9
+			returnPin at (right, 1) {
+				LConnection__lv2ccBKIEe010Lab2K0xoptg
+			}
+			sequenceCall {
+				inPin
+			}
+		}
+	}
+	literal Numeric "0.0" at (621, 273) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_8
+		}
+	}
+	literal Numeric "100.0" at (701, 243) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_9
+		}
+	}
+	complexIdentifier Limiter_instance at (331, 191) size (6, 4) backgroundColor #ffffff {
+		label at (0, 1)
+		methodCall SystemLib.Nonlinears.Limiter.value {
+			argumentPin mn at (top, 0) connection_11 {
+				bendpoints (70, 0)
+			}
+			argumentPin x at (left, 1) connection_10
+			argumentPin mx at (top, 4) connection_12 {
+				bendpoints (90, 0)
+			}
+			returnPin at (right, 1) {
+				LConnection__lvt5kBKIEe010Lab2K0xoptg
+			}
+			sequenceCall at (0, 6) {
+				inPin
+			}
+		}
+	}
+	literal Numeric "1.45" at (241, 143) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_11
+		}
+	}
+	literal Numeric "2.05" at (241, 113) size (49, 0) {
+		label at (0, 4)
+		outPin {
+			connection_12
+		}
+	}
+}

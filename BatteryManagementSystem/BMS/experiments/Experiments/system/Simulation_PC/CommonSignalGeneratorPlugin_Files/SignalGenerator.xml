@@ -1,0 +1,152 @@
+<?SCHEMA schemaVersion="1.0"?>
+<SGConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///C:/Program%20Files/Common%20Files/ETAS/Experiment%20Environment/3.8/Schemas/EE.Data.CommonSignalGenerator.xsd" xsi:type="ETAS.EE.Data.SignalGenerator.SGConfigurationType">
+  <signalDescriptionSets xsi:type="ETAS.EE.Data.SignalGenerator.SignalDescriptionSetListType">
+    <item xsi:type="ETAS.EE.Data.SignalGenerator.SignalDescriptionSetType" id="ID8b3feb4c-89db-446d-a915-72e03810a3ed" name="SignalDescriptionSet" comment="" repetitions="1">
+      <signalDescriptions xsi:type="ETAS.EE.Data.SignalGenerator.SignalDescriptionRefListType">
+        <item xsi:type="ETAS.EE.Data.SignalGenerator.SignalDescriptionRefType" idRef="ID99c497af-010d-4e1c-b7f2-713bffe4aeb5" />
+        <item xsi:type="ETAS.EE.Data.SignalGenerator.SignalDescriptionRefType" idRef="ID4c74972c-983a-4d7c-9c34-521c656ce0b4" />
+      </signalDescriptions>
+    </item>
+  </signalDescriptionSets>
+  <signalDescriptions xsi:type="ETAS.EE.Data.SignalGenerator.SignalDescriptionListType">
+    <item xsi:type="ETAS.EE.Data.SignalGenerator.SignalDescriptionType" id="ID99c497af-010d-4e1c-b7f2-713bffe4aeb5" name="Current" comment="">
+      <signalSegments xsi:type="ETAS.EE.Data.SignalGenerator.SignalSegmentListType">
+        <item xsi:type="ETAS.EE.Data.SignalGenerator.SignalSegmentType" duration="4000000000" comment="" iterations="1">
+          <waveForm xsi:type="ETAS.EE.Data.SignalGenerator.WaveFormType">
+            <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantType">
+              <value xsi:type="ETAS.EE.Data.SignalGenerator.WFPropertyValueType">
+                <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantValueType" value="0" />
+              </value>
+            </constant>
+          </waveForm>
+          <stopTrigger xsi:type="ETAS.EE.Data.SignalGenerator.StopTriggerListType" />
+        </item>
+        <item xsi:type="ETAS.EE.Data.SignalGenerator.SignalSegmentType" duration="50000000000" comment="" iterations="1">
+          <waveForm xsi:type="ETAS.EE.Data.SignalGenerator.WaveFormType">
+            <sine xsi:type="ETAS.EE.Data.SignalGenerator.WFSineType">
+              <offset xsi:type="ETAS.EE.Data.SignalGenerator.WFPropertyValueType">
+                <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantValueType" value="0" />
+              </offset>
+              <amplitude xsi:type="ETAS.EE.Data.SignalGenerator.WFPropertyValueType">
+                <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantValueType" value="10" />
+              </amplitude>
+              <period xsi:type="ETAS.EE.Data.SignalGenerator.WFPropertyValueType">
+                <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantValueType" value="25" />
+              </period>
+              <phase xsi:type="ETAS.EE.Data.SignalGenerator.WFPropertyValueType">
+                <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantValueType" value="0" />
+              </phase>
+            </sine>
+          </waveForm>
+          <stopTrigger xsi:type="ETAS.EE.Data.SignalGenerator.StopTriggerListType" />
+        </item>
+        <item xsi:type="ETAS.EE.Data.SignalGenerator.SignalSegmentType" duration="3000000000" comment="" iterations="1">
+          <waveForm xsi:type="ETAS.EE.Data.SignalGenerator.WaveFormType">
+            <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantType">
+              <value xsi:type="ETAS.EE.Data.SignalGenerator.WFPropertyValueType">
+                <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantValueType" value="0" />
+              </value>
+            </constant>
+          </waveForm>
+          <stopTrigger xsi:type="ETAS.EE.Data.SignalGenerator.StopTriggerListType" />
+        </item>
+        <item xsi:type="ETAS.EE.Data.SignalGenerator.SignalSegmentType" duration="10000000000" comment="" iterations="1">
+          <waveForm xsi:type="ETAS.EE.Data.SignalGenerator.WaveFormType">
+            <ramp xsi:type="ETAS.EE.Data.SignalGenerator.WFRampType" type="Stop">
+              <start xsi:type="ETAS.EE.Data.SignalGenerator.WFPropertyValueType">
+                <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantValueType" value="0" />
+              </start>
+              <value xsi:type="ETAS.EE.Data.SignalGenerator.WFPropertyValueType">
+                <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantValueType" value="-9" />
+              </value>
+            </ramp>
+          </waveForm>
+          <stopTrigger xsi:type="ETAS.EE.Data.SignalGenerator.StopTriggerListType" />
+        </item>
+        <item xsi:type="ETAS.EE.Data.SignalGenerator.SignalSegmentType" duration="533000000000" comment="" iterations="1">
+          <waveForm xsi:type="ETAS.EE.Data.SignalGenerator.WaveFormType">
+            <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantType">
+              <value xsi:type="ETAS.EE.Data.SignalGenerator.WFPropertyValueType">
+                <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantValueType" value="-9" />
+              </value>
+            </constant>
+          </waveForm>
+          <stopTrigger xsi:type="ETAS.EE.Data.SignalGenerator.StopTriggerListType" />
+        </item>
+      </signalSegments>
+    </item>
+    <item xsi:type="ETAS.EE.Data.SignalGenerator.SignalDescriptionType" id="ID4c74972c-983a-4d7c-9c34-521c656ce0b4" name="Temperature_Ambient" comment="">
+      <signalSegments xsi:type="ETAS.EE.Data.SignalGenerator.SignalSegmentListType">
+        <item xsi:type="ETAS.EE.Data.SignalGenerator.SignalSegmentType" duration="100000000000" comment="" iterations="1">
+          <waveForm xsi:type="ETAS.EE.Data.SignalGenerator.WaveFormType">
+            <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantType">
+              <value xsi:type="ETAS.EE.Data.SignalGenerator.WFPropertyValueType">
+                <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantValueType" value="300" />
+              </value>
+            </constant>
+          </waveForm>
+          <stopTrigger xsi:type="ETAS.EE.Data.SignalGenerator.StopTriggerListType" />
+        </item>
+        <item xsi:type="ETAS.EE.Data.SignalGenerator.SignalSegmentType" duration="200000000000" comment="" iterations="1">
+          <waveForm xsi:type="ETAS.EE.Data.SignalGenerator.WaveFormType">
+            <ramp xsi:type="ETAS.EE.Data.SignalGenerator.WFRampType" type="Stop">
+              <start xsi:type="ETAS.EE.Data.SignalGenerator.WFPropertyValueType">
+                <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantValueType" value="300" />
+              </start>
+              <value xsi:type="ETAS.EE.Data.SignalGenerator.WFPropertyValueType">
+                <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantValueType" value="270" />
+              </value>
+            </ramp>
+          </waveForm>
+          <stopTrigger xsi:type="ETAS.EE.Data.SignalGenerator.StopTriggerListType" />
+        </item>
+        <item xsi:type="ETAS.EE.Data.SignalGenerator.SignalSegmentType" duration="200000000000" comment="" iterations="1">
+          <waveForm xsi:type="ETAS.EE.Data.SignalGenerator.WaveFormType">
+            <ramp xsi:type="ETAS.EE.Data.SignalGenerator.WFRampType" type="Stop">
+              <start xsi:type="ETAS.EE.Data.SignalGenerator.WFPropertyValueType">
+                <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantValueType" value="270" />
+              </start>
+              <value xsi:type="ETAS.EE.Data.SignalGenerator.WFPropertyValueType">
+                <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantValueType" value="310" />
+              </value>
+            </ramp>
+          </waveForm>
+          <stopTrigger xsi:type="ETAS.EE.Data.SignalGenerator.StopTriggerListType" />
+        </item>
+        <item xsi:type="ETAS.EE.Data.SignalGenerator.SignalSegmentType" duration="100000000000" comment="" iterations="1">
+          <waveForm xsi:type="ETAS.EE.Data.SignalGenerator.WaveFormType">
+            <ramp xsi:type="ETAS.EE.Data.SignalGenerator.WFRampType" type="Stop">
+              <start xsi:type="ETAS.EE.Data.SignalGenerator.WFPropertyValueType">
+                <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantValueType" value="310" />
+              </start>
+              <value xsi:type="ETAS.EE.Data.SignalGenerator.WFPropertyValueType">
+                <constant xsi:type="ETAS.EE.Data.SignalGenerator.WFConstantValueType" value="270" />
+              </value>
+            </ramp>
+          </waveForm>
+          <stopTrigger xsi:type="ETAS.EE.Data.SignalGenerator.StopTriggerListType" />
+        </item>
+      </signalSegments>
+    </item>
+  </signalDescriptions>
+  <signalMappings xsi:type="ETAS.EE.Data.SignalGenerator.SignalMappingListType">
+    <item xsi:type="ETAS.EE.Data.SignalGenerator.SignalMappingType" id="IDac0fc6dd-7447-4294-b495-f47be2a029e9" name="Mapping">
+      <mappingItems xsi:type="ETAS.EE.Data.SignalGenerator.MappingItemListType">
+        <item xsi:type="ETAS.EE.Data.SignalGenerator.MappingItemType" id="ID1c26f10a-55aa-4e0d-a51a-1dcdb415f3e9" label="Interfaces.akku_messages.current" task="Task_10ms">
+          <signalDescription xsi:type="ETAS.EE.Data.SignalGenerator.SignalDescriptionRefType" idRef="ID99c497af-010d-4e1c-b7f2-713bffe4aeb5" />
+        </item>
+        <item xsi:type="ETAS.EE.Data.SignalGenerator.MappingItemType" id="ID30ce3719-c041-4bca-95b3-b6ccae080bc5" label="Interfaces.akku_messages.T_ambient" task="Task_10ms">
+          <signalDescription xsi:type="ETAS.EE.Data.SignalGenerator.SignalDescriptionRefType" idRef="ID4c74972c-983a-4d7c-9c34-521c656ce0b4" />
+        </item>
+      </mappingItems>
+    </item>
+  </signalMappings>
+  <signalGenerators xsi:type="ETAS.EE.Data.SignalGenerator.SignalGeneratorListType">
+    <item xsi:type="ETAS.EE.Data.SignalGenerator.SignalGeneratorType" id="ID033585c9-8662-4d80-9c2b-d70b20f190c4" instanceId="0" name="SignalGenerator" startTime="0" stopBehaviour="LastValue">
+      <mapping xsi:type="ETAS.EE.Data.SignalGenerator.SignalGeneratorMappingContainerType" mappingChange="Dynamically">
+        <signalMapping xsi:type="ETAS.EE.Data.SignalGenerator.SignalMappingRefType" idRef="IDac0fc6dd-7447-4294-b495-f47be2a029e9" />
+      </mapping>
+    </item>
+  </signalGenerators>
+  <signalAssignments xsi:type="ETAS.EE.Data.SignalGenerator.SignalLinkListType" />
+</SGConfiguration>
