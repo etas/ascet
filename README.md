@@ -17,3 +17,9 @@ This move reflects our commitment to creating an open dialogue, enabling users t
 To create a welcoming and inspiring community please follow the [Code of Conduct](https://github.com/etas/ascet?tab=coc-ov-file).
 
 [Let's start discussing!](https://github.com/etas/ascet/discussions) 🌞
+
+## Learn More
+
+### How to Integrate ASCET-DEVELOPER in a CI/CD Pipeline
+
+Modern software development doesn't stop on the developer's machine. It is essential to establish a review process and automate tests and builds. You can easily integrate ASCET-DEVELOPER in your CI/CD pipeline. Learn more about how to do that in our [dedicated demo repository](https://github.com/etas/ascet-workflows-demo).
